@@ -11,3 +11,9 @@ import Foundation
 public struct Percentage {
     public let percent : Double
 }
+
+extension Percentage : Equatable {}
+
+public func ==(lhs : Percentage, rhs : Percentage) -> Bool {
+    return lhs.percent == rhs.percent
+}
