@@ -13,3 +13,11 @@ public struct Map {
     public let resourceState : ResourceState
     public let summaryPolyline : String
 }
+
+extension Map : Equatable {}
+
+public func ==(lhs : Map, rhs : Map) -> Bool {
+    return  lhs.id              == rhs.id &&
+            lhs.resourceState   == rhs.resourceState &&
+            lhs.summaryPolyline == rhs.summaryPolyline
+}
