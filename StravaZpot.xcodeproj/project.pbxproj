@@ -10,6 +10,8 @@
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9541DBE44B4003E5302 /* StravaZpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9531DBE44B4003E5302 /* StravaZpotTests.swift */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */; };
+		792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.release.xcconfig"; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A6A94E1DBE44B4003E5302 /* StravaZpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StravaZpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9531DBE44B4003E5302 /* StravaZpotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaZpotTests.swift; sourceTree = "<group>"; };
 		11A6A9551DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.release.xcconfig"; sourceTree = "<group>"; };
+		7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28A7DB7276E1105E60C91B2 /* Pods-StravaZpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */,
+				6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 				11A6A9471DBE44B4003E5302 /* StravaZpot */,
 				11A6A9521DBE44B4003E5302 /* StravaZpotTests */,
 				11A6A9461DBE44B4003E5302 /* Products */,
+				4838C7ABD2BE4DD73FC9E102 /* Pods */,
+				4F71574CA2855193987F6AF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,26 @@
 			path = StravaZpotTests;
 			sourceTree = "<group>";
 		};
+		4838C7ABD2BE4DD73FC9E102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B28A7DB7276E1105E60C91B2 /* Pods-StravaZpot.debug.xcconfig */,
+				25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */,
+				8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */,
+				0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F71574CA2855193987F6AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */,
+				8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A6A9591DBE44B4003E5302 /* Build configuration list for PBXNativeTarget "StravaZpot" */;
 			buildPhases = (
+				54931040D481D10D0A342491 /* [CP] Check Pods Manifest.lock */,
 				11A6A9401DBE44B4003E5302 /* Sources */,
 				11A6A9411DBE44B4003E5302 /* Frameworks */,
 				11A6A9421DBE44B4003E5302 /* Headers */,
 				11A6A9431DBE44B4003E5302 /* Resources */,
+				8B502F44F8417B0BD0AB0D4A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A6A95C1DBE44B4003E5302 /* Build configuration list for PBXNativeTarget "StravaZpotTests" */;
 			buildPhases = (
+				5F691F395CE5F9B5C1390CDD /* [CP] Check Pods Manifest.lock */,
 				11A6A94A1DBE44B4003E5302 /* Sources */,
 				11A6A94B1DBE44B4003E5302 /* Frameworks */,
 				11A6A94C1DBE44B4003E5302 /* Resources */,
+				C97603E59320671125CA4A8C /* [CP] Embed Pods Frameworks */,
+				0ED6EF5F33CF50E47C39B47D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +229,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ED6EF5F33CF50E47C39B47D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54931040D481D10D0A342491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F691F395CE5F9B5C1390CDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B502F44F8417B0BD0AB0D4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97603E59320671125CA4A8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11A6A9401DBE44B4003E5302 /* Sources */ = {
@@ -321,6 +436,7 @@
 		};
 		11A6A95A1DBE44B4003E5302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28A7DB7276E1105E60C91B2 /* Pods-StravaZpot.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -341,6 +457,7 @@
 		};
 		11A6A95B1DBE44B4003E5302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -361,6 +478,7 @@
 		};
 		11A6A95D1DBE44B4003E5302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
 				INFOPLIST_FILE = StravaZpotTests/Info.plist;
@@ -373,6 +491,7 @@
 		};
 		11A6A95E1DBE44B4003E5302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
 				INFOPLIST_FILE = StravaZpotTests/Info.plist;
@@ -402,6 +521,7 @@
 				11A6A95B1DBE44B4003E5302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A6A95C1DBE44B4003E5302 /* Build configuration list for PBXNativeTarget "StravaZpotTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +530,7 @@
 				11A6A95E1DBE44B4003E5302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
