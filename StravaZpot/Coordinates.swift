@@ -12,3 +12,9 @@ public struct Coordinates {
     public let latitude : Double
     public let longitude : Double
 }
+
+extension Coordinates : Equatable {}
+
+public func ==(lhs : Coordinates, rhs : Coordinates) -> Bool {
+    return lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude
+}
