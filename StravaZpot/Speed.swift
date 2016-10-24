@@ -11,3 +11,9 @@ import Foundation
 public struct Speed {
     public let metersPerSecond : Double
 }
+
+extension Speed : Equatable {}
+
+public func ==(lhs : Speed, rhs : Speed) -> Bool {
+    return lhs.metersPerSecond == rhs.metersPerSecond
+}
