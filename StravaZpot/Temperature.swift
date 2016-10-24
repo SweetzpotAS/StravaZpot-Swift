@@ -11,3 +11,9 @@ import Foundation
 public struct Temperature {
     public let celsiusDegrees : Double
 }
+
+extension Temperature : Equatable {}
+
+public func ==(lhs : Temperature, rhs : Temperature) -> Bool {
+    return lhs.celsiusDegrees == rhs.celsiusDegrees
+}
