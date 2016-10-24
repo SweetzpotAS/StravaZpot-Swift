@@ -11,3 +11,9 @@ import Foundation
 public struct Distance {
     public let meters : Double
 }
+
+extension Distance : Equatable {}
+
+public func ==(lhs : Distance, rhs : Distance) -> Bool {
+    return lhs.meters == rhs.meters
+}
