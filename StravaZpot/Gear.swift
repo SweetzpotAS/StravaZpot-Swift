@@ -19,3 +19,17 @@ public struct Gear {
     public let frameType : FrameType?
     public let description : String?
 }
+
+extension Gear : Equatable {}
+
+public func ==(lhs : Gear, rhs : Gear) -> Bool {
+    return  lhs.id == rhs.id &&
+            lhs.resourceState == rhs.resourceState &&
+            lhs.primary == rhs.primary &&
+            lhs.name == rhs.name &&
+            lhs.distance == rhs.distance &&
+            lhs.brandName == rhs.brandName &&
+            lhs.modelName == rhs.modelName &&
+            lhs.frameType == rhs.frameType &&
+            lhs.description == rhs.description
+}
