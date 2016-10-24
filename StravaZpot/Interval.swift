@@ -12,3 +12,9 @@ public struct Interval<T : Equatable> {
     public let min : T
     public let max : T
 }
+
+extension Interval : Equatable {}
+
+public func ==<T>(lhs : Interval<T>, rhs : Interval<T>) -> Bool where T : Equatable {
+    return lhs.min == rhs.min && lhs.max == rhs.max
+}
