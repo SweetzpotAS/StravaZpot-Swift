@@ -11,3 +11,9 @@ import Foundation
 public struct Time {
     public let seconds : Int
 }
+
+extension Time : Equatable {}
+
+public func ==(lhs : Time, rhs : Time) -> Bool {
+    return lhs.seconds == rhs.seconds
+}
