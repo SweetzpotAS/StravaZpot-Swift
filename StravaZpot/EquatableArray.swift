@@ -15,3 +15,10 @@ public class EquatableArray<T : Equatable> {
         self.array = array
     }
 }
+
+extension EquatableArray : Equatable {}
+
+public func ==<T>(lhs : EquatableArray<T>, rhs : EquatableArray<T>) -> Bool where T : Equatable {
+    return lhs.array.count == rhs.array.count &&
+        zip(lhs.array, rhs.array).reduce(true, { partial, pair in partial && pair.0 == pair.1})
+}
