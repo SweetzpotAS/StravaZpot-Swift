@@ -19,3 +19,9 @@ public func ==(lhs : Bounds, rhs : Bounds) -> Bool {
     return  lhs.southWest == rhs.southWest &&
             lhs.northEast == rhs.northEast
 }
+
+extension Bounds : CustomStringConvertible {
+    public var description : String {
+        return "\(southWest.latitude),\(southWest.longitude),\(northEast.latitude),\(northEast.longitude)"
+    }
+}
