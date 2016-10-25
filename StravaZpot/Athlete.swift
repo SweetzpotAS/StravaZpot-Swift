@@ -37,3 +37,35 @@ public struct Athlete {
     public let bikes : EquatableArray<Gear>?
     public let shoes : EquatableArray<Gear>?
 }
+
+extension Athlete : Equatable {}
+
+public func ==(lhs : Athlete, rhs : Athlete) -> Bool {
+    return  lhs.id                    == rhs.id &&
+            lhs.resourceState         == rhs.resourceState &&
+            lhs.firstName             == rhs.firstName &&
+            lhs.lastName              == rhs.lastName &&
+            lhs.profileMedium         == rhs.profileMedium &&
+            lhs.profile               == rhs.profile &&
+            lhs.city                  == rhs.city &&
+            lhs.state                 == rhs.state &&
+            lhs.country               == rhs.country &&
+            lhs.sex                   == rhs.sex &&
+            lhs.friend                == rhs.friend &&
+            lhs.follower              == rhs.follower &&
+            lhs.isPremium             == rhs.isPremium &&
+            lhs.createdAt             == rhs.createdAt &&
+            lhs.updatedAt             == rhs.updatedAt &&
+            lhs.followerCount         == rhs.followerCount &&
+            lhs.friendCount           == rhs.friendCount &&
+            lhs.mutualFriendCount     == rhs.mutualFriendCount &&
+            lhs.athleteType           == rhs.athleteType &&
+            lhs.datePreference        == rhs.datePreference &&
+            lhs.measurementPreference == rhs.measurementPreference &&
+            lhs.email                 == rhs.email &&
+            lhs.ftp                   == rhs.ftp &&
+            lhs.weight                == rhs.weight &&
+            lhs.clubs                 == rhs.clubs &&
+            lhs.bikes                 == rhs.bikes &&
+            lhs.shoes                 == rhs.shoes
+}
