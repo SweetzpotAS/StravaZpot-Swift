@@ -24,3 +24,22 @@ public struct LeaderboardEntry {
     public let rank : Int
     public let athleteProfile : String
 }
+
+extension LeaderboardEntry : Equatable {}
+
+public func ==(lhs : LeaderboardEntry, rhs : LeaderboardEntry) -> Bool {
+    return  lhs.athleteID        == rhs.athleteID &&
+            lhs.athleteName      == rhs.athleteName &&
+            lhs.athleteGender    == rhs.athleteGender &&
+            lhs.averageHeartRate == rhs.averageHeartRate &&
+            lhs.avertageWatts    == rhs.avertageWatts &&
+            lhs.distance         == rhs.distance &&
+            lhs.elapsedTime      == rhs.elapsedTime &&
+            lhs.movingTime       == rhs.movingTime &&
+            lhs.startDate        == rhs.startDate &&
+            lhs.stardDateLocal   == rhs.stardDateLocal &&
+            lhs.activityID       == rhs.activityID &&
+            lhs.effortID         == rhs.effortID &&
+            lhs.rank             == rhs.rank &&
+            lhs.athleteProfile   == rhs.athleteProfile
+}
