@@ -13,3 +13,11 @@ public struct JoinResult {
     public let active : Bool
     public let membership : Membership
 }
+
+extension JoinResult : Equatable {}
+
+public func ==(lhs : JoinResult, rhs : JoinResult) -> Bool {
+    return  lhs.success    == rhs.success &&
+            lhs.active     == rhs.active &&
+            lhs.membership == rhs.membership
+}
