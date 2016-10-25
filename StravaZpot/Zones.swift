@@ -12,3 +12,10 @@ public struct Zones {
     public let heartRate : HeartRate
     public let power : Power
 }
+
+extension Zones : Equatable {}
+
+public func ==(lhs : Zones, rhs : Zones) -> Bool {
+    return  lhs.heartRate == rhs.heartRate &&
+            lhs.power == rhs.power
+}
