@@ -16,3 +16,14 @@ public struct Totals {
     public let elevationGain : Distance
     public let achievementCount : Int
 }
+
+extension Totals : Equatable {}
+
+public func ==(lhs : Totals, rhs : Totals) -> Bool {
+    return  lhs.count            == rhs.count &&
+            lhs.distance         == rhs.distance &&
+            lhs.movingTime       == rhs.movingTime &&
+            lhs.elapsedTime      == rhs.movingTime &&
+            lhs.elevationGain    == rhs.elevationGain &&
+            lhs.achievementCount == rhs.achievementCount
+}
