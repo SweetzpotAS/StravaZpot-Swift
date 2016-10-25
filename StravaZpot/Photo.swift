@@ -23,3 +23,21 @@ public struct Photo {
     public let uid : String?
     public let type : String?
 }
+
+extension Photo : Equatable {}
+
+public func ==(lhs : Photo, rhs : Photo) -> Bool {
+    return  lhs.uniqueID      == rhs.uniqueID &&
+            lhs.id            == rhs.id &&
+            lhs.activityID    == rhs.activityID &&
+            lhs.resourceState == rhs.resourceState &&
+            lhs.urls          == rhs.urls &&
+            lhs.caption       == rhs.caption &&
+            lhs.source        == rhs.source &&
+            lhs.uploadedAt    == rhs.uploadedAt &&
+            lhs.createdAt     == rhs.createdAt &&
+            lhs.location      == rhs.location &&
+            lhs.ref           == rhs.ref &&
+            lhs.uid           == rhs.uid &&
+            lhs.type          == rhs.type
+}
