@@ -12,3 +12,9 @@ public struct LeaveResult {
     public let success : Bool
     public let active : Bool
 }
+
+extension LeaveResult : Equatable {}
+
+public func ==(lhs : LeaveResult, rhs : LeaveResult) -> Bool {
+    return lhs.success == rhs.success && lhs.active == rhs.active
+}
