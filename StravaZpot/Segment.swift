@@ -16,7 +16,7 @@ public struct Segment {
     public let distance : Distance
     public let averageGrade : Percentage
     public let maximumGrade : Percentage
-    public let elevationHight : Distance
+    public let elevationHigh : Distance
     public let elevationLow : Distance
     public let startCoordinates : Coordinates
     public let endCoordinates : Coordinates
@@ -34,4 +34,34 @@ public struct Segment {
     public let effortCount : Int?
     public let athleteCount : Int?
     public let starCount : Int?
+}
+
+extension Segment : Equatable {}
+
+public func ==(lhs : Segment, rhs : Segment) -> Bool {
+    return  lhs.id                 == rhs.id &&
+            lhs.resourceState      == rhs.resourceState &&
+            lhs.name               == rhs.name &&
+            lhs.activityType       == rhs.activityType &&
+            lhs.distance           == rhs.distance &&
+            lhs.averageGrade       == rhs.averageGrade &&
+            lhs.maximumGrade       == rhs.maximumGrade &&
+            lhs.elevationHigh      == rhs.elevationHigh &&
+            lhs.elevationLow       == rhs.elevationLow &&
+            lhs.startCoordinates   == rhs.startCoordinates &&
+            lhs.endCoordinates     == rhs.endCoordinates &&
+            lhs.climbCategory      == rhs.climbCategory &&
+            lhs.city               == rhs.city &&
+            lhs.state              == rhs.state &&
+            lhs.country            == rhs.country &&
+            lhs.isPrivate          == rhs.isPrivate &&
+            lhs.isStarred          == rhs.isStarred &&
+            lhs.isHazardous        == rhs.isHazardous &&
+            lhs.createdAt          == rhs.createdAt &&
+            lhs.updatedAt          == rhs.updatedAt &&
+            lhs.totalElevationGain == rhs.totalElevationGain &&
+            lhs.map                == rhs.map &&
+            lhs.effortCount        == rhs.effortCount &&
+            lhs.athleteCount       == rhs.athleteCount &&
+            lhs.starCount          == rhs.starCount
 }
