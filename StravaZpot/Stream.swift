@@ -15,3 +15,12 @@ public struct Stream {
     public let originalSize : Int
     public let resolution : Resolution
 }
+
+extension Stream : Equatable {}
+
+public func ==(lhs : Stream, rhs : Stream) -> Bool {
+    return  lhs.type         == rhs.type &&
+            lhs.seriesType   == rhs.seriesType &&
+            lhs.originalSize == rhs.originalSize &&
+            lhs.resolution   == rhs.resolution
+}
