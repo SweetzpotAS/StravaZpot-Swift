@@ -13,3 +13,11 @@ public struct Achievement {
     public let type : String
     public let rank : Int
 }
+
+extension Achievement : Equatable {}
+
+public func ==(lhs : Achievement, rhs : Achievement) -> Bool {
+    return  lhs.typeID == rhs.typeID &&
+            lhs.type   == rhs.type &&
+            lhs.rank   == rhs.rank
+}
