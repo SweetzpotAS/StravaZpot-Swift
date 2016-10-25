@@ -32,3 +32,30 @@ public struct Club {
     public let isOwner : Bool?
     public let followingCount : Int?
 }
+
+extension Club : Equatable {}
+
+public func ==(lhs : Club, rhs : Club) -> Bool {
+    return  lhs.id              == rhs.id &&
+            lhs.resourceState   == rhs.resourceState &&
+            lhs.name            == rhs.name &&
+            lhs.profileMedium   == rhs.profileMedium &&
+            lhs.profile         == rhs.profile &&
+            lhs.coverPhoto      == rhs.coverPhoto &&
+            lhs.coverPhotoSmall == rhs.coverPhotoSmall &&
+            lhs.sportType       == rhs.sportType &&
+            lhs.city            == rhs.city &&
+            lhs.state           == rhs.state &&
+            lhs.country         == rhs.country &&
+            lhs.isPrivate       == rhs.isPrivate &&
+            lhs.memberCount     == rhs.memberCount &&
+            lhs.isFeatured      == rhs.isFeatured &&
+            lhs.isVerified      == rhs.isVerified &&
+            lhs.url             == rhs.url &&
+            lhs.description     == rhs.description &&
+            lhs.clubType        == rhs.clubType &&
+            lhs.membership      == rhs.membership &&
+            lhs.isAdmin         == rhs.isAdmin &&
+            lhs.isOwner         == rhs.isOwner &&
+            lhs.followingCount  == rhs.followingCount
+}
