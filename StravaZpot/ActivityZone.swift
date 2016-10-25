@@ -18,3 +18,16 @@ public struct ActivityZone {
     public let customZones : Bool?
     public let max : Int?
 }
+
+extension ActivityZone : Equatable {}
+
+public func ==(lhs : ActivityZone, rhs : ActivityZone) -> Bool {
+    return  lhs.resourceState       == rhs.resourceState &&
+            lhs.distributionBuckets == rhs.distributionBuckets &&
+            lhs.type                == rhs.type &&
+            lhs.sensorBased         == rhs.sensorBased &&
+            lhs.score               == rhs.score &&
+            lhs.points              == rhs.points &&
+            lhs.customZones         == rhs.customZones &&
+            lhs.max                 == rhs.max
+}
