@@ -11,3 +11,9 @@ import Foundation
 public struct Power {
     public let zones : EquatableArray<Interval<Double>>
 }
+
+extension Power : Equatable {}
+
+public func ==(lhs : Power, rhs : Power) -> Bool {
+    return lhs.zones == rhs.zones
+}
