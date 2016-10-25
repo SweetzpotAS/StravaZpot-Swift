@@ -61,6 +61,7 @@
 		11DADB731DBF7FF800194349 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB721DBF7FF800194349 /* Photo.swift */; };
 		11DADB751DBF81D200194349 /* PrimaryPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB741DBF81D200194349 /* PrimaryPhoto.swift */; };
 		11DADB771DBF82D200194349 /* PhotoSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB761DBF82D200194349 /* PhotoSummary.swift */; };
+		11DADB791DBF838F00194349 /* Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB781DBF838F00194349 /* Split.swift */; };
 		6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */; };
 		792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,7 @@
 		11DADB721DBF7FF800194349 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		11DADB741DBF81D200194349 /* PrimaryPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryPhoto.swift; sourceTree = "<group>"; };
 		11DADB761DBF82D200194349 /* PhotoSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummary.swift; sourceTree = "<group>"; };
+		11DADB781DBF838F00194349 /* Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Split.swift; sourceTree = "<group>"; };
 		25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.release.xcconfig"; sourceTree = "<group>"; };
 		7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				11DADB721DBF7FF800194349 /* Photo.swift */,
 				11DADB741DBF81D200194349 /* PrimaryPhoto.swift */,
 				11DADB761DBF82D200194349 /* PhotoSummary.swift */,
+				11DADB781DBF838F00194349 /* Split.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				11A6A9651DBE4BDC003E5302 /* Coordinates.swift in Sources */,
 				11A6A97B1DBE5791003E5302 /* RouteType.swift in Sources */,
 				11DADB4F1DBF5FE300194349 /* Power.swift in Sources */,
+				11DADB791DBF838F00194349 /* Split.swift in Sources */,
 				11DADB451DBF5CAD00194349 /* Stream.swift in Sources */,
 				11DADB691DBF758F00194349 /* AchievementType.swift in Sources */,
 				11A6A9751DBE52B1003E5302 /* FrameType.swift in Sources */,
