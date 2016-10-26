@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9541DBE44B4003E5302 /* StravaZpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9531DBE44B4003E5302 /* StravaZpotTests.swift */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.release.xcconfig"; sourceTree = "<group>"; };
+		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				11DADB7A1DBF84D000194349 /* WorkoutType.swift */,
 				11DADB7C1DBF878300194349 /* Athlete.swift */,
 				11DADB7E1DBF891E00194349 /* Segment.swift */,
+				11326E701DC09BBE0020956F /* Activity.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				11DADB471DBF5E0C00194349 /* AthleteType.swift in Sources */,
 				11DADB351DBF50B700194349 /* DateRange.swift in Sources */,
 				11A6A9651DBE4BDC003E5302 /* Coordinates.swift in Sources */,
+				11326E711DC09BBE0020956F /* Activity.swift in Sources */,
 				11A6A97B1DBE5791003E5302 /* RouteType.swift in Sources */,
 				11DADB4F1DBF5FE300194349 /* Power.swift in Sources */,
 				11DADB791DBF838F00194349 /* Split.swift in Sources */,
