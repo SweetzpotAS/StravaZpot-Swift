@@ -25,3 +25,23 @@ public struct Event {
     public let upcomingOccurrences : EquatableArray<Date>
     public let address : String
 }
+
+extension Event : Equatable {}
+
+public func ==(lhs : Event, rhs : Event) -> Bool {
+    return  lhs.id == rhs.id &&
+            lhs.resourceState == rhs.resourceState &&
+            lhs.title == rhs.title &&
+            lhs.description == rhs.description &&
+            lhs.clubID == rhs.clubID &&
+            lhs.organizingAthlete == rhs.organizingAthlete &&
+            lhs.activityType == rhs.activityType &&
+            lhs.createdAt == rhs.createdAt &&
+            lhs.routeID == rhs.routeID &&
+            lhs.isWomanOnly == rhs.isWomanOnly &&
+            lhs.isPrivate == rhs.isPrivate &&
+            lhs.skillLevel == rhs.skillLevel &&
+            lhs.terrain == rhs.terrain &&
+            lhs.upcomingOccurrences == rhs.upcomingOccurrences &&
+            lhs.address == rhs.address
+}
