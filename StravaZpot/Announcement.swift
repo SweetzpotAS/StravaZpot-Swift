@@ -16,3 +16,14 @@ public struct Announcement {
     public let createdAt : Date
     public let message : String
 }
+
+extension Announcement : Equatable {}
+
+public func ==(lhs : Announcement, rhs : Announcement) -> Bool {
+    return  lhs.id            == rhs.id &&
+            lhs.resourceState == rhs.resourceState &&
+            lhs.clubID        == rhs.clubID &&
+            lhs.athlete       == rhs.athlete &&
+            lhs.createdAt     == rhs.createdAt &&
+            lhs.message       == rhs.message
+}
