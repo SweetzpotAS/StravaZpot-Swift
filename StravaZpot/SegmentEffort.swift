@@ -31,3 +31,29 @@ public struct SegmentEffort {
     public let prRank : Int?
     public let isHidden : Bool
 }
+
+extension SegmentEffort : Equatable {}
+
+public func ==(lhs : SegmentEffort, rhs : SegmentEffort) -> Bool {
+    return  lhs.id               == rhs.id &&
+            lhs.resourceState    == rhs.resourceState &&
+            lhs.name             == rhs.name &&
+            lhs.activity         == rhs.activity &&
+            lhs.athlete          == rhs.athlete &&
+            lhs.elapsedTime      == rhs.elapsedTime &&
+            lhs.movingTime       == rhs.movingTime &&
+            lhs.startDate        == rhs.startDate &&
+            lhs.startDateLocal   == rhs.startDateLocal &&
+            lhs.distance         == rhs.distance &&
+            lhs.startIndex       == rhs.startIndex &&
+            lhs.endIndex         == rhs.endIndex &&
+            lhs.averageCadence   == rhs.averageCadence &&
+            lhs.averageWatts     == rhs.averageWatts &&
+            lhs.hasDeviceWatts   == rhs.hasDeviceWatts &&
+            lhs.averageHeartRate == rhs.averageHeartRate &&
+            lhs.maxHeartRate     == rhs.maxHeartRate &&
+            lhs.segment          == rhs.segment &&
+            lhs.komRank          == rhs.komRank &&
+            lhs.prRank           == rhs.prRank &&
+            lhs.isHidden         == rhs.isHidden
+}
