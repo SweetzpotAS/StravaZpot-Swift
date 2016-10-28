@@ -16,3 +16,14 @@ public struct Comment {
     public let athlete : Athlete
     public let createdAt : Date
 }
+
+extension Comment : Equatable {}
+
+public func ==(lhs : Comment, rhs : Comment) -> Bool {
+    return  lhs.id            == rhs.id &&
+            lhs.resourceState == rhs.resourceState &&
+            lhs.activityID    == rhs.activityID &&
+            lhs.text          == rhs.text &&
+            lhs.athlete       == rhs.athlete &&
+            lhs.createdAt     == rhs.createdAt
+}
