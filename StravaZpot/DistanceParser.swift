@@ -1,5 +1,5 @@
 //
-//  Parser.swift
+//  DistanceParser.swift
 //  StravaZpot
 //
 //  Created by Tomás Ruiz López on 28/10/16.
@@ -9,8 +9,10 @@
 import Foundation
 import SwiftyJSON
 
-public protocol Parser {
-    associatedtype ParsedType
+public class DistanceParser {
     
-    func from(json : JSON) -> ParsedType
+    public func from(json : JSON) -> Distance {
+        return Distance(meters : json.double!)
+    }
+
 }

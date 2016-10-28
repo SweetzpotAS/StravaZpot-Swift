@@ -1,5 +1,5 @@
 //
-//  CoordinatesParserTest.swift
+//  DistanceParserTest.swift
 //  StravaZpot
 //
 //  Created by Tomás Ruiz López on 28/10/16.
@@ -12,14 +12,14 @@ import SwiftyJSON
 import Nimble
 @testable import StravaZpot
 
-class CoordinatesParserTest : XCTestCase {
+class DistanceParserTest : XCTestCase {
     
-    func testJSONIsParsedToCoordinates() {
-        let json = JSON.parse("[23.6, -42.1]")
-        let parser = CoordinatesParser()
+    func testJSONisParsedToDistance() {
+        let json = JSON.parse("3621")
+        let parser = DistanceParser()
         
         let result = parser.from(json: json)
-        let expected = Coordinates(latitude: 23.6, longitude: -42.1)
+        let expected = Distance(meters : 3621)
         
         expect(result).to(equal(expected))
     }

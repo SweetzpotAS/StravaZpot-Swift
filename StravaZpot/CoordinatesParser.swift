@@ -14,8 +14,4 @@ public class CoordinatesParser : Parser {
         return Coordinates(latitude: json.arrayValue[0].double!,
                            longitude: json.arrayValue[1].double!)
     }
-    
-    public func toDictionary(_ coordinates : Coordinates) -> [String : Any] {
-        return ["coordinates": [coordinates.latitude, coordinates.longitude]]
-    }
 }
