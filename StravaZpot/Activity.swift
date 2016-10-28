@@ -63,6 +63,8 @@ public struct Activity {
     public let hasKudoed : Bool?
     public let splitsMetric : EquatableArray<Split>?
     public let splitsStandard : EquatableArray<Split>?
+    public let segmentEfforts : EquatableArray<SegmentEffort>?
+    public let bestEfforts : EquatableArray<SegmentEffort>?
 }
 
 extension Activity : Equatable {}
@@ -121,5 +123,7 @@ public func ==(lhs : Activity, rhs : Activity) -> Bool {
             lhs.sufferScore          == rhs.sufferScore &&
             lhs.hasKudoed            == rhs.hasKudoed &&
             lhs.splitsMetric         == rhs.splitsMetric &&
-            lhs.splitsStandard       == rhs.splitsStandard
+            lhs.splitsStandard       == rhs.splitsStandard &&
+            lhs.segmentEfforts       == rhs.segmentEfforts &&
+            lhs.bestEfforts          == rhs.bestEfforts
 }
