@@ -23,3 +23,21 @@ public struct Route {
     public let isStarred : Bool
     public let timestamp : Int
 }
+
+extension Route : Equatable {}
+
+public func ==(lhs : Route, rhs : Route) -> Bool {
+    return  lhs.id            == rhs.id &&
+            lhs.resourceState == rhs.resourceState &&
+            lhs.name          == rhs.name &&
+            lhs.description   == rhs.description &&
+            lhs.athlete       == rhs.athlete &&
+            lhs.distance      == rhs.distance &&
+            lhs.elevationGain == rhs.elevationGain &&
+            lhs.map           == rhs.map &&
+            lhs.type          == rhs.type &&
+            lhs.subtype       == rhs.subtype &&
+            lhs.isPrivate     == rhs.isPrivate &&
+            lhs.isStarred     == rhs.isStarred &&
+            lhs.timestamp     == rhs.timestamp
+}
