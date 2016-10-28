@@ -78,6 +78,8 @@
 		11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66D21DC359F1006FF63E /* DistanceParserTest.swift */; };
 		11FB66D51DC35C2F006FF63E /* GenderParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66D41DC35C2F006FF63E /* GenderParser.swift */; };
 		11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66D61DC35C8D006FF63E /* GenderParserTest.swift */; };
+		11FB66D91DC35E08006FF63E /* IntervalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66D81DC35E08006FF63E /* IntervalParser.swift */; };
+		11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66DA1DC35EBB006FF63E /* IntervalParserTest.swift */; };
 		6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */; };
 		792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +171,8 @@
 		11FB66D21DC359F1006FF63E /* DistanceParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceParserTest.swift; sourceTree = "<group>"; };
 		11FB66D41DC35C2F006FF63E /* GenderParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderParser.swift; sourceTree = "<group>"; };
 		11FB66D61DC35C8D006FF63E /* GenderParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderParserTest.swift; sourceTree = "<group>"; };
+		11FB66D81DC35E08006FF63E /* IntervalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalParser.swift; sourceTree = "<group>"; };
+		11FB66DA1DC35EBB006FF63E /* IntervalParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalParserTest.swift; sourceTree = "<group>"; };
 		25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.release.xcconfig"; sourceTree = "<group>"; };
 		7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 				11FB66C81DC3554E006FF63E /* CoordinatesParser.swift */,
 				11FB66D01DC35977006FF63E /* DistanceParser.swift */,
 				11FB66D41DC35C2F006FF63E /* GenderParser.swift */,
+				11FB66D81DC35E08006FF63E /* IntervalParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				11FB66CC1DC35661006FF63E /* CoordinatesParserTest.swift */,
 				11FB66D21DC359F1006FF63E /* DistanceParserTest.swift */,
 				11FB66D61DC35C8D006FF63E /* GenderParserTest.swift */,
+				11FB66DA1DC35EBB006FF63E /* IntervalParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
+				11FB66D91DC35E08006FF63E /* IntervalParser.swift in Sources */,
 				11DADB751DBF81D200194349 /* PrimaryPhoto.swift in Sources */,
 				11DADB771DBF82D200194349 /* PhotoSummary.swift in Sources */,
 				11A6A96D1DBE506C003E5302 /* Speed.swift in Sources */,
@@ -619,6 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
+				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
 			);
