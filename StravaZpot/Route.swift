@@ -22,6 +22,7 @@ public struct Route {
     public let isPrivate : Bool
     public let isStarred : Bool
     public let timestamp : Int
+    public let segments : EquatableArray<Segment>?
 }
 
 extension Route : Equatable {}
@@ -39,5 +40,6 @@ public func ==(lhs : Route, rhs : Route) -> Bool {
             lhs.subtype       == rhs.subtype &&
             lhs.isPrivate     == rhs.isPrivate &&
             lhs.isStarred     == rhs.isStarred &&
-            lhs.timestamp     == rhs.timestamp
+            lhs.timestamp     == rhs.timestamp &&
+            lhs.segments      == rhs.segments
 }
