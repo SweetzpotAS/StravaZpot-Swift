@@ -9,9 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-protocol Parser {
+public protocol Parser {
     associatedtype ParsedType
     
     func from(json : JSON) -> ParsedType
-    func toDictionary() -> [String : Any]
+    func toDictionary(_ object : ParsedType) -> [String : Any]
 }
