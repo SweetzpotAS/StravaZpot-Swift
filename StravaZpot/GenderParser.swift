@@ -1,5 +1,5 @@
 //
-//  DistanceParser.swift
+//  GenderParser.swift
 //  StravaZpot
 //
 //  Created by Tomás Ruiz López on 28/10/16.
@@ -9,10 +9,10 @@
 import Foundation
 import SwiftyJSON
 
-public class DistanceParser : Parser {
+public class GenderParser : Parser {
     
-    public func from(json : JSON) -> Distance {
-        return Distance(meters : json.double!)
+    public func from(json : JSON) -> Gender {
+        return Gender(rawValue: json.string!)!
     }
-
+    
 }
