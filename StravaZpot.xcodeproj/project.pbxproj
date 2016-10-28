@@ -67,6 +67,7 @@
 		11DADB7B1DBF84D000194349 /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7A1DBF84D000194349 /* WorkoutType.swift */; };
 		11DADB7D1DBF878300194349 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7C1DBF878300194349 /* Athlete.swift */; };
 		11DADB7F1DBF891E00194349 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7E1DBF891E00194349 /* Segment.swift */; };
+		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */; };
 		792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */; };
 /* End PBXBuildFile section */
@@ -146,6 +147,7 @@
 		11DADB7A1DBF84D000194349 /* WorkoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
 		11DADB7C1DBF878300194349 /* Athlete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
 		11DADB7E1DBF891E00194349 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.release.xcconfig"; sourceTree = "<group>"; };
 		7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,9 +218,19 @@
 		11A6A95F1DBE49AE003E5302 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11DADB6A1DBF75C100194349 /* Achievement.swift */,
+				11DADB681DBF758F00194349 /* AchievementType.swift */,
+				11326E701DC09BBE0020956F /* Activity.swift */,
+				11326E721DC0A22E0020956F /* ActivityLap.swift */,
+				11DADB6C1DBF76F800194349 /* ActivityType.swift */,
+				11DADB6E1DBF7CF600194349 /* ActivityZone.swift */,
 				11A6A9801DBE5959003E5302 /* AgeGroup.swift */,
+				11DADB7C1DBF878300194349 /* Athlete.swift */,
 				11DADB461DBF5E0C00194349 /* AthleteType.swift */,
 				11DADB321DBF4F5200194349 /* Bounds.swift */,
+				11DADB5C1DBF6FB700194349 /* Club.swift */,
+				11DADB561DBF6D8700194349 /* ClubType.swift */,
+				11FB66BB1DC33D29006FF63E /* Comment.swift */,
 				11A6A9641DBE4BDC003E5302 /* Coordinates.swift */,
 				11DADB341DBF50B700194349 /* DateRange.swift */,
 				11A6A9621DBE4B2D003E5302 /* Distance.swift */,
@@ -230,49 +242,40 @@
 				11A6A9661DBE4E64003E5302 /* Gender.swift */,
 				11DADB4A1DBF5EC700194349 /* HeartRate.swift */,
 				11A6A9681DBE4ECA003E5302 /* Interval.swift */,
+				11DADB641DBF740400194349 /* JoinResult.swift */,
 				11DADB3C1DBF561B00194349 /* Leaderboard.swift */,
 				11DADB3A1DBF531200194349 /* LeaderboardEntry.swift */,
+				11DADB661DBF74E700194349 /* LeaveResult.swift */,
 				11A6A9781DBE56E0003E5302 /* Map.swift */,
 				11DADB4C1DBF5F6F00194349 /* MeasurementPreference.swift */,
+				11DADB5A1DBF6F5500194349 /* Membership.swift */,
 				11A6A96A1DBE4FBF003E5302 /* Percentage.swift */,
+				11DADB721DBF7FF800194349 /* Photo.swift */,
+				11DADB701DBF7F4100194349 /* PhotoSource.swift */,
+				11DADB761DBF82D200194349 /* PhotoSummary.swift */,
 				11DADB4E1DBF5FE300194349 /* Power.swift */,
+				11DADB741DBF81D200194349 /* PrimaryPhoto.swift */,
 				11DADB401DBF5B7300194349 /* Resolution.swift */,
 				11A6A9601DBE49CF003E5302 /* ResourceState.swift */,
 				11A6A97C1DBE57CC003E5302 /* RouteSubtype.swift */,
 				11A6A97A1DBE5791003E5302 /* RouteType.swift */,
+				11DADB7E1DBF891E00194349 /* Segment.swift */,
 				11DADB421DBF5C4300194349 /* SeriesType.swift */,
+				11DADB621DBF73C000194349 /* SkillLevel.swift */,
 				11A6A96C1DBE506C003E5302 /* Speed.swift */,
+				11DADB781DBF838F00194349 /* Split.swift */,
+				11DADB581DBF6ECE00194349 /* SportType.swift */,
+				11DADB521DBF61A700194349 /* Stats.swift */,
 				11DADB441DBF5CAD00194349 /* Stream.swift */,
 				11DADB3E1DBF59CC00194349 /* StreamType.swift */,
 				11A6A96E1DBE50E2003E5302 /* Temperature.swift */,
+				11DADB5E1DBF733C00194349 /* Terrain.swift */,
 				11A6A9701DBE5164003E5302 /* Time.swift */,
 				11A6A9721DBE51C9003E5302 /* TimedInterval.swift */,
-				11DADB381DBF51A100194349 /* WeightClass.swift */,
 				11DADB501DBF60A400194349 /* Totals.swift */,
-				11DADB521DBF61A700194349 /* Stats.swift */,
-				11DADB541DBF64A100194349 /* Zones.swift */,
-				11DADB561DBF6D8700194349 /* ClubType.swift */,
-				11DADB581DBF6ECE00194349 /* SportType.swift */,
-				11DADB5A1DBF6F5500194349 /* Membership.swift */,
-				11DADB5C1DBF6FB700194349 /* Club.swift */,
-				11DADB5E1DBF733C00194349 /* Terrain.swift */,
-				11DADB621DBF73C000194349 /* SkillLevel.swift */,
-				11DADB641DBF740400194349 /* JoinResult.swift */,
-				11DADB661DBF74E700194349 /* LeaveResult.swift */,
-				11DADB681DBF758F00194349 /* AchievementType.swift */,
-				11DADB6A1DBF75C100194349 /* Achievement.swift */,
-				11DADB6C1DBF76F800194349 /* ActivityType.swift */,
-				11DADB6E1DBF7CF600194349 /* ActivityZone.swift */,
-				11DADB701DBF7F4100194349 /* PhotoSource.swift */,
-				11DADB721DBF7FF800194349 /* Photo.swift */,
-				11DADB741DBF81D200194349 /* PrimaryPhoto.swift */,
-				11DADB761DBF82D200194349 /* PhotoSummary.swift */,
-				11DADB781DBF838F00194349 /* Split.swift */,
+				11DADB381DBF51A100194349 /* WeightClass.swift */,
 				11DADB7A1DBF84D000194349 /* WorkoutType.swift */,
-				11DADB7C1DBF878300194349 /* Athlete.swift */,
-				11DADB7E1DBF891E00194349 /* Segment.swift */,
-				11326E701DC09BBE0020956F /* Activity.swift */,
-				11326E721DC0A22E0020956F /* ActivityLap.swift */,
+				11DADB541DBF64A100194349 /* Zones.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
 				11DADB711DBF7F4100194349 /* PhotoSource.swift in Sources */,
 				11DADB4B1DBF5EC700194349 /* HeartRate.swift in Sources */,
+				11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */,
 				11DADB411DBF5B7300194349 /* Resolution.swift in Sources */,
 				11DADB631DBF73C000194349 /* SkillLevel.swift in Sources */,
 				11A6A97F1DBE5829003E5302 /* EquatableArray.swift in Sources */,
