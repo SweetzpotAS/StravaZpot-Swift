@@ -26,6 +26,8 @@
 		110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682D21DC75FA800A08026 /* StatsParserTest.swift */; };
 		110682D51DC7625000A08026 /* ClubTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682D41DC7625000A08026 /* ClubTypeParser.swift */; };
 		110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682D61DC7629500A08026 /* ClubTypeParserTest.swift */; };
+		110682D91DC7634600A08026 /* MembershipParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682D81DC7634600A08026 /* MembershipParser.swift */; };
+		110682DB1DC7638200A08026 /* MembershipParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682DA1DC7638200A08026 /* MembershipParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -161,6 +163,8 @@
 		110682D21DC75FA800A08026 /* StatsParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsParserTest.swift; sourceTree = "<group>"; };
 		110682D41DC7625000A08026 /* ClubTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTypeParser.swift; sourceTree = "<group>"; };
 		110682D61DC7629500A08026 /* ClubTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTypeParserTest.swift; sourceTree = "<group>"; };
+		110682D81DC7634600A08026 /* MembershipParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipParser.swift; sourceTree = "<group>"; };
+		110682DA1DC7638200A08026 /* MembershipParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -434,6 +438,7 @@
 				110682CC1DC75BC400A08026 /* TotalsParser.swift */,
 				110682D01DC75E7600A08026 /* StatsParser.swift */,
 				110682D41DC7625000A08026 /* ClubTypeParser.swift */,
+				110682D81DC7634600A08026 /* MembershipParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				110682CE1DC75C9900A08026 /* TotalsParserTest.swift */,
 				110682D21DC75FA800A08026 /* StatsParserTest.swift */,
 				110682D61DC7629500A08026 /* ClubTypeParserTest.swift */,
+				110682DA1DC7638200A08026 /* MembershipParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -694,6 +700,7 @@
 				11DADB431DBF5C4300194349 /* SeriesType.swift in Sources */,
 				11DADB531DBF61A700194349 /* Stats.swift in Sources */,
 				11DADB6D1DBF76F800194349 /* ActivityType.swift in Sources */,
+				110682D91DC7634600A08026 /* MembershipParser.swift in Sources */,
 				11EFB3081DC73CB50096AD9B /* AchievementTypeParser.swift in Sources */,
 				11FB66C01DC34268006FF63E /* Event.swift in Sources */,
 				11DADB6F1DBF7CF600194349 /* ActivityZone.swift in Sources */,
@@ -804,6 +811,7 @@
 				11EFB30E1DC73E760096AD9B /* AchievementParserTest.swift in Sources */,
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
 				11EFB3221DC749280096AD9B /* PrimaryPhotoParserTest.swift in Sources */,
+				110682DB1DC7638200A08026 /* MembershipParserTest.swift in Sources */,
 				11EFB31E1DC742AD0096AD9B /* SplitParserTest.swift in Sources */,
 				11FB66DF1DC3634A006FF63E /* PercentageParserTest.swift in Sources */,
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
