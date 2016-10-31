@@ -40,6 +40,8 @@
 		110682EF1DC7694E00A08026 /* LeaveResultParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682EE1DC7694E00A08026 /* LeaveResultParserTest.swift */; };
 		110682F11DC76A2300A08026 /* FrameTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F01DC76A2300A08026 /* FrameTypeParser.swift */; };
 		110682F31DC76A5200A08026 /* FrameTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */; };
+		110682F51DC76AD600A08026 /* GearParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F41DC76AD600A08026 /* GearParser.swift */; };
+		110682F71DC76B7800A08026 /* GearParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F61DC76B7800A08026 /* GearParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -189,6 +191,8 @@
 		110682EE1DC7694E00A08026 /* LeaveResultParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveResultParserTest.swift; sourceTree = "<group>"; };
 		110682F01DC76A2300A08026 /* FrameTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTypeParser.swift; sourceTree = "<group>"; };
 		110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTypeParserTest.swift; sourceTree = "<group>"; };
+		110682F41DC76AD600A08026 /* GearParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearParser.swift; sourceTree = "<group>"; };
+		110682F61DC76B7800A08026 /* GearParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -469,6 +473,7 @@
 				110682E81DC767E500A08026 /* JoinResultParser.swift */,
 				110682EC1DC7691200A08026 /* LeaveResultParser.swift */,
 				110682F01DC76A2300A08026 /* FrameTypeParser.swift */,
+				110682F41DC76AD600A08026 /* GearParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -510,6 +515,7 @@
 				110682EA1DC7684C00A08026 /* JoinResultParserTest.swift */,
 				110682EE1DC7694E00A08026 /* LeaveResultParserTest.swift */,
 				110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */,
+				110682F61DC76B7800A08026 /* GearParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -734,6 +740,7 @@
 				110682C11DC752D300A08026 /* HeartRateParser.swift in Sources */,
 				11DADB731DBF7FF800194349 /* Photo.swift in Sources */,
 				11DADB431DBF5C4300194349 /* SeriesType.swift in Sources */,
+				110682F51DC76AD600A08026 /* GearParser.swift in Sources */,
 				11DADB531DBF61A700194349 /* Stats.swift in Sources */,
 				11DADB6D1DBF76F800194349 /* ActivityType.swift in Sources */,
 				110682D91DC7634600A08026 /* MembershipParser.swift in Sources */,
@@ -864,6 +871,7 @@
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
 				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11EFB3061DC73BE30096AD9B /* TimedIntervalParserTest.swift in Sources */,
+				110682F71DC76B7800A08026 /* GearParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
 				110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */,
 				110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */,
