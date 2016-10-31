@@ -20,6 +20,8 @@
 		110682C71DC7559300A08026 /* PowerParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682C61DC7559300A08026 /* PowerParserTest.swift */; };
 		110682C91DC7568F00A08026 /* ZonesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682C81DC7568F00A08026 /* ZonesParser.swift */; };
 		110682CB1DC756F600A08026 /* ZonesParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682CA1DC756F600A08026 /* ZonesParserTest.swift */; };
+		110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682CC1DC75BC400A08026 /* TotalsParser.swift */; };
+		110682CF1DC75C9900A08026 /* TotalsParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682CE1DC75C9900A08026 /* TotalsParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -149,6 +151,8 @@
 		110682C61DC7559300A08026 /* PowerParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerParserTest.swift; sourceTree = "<group>"; };
 		110682C81DC7568F00A08026 /* ZonesParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonesParser.swift; sourceTree = "<group>"; };
 		110682CA1DC756F600A08026 /* ZonesParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonesParserTest.swift; sourceTree = "<group>"; };
+		110682CC1DC75BC400A08026 /* TotalsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsParser.swift; sourceTree = "<group>"; };
+		110682CE1DC75C9900A08026 /* TotalsParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -419,6 +423,7 @@
 				110682C01DC752D300A08026 /* HeartRateParser.swift */,
 				110682C41DC7550600A08026 /* PowerParser.swift */,
 				110682C81DC7568F00A08026 /* ZonesParser.swift */,
+				110682CC1DC75BC400A08026 /* TotalsParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				110682C21DC753D000A08026 /* HeartRateParserTest.swift */,
 				110682C61DC7559300A08026 /* PowerParserTest.swift */,
 				110682CA1DC756F600A08026 /* ZonesParserTest.swift */,
+				110682CE1DC75C9900A08026 /* TotalsParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -704,6 +710,7 @@
 				11DADB5B1DBF6F5500194349 /* Membership.swift in Sources */,
 				11DADB391DBF51A100194349 /* WeightClass.swift in Sources */,
 				11DADB7F1DBF891E00194349 /* Segment.swift in Sources */,
+				110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */,
 				11DADB511DBF60A400194349 /* Totals.swift in Sources */,
 				11DADB4D1DBF5F6F00194349 /* MeasurementPreference.swift in Sources */,
 				11A6A97D1DBE57CC003E5302 /* RouteSubtype.swift in Sources */,
@@ -772,6 +779,7 @@
 				11EFB2FE1DC73A0E0096AD9B /* TemperatureParserTest.swift in Sources */,
 				11EFB3161DC740620096AD9B /* PhotoSourceParserTest.swift in Sources */,
 				11EFB31A1DC7413E0096AD9B /* WorkoutTypeParserTest.swift in Sources */,
+				110682CF1DC75C9900A08026 /* TotalsParserTest.swift in Sources */,
 				110682B71DC7503000A08026 /* AthleteTypeParserTest.swift in Sources */,
 				110682C31DC753D000A08026 /* HeartRateParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,

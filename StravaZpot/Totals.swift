@@ -23,7 +23,7 @@ public func ==(lhs : Totals, rhs : Totals) -> Bool {
     return  lhs.count            == rhs.count &&
             lhs.distance         == rhs.distance &&
             lhs.movingTime       == rhs.movingTime &&
-            lhs.elapsedTime      == rhs.movingTime &&
+            lhs.elapsedTime      == rhs.elapsedTime &&
             lhs.elevationGain    == rhs.elevationGain &&
             lhs.achievementCount == rhs.achievementCount
 }
