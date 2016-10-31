@@ -13,7 +13,7 @@ public struct LeaderboardEntry {
     public let athleteName : String
     public let athleteGender : Gender
     public let averageHeartRate : Double
-    public let avertageWatts : Double
+    public let averageWatts : Double
     public let distance : Distance
     public let elapsedTime : Time
     public let movingTime : Time
@@ -32,7 +32,7 @@ public func ==(lhs : LeaderboardEntry, rhs : LeaderboardEntry) -> Bool {
             lhs.athleteName      == rhs.athleteName &&
             lhs.athleteGender    == rhs.athleteGender &&
             lhs.averageHeartRate == rhs.averageHeartRate &&
-            lhs.avertageWatts    == rhs.avertageWatts &&
+            lhs.averageWatts     == rhs.averageWatts &&
             lhs.distance         == rhs.distance &&
             lhs.elapsedTime      == rhs.elapsedTime &&
             lhs.movingTime       == rhs.movingTime &&
