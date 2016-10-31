@@ -54,6 +54,8 @@
 		1106830F1DC7733600A08026 /* SeriesTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */; };
 		110683111DC773F600A08026 /* StreamTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683101DC773F600A08026 /* StreamTypeParser.swift */; };
 		110683131DC7742C00A08026 /* StreamTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683121DC7742C00A08026 /* StreamTypeParserTest.swift */; };
+		110683151DC79D5800A08026 /* StreamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683141DC79D5800A08026 /* StreamParser.swift */; };
+		110683171DC79E2100A08026 /* StreamParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683161DC79E2100A08026 /* StreamParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -217,6 +219,8 @@
 		1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesTypeParserTest.swift; sourceTree = "<group>"; };
 		110683101DC773F600A08026 /* StreamTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTypeParser.swift; sourceTree = "<group>"; };
 		110683121DC7742C00A08026 /* StreamTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTypeParserTest.swift; sourceTree = "<group>"; };
+		110683141DC79D5800A08026 /* StreamParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamParser.swift; sourceTree = "<group>"; };
+		110683161DC79E2100A08026 /* StreamParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -504,6 +508,7 @@
 				110683081DC7724300A08026 /* ResolutionParser.swift */,
 				1106830C1DC7730300A08026 /* SeriesTypeParser.swift */,
 				110683101DC773F600A08026 /* StreamTypeParser.swift */,
+				110683141DC79D5800A08026 /* StreamParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				1106830A1DC7728000A08026 /* ResolutionParserTest.swift */,
 				1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */,
 				110683121DC7742C00A08026 /* StreamTypeParserTest.swift */,
+				110683161DC79E2100A08026 /* StreamParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -849,6 +855,7 @@
 				11DADB7B1DBF84D000194349 /* WorkoutType.swift in Sources */,
 				110682D11DC75E7600A08026 /* StatsParser.swift in Sources */,
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
+				110683151DC79D5800A08026 /* StreamParser.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
 				1106830D1DC7730300A08026 /* SeriesTypeParser.swift in Sources */,
@@ -884,6 +891,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110683171DC79E2100A08026 /* StreamParserTest.swift in Sources */,
 				110682C71DC7559300A08026 /* PowerParserTest.swift in Sources */,
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
 				11EFB3121DC73F5D0096AD9B /* ActivityTypeParserTest.swift in Sources */,
