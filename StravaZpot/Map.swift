@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Map {
-    public let id : Int
+    public let id : String
     public let resourceState : ResourceState
     public let summaryPolyline : String
 }

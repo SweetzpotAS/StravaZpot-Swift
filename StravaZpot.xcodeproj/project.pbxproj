@@ -46,6 +46,8 @@
 		110682FB1DC76D7D00A08026 /* RouteTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */; };
 		110682FD1DC76DF700A08026 /* RouteSubtypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682FC1DC76DF700A08026 /* RouteSubtypeParser.swift */; };
 		110682FF1DC76E5B00A08026 /* RouteSubtypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */; };
+		110683011DC76F0F00A08026 /* MapParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683001DC76F0F00A08026 /* MapParser.swift */; };
+		110683031DC76F8C00A08026 /* MapParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683021DC76F8C00A08026 /* MapParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -201,6 +203,8 @@
 		110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTypeParserTest.swift; sourceTree = "<group>"; };
 		110682FC1DC76DF700A08026 /* RouteSubtypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSubtypeParser.swift; sourceTree = "<group>"; };
 		110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSubtypeParserTest.swift; sourceTree = "<group>"; };
+		110683001DC76F0F00A08026 /* MapParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParser.swift; sourceTree = "<group>"; };
+		110683021DC76F8C00A08026 /* MapParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -484,6 +488,7 @@
 				110682F41DC76AD600A08026 /* GearParser.swift */,
 				110682F81DC76D4700A08026 /* RouteTypeParser.swift */,
 				110682FC1DC76DF700A08026 /* RouteSubtypeParser.swift */,
+				110683001DC76F0F00A08026 /* MapParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -528,6 +533,7 @@
 				110682F61DC76B7800A08026 /* GearParserTest.swift */,
 				110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */,
 				110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */,
+				110683021DC76F8C00A08026 /* MapParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -846,6 +852,7 @@
 				110682BD1DC751DE00A08026 /* MeasurementPreferenceParser.swift in Sources */,
 				11DADB671DBF74E700194349 /* LeaveResult.swift in Sources */,
 				11DADB5D1DBF6FB700194349 /* Club.swift in Sources */,
+				110683011DC76F0F00A08026 /* MapParser.swift in Sources */,
 				11A6A96B1DBE4FBF003E5302 /* Percentage.swift in Sources */,
 				11EFB3181DC7410F0096AD9B /* WorkoutTypeParser.swift in Sources */,
 				11DADB6B1DBF75C100194349 /* Achievement.swift in Sources */,
@@ -893,6 +900,7 @@
 				110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */,
 				110682E71DC765E900A08026 /* TerrainParserTest.swift in Sources */,
 				11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */,
+				110683031DC76F8C00A08026 /* MapParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
