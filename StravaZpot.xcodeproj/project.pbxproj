@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */; };
+		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
@@ -122,6 +124,8 @@
 
 /* Begin PBXFileReference section */
 		0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.release.xcconfig"; sourceTree = "<group>"; };
+		110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParserTest.swift; sourceTree = "<group>"; };
+		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -384,6 +388,7 @@
 				11EFB3171DC7410F0096AD9B /* WorkoutTypeParser.swift */,
 				11EFB31B1DC742130096AD9B /* SplitParser.swift */,
 				11EFB31F1DC744820096AD9B /* PrimaryPhotoParser.swift */,
+				111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				11EFB3191DC7413E0096AD9B /* WorkoutTypeParserTest.swift */,
 				11EFB31D1DC742AD0096AD9B /* SplitParserTest.swift */,
 				11EFB3211DC749280096AD9B /* PrimaryPhotoParserTest.swift */,
+				110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -669,6 +675,7 @@
 				11DADB3F1DBF59CC00194349 /* StreamType.swift in Sources */,
 				11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */,
 				11DADB3B1DBF531200194349 /* LeaderboardEntry.swift in Sources */,
+				111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */,
 				11DADB591DBF6ECE00194349 /* SportType.swift in Sources */,
 				11DADB551DBF64A100194349 /* Zones.swift in Sources */,
 				11DADB471DBF5E0C00194349 /* AthleteType.swift in Sources */,
@@ -732,6 +739,7 @@
 				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11EFB3061DC73BE30096AD9B /* TimedIntervalParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
+				110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */,
 				11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
