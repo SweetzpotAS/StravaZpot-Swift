@@ -66,6 +66,8 @@
 		11DADB7B1DBF84D000194349 /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7A1DBF84D000194349 /* WorkoutType.swift */; };
 		11DADB7D1DBF878300194349 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7C1DBF878300194349 /* Athlete.swift */; };
 		11DADB7F1DBF891E00194349 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7E1DBF891E00194349 /* Segment.swift */; };
+		11EFB2F41DC737E60096AD9B /* ResourceStateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */; };
+		11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -160,6 +162,8 @@
 		11DADB7A1DBF84D000194349 /* WorkoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
 		11DADB7C1DBF878300194349 /* Athlete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
 		11DADB7E1DBF891E00194349 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceStateParser.swift; sourceTree = "<group>"; };
+		11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceStateParserTest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -324,6 +328,7 @@
 				11FB66D41DC35C2F006FF63E /* GenderParser.swift */,
 				11FB66D81DC35E08006FF63E /* IntervalParser.swift */,
 				11FB66DC1DC362AB006FF63E /* PercentageParser.swift */,
+				11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				11FB66D61DC35C8D006FF63E /* GenderParserTest.swift */,
 				11FB66DA1DC35EBB006FF63E /* IntervalParserTest.swift */,
 				11FB66DE1DC3634A006FF63E /* PercentageParserTest.swift */,
+				11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -611,6 +617,7 @@
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
 				11FB66D91DC35E08006FF63E /* IntervalParser.swift in Sources */,
+				11EFB2F41DC737E60096AD9B /* ResourceStateParser.swift in Sources */,
 				11DADB751DBF81D200194349 /* PrimaryPhoto.swift in Sources */,
 				11DADB771DBF82D200194349 /* PhotoSummary.swift in Sources */,
 				11A6A96D1DBE506C003E5302 /* Speed.swift in Sources */,
@@ -634,6 +641,7 @@
 			files = (
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
+				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
 				11FB66DF1DC3634A006FF63E /* PercentageParserTest.swift in Sources */,
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
