@@ -42,6 +42,8 @@
 		110682F31DC76A5200A08026 /* FrameTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */; };
 		110682F51DC76AD600A08026 /* GearParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F41DC76AD600A08026 /* GearParser.swift */; };
 		110682F71DC76B7800A08026 /* GearParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F61DC76B7800A08026 /* GearParserTest.swift */; };
+		110682F91DC76D4700A08026 /* RouteTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682F81DC76D4700A08026 /* RouteTypeParser.swift */; };
+		110682FB1DC76D7D00A08026 /* RouteTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -193,6 +195,8 @@
 		110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTypeParserTest.swift; sourceTree = "<group>"; };
 		110682F41DC76AD600A08026 /* GearParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearParser.swift; sourceTree = "<group>"; };
 		110682F61DC76B7800A08026 /* GearParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearParserTest.swift; sourceTree = "<group>"; };
+		110682F81DC76D4700A08026 /* RouteTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTypeParser.swift; sourceTree = "<group>"; };
+		110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTypeParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -474,6 +478,7 @@
 				110682EC1DC7691200A08026 /* LeaveResultParser.swift */,
 				110682F01DC76A2300A08026 /* FrameTypeParser.swift */,
 				110682F41DC76AD600A08026 /* GearParser.swift */,
+				110682F81DC76D4700A08026 /* RouteTypeParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -516,6 +521,7 @@
 				110682EE1DC7694E00A08026 /* LeaveResultParserTest.swift */,
 				110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */,
 				110682F61DC76B7800A08026 /* GearParserTest.swift */,
+				110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -760,6 +766,7 @@
 				110682B91DC750C400A08026 /* FriendStatusParser.swift in Sources */,
 				11FB66D11DC35977006FF63E /* DistanceParser.swift in Sources */,
 				11EFB30C1DC73E020096AD9B /* AchievementParser.swift in Sources */,
+				110682F91DC76D4700A08026 /* RouteTypeParser.swift in Sources */,
 				11DADB4B1DBF5EC700194349 /* HeartRate.swift in Sources */,
 				11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */,
 				11DADB411DBF5B7300194349 /* Resolution.swift in Sources */,
@@ -856,6 +863,7 @@
 				110682EF1DC7694E00A08026 /* LeaveResultParserTest.swift in Sources */,
 				110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */,
 				110682DF1DC7644300A08026 /* SkillLevelParserTest.swift in Sources */,
+				110682FB1DC76D7D00A08026 /* RouteTypeParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				110682BF1DC7521400A08026 /* MeasurementPreferenceParserTest.swift in Sources */,
 				110682F31DC76A5200A08026 /* FrameTypeParserTest.swift in Sources */,
