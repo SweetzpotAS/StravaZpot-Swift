@@ -72,6 +72,8 @@
 		11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */; };
 		11EFB2FC1DC739CC0096AD9B /* TemperatureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2FB1DC739CC0096AD9B /* TemperatureParser.swift */; };
 		11EFB2FE1DC73A0E0096AD9B /* TemperatureParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2FD1DC73A0E0096AD9B /* TemperatureParserTest.swift */; };
+		11EFB3001DC73AA00096AD9B /* TimeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2FF1DC73AA00096AD9B /* TimeParser.swift */; };
+		11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -172,6 +174,8 @@
 		11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedParserTest.swift; sourceTree = "<group>"; };
 		11EFB2FB1DC739CC0096AD9B /* TemperatureParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureParser.swift; sourceTree = "<group>"; };
 		11EFB2FD1DC73A0E0096AD9B /* TemperatureParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureParserTest.swift; sourceTree = "<group>"; };
+		11EFB2FF1DC73AA00096AD9B /* TimeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeParser.swift; sourceTree = "<group>"; };
+		11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeParserTest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -339,6 +343,7 @@
 				11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */,
 				11EFB2F71DC739040096AD9B /* SpeedParser.swift */,
 				11EFB2FB1DC739CC0096AD9B /* TemperatureParser.swift */,
+				11EFB2FF1DC73AA00096AD9B /* TimeParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */,
 				11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */,
 				11EFB2FD1DC73A0E0096AD9B /* TemperatureParserTest.swift */,
+				11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -636,6 +642,7 @@
 				11DADB771DBF82D200194349 /* PhotoSummary.swift in Sources */,
 				11A6A96D1DBE506C003E5302 /* Speed.swift in Sources */,
 				11A6A9771DBE532E003E5302 /* Gear.swift in Sources */,
+				11EFB3001DC73AA00096AD9B /* TimeParser.swift in Sources */,
 				11DADB651DBF740400194349 /* JoinResult.swift in Sources */,
 				11A6A9711DBE5164003E5302 /* Time.swift in Sources */,
 				11DADB491DBF5E5500194349 /* FriendStatus.swift in Sources */,
@@ -661,6 +668,7 @@
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
 				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
+				11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
