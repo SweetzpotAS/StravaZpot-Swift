@@ -68,6 +68,8 @@
 		11DADB7F1DBF891E00194349 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB7E1DBF891E00194349 /* Segment.swift */; };
 		11EFB2F41DC737E60096AD9B /* ResourceStateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */; };
 		11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */; };
+		11EFB2F81DC739040096AD9B /* SpeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F71DC739040096AD9B /* SpeedParser.swift */; };
+		11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -164,6 +166,8 @@
 		11DADB7E1DBF891E00194349 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceStateParser.swift; sourceTree = "<group>"; };
 		11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceStateParserTest.swift; sourceTree = "<group>"; };
+		11EFB2F71DC739040096AD9B /* SpeedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedParser.swift; sourceTree = "<group>"; };
+		11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedParserTest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -329,6 +333,7 @@
 				11FB66D81DC35E08006FF63E /* IntervalParser.swift */,
 				11FB66DC1DC362AB006FF63E /* PercentageParser.swift */,
 				11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */,
+				11EFB2F71DC739040096AD9B /* SpeedParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				11FB66DA1DC35EBB006FF63E /* IntervalParserTest.swift */,
 				11FB66DE1DC3634A006FF63E /* PercentageParserTest.swift */,
 				11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */,
+				11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -573,6 +579,7 @@
 				11A6A9671DBE4E64003E5302 /* Gender.swift in Sources */,
 				11DADB3D1DBF561B00194349 /* Leaderboard.swift in Sources */,
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
+				11EFB2F81DC739040096AD9B /* SpeedParser.swift in Sources */,
 				11DADB711DBF7F4100194349 /* PhotoSource.swift in Sources */,
 				11FB66D11DC35977006FF63E /* DistanceParser.swift in Sources */,
 				11DADB4B1DBF5EC700194349 /* HeartRate.swift in Sources */,
@@ -644,6 +651,7 @@
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
 				11FB66DF1DC3634A006FF63E /* PercentageParserTest.swift in Sources */,
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
+				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
