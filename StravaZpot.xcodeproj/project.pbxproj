@@ -48,6 +48,10 @@
 		110682FF1DC76E5B00A08026 /* RouteSubtypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */; };
 		110683011DC76F0F00A08026 /* MapParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683001DC76F0F00A08026 /* MapParser.swift */; };
 		110683031DC76F8C00A08026 /* MapParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683021DC76F8C00A08026 /* MapParserTest.swift */; };
+		110683091DC7724300A08026 /* ResolutionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683081DC7724300A08026 /* ResolutionParser.swift */; };
+		1106830B1DC7728000A08026 /* ResolutionParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106830A1DC7728000A08026 /* ResolutionParserTest.swift */; };
+		1106830D1DC7730300A08026 /* SeriesTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106830C1DC7730300A08026 /* SeriesTypeParser.swift */; };
+		1106830F1DC7733600A08026 /* SeriesTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -205,6 +209,10 @@
 		110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSubtypeParserTest.swift; sourceTree = "<group>"; };
 		110683001DC76F0F00A08026 /* MapParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParser.swift; sourceTree = "<group>"; };
 		110683021DC76F8C00A08026 /* MapParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParserTest.swift; sourceTree = "<group>"; };
+		110683081DC7724300A08026 /* ResolutionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolutionParser.swift; sourceTree = "<group>"; };
+		1106830A1DC7728000A08026 /* ResolutionParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolutionParserTest.swift; sourceTree = "<group>"; };
+		1106830C1DC7730300A08026 /* SeriesTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesTypeParser.swift; sourceTree = "<group>"; };
+		1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesTypeParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -489,6 +497,8 @@
 				110682F81DC76D4700A08026 /* RouteTypeParser.swift */,
 				110682FC1DC76DF700A08026 /* RouteSubtypeParser.swift */,
 				110683001DC76F0F00A08026 /* MapParser.swift */,
+				110683081DC7724300A08026 /* ResolutionParser.swift */,
+				1106830C1DC7730300A08026 /* SeriesTypeParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -534,6 +544,8 @@
 				110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */,
 				110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */,
 				110683021DC76F8C00A08026 /* MapParserTest.swift */,
+				1106830A1DC7728000A08026 /* ResolutionParserTest.swift */,
+				1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -832,6 +844,7 @@
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
+				1106830D1DC7730300A08026 /* SeriesTypeParser.swift in Sources */,
 				110682DD1DC7640500A08026 /* SkillLevelParser.swift in Sources */,
 				110682D51DC7625000A08026 /* ClubTypeParser.swift in Sources */,
 				11FB66D91DC35E08006FF63E /* IntervalParser.swift in Sources */,
@@ -853,6 +866,7 @@
 				11DADB671DBF74E700194349 /* LeaveResult.swift in Sources */,
 				11DADB5D1DBF6FB700194349 /* Club.swift in Sources */,
 				110683011DC76F0F00A08026 /* MapParser.swift in Sources */,
+				110683091DC7724300A08026 /* ResolutionParser.swift in Sources */,
 				11A6A96B1DBE4FBF003E5302 /* Percentage.swift in Sources */,
 				11EFB3181DC7410F0096AD9B /* WorkoutTypeParser.swift in Sources */,
 				11DADB6B1DBF75C100194349 /* Achievement.swift in Sources */,
@@ -878,6 +892,7 @@
 				110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */,
 				110682DF1DC7644300A08026 /* SkillLevelParserTest.swift in Sources */,
 				110682FB1DC76D7D00A08026 /* RouteTypeParserTest.swift in Sources */,
+				1106830F1DC7733600A08026 /* SeriesTypeParserTest.swift in Sources */,
 				110682FF1DC76E5B00A08026 /* RouteSubtypeParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				110682BF1DC7521400A08026 /* MeasurementPreferenceParserTest.swift in Sources */,
@@ -895,6 +910,7 @@
 				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11EFB3061DC73BE30096AD9B /* TimedIntervalParserTest.swift in Sources */,
 				110682F71DC76B7800A08026 /* GearParserTest.swift in Sources */,
+				1106830B1DC7728000A08026 /* ResolutionParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
 				110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */,
 				110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */,
