@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */; };
+		110682B51DC74FF100A08026 /* AthleteTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682B41DC74FF100A08026 /* AthleteTypeParser.swift */; };
+		110682B71DC7503000A08026 /* AthleteTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682B61DC7503000A08026 /* AthleteTypeParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -125,6 +127,8 @@
 /* Begin PBXFileReference section */
 		0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.release.xcconfig"; sourceTree = "<group>"; };
 		110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParserTest.swift; sourceTree = "<group>"; };
+		110682B41DC74FF100A08026 /* AthleteTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteTypeParser.swift; sourceTree = "<group>"; };
+		110682B61DC7503000A08026 /* AthleteTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteTypeParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -389,6 +393,7 @@
 				11EFB31B1DC742130096AD9B /* SplitParser.swift */,
 				11EFB31F1DC744820096AD9B /* PrimaryPhotoParser.swift */,
 				111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */,
+				110682B41DC74FF100A08026 /* AthleteTypeParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 				11EFB31D1DC742AD0096AD9B /* SplitParserTest.swift */,
 				11EFB3211DC749280096AD9B /* PrimaryPhotoParserTest.swift */,
 				110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */,
+				110682B61DC7503000A08026 /* AthleteTypeParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -647,6 +653,7 @@
 				11DADB3D1DBF561B00194349 /* Leaderboard.swift in Sources */,
 				11EFB2FC1DC739CC0096AD9B /* TemperatureParser.swift in Sources */,
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
+				110682B51DC74FF100A08026 /* AthleteTypeParser.swift in Sources */,
 				11EFB2F81DC739040096AD9B /* SpeedParser.swift in Sources */,
 				11DADB711DBF7F4100194349 /* PhotoSource.swift in Sources */,
 				11FB66D11DC35977006FF63E /* DistanceParser.swift in Sources */,
@@ -729,6 +736,7 @@
 				11EFB2FE1DC73A0E0096AD9B /* TemperatureParserTest.swift in Sources */,
 				11EFB3161DC740620096AD9B /* PhotoSourceParserTest.swift in Sources */,
 				11EFB31A1DC7413E0096AD9B /* WorkoutTypeParserTest.swift in Sources */,
+				110682B71DC7503000A08026 /* AthleteTypeParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				11EFB30E1DC73E760096AD9B /* AchievementParserTest.swift in Sources */,
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
