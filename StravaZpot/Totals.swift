@@ -14,7 +14,7 @@ public struct Totals {
     public let movingTime : Time
     public let elapsedTime : Time
     public let elevationGain : Distance
-    public let achievementCount : Int
+    public let achievementCount : Int?
 }
 
 extension Totals : Equatable {}

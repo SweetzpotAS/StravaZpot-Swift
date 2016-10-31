@@ -22,6 +22,8 @@
 		110682CB1DC756F600A08026 /* ZonesParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682CA1DC756F600A08026 /* ZonesParserTest.swift */; };
 		110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682CC1DC75BC400A08026 /* TotalsParser.swift */; };
 		110682CF1DC75C9900A08026 /* TotalsParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682CE1DC75C9900A08026 /* TotalsParserTest.swift */; };
+		110682D11DC75E7600A08026 /* StatsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682D01DC75E7600A08026 /* StatsParser.swift */; };
+		110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110682D21DC75FA800A08026 /* StatsParserTest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -153,6 +155,8 @@
 		110682CA1DC756F600A08026 /* ZonesParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonesParserTest.swift; sourceTree = "<group>"; };
 		110682CC1DC75BC400A08026 /* TotalsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsParser.swift; sourceTree = "<group>"; };
 		110682CE1DC75C9900A08026 /* TotalsParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsParserTest.swift; sourceTree = "<group>"; };
+		110682D01DC75E7600A08026 /* StatsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsParser.swift; sourceTree = "<group>"; };
+		110682D21DC75FA800A08026 /* StatsParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsParserTest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -424,6 +428,7 @@
 				110682C41DC7550600A08026 /* PowerParser.swift */,
 				110682C81DC7568F00A08026 /* ZonesParser.swift */,
 				110682CC1DC75BC400A08026 /* TotalsParser.swift */,
+				110682D01DC75E7600A08026 /* StatsParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				110682C61DC7559300A08026 /* PowerParserTest.swift */,
 				110682CA1DC756F600A08026 /* ZonesParserTest.swift */,
 				110682CE1DC75C9900A08026 /* TotalsParserTest.swift */,
+				110682D21DC75FA800A08026 /* StatsParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -741,6 +747,7 @@
 				11A6A9751DBE52B1003E5302 /* FrameType.swift in Sources */,
 				11DADB571DBF6D8700194349 /* ClubType.swift in Sources */,
 				11DADB7B1DBF84D000194349 /* WorkoutType.swift in Sources */,
+				110682D11DC75E7600A08026 /* StatsParser.swift in Sources */,
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
@@ -782,6 +789,7 @@
 				110682CF1DC75C9900A08026 /* TotalsParserTest.swift in Sources */,
 				110682B71DC7503000A08026 /* AthleteTypeParserTest.swift in Sources */,
 				110682C31DC753D000A08026 /* HeartRateParserTest.swift in Sources */,
+				110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				110682BF1DC7521400A08026 /* MeasurementPreferenceParserTest.swift in Sources */,
 				110682BB1DC7512C00A08026 /* FriendStatusParserTest.swift in Sources */,

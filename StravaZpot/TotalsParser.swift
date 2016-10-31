@@ -19,6 +19,6 @@ public class TotalsParser : Parser {
                       movingTime: timeParser.from(json: json["moving_time"]),
                       elapsedTime: timeParser.from(json: json["elapsed_time"]),
                       elevationGain: distanceParser.from(json: json["elevation_gain"]),
-                      achievementCount: json["achievement_count"].int!)
+                      achievementCount: json["achievement_count"].int)
     }
 }
