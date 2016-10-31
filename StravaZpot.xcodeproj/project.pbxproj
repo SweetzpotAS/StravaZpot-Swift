@@ -76,6 +76,8 @@
 		11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */; };
 		11EFB3041DC73B720096AD9B /* TimedIntervalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3031DC73B720096AD9B /* TimedIntervalParser.swift */; };
 		11EFB3061DC73BE30096AD9B /* TimedIntervalParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3051DC73BE30096AD9B /* TimedIntervalParserTest.swift */; };
+		11EFB3081DC73CB50096AD9B /* AchievementTypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3071DC73CB50096AD9B /* AchievementTypeParser.swift */; };
+		11EFB30A1DC73D000096AD9B /* AchievementTypeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3091DC73D000096AD9B /* AchievementTypeParserTest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -180,6 +182,8 @@
 		11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeParserTest.swift; sourceTree = "<group>"; };
 		11EFB3031DC73B720096AD9B /* TimedIntervalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedIntervalParser.swift; sourceTree = "<group>"; };
 		11EFB3051DC73BE30096AD9B /* TimedIntervalParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedIntervalParserTest.swift; sourceTree = "<group>"; };
+		11EFB3071DC73CB50096AD9B /* AchievementTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTypeParser.swift; sourceTree = "<group>"; };
+		11EFB3091DC73D000096AD9B /* AchievementTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTypeParserTest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -349,6 +353,7 @@
 				11EFB2FB1DC739CC0096AD9B /* TemperatureParser.swift */,
 				11EFB2FF1DC73AA00096AD9B /* TimeParser.swift */,
 				11EFB3031DC73B720096AD9B /* TimedIntervalParser.swift */,
+				11EFB3071DC73CB50096AD9B /* AchievementTypeParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 				11EFB2FD1DC73A0E0096AD9B /* TemperatureParserTest.swift */,
 				11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */,
 				11EFB3051DC73BE30096AD9B /* TimedIntervalParserTest.swift */,
+				11EFB3091DC73D000096AD9B /* AchievementTypeParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -591,6 +597,7 @@
 				11DADB431DBF5C4300194349 /* SeriesType.swift in Sources */,
 				11DADB531DBF61A700194349 /* Stats.swift in Sources */,
 				11DADB6D1DBF76F800194349 /* ActivityType.swift in Sources */,
+				11EFB3081DC73CB50096AD9B /* AchievementTypeParser.swift in Sources */,
 				11FB66C01DC34268006FF63E /* Event.swift in Sources */,
 				11DADB6F1DBF7CF600194349 /* ActivityZone.swift in Sources */,
 				11A6A9691DBE4ECA003E5302 /* Interval.swift in Sources */,
@@ -668,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
+				11EFB30A1DC73D000096AD9B /* AchievementTypeParserTest.swift in Sources */,
 				11EFB2FE1DC73A0E0096AD9B /* TemperatureParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
