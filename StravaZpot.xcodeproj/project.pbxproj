@@ -68,6 +68,8 @@
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1041DC888BE00AE054F /* SegmentParser.swift */; };
 		1151B1071DC88B7B00AE054F /* SegmentParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */; };
+		1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1081DC88F4300AE054F /* ClubParser.swift */; };
+		1151B10B1DC890C900AE054F /* ClubParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B10A1DC890C900AE054F /* ClubParserTest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -242,6 +244,8 @@
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		1151B1041DC888BE00AE054F /* SegmentParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParser.swift; sourceTree = "<group>"; };
 		1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParserTest.swift; sourceTree = "<group>"; };
+		1151B1081DC88F4300AE054F /* ClubParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubParser.swift; sourceTree = "<group>"; };
+		1151B10A1DC890C900AE054F /* ClubParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubParserTest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -540,6 +544,7 @@
 				11EFB3171DC7410F0096AD9B /* WorkoutTypeParser.swift */,
 				110682C81DC7568F00A08026 /* ZonesParser.swift */,
 				1151B1041DC888BE00AE054F /* SegmentParser.swift */,
+				1151B1081DC88F4300AE054F /* ClubParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -593,6 +598,7 @@
 				11EFB3191DC7413E0096AD9B /* WorkoutTypeParserTest.swift */,
 				110682CA1DC756F600A08026 /* ZonesParserTest.swift */,
 				1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */,
+				1151B10A1DC890C900AE054F /* ClubParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -874,6 +880,7 @@
 				110683241DC7AFF700A08026 /* LeaderboardParser.swift in Sources */,
 				11DADB551DBF64A100194349 /* Zones.swift in Sources */,
 				110682F11DC76A2300A08026 /* FrameTypeParser.swift in Sources */,
+				1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */,
 				11DADB471DBF5E0C00194349 /* AthleteType.swift in Sources */,
 				11DADB351DBF50B700194349 /* DateRange.swift in Sources */,
 				11A6A9651DBE4BDC003E5302 /* Coordinates.swift in Sources */,
@@ -932,6 +939,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110683171DC79E2100A08026 /* StreamParserTest.swift in Sources */,
+				1151B10B1DC890C900AE054F /* ClubParserTest.swift in Sources */,
 				110682C71DC7559300A08026 /* PowerParserTest.swift in Sources */,
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
 				11EFB3121DC73F5D0096AD9B /* ActivityTypeParserTest.swift in Sources */,
