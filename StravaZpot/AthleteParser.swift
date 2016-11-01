@@ -40,13 +40,21 @@ public class AthleteParser : Parser {
                        shoes: getGear(json: json["shoes"]))
     }
     
-    private func getClubs(json : JSON) -> EquatableArray<Club> {
-        let clubParser = ClubParser()
-        return EquatableArray<Club>(array: json.map { clubParser.from(json: $1) })
+    private func getClubs(json : JSON) -> EquatableArray<Club>? {
+        if json.exists() {
+            let clubParser = ClubParser()
+            return EquatableArray<Club>(array: json.map { clubParser.from(json: $1) })
+        } else {
+            return nil
+        }
     }
     
-    private func getGear(json : JSON) -> EquatableArray<Gear> {
-        let gearParser = GearParser()
-        return EquatableArray<Gear>(array: json.map { gearParser.from(json: $1) })
+    private func getGear(json : JSON) -> EquatableArray<Gear>? {
+        if json.exists() {
+            let gearParser = GearParser()
+            return EquatableArray<Gear>(array: json.map { gearParser.from(json: $1) })
+        } else {
+            return nil
+        }
     }
 }
