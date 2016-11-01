@@ -11,6 +11,10 @@ import SwiftyJSON
 
 public class FriendStatusParser : Parser {
     public func from(json: JSON) -> FriendStatus {
-        return FriendStatus(rawValue: json.string!)!
+        if let friendString = json.string {
+            return FriendStatus(rawValue: friendString)!
+        } else {
+            return .not_friends
+        }
     }
 }
