@@ -15,7 +15,7 @@ public struct Photo {
     public let resourceState : ResourceState
     public let urls : [String : String]
     public let caption : String
-    public let source : PhotoSource
+    public let source : PhotoSource?
     public let uploadedAt : Date
     public let createdAt : Date
     public let location : Coordinates?
