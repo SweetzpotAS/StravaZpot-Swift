@@ -18,4 +18,8 @@ public class AthleteAPI {
     public func retrieveCurrentAthlete() -> GetCurrentAthleteRequest {
         return GetCurrentAthleteRequest(client: client)
     }
+    
+    public func retrieveAthlete(withID id: Int) -> RetrieveAthleteRequest {
+        return RetrieveAthleteRequest(client: client, id: id)
+    }
 }

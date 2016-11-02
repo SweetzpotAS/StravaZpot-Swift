@@ -24,6 +24,18 @@ class AthleteAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldRetrieveAnAthleteByID() {
+        let client = MockHTTPClient(respondWithJSON: ATHLETE_JSON)
+        let api = AthleteAPI(client: client)
+        
+        var result : StravaResult<Athlete, StravaError>?
+        api.retrieveAthlete(withID: 227615).execute { result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athletes/227615"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let ATHLETE_JSON = "{" +
         "  \"id\": 227615," +
         "  \"resource_state\": 3," +
