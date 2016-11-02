@@ -25,4 +25,8 @@ extension JSON {
     var athlete : Athlete? {
         return exists() ? AthleteParser().from(json: self) : nil
     }
+    
+    var time : Time? {
+        return exists() ? TimeParser().from(json: self) : nil
+    }
 }

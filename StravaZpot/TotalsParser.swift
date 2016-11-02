@@ -10,14 +10,13 @@ import Foundation
 import SwiftyJSON
 
 public class TotalsParser : Parser {
-    private let timeParser = TimeParser()
     private let distanceParser = DistanceParser()
     
     public func from(json: JSON) -> Totals {
         return Totals(count: json["count"].int!,
                       distance: distanceParser.from(json: json["distance"]),
-                      movingTime: timeParser.from(json: json["moving_time"]),
-                      elapsedTime: timeParser.from(json: json["elapsed_time"]),
+                      movingTime: json["moving_time"].time!,
+                      elapsedTime: json["elapsed_time"].time!,
                       elevationGain: distanceParser.from(json: json["elevation_gain"]),
                       achievementCount: json["achievement_count"].int)
     }

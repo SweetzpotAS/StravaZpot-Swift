@@ -11,13 +11,12 @@ import SwiftyJSON
 
 public class SplitParser : Parser {
     private let distanceParser = DistanceParser()
-    private let timeParser = TimeParser()
     
     public func from(json: JSON) -> Split {
         return Split(distance: distanceParser.from(json: json["distance"]),
                      elevationDifference: distanceParser.from(json: json["elevation_difference"]),
-                     elapsedTime: timeParser.from(json: json["elapsed_time"]),
-                     movingTime: timeParser.from(json: json["moving_time"]),
+                     elapsedTime: json["elapsed_time"].time!,
+                     movingTime: json["moving_time"].time!,
                      split: json["split"].int!)
     }
 }
