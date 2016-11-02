@@ -57,4 +57,8 @@ extension JSON {
     var map : Map? {
         return exists() ? MapParser().from(json: self) : nil
     }
+    
+    var workoutType : WorkoutType? {
+        return exists() ? WorkoutTypeParser().from(json: self) : nil
+    }
 }
