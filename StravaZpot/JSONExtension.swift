@@ -81,4 +81,8 @@ extension JSON {
     var gender : Gender? {
         return exists() ? GenderParser().from(json: self) : nil
     }
+    
+    var friendStatus : FriendStatus? {
+        return exists() ? FriendStatusParser().from(json: self) : nil
+    }
 }
