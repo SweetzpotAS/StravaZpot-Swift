@@ -71,8 +71,7 @@ public class ActivityParser : Parser {
     
     private func getSplits(json : JSON) -> EquatableArray<Split>? {
         if json.exists() {
-            let parser = SplitParser()
-            return EquatableArray<Split>(array: json.map { parser.from(json: $1) } )
+            return EquatableArray<Split>(array: json.map { $1.split! } )
         } else {
             return nil
         }

@@ -69,4 +69,8 @@ extension JSON {
     var temperature : Temperature? {
         return exists() ? TemperatureParser().from(json: self) : nil
     }
+    
+    var split : Split? {
+        return exists() ? SplitParser().from(json: self) : nil
+    }
 }
