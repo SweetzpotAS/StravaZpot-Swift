@@ -37,4 +37,8 @@ extension JSON {
     var distance : Distance? {
         return exists() ? DistanceParser().from(json: self) : nil
     }
+    
+    var speed : Speed? {
+        return exists() ? SpeedParser().from(json: self) : nil
+    }
 }
