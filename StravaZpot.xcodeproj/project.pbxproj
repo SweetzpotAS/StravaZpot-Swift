@@ -86,6 +86,8 @@
 		1151B1271DC8BB6F00AE054F /* ActivityParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */; };
 		1151B1291DC8D1A700AE054F /* ActivityLapParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */; };
 		1151B12B1DC8D2F900AE054F /* ActivityLapParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */; };
+		1151B12D1DC9D92C00AE054F /* RouteParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B12C1DC9D92C00AE054F /* RouteParser.swift */; };
+		1151B12F1DC9DA7F00AE054F /* RouteParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B12E1DC9DA7F00AE054F /* RouteParserTest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -278,6 +280,8 @@
 		1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityParserTest.swift; sourceTree = "<group>"; };
 		1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLapParser.swift; sourceTree = "<group>"; };
 		1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLapParserTest.swift; sourceTree = "<group>"; };
+		1151B12C1DC9D92C00AE054F /* RouteParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteParser.swift; sourceTree = "<group>"; };
+		1151B12E1DC9DA7F00AE054F /* RouteParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteParserTest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -531,12 +535,20 @@
 			children = (
 				11EFB30B1DC73E020096AD9B /* AchievementParser.swift */,
 				11EFB3071DC73CB50096AD9B /* AchievementTypeParser.swift */,
+				1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */,
+				1151B1241DC8B6C900AE054F /* ActivityParser.swift */,
 				11EFB30F1DC73F150096AD9B /* ActivityTypeParser.swift */,
+				1151B11C1DC8B1CE00AE054F /* ActivityZoneParser.swift */,
+				1151B1101DC8A3AC00AE054F /* AnnouncementParser.swift */,
+				1151B10C1DC8924300AE054F /* AthleteParser.swift */,
 				110682B41DC74FF100A08026 /* AthleteTypeParser.swift */,
+				1151B1081DC88F4300AE054F /* ClubParser.swift */,
 				110682D41DC7625000A08026 /* ClubTypeParser.swift */,
+				1151B1201DC8B51400AE054F /* CommentParser.swift */,
 				11FB66C81DC3554E006FF63E /* CoordinatesParser.swift */,
 				1106831A1DC7AADE00A08026 /* DateParser.swift */,
 				11FB66D01DC35977006FF63E /* DistanceParser.swift */,
+				1151B1141DC8AB0600AE054F /* EventParser.swift */,
 				110682F01DC76A2300A08026 /* FrameTypeParser.swift */,
 				110682B81DC750C400A08026 /* FriendStatusParser.swift */,
 				110682F41DC76AD600A08026 /* GearParser.swift */,
@@ -552,6 +564,7 @@
 				110682D81DC7634600A08026 /* MembershipParser.swift */,
 				11FB66C61DC35477006FF63E /* Parser.swift */,
 				11FB66DC1DC362AB006FF63E /* PercentageParser.swift */,
+				1151B1181DC8AE9200AE054F /* PhotoParser.swift */,
 				11EFB3131DC7401D0096AD9B /* PhotoSourceParser.swift */,
 				111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */,
 				110682C41DC7550600A08026 /* PowerParser.swift */,
@@ -560,6 +573,7 @@
 				11EFB2F31DC737E60096AD9B /* ResourceStateParser.swift */,
 				110682FC1DC76DF700A08026 /* RouteSubtypeParser.swift */,
 				110682F81DC76D4700A08026 /* RouteTypeParser.swift */,
+				1151B1041DC888BE00AE054F /* SegmentParser.swift */,
 				1106830C1DC7730300A08026 /* SeriesTypeParser.swift */,
 				110682DC1DC7640500A08026 /* SkillLevelParser.swift */,
 				11EFB2F71DC739040096AD9B /* SpeedParser.swift */,
@@ -575,16 +589,7 @@
 				110682CC1DC75BC400A08026 /* TotalsParser.swift */,
 				11EFB3171DC7410F0096AD9B /* WorkoutTypeParser.swift */,
 				110682C81DC7568F00A08026 /* ZonesParser.swift */,
-				1151B1041DC888BE00AE054F /* SegmentParser.swift */,
-				1151B1081DC88F4300AE054F /* ClubParser.swift */,
-				1151B10C1DC8924300AE054F /* AthleteParser.swift */,
-				1151B1101DC8A3AC00AE054F /* AnnouncementParser.swift */,
-				1151B1141DC8AB0600AE054F /* EventParser.swift */,
-				1151B1181DC8AE9200AE054F /* PhotoParser.swift */,
-				1151B11C1DC8B1CE00AE054F /* ActivityZoneParser.swift */,
-				1151B1201DC8B51400AE054F /* CommentParser.swift */,
-				1151B1241DC8B6C900AE054F /* ActivityParser.swift */,
-				1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */,
+				1151B12C1DC9D92C00AE054F /* RouteParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -594,12 +599,20 @@
 			children = (
 				11EFB30D1DC73E760096AD9B /* AchievementParserTest.swift */,
 				11EFB3091DC73D000096AD9B /* AchievementTypeParserTest.swift */,
+				1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */,
+				1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */,
 				11EFB3111DC73F5D0096AD9B /* ActivityTypeParserTest.swift */,
+				1151B11E1DC8B34F00AE054F /* ActivityZoneParserTest.swift */,
+				1151B1121DC8A43A00AE054F /* AnnouncementParserTest.swift */,
+				1151B10E1DC8A0BE00AE054F /* AthleteParserTest.swift */,
 				110682B61DC7503000A08026 /* AthleteTypeParserTest.swift */,
+				1151B10A1DC890C900AE054F /* ClubParserTest.swift */,
 				110682D61DC7629500A08026 /* ClubTypeParserTest.swift */,
+				1151B1221DC8B5A600AE054F /* CommentParserTest.swift */,
 				11FB66CC1DC35661006FF63E /* CoordinatesParserTest.swift */,
 				1106831C1DC7AB7B00A08026 /* DateParserTest.swift */,
 				11FB66D21DC359F1006FF63E /* DistanceParserTest.swift */,
+				1151B1161DC8AC4C00AE054F /* EventParserTest.swift */,
 				110682F21DC76A5200A08026 /* FrameTypeParserTest.swift */,
 				110682BA1DC7512C00A08026 /* FriendStatusParserTest.swift */,
 				110682F61DC76B7800A08026 /* GearParserTest.swift */,
@@ -614,6 +627,7 @@
 				110682BE1DC7521400A08026 /* MeasurementPreferenceParserTest.swift */,
 				110682DA1DC7638200A08026 /* MembershipParserTest.swift */,
 				11FB66DE1DC3634A006FF63E /* PercentageParserTest.swift */,
+				1151B11A1DC8AFF200AE054F /* PhotoParserTest.swift */,
 				11EFB3151DC740620096AD9B /* PhotoSourceParserTest.swift */,
 				110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */,
 				110682C61DC7559300A08026 /* PowerParserTest.swift */,
@@ -622,6 +636,7 @@
 				11EFB2F51DC738350096AD9B /* ResourceStateParserTest.swift */,
 				110682FE1DC76E5B00A08026 /* RouteSubtypeParserTest.swift */,
 				110682FA1DC76D7D00A08026 /* RouteTypeParserTest.swift */,
+				1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */,
 				1106830E1DC7733600A08026 /* SeriesTypeParserTest.swift */,
 				110682DE1DC7644300A08026 /* SkillLevelParserTest.swift */,
 				11EFB2F91DC739430096AD9B /* SpeedParserTest.swift */,
@@ -637,16 +652,7 @@
 				110682CE1DC75C9900A08026 /* TotalsParserTest.swift */,
 				11EFB3191DC7413E0096AD9B /* WorkoutTypeParserTest.swift */,
 				110682CA1DC756F600A08026 /* ZonesParserTest.swift */,
-				1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */,
-				1151B10A1DC890C900AE054F /* ClubParserTest.swift */,
-				1151B10E1DC8A0BE00AE054F /* AthleteParserTest.swift */,
-				1151B1121DC8A43A00AE054F /* AnnouncementParserTest.swift */,
-				1151B1161DC8AC4C00AE054F /* EventParserTest.swift */,
-				1151B11A1DC8AFF200AE054F /* PhotoParserTest.swift */,
-				1151B11E1DC8B34F00AE054F /* ActivityZoneParserTest.swift */,
-				1151B1221DC8B5A600AE054F /* CommentParserTest.swift */,
-				1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */,
-				1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */,
+				1151B12E1DC9DA7F00AE054F /* RouteParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -908,6 +914,7 @@
 				11FB66C41DC34612006FF63E /* SegmentEffort.swift in Sources */,
 				11EFB31C1DC742130096AD9B /* SplitParser.swift in Sources */,
 				11A6A9791DBE56E0003E5302 /* Map.swift in Sources */,
+				1151B12D1DC9D92C00AE054F /* RouteParser.swift in Sources */,
 				110683111DC773F600A08026 /* StreamTypeParser.swift in Sources */,
 				11DADB5B1DBF6F5500194349 /* Membership.swift in Sources */,
 				11DADB391DBF51A100194349 /* WeightClass.swift in Sources */,
@@ -1030,6 +1037,7 @@
 				110682CB1DC756F600A08026 /* ZonesParserTest.swift in Sources */,
 				110682EB1DC7684C00A08026 /* JoinResultParserTest.swift in Sources */,
 				11EFB30E1DC73E760096AD9B /* AchievementParserTest.swift in Sources */,
+				1151B12F1DC9DA7F00AE054F /* RouteParserTest.swift in Sources */,
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
 				110683261DC7B09E00A08026 /* LeaderboardParserTest.swift in Sources */,
 				11EFB3221DC749280096AD9B /* PrimaryPhotoParserTest.swift in Sources */,

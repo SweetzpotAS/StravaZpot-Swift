@@ -18,7 +18,7 @@ public struct Route {
     public let elevationGain : Distance
     public let map : Map
     public let type : RouteType
-    public let subtype : RouteSubtype
+    public let subtype : RouteSubtype?
     public let isPrivate : Bool
     public let isStarred : Bool
     public let timestamp : Int
