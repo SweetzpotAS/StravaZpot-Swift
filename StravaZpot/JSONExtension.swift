@@ -192,4 +192,8 @@ extension JSON {
     var totals : Totals? {
         return exists() ? TotalsParser().from(json: self) : nil
     }
+    
+    var streamType : StreamType? {
+        return exists() ? StreamTypeParser().from(json: self) : nil
+    }
 }

@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class StreamParser : Parser {
     public func from(json: JSON) -> Stream {
-        return Stream(type: StreamTypeParser().from(json: json["type"]),
+        return Stream(type: json["type"].streamType!,
                       data: json["data"].array!,
                       seriesType: SeriesTypeParser().from(json: json["series_type"]),
                       originalSize: json["original_size"].int!,
