@@ -49,4 +49,8 @@ extension JSON {
     var coordinates : Coordinates? {
         return exists() ? CoordinatesParser().from(json: self) : nil
     }
+    
+    var photoSummary : PhotoSummary? {
+        return exists() ? PhotoSummaryParser().from(json: self) : nil
+    }
 }
