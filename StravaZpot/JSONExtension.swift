@@ -176,4 +176,12 @@ extension JSON {
     var routeSubtype : RouteSubtype? {
         return exists() ? RouteSubtypeParser().from(json: self) : nil
     }
+    
+    var segment : Segment? {
+        return exists() ? SegmentParser().from(json: self) : nil
+    }
+    
+    var segmentArray : EquatableArray<Segment>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.segment }) : nil
+    }
 }

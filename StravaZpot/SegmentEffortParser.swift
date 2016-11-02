@@ -28,7 +28,7 @@ public class SegmentEffortParser : Parser {
                              hasDeviceWatts: json["device_watts"].bool!,
                              averageHeartRate: json["average_heartrate"].double!,
                              maxHeartRate: json["max_heartrate"].double!,
-                             segment: SegmentParser().from(json: json["segment"]),
+                             segment: json["segment"].segment!,
                              komRank: json["kom_rank"].int,
                              prRank: json["pr_rank"].int,
                              isHidden: json["hidden"].bool)

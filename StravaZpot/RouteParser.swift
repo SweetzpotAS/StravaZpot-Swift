@@ -24,15 +24,6 @@ public class RouteParser : Parser {
                      isPrivate: json["private"].bool!,
                      isStarred: json["starred"].bool!,
                      timestamp: json["timestamp"].int!,
-                     segments: getSegments(json: json["segments"]))
-    }
-    
-    private func getSegments(json: JSON) -> EquatableArray<Segment>? {
-        if json.exists() {
-            let parser = SegmentParser()
-            return EquatableArray<Segment>(array: json.map { parser.from(json: $1) })
-        } else {
-            return nil
-        }
+                     segments: json["segments"].segmentArray)
     }
 }
