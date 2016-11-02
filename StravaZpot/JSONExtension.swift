@@ -77,4 +77,8 @@ extension JSON {
     var segmentEffort : SegmentEffort? {
         return exists() ? SegmentEffortParser().from(json: self) : nil
     }
+    
+    var gender : Gender? {
+        return exists() ? GenderParser().from(json: self) : nil
+    }
 }

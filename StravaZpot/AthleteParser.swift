@@ -20,7 +20,7 @@ public class AthleteParser : Parser {
                        city: json["city"].string,
                        state: json["state"].string,
                        country: json["country"].string,
-                       sex: json["sex"].exists() ? GenderParser().from(json: json["sex"]) : nil,
+                       sex: json["sex"].gender,
                        friend: json["friend"].exists() ? FriendStatusParser().from(json: json["friend"]) : nil,
                        follower: json["follower"].exists() ? FriendStatusParser().from(json: json["follower"]) : nil,
                        isPremium: json["premium"].bool,

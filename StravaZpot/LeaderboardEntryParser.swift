@@ -13,7 +13,7 @@ public class LeaderboardEntryParser : Parser {
     public func from(json: JSON) -> LeaderboardEntry {
         return LeaderboardEntry(athleteID: json["athlete_id"].int!,
                                 athleteName: json["athlete_name"].string!,
-                                athleteGender: GenderParser().from(json: json["athlete_gender"]),
+                                athleteGender: json["athlete_gender"].gender!,
                                 averageHeartRate: json["average_hr"].double!,
                                 averageWatts: json["average_watts"].double!,
                                 distance: json["distance"].distance!,
