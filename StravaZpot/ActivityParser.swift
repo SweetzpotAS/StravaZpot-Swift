@@ -65,15 +65,7 @@ public class ActivityParser : Parser {
                         hasKudoed: json["has_kudoed"].bool,
                         splitsMetric: json["splits_metric"].splitArray,
                         splitsStandard: json["splits_standard"].splitArray,
-                        segmentEfforts: getEfforts(json: json["segment_efforts"]),
-                        bestEfforts: getEfforts(json: json["best_efforts"]))
-    }
-    
-    private func getEfforts(json : JSON) -> EquatableArray<SegmentEffort>? {
-        if json.exists() {
-            return EquatableArray<SegmentEffort>(array: json.map { $1.segmentEffort! } )
-        } else {
-            return nil
-        }
+                        segmentEfforts: json["segment_efforts"].segmentEffortArray,
+                        bestEfforts: json["best_efforts"].segmentEffortArray)
     }
 }

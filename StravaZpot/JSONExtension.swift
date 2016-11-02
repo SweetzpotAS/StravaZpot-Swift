@@ -86,6 +86,10 @@ extension JSON {
         return exists() ? SegmentEffortParser().from(json: self) : nil
     }
     
+    var segmentEffortArray : EquatableArray<SegmentEffort>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.segmentEffort }) : nil
+    }
+    
     var gender : Gender? {
         return exists() ? GenderParser().from(json: self) : nil
     }
