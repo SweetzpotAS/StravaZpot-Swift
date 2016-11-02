@@ -157,4 +157,8 @@ extension JSON {
     var photoSource : PhotoSource? {
         return exists() ? PhotoSourceParser().from(json: self) : nil
     }
+    
+    var primaryPhoto : PrimaryPhoto? {
+        return exists() ? PrimaryPhotoParser().from(json: self) : nil
+    }
 }
