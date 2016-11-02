@@ -28,7 +28,7 @@ public class ClubParser : Parser {
                     isVerified: json["verified"].bool,
                     url: json["url"].string!,
                     description: json["description"].string,
-                    clubType: json["club_type"].exists() ? ClubTypeParser().from(json: json["club_type"]) : nil,
+                    clubType: json["club_type"].clubType,
                     membership: json["membership"].exists() ? MembershipParser().from(json: json["membership"]) : nil,
                     isAdmin: json["admin"].bool,
                     isOwner: json["owner"].bool,
