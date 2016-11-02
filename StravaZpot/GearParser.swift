@@ -12,7 +12,7 @@ import SwiftyJSON
 public class GearParser : Parser {
     public func from(json: JSON) -> Gear {
         return Gear(id: json["id"].string!,
-                    resourceState: json["resource_state"].resourceState,
+                    resourceState: json["resource_state"].resourceState!,
                     primary: json["primary"].bool!,
                     name: json["name"].string!,
                     distance: DistanceParser().from(json: json["distance"]),

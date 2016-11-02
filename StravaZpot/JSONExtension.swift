@@ -17,4 +17,8 @@ extension JSON {
     var resourceState : ResourceState? {
         return exists() ? ResourceStateParser().from(json: self) : ResourceState.meta
     }
+    
+    var activity : Activity? {
+        return exists() ? ActivityParser().from(json: self) : nil
+    }
 }

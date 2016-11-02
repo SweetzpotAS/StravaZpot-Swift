@@ -14,7 +14,7 @@ public class ActivityLapParser : Parser {
         return ActivityLap(id: json["id"].int!,
                            resourceState: json["resource_state"].resourceState!,
                            name: json["name"].string!,
-                           activity: ActivityParser().from(json: json["activity"]),
+                           activity: json["activity"].activity!,
                            athlete: AthleteParser().from(json: json["athlete"]),
                            elapsedTime: TimeParser().from(json: json["elapsed_time"]),
                            movingTime: TimeParser().from(json: json["moving_time"]),

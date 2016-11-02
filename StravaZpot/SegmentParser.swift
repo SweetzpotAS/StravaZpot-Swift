@@ -17,7 +17,7 @@ public class SegmentParser : Parser {
     
     public func from(json : JSON) -> Segment {
         return Segment(id: json["id"].int!,
-                       resourceState: json["resource_state"].resourceState,
+                       resourceState: json["resource_state"].resourceState!,
                        name: json["name"].string!,
                        activityType: json["activity_type"].exists() ? ActivityTypeParser().from(json: json["activity_type"]) : nil,
                        distance: json["distance"].exists() ? distanceParser.from(json: json["distance"]) : nil,
