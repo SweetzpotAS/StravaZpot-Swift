@@ -23,7 +23,7 @@ public class EventParser : Parser {
                      isWomanOnly: json["women_only"].bool!,
                      isPrivate: json["private"].bool!,
                      skillLevel: json["skill_levels"].skillLevel!,
-                     terrain: TerrainParser().from(json: json["terrain"]),
+                     terrain: json["terrain"].terrain!,
                      upcomingOccurrences: getDates(json: json["upcoming_occurrences"]),
                      address: json["address"].string!)
     }

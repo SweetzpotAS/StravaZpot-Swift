@@ -121,4 +121,8 @@ extension JSON {
     var skillLevel : SkillLevel? {
         return exists() ? SkillLevelParser().from(json: self) : nil
     }
+    
+    var terrain : Terrain? {
+        return exists() ? TerrainParser().from(json: self) : nil
+    }
 }
