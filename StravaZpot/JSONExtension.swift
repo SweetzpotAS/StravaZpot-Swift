@@ -89,4 +89,8 @@ extension JSON {
     var athleteType : AthleteType? {
         return exists() ? AthleteTypeParser().from(json: self) : nil
     }
+    
+    var measurementPreference : MeasurementPreference? {
+        return exists() ? MeasurementPreferenceParser().from(json: self) : nil
+    }
 }
