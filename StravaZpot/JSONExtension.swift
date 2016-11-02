@@ -208,4 +208,8 @@ extension JSON {
     var heartRate : HeartRate? {
         return exists() ? HeartRateParser().from(json: self) : nil
     }
+    
+    var power : Power? {
+        return exists() ? PowerParser().from(json: self) : nil
+    }
 }
