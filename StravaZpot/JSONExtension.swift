@@ -196,4 +196,8 @@ extension JSON {
     var streamType : StreamType? {
         return exists() ? StreamTypeParser().from(json: self) : nil
     }
+    
+    var seriesType : SeriesType? {
+        return exists() ? SeriesTypeParser().from(json : self) : nil
+    }
 }
