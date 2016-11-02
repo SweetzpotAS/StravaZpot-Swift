@@ -117,4 +117,8 @@ extension JSON {
     var clubType : ClubType? {
         return exists() ? ClubTypeParser().from(json: self) : nil
     }
+    
+    var skillLevel : SkillLevel? {
+        return exists() ? SkillLevelParser().from(json: self) : nil
+    }
 }
