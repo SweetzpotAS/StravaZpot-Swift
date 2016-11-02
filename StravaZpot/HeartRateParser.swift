@@ -12,11 +12,7 @@ import SwiftyJSON
 public class HeartRateParser : Parser {
     public func from(json: JSON) -> HeartRate {
         return HeartRate(customZones: json["custom_zones"].bool!,
-                         zones: getZones(json: json["zones"]))
+                         zones: json["zones"].intervalArray!)
     }
     
-    private func getZones(json: JSON) -> EquatableArray<Interval<Double>> {
-        let intervalParser = IntervalDoubleParser()
-        return EquatableArray(array: json.map{ intervalParser.from(json: $1) })
-    }
 }

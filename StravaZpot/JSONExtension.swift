@@ -133,4 +133,12 @@ extension JSON {
     var frameType : FrameType? {
         return exists() ? FrameTypeParser().from(json: self) : nil
     }
+    
+    var interval : Interval<Double>? {
+        return exists() ? IntervalDoubleParser().from(json: self) : nil
+    }
+    
+    var intervalArray : EquatableArray<Interval<Double>>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.interval }) : nil
+    }
 }

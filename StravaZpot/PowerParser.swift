@@ -11,11 +11,6 @@ import SwiftyJSON
 
 public class PowerParser : Parser {
     public func from(json: JSON) -> Power {
-        return Power(zones: getArray(json: json["zones"]))
-    }
-    
-    private func getArray(json: JSON) -> EquatableArray<Interval<Double>> {
-        let intervalParser = IntervalDoubleParser()
-        return EquatableArray(array: json.map{ intervalParser.from(json: $1) })
+        return Power(zones: json["zones"].intervalArray!)
     }
 }
