@@ -85,4 +85,8 @@ extension JSON {
     var friendStatus : FriendStatus? {
         return exists() ? FriendStatusParser().from(json: self) : nil
     }
+    
+    var athleteType : AthleteType? {
+        return exists() ? AthleteTypeParser().from(json: self) : nil
+    }
 }

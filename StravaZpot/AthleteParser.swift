@@ -29,7 +29,7 @@ public class AthleteParser : Parser {
                        followerCount: json["follower_count"].int,
                        friendCount: json["friend_count"].int,
                        mutualFriendCount: json["mutual_friend_count"].int,
-                       athleteType: json["athlete_type"].exists() ? AthleteTypeParser().from(json: json["athlete_type"]) : nil,
+                       athleteType: json["athlete_type"].athleteType,
                        datePreference: json["date_preference"].string,
                        measurementPreference: json["measurement_preference"].exists() ? MeasurementPreferenceParser().from(json: json["measurement_preference"]) : nil,
                        email: json["email"].string,
