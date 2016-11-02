@@ -20,7 +20,7 @@ public class PhotoParser : Parser {
                      source: json["source"].exists() ? PhotoSourceParser().from(json: json["source"]) : nil,
                      uploadedAt: json["uploaded_at"].date!,
                      createdAt: json["created_at"].date!,
-                     location: json["location"].exists() ? CoordinatesParser().from(json: json["location"]) : nil,
+                     location: json["location"].coordinates,
                      ref: json["ref"].string,
                      uid: json["uid"].string,
                      type: json["type"].string)

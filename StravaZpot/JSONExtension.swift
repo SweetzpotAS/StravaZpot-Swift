@@ -45,4 +45,8 @@ extension JSON {
     var activityType : ActivityType? {
         return exists() ? ActivityTypeParser().from(json: self) : nil
     }
+    
+    var coordinates : Coordinates? {
+        return exists() ? CoordinatesParser().from(json: self) : nil
+    }
 }

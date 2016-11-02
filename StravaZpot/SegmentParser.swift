@@ -11,7 +11,6 @@ import SwiftyJSON
 
 public class SegmentParser : Parser {
     private let percentageParser = PercentageParser()
-    private let coordinatesParser = CoordinatesParser()
     
     public func from(json : JSON) -> Segment {
         return Segment(id: json["id"].int!,
@@ -23,8 +22,8 @@ public class SegmentParser : Parser {
                        maximumGrade: json["maximum_grade"].exists() ? percentageParser.from(json: json["maximum_grade"]) : nil,
                        elevationHigh: json["elevation_high"].distance,
                        elevationLow: json["elevation_low"].distance,
-                       startCoordinates: json["start_latlng"].exists() ? coordinatesParser.from(json: json["start_latlng"]) : nil,
-                       endCoordinates: json["end_latlng"].exists() ? coordinatesParser.from(json: json["end_latlng"]) : nil,
+                       startCoordinates: json["start_latlng"].coordinates,
+                       endCoordinates: json["end_latlng"].coordinates,
                        climbCategory: json["climb_category"].int,
                        city: json["city"].string,
                        state: json["state"].string,
