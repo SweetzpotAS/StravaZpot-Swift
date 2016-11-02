@@ -37,7 +37,7 @@ public class ActivityParser : Parser {
                         photoCount: json["photo_count"].int,
                         totalPhotoCount: json["total_photo_count"].int,
                         photos: json["photos"].photoSummary,
-                        map: json["map"].exists() ? MapParser().from(json: json["map"]) : nil,
+                        map: json["map"].map,
                         hasTrainer: json["trainer"].bool,
                         isCommute: json["commute"].bool,
                         isManual: json["manual"].bool,

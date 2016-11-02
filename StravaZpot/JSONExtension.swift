@@ -53,4 +53,8 @@ extension JSON {
     var photoSummary : PhotoSummary? {
         return exists() ? PhotoSummaryParser().from(json: self) : nil
     }
+    
+    var map : Map? {
+        return exists() ? MapParser().from(json: self) : nil
+    }
 }

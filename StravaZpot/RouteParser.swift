@@ -18,7 +18,7 @@ public class RouteParser : Parser {
                      athlete: json["athlete"].athlete!,
                      distance: json["distance"].distance!,
                      elevationGain: json["elevation_gain"].distance!,
-                     map: MapParser().from(json: json["map"]),
+                     map: json["map"].map!,
                      type: RouteTypeParser().from(json: json["type"]),
                      subtype: json["sub_type"].exists() ? RouteSubtypeParser().from(json: json["sub_type"]) : nil,
                      isPrivate: json["private"].bool!,

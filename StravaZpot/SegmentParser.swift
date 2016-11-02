@@ -34,7 +34,7 @@ public class SegmentParser : Parser {
                        createdAt: json["created_at"].date,
                        updatedAt: json["updated_at"].date,
                        totalElevationGain: json["total_elevation_gain"].distance,
-                       map: !json["map"].exists() ? nil : MapParser().from(json: json["map"]),
+                       map: json["map"].map,
                        effortCount: json["effort_count"].int,
                        athleteCount: json["athlete_count"].int,
                        starCount: json["star_count"].int)
