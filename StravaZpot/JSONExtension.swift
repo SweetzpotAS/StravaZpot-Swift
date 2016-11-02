@@ -97,4 +97,8 @@ extension JSON {
     var club : Club? {
         return exists() ? ClubParser().from(json: self) : nil
     }
+    
+    var clubArray : EquatableArray<Club>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.club }) : nil
+    }
 }
