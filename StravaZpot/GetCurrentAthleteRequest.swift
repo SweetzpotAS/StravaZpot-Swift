@@ -19,8 +19,11 @@ public class GetCurrentAthleteRequest {
         client.get(url: "athlete", parameters: [:]) { result in
             switch(result) {
             case let .success(json) :
-                let athlete = AthleteParser().from(json: json)
-                callback(.success(athlete))
+                if let athlete = json.athlete {
+                    callback(.success(athlete))
+                } else {
+                    callback(.error(StravaError.apiError(message: "Error parsing JSON")))
+                }
             case let .error(content) :
                 callback(.error(content))
             }

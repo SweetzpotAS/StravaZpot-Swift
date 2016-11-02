@@ -16,7 +16,7 @@ public class EventParser : Parser {
                      title: json["title"].string!,
                      description: json["description"].string!,
                      clubID: json["club_id"].int!,
-                     organizingAthlete: AthleteParser().from(json: json["organizing_athlete"]),
+                     organizingAthlete: json["organizing_athlete"].athlete!,
                      activityType: ActivityTypeParser().from(json: json["activity_type"]),
                      createdAt: DateParser().from(json: json["created_at"]),
                      routeID: json["route_id"].int!,

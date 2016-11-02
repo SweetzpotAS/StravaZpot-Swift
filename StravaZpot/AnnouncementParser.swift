@@ -14,7 +14,7 @@ public class AnnouncementParser : Parser {
         return Announcement(id: json["id"].int!,
                             resourceState: json["resource_state"].resourceState!,
                             clubID: json["club_id"].int!,
-                            athlete: AthleteParser().from(json: json["athlete"]),
+                            athlete: json["athlete"].athlete!,
                             createdAt: DateParser().from(json: json["created_at"]),
                             message: json["message"].string!)
     }

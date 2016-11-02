@@ -15,7 +15,7 @@ public class CommentParser : Parser {
                        resourceState: json["resource_state"].resourceState!,
                        activityID: json["activity_id"].int!,
                        text: json["text"].string!,
-                       athlete: AthleteParser().from(json: json["athlete"]),
+                       athlete: json["athlete"].athlete!,
                        createdAt: DateParser().from(json: json["created_at"]))
     }
 }

@@ -15,7 +15,7 @@ public class SegmentEffortParser : Parser {
                              resourceState: json["resource_state"].resourceState!,
                              name: json["name"].string!,
                              activity: json["activity"].activity!,
-                             athlete: AthleteParser().from(json: json["athlete"]),
+                             athlete: json["athlete"].athlete!,
                              elapsedTime: TimeParser().from(json: json["elapsed_time"]),
                              movingTime: TimeParser().from(json: json["moving_time"]),
                              startDate: DateParser().from(json: json["start_date"]),

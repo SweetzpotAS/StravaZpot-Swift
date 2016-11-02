@@ -15,7 +15,7 @@ public class RouteParser : Parser {
                      resourceState: json["resource_state"].resourceState!,
                      name: json["name"].string!,
                      description: json["description"].string!,
-                     athlete: AthleteParser().from(json: json["athlete"]),
+                     athlete: json["athlete"].athlete!,
                      distance: DistanceParser().from(json: json["distance"]),
                      elevationGain: DistanceParser().from(json: json["elevation_gain"]),
                      map: MapParser().from(json: json["map"]),
