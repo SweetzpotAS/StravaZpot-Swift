@@ -73,4 +73,8 @@ extension JSON {
     var split : Split? {
         return exists() ? SplitParser().from(json: self) : nil
     }
+    
+    var segmentEffort : SegmentEffort? {
+        return exists() ? SegmentEffortParser().from(json: self) : nil
+    }
 }
