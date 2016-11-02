@@ -66,6 +66,10 @@ extension JSON {
         return exists() ? GearParser().from(json: self) : nil
     }
     
+    var gearArray : EquatableArray<Gear>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.gear }) : nil
+    }
+    
     var temperature : Temperature? {
         return exists() ? TemperatureParser().from(json: self) : nil
     }

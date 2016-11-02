@@ -36,15 +36,8 @@ public class AthleteParser : Parser {
                        ftp: json["ftp"].int,
                        weight: json["weight"].double,
                        clubs: json["clubs"].clubArray,
-                       bikes: getGear(json: json["bikes"]),
-                       shoes: getGear(json: json["shoes"]))
+                       bikes: json["bikes"].gearArray,
+                       shoes: json["shoes"].gearArray)
     }
     
-    private func getGear(json : JSON) -> EquatableArray<Gear>? {
-        if json.exists() {
-            return EquatableArray<Gear>(array: json.map { $1.gear! })
-        } else {
-            return nil
-        }
-    }
 }
