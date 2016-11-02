@@ -15,6 +15,6 @@ public class StreamParser : Parser {
                       data: json["data"].array!,
                       seriesType: json["series_type"].seriesType!,
                       originalSize: json["original_size"].int!,
-                      resolution: ResolutionParser().from(json: json["resolution"]))
+                      resolution: json["resolution"].resolution!)
     }
 }

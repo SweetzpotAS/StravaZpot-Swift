@@ -198,6 +198,10 @@ extension JSON {
     }
     
     var seriesType : SeriesType? {
-        return exists() ? SeriesTypeParser().from(json : self) : nil
+        return exists() ? SeriesTypeParser().from(json: self) : nil
+    }
+    
+    var resolution : Resolution? {
+        return exists() ? ResolutionParser().from(json: self) : nil
     }
 }
