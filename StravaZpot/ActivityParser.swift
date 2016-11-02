@@ -63,18 +63,10 @@ public class ActivityParser : Parser {
                         calories: json["calories"].double,
                         sufferScore: json["suffer_score"].int,
                         hasKudoed: json["has_kudoed"].bool,
-                        splitsMetric: getSplits(json: json["splits_metric"]),
-                        splitsStandard: getSplits(json: json["splits_standard"]),
+                        splitsMetric: json["splits_metric"].splitArray,
+                        splitsStandard: json["splits_standard"].splitArray,
                         segmentEfforts: getEfforts(json: json["segment_efforts"]),
                         bestEfforts: getEfforts(json: json["best_efforts"]))
-    }
-    
-    private func getSplits(json : JSON) -> EquatableArray<Split>? {
-        if json.exists() {
-            return EquatableArray<Split>(array: json.map { $1.split! } )
-        } else {
-            return nil
-        }
     }
     
     private func getEfforts(json : JSON) -> EquatableArray<SegmentEffort>? {

@@ -78,6 +78,10 @@ extension JSON {
         return exists() ? SplitParser().from(json: self) : nil
     }
     
+    var splitArray : EquatableArray<Split>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.split }) : nil
+    }
+    
     var segmentEffort : SegmentEffort? {
         return exists() ? SegmentEffortParser().from(json: self) : nil
     }
