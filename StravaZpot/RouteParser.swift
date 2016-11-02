@@ -19,7 +19,7 @@ public class RouteParser : Parser {
                      distance: json["distance"].distance!,
                      elevationGain: json["elevation_gain"].distance!,
                      map: json["map"].map!,
-                     type: RouteTypeParser().from(json: json["type"]),
+                     type: json["type"].routeType!,
                      subtype: json["sub_type"].exists() ? RouteSubtypeParser().from(json: json["sub_type"]) : nil,
                      isPrivate: json["private"].bool!,
                      isStarred: json["starred"].bool!,

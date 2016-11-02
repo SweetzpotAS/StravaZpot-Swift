@@ -168,4 +168,8 @@ extension JSON {
         pairs.forEach{ urls[$0.0] = $0.1 }
         return urls
     }
+    
+    var routeType : RouteType? {
+        return exists() ? RouteTypeParser().from(json: self) : nil
+    }
 }
