@@ -9,8 +9,9 @@
 import Foundation
 
 public struct StravaConfig {
-    let token : String
-    let debug : Bool
+    private let baseURL = "https://www.strava.com/api/v3/"
+    private let token : String
+    private let debug : Bool
     
     public init(token : String, debug : Bool = false) {
         self.token = token
@@ -18,6 +19,6 @@ public struct StravaConfig {
     }
     
     public func client() -> HTTPClient {
-        return AlamofireHTTPClient(token: token, debug: debug)
+        return AlamofireHTTPClient(baseURL: baseURL, token: token, debug: debug)
     }
 }

@@ -10,10 +10,12 @@ import Foundation
 import SwiftyJSON
 
 class AlamofireHTTPClient : HTTPClient {
+    private let baseURL : String
     private let token : String
     private let debug : Bool
     
-    init(token : String, debug : Bool) {
+    init(baseURL : String, token : String, debug : Bool) {
+        self.baseURL = baseURL
         self.token = token
         self.debug = debug
     }
