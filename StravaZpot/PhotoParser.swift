@@ -15,7 +15,7 @@ public class PhotoParser : Parser {
                      id: json["id"].int,
                      activityID: json["activity_id"].int!,
                      resourceState: json["resource_state"].resourceState!,
-                     urls: getURLs(json: json["urls"]),
+                     urls: json["urls"].imageURLs!,
                      caption: json["caption"].string!,
                      source: json["source"].photoSource,
                      uploadedAt: json["uploaded_at"].date!,
@@ -24,12 +24,5 @@ public class PhotoParser : Parser {
                      ref: json["ref"].string,
                      uid: json["uid"].string,
                      type: json["type"].string)
-    }
-    
-    private func getURLs(json : JSON) -> [String : String] {
-        let pairs = json.map { ($0, $1.string!) }
-        var urls = [String : String]()
-        pairs.forEach { urls[$0.0] = $0.1 }
-        return urls
     }
 }

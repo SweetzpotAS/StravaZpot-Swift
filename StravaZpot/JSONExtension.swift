@@ -161,4 +161,11 @@ extension JSON {
     var primaryPhoto : PrimaryPhoto? {
         return exists() ? PrimaryPhotoParser().from(json: self) : nil
     }
+    
+    var imageURLs : [String : String]? {
+        let pairs : [(String, String)] = self.map { key, value in (key, value.string!) }
+        var urls = [String : String]()
+        pairs.forEach{ urls[$0.0] = $0.1 }
+        return urls
+    }
 }

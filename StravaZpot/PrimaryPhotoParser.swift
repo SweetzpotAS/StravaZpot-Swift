@@ -14,13 +14,6 @@ public class PrimaryPhotoParser : Parser {
         return PrimaryPhoto(id: json["id"].int,
                             uniqueID: json["unique_id"].string,
                             source: json["source"].photoSource!,
-                            urls: getURLsFrom(json: json["urls"]))
-    }
-    
-    private func getURLsFrom(json : JSON) -> [String : String] {
-        let pairs : [(String, String)] = json.map { key, value in (key, value.string!) }
-        var urls = [String : String]()
-        pairs.forEach{ urls[$0.0] = $0.1 }
-        return urls
+                            urls: json["urls"].imageURLs!)
     }
 }
