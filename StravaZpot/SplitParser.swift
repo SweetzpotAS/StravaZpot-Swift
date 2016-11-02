@@ -10,11 +10,9 @@ import Foundation
 import SwiftyJSON
 
 public class SplitParser : Parser {
-    private let distanceParser = DistanceParser()
-    
     public func from(json: JSON) -> Split {
-        return Split(distance: distanceParser.from(json: json["distance"]),
-                     elevationDifference: distanceParser.from(json: json["elevation_difference"]),
+        return Split(distance: json["distance"].distance!,
+                     elevationDifference: json["elevation_difference"].distance!,
                      elapsedTime: json["elapsed_time"].time!,
                      movingTime: json["moving_time"].time!,
                      split: json["split"].int!)

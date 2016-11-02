@@ -10,12 +10,11 @@ import Foundation
 import SwiftyJSON
 
 public class StatsParser : Parser {
-    private let distanceParser = DistanceParser()
     private let totalsParser = TotalsParser()
     
     public func from(json: JSON) -> Stats {
-        return Stats(biggestRideDistance: distanceParser.from(json: json["biggest_ride_distance"]),
-                     biggestClimbElevationGain: distanceParser.from(json: json["biggest_climb_elevation_gain"]),
+        return Stats(biggestRideDistance: json["biggest_ride_distance"].distance!,
+                     biggestClimbElevationGain: json["biggest_climb_elevation_gain"].distance!,
                      recentRideTotals: totalsParser.from(json: json["recent_ride_totals"]),
                      recentRunTotals: totalsParser.from(json: json["recent_run_totals"]),
                      recentSwimTotals: totalsParser.from(json: json["recent_swim_totals"]),

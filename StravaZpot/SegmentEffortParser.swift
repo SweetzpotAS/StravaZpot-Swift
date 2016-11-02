@@ -20,7 +20,7 @@ public class SegmentEffortParser : Parser {
                              movingTime: json["moving_time"].time!,
                              startDate: json["start_date"].date!,
                              startDateLocal: json["start_date_local"].date!,
-                             distance: DistanceParser().from(json: json["distance"]),
+                             distance: json["distance"].distance!,
                              startIndex: json["start_index"].int!,
                              endIndex: json["end_index"].int!,
                              averageCadence: json["average_cadence"].double!,

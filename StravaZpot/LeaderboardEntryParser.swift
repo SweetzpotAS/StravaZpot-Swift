@@ -16,7 +16,7 @@ public class LeaderboardEntryParser : Parser {
                                 athleteGender: GenderParser().from(json: json["athlete_gender"]),
                                 averageHeartRate: json["average_hr"].double!,
                                 averageWatts: json["average_watts"].double!,
-                                distance: DistanceParser().from(json: json["distance"]),
+                                distance: json["distance"].distance!,
                                 elapsedTime: json["elapsed_time"].time!,
                                 movingTime: json["moving_time"].time!,
                                 startDate: json["start_date"].date!,

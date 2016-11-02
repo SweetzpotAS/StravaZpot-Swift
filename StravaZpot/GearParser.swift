@@ -15,7 +15,7 @@ public class GearParser : Parser {
                     resourceState: json["resource_state"].resourceState!,
                     primary: json["primary"].bool!,
                     name: json["name"].string!,
-                    distance: DistanceParser().from(json: json["distance"]),
+                    distance: json["distance"].distance!,
                     brandName: json["brand_name"].string,
                     modelName: json["model_name"].string,
                     frameType: json["frame_type"].exists() ? FrameTypeParser().from(json: json["frame_type"]) : nil,

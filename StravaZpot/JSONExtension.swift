@@ -33,4 +33,8 @@ extension JSON {
     var date : Date? {
         return exists() ? DateParser().from(json: self) : nil
     }
+    
+    var distance : Distance? {
+        return exists() ? DistanceParser().from(json: self) : nil
+    }
 }
