@@ -212,4 +212,12 @@ extension JSON {
     var power : Power? {
         return exists() ? PowerParser().from(json: self) : nil
     }
+    
+    var timedInterval : TimedInterval<Double>? {
+        return exists() ? TimedDoubleIntervalParser().from(json: self) : nil
+    }
+    
+    var timedIntervalArray : EquatableArray<TimedInterval<Double>>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.timedInterval }) : nil
+    }
 }
