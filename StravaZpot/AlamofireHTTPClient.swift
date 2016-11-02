@@ -8,11 +8,20 @@
 
 import Foundation
 import SwiftyJSON
+import Alamofire
 
 class AlamofireHTTPClient : HTTPClient {
     private let baseURL : String
     private let token : String
     private let debug : Bool
+    private var headers : HTTPHeaders {
+        get {
+            return [
+                "Authorization": token,
+                "Accept": "application/json"
+            ]
+        }
+    }
     
     init(baseURL : String, token : String, debug : Bool) {
         self.baseURL = baseURL
@@ -21,18 +30,39 @@ class AlamofireHTTPClient : HTTPClient {
     }
     
     func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
-        
+        request(url: url, method: .get, parameters: parameters, callback: callback)
     }
     
     func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
-        
+        request(url: url, method: .post, parameters: parameters, callback: callback)
     }
     
     func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
-        
+        request(url: url, method: .put, parameters: parameters, callback: callback)
     }
     
     func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+        request(url: url, method: .delete, parameters: parameters, callback: callback)
+    }
+    
+    private func request(url : String, method: HTTPMethod, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
         
+        Alamofire.request(baseURL + url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            .validate(statusCode: 200 ..< 300)
+            .responseJSON { response in
+                if(self.debug) {
+                    debugPrint(response)
+                }
+                
+                if let result = response.result.value {
+                    callback(.success(JSON(result)))
+                } else {
+                    if response.response?.statusCode == 401 {
+                        callback(.error(.unauthorized(message: "Unauthorized access. Request a new token.")))
+                    } else {
+                        callback(.error(.apiError(message: "Strava API Error")))
+                    }
+                }
+        }
     }
 }
