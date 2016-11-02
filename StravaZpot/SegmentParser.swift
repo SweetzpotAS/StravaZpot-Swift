@@ -10,16 +10,14 @@ import Foundation
 import SwiftyJSON
 
 public class SegmentParser : Parser {
-    private let percentageParser = PercentageParser()
-    
     public func from(json : JSON) -> Segment {
         return Segment(id: json["id"].int!,
                        resourceState: json["resource_state"].resourceState!,
                        name: json["name"].string!,
                        activityType: json["activity_type"].activityType,
                        distance: json["distance"].distance,
-                       averageGrade: json["average_grade"].exists() ? percentageParser.from(json: json["average_grade"]) : nil,
-                       maximumGrade: json["maximum_grade"].exists() ? percentageParser.from(json: json["maximum_grade"]) : nil,
+                       averageGrade: json["average_grade"].percentage,
+                       maximumGrade: json["maximum_grade"].percentage,
                        elevationHigh: json["elevation_high"].distance,
                        elevationLow: json["elevation_low"].distance,
                        startCoordinates: json["start_latlng"].coordinates,

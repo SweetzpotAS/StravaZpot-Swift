@@ -184,4 +184,8 @@ extension JSON {
     var segmentArray : EquatableArray<Segment>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.segment }) : nil
     }
+    
+    var percentage : Percentage? {
+        return exists() ? PercentageParser().from(json: self) : nil
+    }
 }
