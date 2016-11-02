@@ -23,7 +23,7 @@ public struct Club {
     public let isPrivate : Bool
     public let memberCount : Int
     public let isFeatured : Bool
-    public let isVerified : Bool
+    public let isVerified : Bool?
     public let url : String
     public let description : String?
     public let clubType : ClubType?

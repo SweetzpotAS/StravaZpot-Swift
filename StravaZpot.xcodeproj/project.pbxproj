@@ -95,6 +95,11 @@
 		1151B13A1DC9E5AD00AE054F /* StravaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1391DC9E5AD00AE054F /* StravaError.swift */; };
 		1151B13D1DC9E7D200AE054F /* StravaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B13C1DC9E7D200AE054F /* StravaConfig.swift */; };
 		1151B13F1DC9E85900AE054F /* AlamofireHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B13E1DC9E85900AE054F /* AlamofireHTTPClient.swift */; };
+		1151B1421DC9F0F200AE054F /* AthleteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1411DC9F0F200AE054F /* AthleteAPI.swift */; };
+		1151B1451DC9F15800AE054F /* GetCurrentAthleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1441DC9F15800AE054F /* GetCurrentAthleteRequest.swift */; };
+		1151B1481DC9F2D600AE054F /* AthleteAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */; };
+		1151B14B1DC9F2F100AE054F /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B14A1DC9F2F100AE054F /* MockHTTPClient.swift */; };
+		1151B14E1DC9F63A00AE054F /* StravaResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B14D1DC9F63A00AE054F /* StravaResultMatchers.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -296,6 +301,11 @@
 		1151B1391DC9E5AD00AE054F /* StravaError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaError.swift; sourceTree = "<group>"; };
 		1151B13C1DC9E7D200AE054F /* StravaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaConfig.swift; sourceTree = "<group>"; };
 		1151B13E1DC9E85900AE054F /* AlamofireHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClient.swift; sourceTree = "<group>"; };
+		1151B1411DC9F0F200AE054F /* AthleteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteAPI.swift; sourceTree = "<group>"; };
+		1151B1441DC9F15800AE054F /* GetCurrentAthleteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentAthleteRequest.swift; sourceTree = "<group>"; };
+		1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteAPITest.swift; sourceTree = "<group>"; };
+		1151B14A1DC9F2F100AE054F /* MockHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
+		1151B14D1DC9F63A00AE054F /* StravaResultMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaResultMatchers.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -447,9 +457,43 @@
 		1151B13B1DC9E7BA00AE054F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				1151B1401DC9F0CC00AE054F /* Athlete */,
 				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		1151B1401DC9F0CC00AE054F /* Athlete */ = {
+			isa = PBXGroup;
+			children = (
+				1151B1411DC9F0F200AE054F /* AthleteAPI.swift */,
+				1151B1441DC9F15800AE054F /* GetCurrentAthleteRequest.swift */,
+			);
+			name = Athlete;
+			sourceTree = "<group>";
+		};
+		1151B1461DC9F2C200AE054F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		1151B1491DC9F2E300AE054F /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				1151B14A1DC9F2F100AE054F /* MockHTTPClient.swift */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		1151B14C1DC9F5D200AE054F /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				1151B14D1DC9F63A00AE054F /* StravaResultMatchers.swift */,
+			);
+			name = Matchers;
 			sourceTree = "<group>";
 		};
 		11A6A93B1DBE44B4003E5302 = {
@@ -489,6 +533,9 @@
 		11A6A9521DBE44B4003E5302 /* StravaZpotTests */ = {
 			isa = PBXGroup;
 			children = (
+				1151B14C1DC9F5D200AE054F /* Matchers */,
+				1151B1491DC9F2E300AE054F /* HTTP */,
+				1151B1461DC9F2C200AE054F /* API */,
 				11FB66CB1DC35661006FF63E /* StravaZpotTests-Bridging-Header.h */,
 				11FB66CA1DC35649006FF63E /* Parsers */,
 				11A6A9551DBE44B4003E5302 /* Info.plist */,
@@ -955,6 +1002,7 @@
 				11FB66C41DC34612006FF63E /* SegmentEffort.swift in Sources */,
 				11EFB31C1DC742130096AD9B /* SplitParser.swift in Sources */,
 				11A6A9791DBE56E0003E5302 /* Map.swift in Sources */,
+				1151B1451DC9F15800AE054F /* GetCurrentAthleteRequest.swift in Sources */,
 				1151B12D1DC9D92C00AE054F /* RouteParser.swift in Sources */,
 				110683111DC773F600A08026 /* StreamTypeParser.swift in Sources */,
 				11DADB5B1DBF6F5500194349 /* Membership.swift in Sources */,
@@ -1014,6 +1062,7 @@
 				1106830D1DC7730300A08026 /* SeriesTypeParser.swift in Sources */,
 				110682DD1DC7640500A08026 /* SkillLevelParser.swift in Sources */,
 				110682D51DC7625000A08026 /* ClubTypeParser.swift in Sources */,
+				1151B1421DC9F0F200AE054F /* AthleteAPI.swift in Sources */,
 				11FB66D91DC35E08006FF63E /* IntervalParser.swift in Sources */,
 				11EFB2F41DC737E60096AD9B /* ResourceStateParser.swift in Sources */,
 				11EFB3201DC744820096AD9B /* PrimaryPhotoParser.swift in Sources */,
@@ -1058,6 +1107,7 @@
 				11EFB31A1DC7413E0096AD9B /* WorkoutTypeParserTest.swift in Sources */,
 				110682E31DC7652100A08026 /* SportTypeParserTest.swift in Sources */,
 				110682CF1DC75C9900A08026 /* TotalsParserTest.swift in Sources */,
+				1151B14B1DC9F2F100AE054F /* MockHTTPClient.swift in Sources */,
 				110683221DC7AE6400A08026 /* LeaderboardEntryParserTest.swift in Sources */,
 				1151B1231DC8B5A600AE054F /* CommentParserTest.swift in Sources */,
 				110682B71DC7503000A08026 /* AthleteTypeParserTest.swift in Sources */,
@@ -1080,6 +1130,7 @@
 				110682CB1DC756F600A08026 /* ZonesParserTest.swift in Sources */,
 				110682EB1DC7684C00A08026 /* JoinResultParserTest.swift in Sources */,
 				11EFB30E1DC73E760096AD9B /* AchievementParserTest.swift in Sources */,
+				1151B1481DC9F2D600AE054F /* AthleteAPITest.swift in Sources */,
 				1151B12F1DC9DA7F00AE054F /* RouteParserTest.swift in Sources */,
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
 				110683261DC7B09E00A08026 /* LeaderboardParserTest.swift in Sources */,
@@ -1094,6 +1145,7 @@
 				1106830B1DC7728000A08026 /* ResolutionParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
 				110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */,
+				1151B14E1DC9F63A00AE054F /* StravaResultMatchers.swift in Sources */,
 				110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */,
 				110682E71DC765E900A08026 /* TerrainParserTest.swift in Sources */,
 				1151B1331DC9DFCE00AE054F /* SegmentEffortParserTest.swift in Sources */,

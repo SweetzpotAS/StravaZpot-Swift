@@ -25,7 +25,7 @@ public class ClubParser : Parser {
                     isPrivate: json["private"].bool!,
                     memberCount: json["member_count"].int!,
                     isFeatured: json["featured"].bool!,
-                    isVerified: json["verified"].bool!,
+                    isVerified: json["verified"].bool,
                     url: json["url"].string!,
                     description: json["description"].string,
                     clubType: json["club_type"].exists() ? ClubTypeParser().from(json: json["club_type"]) : nil,
