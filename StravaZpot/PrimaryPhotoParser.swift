@@ -13,7 +13,7 @@ public class PrimaryPhotoParser : Parser {
     public func from(json: JSON) -> PrimaryPhoto {
         return PrimaryPhoto(id: json["id"].int,
                             uniqueID: json["unique_id"].string,
-                            source: PhotoSourceParser().from(json: json["source"]),
+                            source: json["source"].photoSource!,
                             urls: getURLsFrom(json: json["urls"]))
     }
     

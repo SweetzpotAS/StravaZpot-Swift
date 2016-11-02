@@ -153,4 +153,8 @@ extension JSON {
     var leaderboardEntryArray : EquatableArray<LeaderboardEntry>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.leaderboardEntry }) : nil
     }
+    
+    var photoSource : PhotoSource? {
+        return exists() ? PhotoSourceParser().from(json: self) : nil
+    }
 }

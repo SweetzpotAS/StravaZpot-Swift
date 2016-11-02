@@ -17,7 +17,7 @@ public class PhotoParser : Parser {
                      resourceState: json["resource_state"].resourceState!,
                      urls: getURLs(json: json["urls"]),
                      caption: json["caption"].string!,
-                     source: json["source"].exists() ? PhotoSourceParser().from(json: json["source"]) : nil,
+                     source: json["source"].photoSource,
                      uploadedAt: json["uploaded_at"].date!,
                      createdAt: json["created_at"].date!,
                      location: json["location"].coordinates,
