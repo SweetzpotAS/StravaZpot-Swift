@@ -24,11 +24,7 @@ public class EventParser : Parser {
                      isPrivate: json["private"].bool!,
                      skillLevel: json["skill_levels"].skillLevel!,
                      terrain: json["terrain"].terrain!,
-                     upcomingOccurrences: getDates(json: json["upcoming_occurrences"]),
+                     upcomingOccurrences: json["upcoming_occurrences"].dateArray!,
                      address: json["address"].string!)
-    }
-    
-    private func getDates(json : JSON) -> EquatableArray<Date> {
-        return EquatableArray<Date>(array: json.map { $1.date! })
     }
 }

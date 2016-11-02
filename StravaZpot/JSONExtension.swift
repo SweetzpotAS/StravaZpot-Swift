@@ -34,6 +34,10 @@ extension JSON {
         return exists() ? DateParser().from(json: self) : nil
     }
     
+    var dateArray : EquatableArray<Date>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.date }) : nil
+    }
+    
     var distance : Distance? {
         return exists() ? DistanceParser().from(json: self) : nil
     }
@@ -125,4 +129,5 @@ extension JSON {
     var terrain : Terrain? {
         return exists() ? TerrainParser().from(json: self) : nil
     }
+    
 }
