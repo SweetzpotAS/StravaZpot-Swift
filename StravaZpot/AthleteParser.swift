@@ -42,8 +42,7 @@ public class AthleteParser : Parser {
     
     private func getClubs(json : JSON) -> EquatableArray<Club>? {
         if json.exists() {
-            let clubParser = ClubParser()
-            return EquatableArray<Club>(array: json.map { clubParser.from(json: $1) })
+            return EquatableArray<Club>(array: json.map { $1.club! })
         } else {
             return nil
         }

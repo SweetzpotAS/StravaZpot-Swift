@@ -93,4 +93,8 @@ extension JSON {
     var measurementPreference : MeasurementPreference? {
         return exists() ? MeasurementPreferenceParser().from(json: self) : nil
     }
+    
+    var club : Club? {
+        return exists() ? ClubParser().from(json: self) : nil
+    }
 }
