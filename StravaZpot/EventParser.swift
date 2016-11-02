@@ -18,7 +18,7 @@ public class EventParser : Parser {
                      clubID: json["club_id"].int!,
                      organizingAthlete: json["organizing_athlete"].athlete!,
                      activityType: ActivityTypeParser().from(json: json["activity_type"]),
-                     createdAt: DateParser().from(json: json["created_at"]),
+                     createdAt: json["created_at"].date!,
                      routeID: json["route_id"].int!,
                      isWomanOnly: json["women_only"].bool!,
                      isPrivate: json["private"].bool!,
@@ -29,7 +29,6 @@ public class EventParser : Parser {
     }
     
     private func getDates(json : JSON) -> EquatableArray<Date> {
-        let dateParser = DateParser()
-        return EquatableArray<Date>(array: json.map { dateParser.from(json: $1) })
+        return EquatableArray<Date>(array: json.map { $1.date! })
     }
 }

@@ -13,7 +13,6 @@ public class SegmentParser : Parser {
     private let distanceParser = DistanceParser()
     private let percentageParser = PercentageParser()
     private let coordinatesParser = CoordinatesParser()
-    private let dateParser = DateParser()
     
     public func from(json : JSON) -> Segment {
         return Segment(id: json["id"].int!,
@@ -34,8 +33,8 @@ public class SegmentParser : Parser {
                        isPrivate: json["private"].bool,
                        isStarred: json["starred"].bool,
                        isHazardous: json["hazardous"].bool,
-                       createdAt: !json["created_at"].exists() ? nil : dateParser.from(json: json["created_at"]),
-                       updatedAt: !json["updated_at"].exists() ? nil : dateParser.from(json: json["updated_at"]),
+                       createdAt: json["created_at"].date,
+                       updatedAt: json["updated_at"].date,
                        totalElevationGain: !json["total_elevation_gain"].exists() ? nil : distanceParser.from(json: json["total_elevation_gain"]),
                        map: !json["map"].exists() ? nil : MapParser().from(json: json["map"]),
                        effortCount: json["effort_count"].int,

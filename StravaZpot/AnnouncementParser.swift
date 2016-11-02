@@ -15,7 +15,7 @@ public class AnnouncementParser : Parser {
                             resourceState: json["resource_state"].resourceState!,
                             clubID: json["club_id"].int!,
                             athlete: json["athlete"].athlete!,
-                            createdAt: DateParser().from(json: json["created_at"]),
+                            createdAt: json["created_at"].date!,
                             message: json["message"].string!)
     }
 }

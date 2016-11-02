@@ -29,4 +29,8 @@ extension JSON {
     var time : Time? {
         return exists() ? TimeParser().from(json: self) : nil
     }
+    
+    var date : Date? {
+        return exists() ? DateParser().from(json: self) : nil
+    }
 }
