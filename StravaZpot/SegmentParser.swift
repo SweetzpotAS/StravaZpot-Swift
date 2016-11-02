@@ -17,7 +17,7 @@ public class SegmentParser : Parser {
         return Segment(id: json["id"].int!,
                        resourceState: json["resource_state"].resourceState!,
                        name: json["name"].string!,
-                       activityType: json["activity_type"].exists() ? ActivityTypeParser().from(json: json["activity_type"]) : nil,
+                       activityType: json["activity_type"].activityType,
                        distance: json["distance"].distance,
                        averageGrade: json["average_grade"].exists() ? percentageParser.from(json: json["average_grade"]) : nil,
                        maximumGrade: json["maximum_grade"].exists() ? percentageParser.from(json: json["maximum_grade"]) : nil,

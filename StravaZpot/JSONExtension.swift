@@ -41,4 +41,8 @@ extension JSON {
     var speed : Speed? {
         return exists() ? SpeedParser().from(json: self) : nil
     }
+    
+    var activityType : ActivityType? {
+        return exists() ? ActivityTypeParser().from(json: self) : nil
+    }
 }

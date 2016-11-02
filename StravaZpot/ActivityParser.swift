@@ -24,7 +24,7 @@ public class ActivityParser : Parser {
                         totalElevationGain: json["total_elevation_gain"].distance,
                         elevationHigh: json["elev_high"].distance,
                         elevationLow: json["elev_low"].distance,
-                        type: json["type"].exists() ? ActivityTypeParser().from(json: json["type"]) : nil,
+                        type: json["type"].activityType,
                         startDate: json["start_date"].date,
                         startDateLocal: json["start_date_local"].date,
                         timezone: json["timezone"].string,
