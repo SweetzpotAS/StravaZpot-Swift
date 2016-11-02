@@ -145,4 +145,12 @@ extension JSON {
     var membership : Membership? {
         return exists() ? MembershipParser().from(json: self) : nil
     }
+    
+    var leaderboardEntry : LeaderboardEntry? {
+        return exists() ? LeaderboardEntryParser().from(json: self) : nil
+    }
+    
+    var leaderboardEntryArray : EquatableArray<LeaderboardEntry>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.leaderboardEntry }) : nil
+    }
 }
