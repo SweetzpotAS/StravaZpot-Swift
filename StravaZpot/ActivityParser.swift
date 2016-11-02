@@ -79,6 +79,11 @@ public class ActivityParser : Parser {
     }
     
     private func getEfforts(json : JSON) -> EquatableArray<SegmentEffort>? {
-        return nil
+        if json.exists() {
+            let parser = SegmentEffortParser()
+            return EquatableArray<SegmentEffort>(array: json.map { parser.from(json: $1) } )
+        } else {
+            return nil
+        }
     }
 }
