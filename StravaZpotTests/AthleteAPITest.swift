@@ -36,6 +36,24 @@ class AthleteAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldUpdateCurrentAthleteWithGivenValues() {
+        let client = MockHTTPClient(respondWithJSON: ATHLETE_JSON)
+        let api = AthleteAPI(client: client)
+        
+        var result : StravaResult<Athlete, StravaError>?
+        api.updateCurrentAthlete(withCity: "Irvine", withState: "California", withCountry: "USA", withSex: .male, withWeight: 85.6).execute { result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athlete"))
+        expect(client.putCalled).to(equal(true))
+        expect(client.lastParameters["city"] as! String?).to(equal("Irvine"))
+        expect(client.lastParameters["state"] as! String?).to(equal("California"))
+        expect(client.lastParameters["country"] as! String?).to(equal("USA"))
+        expect(client.lastParameters["sex"] as! String?).to(equal("M"))
+        expect(client.lastParameters["weight"] as! Double?).to(equal(85.6))
+        print(client.lastParameters)
+    }
+    
     let ATHLETE_JSON = "{" +
         "  \"id\": 227615," +
         "  \"resource_state\": 3," +
