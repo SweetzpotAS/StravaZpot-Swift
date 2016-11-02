@@ -10,19 +10,17 @@ import Foundation
 import SwiftyJSON
 
 public class StatsParser : Parser {
-    private let totalsParser = TotalsParser()
-    
     public func from(json: JSON) -> Stats {
         return Stats(biggestRideDistance: json["biggest_ride_distance"].distance!,
                      biggestClimbElevationGain: json["biggest_climb_elevation_gain"].distance!,
-                     recentRideTotals: totalsParser.from(json: json["recent_ride_totals"]),
-                     recentRunTotals: totalsParser.from(json: json["recent_run_totals"]),
-                     recentSwimTotals: totalsParser.from(json: json["recent_swim_totals"]),
-                     yearToDateRideTotals: totalsParser.from(json: json["ytd_ride_totals"]),
-                     yearToDateRunTotals: totalsParser.from(json: json["ytd_run_totals"]),
-                     yearToDateSwimTotals: totalsParser.from(json: json["ytd_swim_totals"]),
-                     allRideTotals: totalsParser.from(json: json["all_ride_totals"]),
-                     allRunTotals: totalsParser.from(json: json["all_run_totals"]),
-                     allSwimTotals: totalsParser.from(json: json["all_swim_totals"]))
+                     recentRideTotals: json["recent_ride_totals"].totals!,
+                     recentRunTotals: json["recent_run_totals"].totals!,
+                     recentSwimTotals: json["recent_swim_totals"].totals!,
+                     yearToDateRideTotals: json["ytd_ride_totals"].totals!,
+                     yearToDateRunTotals: json["ytd_run_totals"].totals!,
+                     yearToDateSwimTotals: json["ytd_swim_totals"].totals!,
+                     allRideTotals: json["all_ride_totals"].totals!,
+                     allRunTotals: json["all_run_totals"].totals!,
+                     allSwimTotals: json["all_swim_totals"].totals!)
     }
 }

@@ -188,4 +188,8 @@ extension JSON {
     var percentage : Percentage? {
         return exists() ? PercentageParser().from(json: self) : nil
     }
+    
+    var totals : Totals? {
+        return exists() ? TotalsParser().from(json: self) : nil
+    }
 }
