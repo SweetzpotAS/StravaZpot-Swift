@@ -65,4 +65,8 @@ extension JSON {
     var gear : Gear? {
         return exists() ? GearParser().from(json: self) : nil
     }
+    
+    var temperature : Temperature? {
+        return exists() ? TemperatureParser().from(json: self) : nil
+    }
 }

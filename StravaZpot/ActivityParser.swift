@@ -51,7 +51,7 @@ public class ActivityParser : Parser {
                         averageSpeed: json["average_speed"].speed,
                         maxSpeed: json["max_speed"].speed,
                         averageCadence: json["average_cadence"].double,
-                        averageTemperature: json["average_temperature"].exists() ? TemperatureParser().from(json: json["average_temperature"]) : nil,
+                        averageTemperature: json["average_temperature"].temperature,
                         averageWatts: json["average_watts"].double,
                         maxWatts: json["max_watts"].double,
                         weightedAverageWatts: json["weighted_average_watts"].double,
