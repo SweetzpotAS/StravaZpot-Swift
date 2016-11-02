@@ -20,6 +20,8 @@ class AthleteAPITest: XCTestCase {
         api.retrieveCurrentAthlete().execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athlete"))
+        expect(client.getCalled).to(equal(true))
     }
     
     let ATHLETE_JSON = "{" +
