@@ -14,7 +14,7 @@ public class PhotoParser : Parser {
         return Photo(uniqueID: json["unique_id"].string,
                      id: json["id"].int,
                      activityID: json["activity_id"].int!,
-                     resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                     resourceState: json["resource_state"].resourceState!,
                      urls: getURLs(json: json["urls"]),
                      caption: json["caption"].string!,
                      source: json["source"].exists() ? PhotoSourceParser().from(json: json["source"]) : nil,

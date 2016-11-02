@@ -12,7 +12,7 @@ import SwiftyJSON
 public class MapParser : Parser {
     public func from(json: JSON) -> Map {
         return Map(id: json["id"].string!,
-                   resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                   resourceState: json["resource_state"].resourceState,
                    summaryPolyline: json["summary_polyline"].string!)
     }
 }

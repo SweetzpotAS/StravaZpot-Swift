@@ -12,7 +12,7 @@ import SwiftyJSON
 public class CommentParser : Parser {
     public func from(json: JSON) -> Comment {
         return Comment(id: json["id"].int!,
-                       resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                       resourceState: json["resource_state"].resourceState,
                        activityID: json["activity_id"].int!,
                        text: json["text"].string!,
                        athlete: AthleteParser().from(json: json["athlete"]),

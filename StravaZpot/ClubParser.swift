@@ -12,7 +12,7 @@ import SwiftyJSON
 public class ClubParser : Parser {
     public func from(json: JSON) -> Club {
         return Club(id: json["id"].int!,
-                    resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                    resourceState: json["resource_state"].resourceState!,
                     name: json["name"].string!,
                     profileMedium: json["profile_medium"].string!,
                     profile: json["profile"].string!,

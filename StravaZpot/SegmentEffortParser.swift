@@ -12,7 +12,7 @@ import SwiftyJSON
 public class SegmentEffortParser : Parser {
     public func from(json: JSON) -> SegmentEffort {
         return SegmentEffort(id: json["id"].int64!,
-                             resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                             resourceState: json["resource_state"].resourceState,
                              name: json["name"].string!,
                              activity: ActivityParser().from(json: json["activity"]),
                              athlete: AthleteParser().from(json: json["athlete"]),

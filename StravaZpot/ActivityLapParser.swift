@@ -12,7 +12,7 @@ import SwiftyJSON
 public class ActivityLapParser : Parser {
     public func from(json: JSON) -> ActivityLap {
         return ActivityLap(id: json["id"].int!,
-                           resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                           resourceState: json["resource_state"].resourceState!,
                            name: json["name"].string!,
                            activity: ActivityParser().from(json: json["activity"]),
                            athlete: AthleteParser().from(json: json["athlete"]),

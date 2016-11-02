@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class ActivityZoneParser : Parser {
     public func from(json: JSON) -> ActivityZone {
-        return ActivityZone(resourceState: ResourceStateParser().from(json: json["resource_state"]),
+        return ActivityZone(resourceState: json["resource_state"].resourceState!,
                             distributionBuckets: getBuckets(json: json["distribution_buckets"]),
                             type: json["type"].string!,
                             sensorBased: json["sensor_based"].bool!,

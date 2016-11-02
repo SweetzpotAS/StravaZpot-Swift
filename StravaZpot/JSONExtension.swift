@@ -13,4 +13,8 @@ extension JSON {
     var achievementType : AchievementType? {
         return exists() ? AchievementTypeParser().from(json: self) : nil
     }
+    
+    var resourceState : ResourceState? {
+        return exists() ? ResourceStateParser().from(json: self) : ResourceState.meta
+    }
 }

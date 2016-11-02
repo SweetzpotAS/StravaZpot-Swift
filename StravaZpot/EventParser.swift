@@ -12,7 +12,7 @@ import SwiftyJSON
 public class EventParser : Parser {
     public func from(json: JSON) -> Event {
         return Event(id: json["id"].int!,
-                     resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                     resourceState: json["resource_state"].resourceState!,
                      title: json["title"].string!,
                      description: json["description"].string!,
                      clubID: json["club_id"].int!,

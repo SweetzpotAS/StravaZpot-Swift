@@ -12,7 +12,7 @@ import SwiftyJSON
 public class RouteParser : Parser {
     public func from(json: JSON) -> Route {
         return Route(id: json["id"].int!,
-                     resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                     resourceState: json["resource_state"].resourceState!,
                      name: json["name"].string!,
                      description: json["description"].string!,
                      athlete: AthleteParser().from(json: json["athlete"]),

@@ -12,7 +12,7 @@ import SwiftyJSON
 public class ActivityParser : Parser {
     public func from(json: JSON) -> Activity {
         return Activity(id: json["id"].int!,
-                        resourceState: json["resource_state"].exists() ? ResourceStateParser().from(json: json["resource_state"]) : ResourceState.meta,
+                        resourceState: json["resource_state"].resourceState!,
                         externalID: json["external_id"].string,
                         uploadID: json["upload_id"].int,
                         athlete: json["athlete"].exists() ? AthleteParser().from(json: json["athlete"]) : nil,
