@@ -12,7 +12,7 @@ import SwiftyJSON
 public class AthleteParser : Parser {
     public func from(json: JSON) -> Athlete {
         return Athlete(id: json["id"].int!,
-                       resourceState: ResourceStateParser().from(json: json["resource_state"]),
+                       resourceState: json["resource_state"].exists() ? ResourceStateParser().from(json: json["resource_state"]) : ResourceState.meta,
                        firstName: json["firstname"].string,
                        lastName: json["lastname"].string,
                        profileMedium: json["profile_medium"].string,

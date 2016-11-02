@@ -84,6 +84,8 @@
 		1151B1231DC8B5A600AE054F /* CommentParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1221DC8B5A600AE054F /* CommentParserTest.swift */; };
 		1151B1251DC8B6C900AE054F /* ActivityParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1241DC8B6C900AE054F /* ActivityParser.swift */; };
 		1151B1271DC8BB6F00AE054F /* ActivityParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */; };
+		1151B1291DC8D1A700AE054F /* ActivityLapParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */; };
+		1151B12B1DC8D2F900AE054F /* ActivityLapParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -274,6 +276,8 @@
 		1151B1221DC8B5A600AE054F /* CommentParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentParserTest.swift; sourceTree = "<group>"; };
 		1151B1241DC8B6C900AE054F /* ActivityParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityParser.swift; sourceTree = "<group>"; };
 		1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityParserTest.swift; sourceTree = "<group>"; };
+		1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLapParser.swift; sourceTree = "<group>"; };
+		1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLapParserTest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -580,6 +584,7 @@
 				1151B11C1DC8B1CE00AE054F /* ActivityZoneParser.swift */,
 				1151B1201DC8B51400AE054F /* CommentParser.swift */,
 				1151B1241DC8B6C900AE054F /* ActivityParser.swift */,
+				1151B1281DC8D1A700AE054F /* ActivityLapParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				1151B11E1DC8B34F00AE054F /* ActivityZoneParserTest.swift */,
 				1151B1221DC8B5A600AE054F /* CommentParserTest.swift */,
 				1151B1261DC8BB6F00AE054F /* ActivityParserTest.swift */,
+				1151B12A1DC8D2F900AE054F /* ActivityLapParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -879,6 +885,7 @@
 				11DADB3D1DBF561B00194349 /* Leaderboard.swift in Sources */,
 				11EFB2FC1DC739CC0096AD9B /* TemperatureParser.swift in Sources */,
 				110682E51DC765B300A08026 /* TerrainParser.swift in Sources */,
+				1151B1291DC8D1A700AE054F /* ActivityLapParser.swift in Sources */,
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
 				1151B10D1DC8924300AE054F /* AthleteParser.swift in Sources */,
 				1151B1151DC8AB0600AE054F /* EventParser.swift in Sources */,
@@ -1011,6 +1018,7 @@
 				110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */,
 				110682DF1DC7644300A08026 /* SkillLevelParserTest.swift in Sources */,
 				110682FB1DC76D7D00A08026 /* RouteTypeParserTest.swift in Sources */,
+				1151B12B1DC8D2F900AE054F /* ActivityLapParserTest.swift in Sources */,
 				1106830F1DC7733600A08026 /* SeriesTypeParserTest.swift in Sources */,
 				1106831D1DC7AB7B00A08026 /* DateParserTest.swift in Sources */,
 				110682FF1DC76E5B00A08026 /* RouteSubtypeParserTest.swift in Sources */,
