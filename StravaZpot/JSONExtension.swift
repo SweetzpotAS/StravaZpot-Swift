@@ -172,4 +172,8 @@ extension JSON {
     var routeType : RouteType? {
         return exists() ? RouteTypeParser().from(json: self) : nil
     }
+    
+    var routeSubtype : RouteSubtype? {
+        return exists() ? RouteSubtypeParser().from(json: self) : nil
+    }
 }
