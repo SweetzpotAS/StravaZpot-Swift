@@ -61,4 +61,8 @@ extension JSON {
     var workoutType : WorkoutType? {
         return exists() ? WorkoutTypeParser().from(json: self) : nil
     }
+    
+    var gear : Gear? {
+        return exists() ? GearParser().from(json: self) : nil
+    }
 }

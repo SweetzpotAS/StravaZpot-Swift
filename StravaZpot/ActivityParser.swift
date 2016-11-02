@@ -47,7 +47,7 @@ public class ActivityParser : Parser {
                         isFlagged: json["flagged"].bool,
                         workoutType: json["workout_type"].workoutType,
                         gearID: json["gear_id"].string,
-                        gear: json["gear"].exists() ? GearParser().from(json: json["gear"]) : nil,
+                        gear: json["gear"].gear,
                         averageSpeed: json["average_speed"].speed,
                         maxSpeed: json["max_speed"].speed,
                         averageCadence: json["average_cadence"].double,

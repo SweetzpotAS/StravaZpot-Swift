@@ -51,8 +51,7 @@ public class AthleteParser : Parser {
     
     private func getGear(json : JSON) -> EquatableArray<Gear>? {
         if json.exists() {
-            let gearParser = GearParser()
-            return EquatableArray<Gear>(array: json.map { gearParser.from(json: $1) })
+            return EquatableArray<Gear>(array: json.map { $1.gear! })
         } else {
             return nil
         }
