@@ -29,7 +29,7 @@ public class ClubParser : Parser {
                     url: json["url"].string!,
                     description: json["description"].string,
                     clubType: json["club_type"].clubType,
-                    membership: json["membership"].exists() ? MembershipParser().from(json: json["membership"]) : nil,
+                    membership: json["membership"].membership,
                     isAdmin: json["admin"].bool,
                     isOwner: json["owner"].bool,
                     followingCount: json["following_count"].int)

@@ -141,4 +141,8 @@ extension JSON {
     var intervalArray : EquatableArray<Interval<Double>>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.interval }) : nil
     }
+    
+    var membership : Membership? {
+        return exists() ? MembershipParser().from(json: self) : nil
+    }
 }

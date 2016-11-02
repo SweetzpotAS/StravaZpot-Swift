@@ -13,6 +13,6 @@ public class JoinResultParser : Parser {
     public func from(json: JSON) -> JoinResult {
         return JoinResult(success: json["success"].bool!,
                           active: json["active"].bool!,
-                          membership: MembershipParser().from(json: json["membership"]))
+                          membership: json["membership"].membership!)
     }
 }
