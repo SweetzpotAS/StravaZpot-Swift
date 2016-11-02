@@ -29,7 +29,7 @@ public struct SegmentEffort {
     public let segment : Segment
     public let komRank : Int?
     public let prRank : Int?
-    public let isHidden : Bool
+    public let isHidden : Bool?
 }
 
 extension SegmentEffort : Equatable {}
