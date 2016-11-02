@@ -204,4 +204,8 @@ extension JSON {
     var resolution : Resolution? {
         return exists() ? ResolutionParser().from(json: self) : nil
     }
+    
+    var heartRate : HeartRate? {
+        return exists() ? HeartRateParser().from(json: self) : nil
+    }
 }
