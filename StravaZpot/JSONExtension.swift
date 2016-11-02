@@ -1,0 +1,16 @@
+//
+//  JSONExtension.swift
+//  StravaZpot
+//
+//  Created by Tomás Ruiz López on 2/11/16.
+//  Copyright © 2016 SweetZpot AS. All rights reserved.
+//
+
+import Foundation
+import SwiftyJSON
+
+extension JSON {
+    var achievementType : AchievementType? {
+        return exists() ? AchievementTypeParser().from(json: self) : nil
+    }
+}
