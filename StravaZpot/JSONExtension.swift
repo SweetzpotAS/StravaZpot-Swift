@@ -130,4 +130,7 @@ extension JSON {
         return exists() ? TerrainParser().from(json: self) : nil
     }
     
+    var frameType : FrameType? {
+        return exists() ? FrameTypeParser().from(json: self) : nil
+    }
 }
