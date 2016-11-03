@@ -33,6 +33,19 @@ class ActivityAPITest: XCTestCase {
         expect(client.lastParameters["commute"] as! Bool?).to(equal(false))
     }
     
+    func testShouldRetrieveActivity() {
+        let client = MockHTTPClient(respondWithJSON: ACTIVITY_JSON)
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<Activity, StravaError>?
+        api.retrieveActivity(withID: 321934, includeAllEfforts: true).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("activities/321934"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["include_all_efforts"] as! Bool?).to(equal(true))
+    }
+    
     let ACTIVITY_JSON = "{" +
         "  \"id\": 321934," +
         "  \"resource_state\": 3," +
