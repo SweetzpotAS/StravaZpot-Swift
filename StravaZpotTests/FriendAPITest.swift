@@ -31,7 +31,7 @@ class FriendAPITest: XCTestCase {
         let api = FriendAPI(client: client)
         
         var result : StravaResult<EquatableArray<Athlete>, StravaError>?
-        api.listAhtleteFriends(withID: 227615).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
+        api.listAthleteFriends(withID: 227615).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())
         expect(client.lastUrl).to(contain("athletes/227615/friends"))
@@ -54,6 +54,18 @@ class FriendAPITest: XCTestCase {
         expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
     }
     
-    
+    func testShouldListAthleteFollowers() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = FriendAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Athlete>, StravaError>?
+        api.listAthleteFollowers(withID: 227615).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athletes/227615/followers"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["page"] as! Int?).to(equal(2))
+        expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
+    }
     
 }
