@@ -21,3 +21,10 @@ extension Dictionary {
         return dict
     }
 }
+
+func +<T>(_ lhs : [T : Any], _ rhs : [T : Any]) -> [T : Any] {
+    var result = [T : Any]()
+    lhs.forEach{ result[$0.key] = $0.value }
+    rhs.forEach{ result[$0.key] = $0.value }
+    return result.flatten()
+}
