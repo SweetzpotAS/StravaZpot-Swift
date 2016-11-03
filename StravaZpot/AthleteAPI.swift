@@ -30,4 +30,8 @@ public class AthleteAPI {
     public func getAthleteZones() -> GetAthleteZonesRequest {
         return GetAthleteZonesRequest(client: client)
     }
+    
+    public func getTotalsAndStats(withID id : Int) -> GetTotalsAndStatsRequest {
+        return GetTotalsAndStatsRequest(client: client, id: id)
+    }
 }
