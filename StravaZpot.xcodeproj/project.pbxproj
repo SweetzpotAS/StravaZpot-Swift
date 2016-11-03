@@ -109,6 +109,9 @@
 		118668E71DCB329E006D5275 /* GetTotalsAndStatsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668E61DCB329E006D5275 /* GetTotalsAndStatsRequest.swift */; };
 		118668E91DCB3734006D5275 /* ListAthleteKOMSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668E81DCB3734006D5275 /* ListAthleteKOMSRequest.swift */; };
 		118668EC1DCB385D006D5275 /* PaginatedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668EB1DCB385D006D5275 /* PaginatedRequest.swift */; };
+		118668EF1DCB3B5F006D5275 /* FriendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668EE1DCB3B5F006D5275 /* FriendAPI.swift */; };
+		118668F11DCB3BCE006D5275 /* ListMyFriendsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */; };
+		118668F31DCB3DD2006D5275 /* FriendAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668F21DCB3DD2006D5275 /* FriendAPITest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -324,6 +327,9 @@
 		118668E61DCB329E006D5275 /* GetTotalsAndStatsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTotalsAndStatsRequest.swift; sourceTree = "<group>"; };
 		118668E81DCB3734006D5275 /* ListAthleteKOMSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAthleteKOMSRequest.swift; sourceTree = "<group>"; };
 		118668EB1DCB385D006D5275 /* PaginatedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedRequest.swift; sourceTree = "<group>"; };
+		118668EE1DCB3B5F006D5275 /* FriendAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAPI.swift; sourceTree = "<group>"; };
+		118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMyFriendsRequest.swift; sourceTree = "<group>"; };
+		118668F21DCB3DD2006D5275 /* FriendAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAPITest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -478,8 +484,9 @@
 		1151B13B1DC9E7BA00AE054F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				118668EA1DCB3851006D5275 /* Common */,
 				1151B1401DC9F0CC00AE054F /* Athlete */,
+				118668EA1DCB3851006D5275 /* Common */,
+				118668ED1DCB3B46006D5275 /* Friend */,
 				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
 			);
 			name = API;
@@ -489,12 +496,12 @@
 			isa = PBXGroup;
 			children = (
 				1151B1411DC9F0F200AE054F /* AthleteAPI.swift */,
-				1151B1441DC9F15800AE054F /* GetCurrentAthleteRequest.swift */,
-				118668DA1DCA473E006D5275 /* RetrieveAthleteRequest.swift */,
-				118668DC1DCA49EE006D5275 /* UpdateAthleteRequest.swift */,
 				118668E41DCB2FD9006D5275 /* GetAthleteZonesRequest.swift */,
+				1151B1441DC9F15800AE054F /* GetCurrentAthleteRequest.swift */,
 				118668E61DCB329E006D5275 /* GetTotalsAndStatsRequest.swift */,
 				118668E81DCB3734006D5275 /* ListAthleteKOMSRequest.swift */,
+				118668DA1DCA473E006D5275 /* RetrieveAthleteRequest.swift */,
+				118668DC1DCA49EE006D5275 /* UpdateAthleteRequest.swift */,
 			);
 			name = Athlete;
 			sourceTree = "<group>";
@@ -503,6 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */,
+				118668F21DCB3DD2006D5275 /* FriendAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -529,6 +537,15 @@
 				118668EB1DCB385D006D5275 /* PaginatedRequest.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		118668ED1DCB3B46006D5275 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				118668EE1DCB3B5F006D5275 /* FriendAPI.swift */,
+				118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */,
+			);
+			name = Friend;
 			sourceTree = "<group>";
 		};
 		11A6A93B1DBE44B4003E5302 = {
@@ -1033,6 +1050,7 @@
 				11DADB411DBF5B7300194349 /* Resolution.swift in Sources */,
 				11DADB631DBF73C000194349 /* SkillLevel.swift in Sources */,
 				11FB66DD1DC362AB006FF63E /* PercentageParser.swift in Sources */,
+				118668F11DCB3BCE006D5275 /* ListMyFriendsRequest.swift in Sources */,
 				11EFB3141DC7401D0096AD9B /* PhotoSourceParser.swift in Sources */,
 				11FB66C21DC343FB006FF63E /* Route.swift in Sources */,
 				11A6A97F1DBE5829003E5302 /* EquatableArray.swift in Sources */,
@@ -1047,6 +1065,7 @@
 				11DADB7F1DBF891E00194349 /* Segment.swift in Sources */,
 				1151B1251DC8B6C900AE054F /* ActivityParser.swift in Sources */,
 				1151B1111DC8A3AC00AE054F /* AnnouncementParser.swift in Sources */,
+				118668EF1DCB3B5F006D5275 /* FriendAPI.swift in Sources */,
 				110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */,
 				11DADB511DBF60A400194349 /* Totals.swift in Sources */,
 				1151B1191DC8AE9200AE054F /* PhotoParser.swift in Sources */,
@@ -1158,6 +1177,7 @@
 				110682C31DC753D000A08026 /* HeartRateParserTest.swift in Sources */,
 				110682EF1DC7694E00A08026 /* LeaveResultParserTest.swift in Sources */,
 				110683131DC7742C00A08026 /* StreamTypeParserTest.swift in Sources */,
+				118668F31DCB3DD2006D5275 /* FriendAPITest.swift in Sources */,
 				1151B1131DC8A43A00AE054F /* AnnouncementParserTest.swift in Sources */,
 				110682D31DC75FA800A08026 /* StatsParserTest.swift in Sources */,
 				110682DF1DC7644300A08026 /* SkillLevelParserTest.swift in Sources */,
