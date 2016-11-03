@@ -42,4 +42,8 @@ public class ActivityAPI {
                                withDescription description : String? = nil) -> UpdateActivityRequest {
         return UpdateActivityRequest(client: client, id: id, name: name, type: type, isPrivate: isPrivate, hasTrainer: hasTrainer, commute: commute, gearID: gearID, description: description)
     }
+    
+    public func deleteActivity(withID id : Int) -> DeleteActivityRequest{
+        return DeleteActivityRequest(client: client, id: id)
+    }
 }

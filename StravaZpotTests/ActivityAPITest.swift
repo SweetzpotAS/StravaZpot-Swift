@@ -65,6 +65,18 @@ class ActivityAPITest: XCTestCase {
         expect(client.lastParameters["description"] as! String?).to(equal("Best training ever!"))
     }
     
+    func testShouldDeleteAnActivity() {
+        let client = MockHTTPClient(respondWithJSON: "")
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<Bool>?
+        api.deleteActivity(withID: 321934).execute{ result = $0 }
+        
+        expect(result).to(beSuccessful())
+        expect(client.lastUrl).to(contain("activities/321934"))
+        expect(client.deleteCalled).to(equal(true))
+    }
+    
     let ACTIVITY_JSON = "{" +
         "  \"id\": 321934," +
         "  \"resource_state\": 3," +

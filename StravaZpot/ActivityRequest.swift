@@ -28,10 +28,6 @@ public class ActivityRequest {
         client.put(url: url, parameters: parameters.flatten(), callback: parseActivity(callback: callback))
     }
     
-    func deleteRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity>) -> ()) {
-        client.delete(url: url, parameters: parameters.flatten(), callback: parseActivity(callback: callback))
-    }
-    
     private func parseActivity(callback: @escaping (StravaResult<Activity>) -> ()) -> (StravaResult<JSON>) -> () {
         return { result in
             switch result {
