@@ -78,6 +78,20 @@ class AthleteAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldListAthleteKOMS() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = AthleteAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<SegmentEffort>, StravaError>?
+        api.listAthleteKOMS(withID: 227615).of(page: 2, itemsPerPage: 10).execute { result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athletes/227615/koms"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["page"] as! Int?).to(equal(2))
+        expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
+    }
+    
     let ATHLETE_JSON = "{" +
         "  \"id\": 227615," +
         "  \"resource_state\": 3," +

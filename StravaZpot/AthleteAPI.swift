@@ -34,4 +34,8 @@ public class AthleteAPI {
     public func getTotalsAndStats(withID id : Int) -> GetTotalsAndStatsRequest {
         return GetTotalsAndStatsRequest(client: client, id: id)
     }
+    
+    public func listAthleteKOMS(withID id : Int) -> ListAthleteKOMSRequest {
+        return ListAthleteKOMSRequest(client: client, id: id)
+    }
 }
