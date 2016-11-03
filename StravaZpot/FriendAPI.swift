@@ -22,4 +22,8 @@ public class FriendAPI {
     public func listAhtleteFriends(withID id : Int) -> ListAthleteFriendsRequest {
         return ListAthleteFriendsRequest(client: client, id: id)
     }
+    
+    public func listMyFollowers() -> ListMyFollowersRequest {
+        return ListMyFollowersRequest(client: client)
+    }
 }
