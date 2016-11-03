@@ -93,6 +93,21 @@ class ActivityAPITest: XCTestCase {
         expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
     }
     
+    func testShouldListFriendsActivities() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Activity>>?
+        api.listFriendsActivities(before: 1000).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
+        
+        expect(result).to(beSuccessful())
+        expect(client.lastUrl).to(contain("activities/following"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["before"] as! Int?).to(equal(1000))
+        expect(client.lastParameters["page"] as! Int?).to(equal(2))
+        expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
+    }
+    
     let ACTIVITY_JSON = "{" +
         "  \"id\": 321934," +
         "  \"resource_state\": 3," +

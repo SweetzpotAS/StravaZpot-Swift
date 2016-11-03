@@ -50,4 +50,8 @@ public class ActivityAPI {
     public func listActivities(before : Int? = nil, after : Int? = nil) -> ListActivitiesRequest {
         return ListActivitiesRequest(client: client, before: before, after: after)
     }
+    
+    public func listFriendsActivities(before : Int? = nil) -> ListFriendsActivitiesRequest {
+        return ListFriendsActivitiesRequest(client: client, before: before)
+    }
 }
