@@ -30,4 +30,8 @@ public class FriendAPI {
     public func listAthleteFollowers(withID id : Int) -> ListAthleteFollowersRequest {
         return ListAthleteFollowersRequest(client: client, id: id)
     }
+    
+    public func listBothFollowing(withID id : Int) -> ListBothFollowingRequest {
+        return ListBothFollowingRequest(client: client, id: id)
+    }
 }
