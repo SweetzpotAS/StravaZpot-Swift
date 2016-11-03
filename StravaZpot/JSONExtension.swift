@@ -220,4 +220,8 @@ extension JSON {
     var timedIntervalArray : EquatableArray<TimedInterval<Double>>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.timedInterval }) : nil
     }
+    
+    var zones : Zones? {
+        return exists() ? ZonesParser().from(json: self) : nil
+    }
 }
