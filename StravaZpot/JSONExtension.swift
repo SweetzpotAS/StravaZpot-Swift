@@ -224,4 +224,8 @@ extension JSON {
     var zones : Zones? {
         return exists() ? ZonesParser().from(json: self) : nil
     }
+    
+    var stats : Stats? {
+        return exists() ? StatsParser().from(json: self) : nil
+    }
 }
