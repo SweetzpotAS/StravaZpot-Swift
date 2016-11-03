@@ -22,6 +22,10 @@ extension JSON {
         return exists() ? ActivityParser().from(json: self) : nil
     }
     
+    var activityArray : EquatableArray<Activity>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.activity }) : nil
+    }
+    
     var athlete : Athlete? {
         return exists() ? AthleteParser().from(json: self) : nil
     }
