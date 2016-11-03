@@ -233,7 +233,19 @@ extension JSON {
         return exists() ? ZonesParser().from(json: self) : nil
     }
     
+    var zonesArray : EquatableArray<Zones>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.zones }) : nil
+    }
+    
     var stats : Stats? {
         return exists() ? StatsParser().from(json: self) : nil
+    }
+    
+    var activityZone : ActivityZone? {
+        return exists() ? ActivityZoneParser().from(json: self) : nil
+    }
+    
+    var activityZoneArray : EquatableArray<ActivityZone>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.activityZone }) : nil
     }
 }

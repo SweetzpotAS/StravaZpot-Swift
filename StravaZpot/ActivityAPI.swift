@@ -58,4 +58,8 @@ public class ActivityAPI {
     public func listRelatedActivities(toActivityWithID id : Int) -> ListRelatedActivitiesRequest {
         return ListRelatedActivitiesRequest(client: client, id: id)
     }
+    
+    public func listActivityZones(withID id : Int) -> ListActivityZonesRequest {
+        return ListActivityZonesRequest(client: client, id: id)
+    }
 }

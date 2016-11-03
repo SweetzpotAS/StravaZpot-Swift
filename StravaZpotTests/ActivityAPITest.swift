@@ -122,6 +122,18 @@ class ActivityAPITest: XCTestCase {
         expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
     }
     
+    func testShouldListActivityZones() {
+        let client = MockHTTPClient(respondWithJSON: ACTIVITY_ZONES_JSON)
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<ActivityZone>>?
+        api.listActivityZones(withID: 321934).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("activities/321934/zones"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let ACTIVITY_JSON = "{" +
         "  \"id\": 321934," +
         "  \"resource_state\": 3," +
@@ -322,4 +334,41 @@ class ActivityAPITest: XCTestCase {
         "    }" +
         "  ]" +
     "}"
+    
+    let ACTIVITY_ZONES_JSON = "[\n" +
+        "  {\n" +
+        "    \"score\": 215,\n" +
+        "    \"distribution_buckets\": [\n" +
+        "      { \"min\": 0,   \"max\":115,  \"time\": 1735 },\n" +
+        "      { \"min\": 115, \"max\": 152, \"time\": 5966 },\n" +
+        "      { \"min\": 152, \"max\": 171, \"time\": 4077 },\n" +
+        "      { \"min\": 171, \"max\": 190, \"time\": 4238 },\n" +
+        "      { \"min\": 190, \"max\": -1,  \"time\": 36 }\n" +
+        "    ],\n" +
+        "    \"type\": \"heartrate\",\n" +
+        "    \"resource_state\": 3,\n" +
+        "    \"sensor_based\": true,\n" +
+        "    \"points\": 119,\n" +
+        "    \"custom_zones\": false,\n" +
+        "    \"max\": 196\n" +
+        "  },\n" +
+        "  {\n" +
+        "    \"distribution_buckets\": [\n" +
+        "      { \"min\": 0,   \"max\": 0,   \"time\": 3043 },\n" +
+        "      { \"min\": 0,   \"max\": 50,  \"time\": 999 },\n" +
+        "      { \"min\": 50,  \"max\": 100, \"time\": 489 },\n" +
+        "      { \"min\": 100, \"max\": 150, \"time\": 737 },\n" +
+        "      { \"min\": 150, \"max\": 200, \"time\": 1299 },\n" +
+        "      { \"min\": 200, \"max\": 250, \"time\": 1478 },\n" +
+        "      { \"min\": 250, \"max\": 300, \"time\": 1523 },\n" +
+        "      { \"min\": 300, \"max\": 350, \"time\": 2154 },\n" +
+        "      { \"min\": 350, \"max\": 400, \"time\": 2226 },\n" +
+        "      { \"min\": 400, \"max\": 450, \"time\": 1181 },\n" +
+        "      { \"min\": 450, \"max\": -1,  \"time\": 923 }\n" +
+        "    ],\n" +
+        "    \"type\": \"power\",\n" +
+        "    \"resource_state\": 3,\n" +
+        "    \"sensor_based\": true\n" +
+        "  }\n" +
+    "]"
 }
