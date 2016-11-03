@@ -26,4 +26,8 @@ public class AthleteAPI {
     public func updateCurrentAthlete(withCity city : String? = nil, withState state : String? = nil, withCountry country : String? = nil, withSex sex : Gender? = nil, withWeight weight : Double? = nil) -> UpdateAthleteRequest {
         return UpdateAthleteRequest(client: client, city: city, state: state, country: country, sex: sex, weight: weight)
     }
+    
+    public func getAthleteZones() -> GetAthleteZonesRequest {
+        return GetAthleteZonesRequest(client: client)
+    }
 }

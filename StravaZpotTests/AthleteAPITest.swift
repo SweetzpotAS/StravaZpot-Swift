@@ -54,6 +54,18 @@ class AthleteAPITest: XCTestCase {
         print(client.lastParameters)
     }
     
+    func testShouldGetAthleteZones() {
+        let client = MockHTTPClient(respondWithJSON: ZONES_JSON)
+        let api = AthleteAPI(client: client)
+        
+        var result : StravaResult<Zones, StravaError>?
+        api.getAthleteZones().execute { result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athlete/zones"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let ATHLETE_JSON = "{" +
         "  \"id\": 227615," +
         "  \"resource_state\": 3," +
@@ -123,5 +135,29 @@ class AthleteAPITest: XCTestCase {
         "      \"resource_state\": 2" +
         "    }" +
         "  ]" +
-    "}";
+    "}"
+    
+    let ZONES_JSON = "{" +
+        "  \"heart_rate\": {" +
+        "    \"custom_zones\": false," +
+        "    \"zones\": [" +
+        "      { \"min\": 0, \"max\": 115 }," +
+        "      { \"min\": 115, \"max\": 152 }," +
+        "      { \"min\": 152, \"max\": 171 }," +
+        "      { \"min\": 171, \"max\": 190 }," +
+        "      { \"min\": 190,  \"max\": -1 }" +
+        "    ]" +
+        "  }," +
+        "  \"power\": {" +
+        "      \"zones\": [" +
+        "        { \"min\": 0, \"max\": 180 }," +
+        "        { \"min\": 181, \"max\": 246 }," +
+        "        { \"min\": 247, \"max\": 295 }," +
+        "        { \"min\": 296, \"max\": 344 }," +
+        "        { \"min\": 345, \"max\": 393 }," +
+        "        { \"min\": 394, \"max\": 492 }," +
+        "        { \"min\": 493,  \"max\": -1 }" +
+        "      ]" +
+        "    }" +
+    "}"
 }
