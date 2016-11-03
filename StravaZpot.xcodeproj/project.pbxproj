@@ -112,6 +112,7 @@
 		118668EF1DCB3B5F006D5275 /* FriendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668EE1DCB3B5F006D5275 /* FriendAPI.swift */; };
 		118668F11DCB3BCE006D5275 /* ListMyFriendsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */; };
 		118668F31DCB3DD2006D5275 /* FriendAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668F21DCB3DD2006D5275 /* FriendAPITest.swift */; };
+		118668F51DCB3EF8006D5275 /* AthleteArrayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668F41DCB3EF8006D5275 /* AthleteArrayRequest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -330,6 +331,7 @@
 		118668EE1DCB3B5F006D5275 /* FriendAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAPI.swift; sourceTree = "<group>"; };
 		118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMyFriendsRequest.swift; sourceTree = "<group>"; };
 		118668F21DCB3DD2006D5275 /* FriendAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAPITest.swift; sourceTree = "<group>"; };
+		118668F41DCB3EF8006D5275 /* AthleteArrayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteArrayRequest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -544,6 +546,7 @@
 			children = (
 				118668EE1DCB3B5F006D5275 /* FriendAPI.swift */,
 				118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */,
+				118668F41DCB3EF8006D5275 /* AthleteArrayRequest.swift */,
 			);
 			name = Friend;
 			sourceTree = "<group>";
@@ -1117,6 +1120,7 @@
 				110683151DC79D5800A08026 /* StreamParser.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
+				118668F51DCB3EF8006D5275 /* AthleteArrayRequest.swift in Sources */,
 				1106830D1DC7730300A08026 /* SeriesTypeParser.swift in Sources */,
 				110682DD1DC7640500A08026 /* SkillLevelParser.swift in Sources */,
 				110682D51DC7625000A08026 /* ClubTypeParser.swift in Sources */,
