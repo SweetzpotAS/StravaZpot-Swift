@@ -46,6 +46,25 @@ class ActivityAPITest: XCTestCase {
         expect(client.lastParameters["include_all_efforts"] as! Bool?).to(equal(true))
     }
     
+    func testShouldUpdateActivity() {
+        let client = MockHTTPClient(respondWithJSON: ACTIVITY_JSON)
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<Activity>?
+        api.updateActivity(withID: 321934, withName: "Rowing session", withType: .rowing, isPrivate: true, withTrainer: false, withCommute: true, withGearID: "b123456", withDescription: "Best training ever!").execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("activities/321934"))
+        expect(client.putCalled).to(equal(true))
+        expect(client.lastParameters["name"] as! String?).to(equal("Rowing session"))
+        expect(client.lastParameters["type"] as! String?).to(equal("Rowing"))
+        expect(client.lastParameters["private"] as! Bool?).to(equal(true))
+        expect(client.lastParameters["trainer"] as! Bool?).to(equal(false))
+        expect(client.lastParameters["commute"] as! Bool?).to(equal(true))
+        expect(client.lastParameters["gear_id"] as! String?).to(equal("b123456"))
+        expect(client.lastParameters["description"] as! String?).to(equal("Best training ever!"))
+    }
+    
     let ACTIVITY_JSON = "{" +
         "  \"id\": 321934," +
         "  \"resource_state\": 3," +

@@ -31,4 +31,15 @@ public class ActivityAPI {
                                  includeAllEfforts : Bool? = nil) -> RetrieveActivityRequest {
         return RetrieveActivityRequest(client: client, id: id, includeAllEfforts: includeAllEfforts)
     }
+    
+    public func updateActivity(withID id : Int,
+                               withName name : String? = nil,
+                               withType type : ActivityType? = nil,
+                               isPrivate : Bool? = nil,
+                               withTrainer hasTrainer : Bool? = nil,
+                               withCommute commute : Bool? = nil,
+                               withGearID gearID : String? = nil,
+                               withDescription description : String? = nil) -> UpdateActivityRequest {
+        return UpdateActivityRequest(client: client, id: id, name: name, type: type, isPrivate: isPrivate, hasTrainer: hasTrainer, commute: commute, gearID: gearID, description: description)
+    }
 }
