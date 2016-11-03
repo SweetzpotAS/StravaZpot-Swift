@@ -26,6 +26,10 @@ extension JSON {
         return exists() ? AthleteParser().from(json: self) : nil
     }
     
+    var athleteArray : EquatableArray<Athlete>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.athlete }) : nil
+    }
+    
     var time : Time? {
         return exists() ? TimeParser().from(json: self) : nil
     }
