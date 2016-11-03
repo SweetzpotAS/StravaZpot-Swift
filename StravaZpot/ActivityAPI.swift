@@ -43,7 +43,11 @@ public class ActivityAPI {
         return UpdateActivityRequest(client: client, id: id, name: name, type: type, isPrivate: isPrivate, hasTrainer: hasTrainer, commute: commute, gearID: gearID, description: description)
     }
     
-    public func deleteActivity(withID id : Int) -> DeleteActivityRequest{
+    public func deleteActivity(withID id : Int) -> DeleteActivityRequest {
         return DeleteActivityRequest(client: client, id: id)
+    }
+    
+    public func listActivities(before : Int? = nil, after : Int? = nil) -> ListActivitiesRequest {
+        return ListActivitiesRequest(client: client, before: before, after: after)
     }
 }

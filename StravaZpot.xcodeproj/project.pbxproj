@@ -124,6 +124,8 @@
 		118669081DCB9BF2006D5275 /* RetrieveActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */; };
 		1186690A1DCB9FD3006D5275 /* UpdateActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */; };
 		1186690C1DCBA408006D5275 /* DeleteActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */; };
+		1186690E1DCBA601006D5275 /* ActivityArrayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186690D1DCBA601006D5275 /* ActivityArrayRequest.swift */; };
+		118669101DCBA6E7006D5275 /* ListActivitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186690F1DCBA6E7006D5275 /* ListActivitiesRequest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -354,6 +356,8 @@
 		118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveActivityRequest.swift; sourceTree = "<group>"; };
 		118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateActivityRequest.swift; sourceTree = "<group>"; };
 		1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteActivityRequest.swift; sourceTree = "<group>"; };
+		1186690D1DCBA601006D5275 /* ActivityArrayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityArrayRequest.swift; sourceTree = "<group>"; };
+		1186690F1DCBA6E7006D5275 /* ListActivitiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivitiesRequest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -588,6 +592,8 @@
 				118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */,
 				118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */,
 				1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */,
+				1186690D1DCBA601006D5275 /* ActivityArrayRequest.swift */,
+				1186690F1DCBA6E7006D5275 /* ListActivitiesRequest.swift */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -1094,6 +1100,7 @@
 				11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */,
 				1151B1381DC9E57100AE054F /* StravaResult.swift in Sources */,
 				11DADB411DBF5B7300194349 /* Resolution.swift in Sources */,
+				118669101DCBA6E7006D5275 /* ListActivitiesRequest.swift in Sources */,
 				11DADB631DBF73C000194349 /* SkillLevel.swift in Sources */,
 				11FB66DD1DC362AB006FF63E /* PercentageParser.swift in Sources */,
 				118668F11DCB3BCE006D5275 /* ListMyFriendsRequest.swift in Sources */,
@@ -1114,6 +1121,7 @@
 				118668EF1DCB3B5F006D5275 /* FriendAPI.swift in Sources */,
 				110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */,
 				11DADB511DBF60A400194349 /* Totals.swift in Sources */,
+				1186690E1DCBA601006D5275 /* ActivityArrayRequest.swift in Sources */,
 				1151B1191DC8AE9200AE054F /* PhotoParser.swift in Sources */,
 				11DADB4D1DBF5F6F00194349 /* MeasurementPreference.swift in Sources */,
 				110683191DC7A99400A08026 /* LeaderboardEntryParser.swift in Sources */,
