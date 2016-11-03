@@ -117,6 +117,10 @@
 		118668F91DCB41E9006D5275 /* ListMyFollowersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668F81DCB41E9006D5275 /* ListMyFollowersRequest.swift */; };
 		118668FB1DCB5F5D006D5275 /* ListAthleteFollowersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668FA1DCB5F5D006D5275 /* ListAthleteFollowersRequest.swift */; };
 		118668FD1DCB60F8006D5275 /* ListBothFollowingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668FC1DCB60F8006D5275 /* ListBothFollowingRequest.swift */; };
+		118669001DCB62A7006D5275 /* ActivityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668FF1DCB62A7006D5275 /* ActivityAPI.swift */; };
+		118669021DCB62D8006D5275 /* CreateActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669011DCB62D8006D5275 /* CreateActivityRequest.swift */; };
+		118669041DCB6340006D5275 /* ActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669031DCB6340006D5275 /* ActivityRequest.swift */; };
+		118669061DCB6814006D5275 /* ActivityAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669051DCB6814006D5275 /* ActivityAPITest.swift */; };
 		11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A9451DBE44B4003E5302 /* StravaZpot.framework */; };
 		11A6A9561DBE44B4003E5302 /* StravaZpot.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A6A9481DBE44B4003E5302 /* StravaZpot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9601DBE49CF003E5302 /* ResourceState.swift */; };
@@ -340,6 +344,10 @@
 		118668F81DCB41E9006D5275 /* ListMyFollowersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMyFollowersRequest.swift; sourceTree = "<group>"; };
 		118668FA1DCB5F5D006D5275 /* ListAthleteFollowersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAthleteFollowersRequest.swift; sourceTree = "<group>"; };
 		118668FC1DCB60F8006D5275 /* ListBothFollowingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBothFollowingRequest.swift; sourceTree = "<group>"; };
+		118668FF1DCB62A7006D5275 /* ActivityAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAPI.swift; sourceTree = "<group>"; };
+		118669011DCB62D8006D5275 /* CreateActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateActivityRequest.swift; sourceTree = "<group>"; };
+		118669031DCB6340006D5275 /* ActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRequest.swift; sourceTree = "<group>"; };
+		118669051DCB6814006D5275 /* ActivityAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAPITest.swift; sourceTree = "<group>"; };
 		11A6A9451DBE44B4003E5302 /* StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A9481DBE44B4003E5302 /* StravaZpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StravaZpot.h; sourceTree = "<group>"; };
 		11A6A9491DBE44B4003E5302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -494,6 +502,7 @@
 		1151B13B1DC9E7BA00AE054F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				118668FE1DCB629B006D5275 /* Activity */,
 				1151B1401DC9F0CC00AE054F /* Athlete */,
 				118668EA1DCB3851006D5275 /* Common */,
 				118668ED1DCB3B46006D5275 /* Friend */,
@@ -521,6 +530,7 @@
 			children = (
 				1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */,
 				118668F21DCB3DD2006D5275 /* FriendAPITest.swift */,
+				118669051DCB6814006D5275 /* ActivityAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -552,15 +562,25 @@
 		118668ED1DCB3B46006D5275 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
-				118668EE1DCB3B5F006D5275 /* FriendAPI.swift */,
-				118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */,
 				118668F41DCB3EF8006D5275 /* AthleteArrayRequest.swift */,
-				118668F61DCB4027006D5275 /* ListAthleteFriendsRequest.swift */,
-				118668F81DCB41E9006D5275 /* ListMyFollowersRequest.swift */,
+				118668EE1DCB3B5F006D5275 /* FriendAPI.swift */,
 				118668FA1DCB5F5D006D5275 /* ListAthleteFollowersRequest.swift */,
+				118668F61DCB4027006D5275 /* ListAthleteFriendsRequest.swift */,
 				118668FC1DCB60F8006D5275 /* ListBothFollowingRequest.swift */,
+				118668F81DCB41E9006D5275 /* ListMyFollowersRequest.swift */,
+				118668F01DCB3BCE006D5275 /* ListMyFriendsRequest.swift */,
 			);
 			name = Friend;
+			sourceTree = "<group>";
+		};
+		118668FE1DCB629B006D5275 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				118668FF1DCB62A7006D5275 /* ActivityAPI.swift */,
+				118669011DCB62D8006D5275 /* CreateActivityRequest.swift */,
+				118669031DCB6340006D5275 /* ActivityRequest.swift */,
+			);
+			name = Activity;
 			sourceTree = "<group>";
 		};
 		11A6A93B1DBE44B4003E5302 = {
@@ -1045,6 +1065,7 @@
 				11A6A9671DBE4E64003E5302 /* Gender.swift in Sources */,
 				11DADB3D1DBF561B00194349 /* Leaderboard.swift in Sources */,
 				11EFB2FC1DC739CC0096AD9B /* TemperatureParser.swift in Sources */,
+				118669001DCB62A7006D5275 /* ActivityAPI.swift in Sources */,
 				110682E51DC765B300A08026 /* TerrainParser.swift in Sources */,
 				1151B1291DC8D1A700AE054F /* ActivityLapParser.swift in Sources */,
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
@@ -1146,6 +1167,7 @@
 				11EFB3201DC744820096AD9B /* PrimaryPhotoParser.swift in Sources */,
 				11DADB751DBF81D200194349 /* PrimaryPhoto.swift in Sources */,
 				118668E31DCB2F20006D5275 /* DictionaryExtension.swift in Sources */,
+				118669021DCB62D8006D5275 /* CreateActivityRequest.swift in Sources */,
 				11EFB3041DC73B720096AD9B /* TimedIntervalParser.swift in Sources */,
 				118668EC1DCB385D006D5275 /* PaginatedRequest.swift in Sources */,
 				11DADB771DBF82D200194349 /* PhotoSummary.swift in Sources */,
@@ -1155,6 +1177,7 @@
 				11DADB651DBF740400194349 /* JoinResult.swift in Sources */,
 				11A6A9711DBE5164003E5302 /* Time.swift in Sources */,
 				118668E11DCB2F01006D5275 /* OptionalExtension.swift in Sources */,
+				118669041DCB6340006D5275 /* ActivityRequest.swift in Sources */,
 				11DADB491DBF5E5500194349 /* FriendStatus.swift in Sources */,
 				11A6A9811DBE5959003E5302 /* AgeGroup.swift in Sources */,
 				1151B1501DC9F8D400AE054F /* JSONExtension.swift in Sources */,
@@ -1225,6 +1248,7 @@
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
 				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11EFB3061DC73BE30096AD9B /* TimedIntervalParserTest.swift in Sources */,
+				118669061DCB6814006D5275 /* ActivityAPITest.swift in Sources */,
 				110682F71DC76B7800A08026 /* GearParserTest.swift in Sources */,
 				1106830B1DC7728000A08026 /* ResolutionParserTest.swift in Sources */,
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
