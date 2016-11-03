@@ -11,7 +11,7 @@ import SwiftyJSON
 @testable import StravaZpot
 
 class MockHTTPClient : HTTPClient {
-    private let response : StravaResult<JSON, StravaError>
+    private let response : StravaResult<JSON>
     var getCalled = false
     var postCalled = false
     var putCalled = false
@@ -27,27 +27,27 @@ class MockHTTPClient : HTTPClient {
         self.response = .error(error)
     }
     
-    func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         self.getCalled = true
         request(url: url, parameters: parameters, callback: callback)
     }
     
-    func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         self.postCalled = true
         request(url: url, parameters: parameters, callback: callback)
     }
     
-    func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         self.putCalled = true
         request(url: url, parameters: parameters, callback: callback)
     }
     
-    func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         self.deleteCalled = true
         request(url: url, parameters: parameters, callback: callback)
     }
     
-    private func request(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    private func request(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         self.lastUrl = url
         self.lastParameters = parameters
         callback(response)

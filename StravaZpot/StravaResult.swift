@@ -8,14 +8,14 @@
 
 import Foundation
 
-public enum StravaResult<T : Equatable, U : Equatable> where U : Error {
+public enum StravaResult<T : Equatable> {
     case success(T)
-    case error(U)
+    case error(StravaError)
 }
 
 extension StravaResult : Equatable {}
 
-public func ==<T, U>(lhs : StravaResult<T, U>, rhs : StravaResult<T, U>) -> Bool where T : Equatable, U : Equatable, U : Error{
+public func ==<T>(lhs : StravaResult<T>, rhs : StravaResult<T>) -> Bool where T : Equatable {
     switch(lhs, rhs) {
     case let (.success(left), .success(right)):
         return left == right

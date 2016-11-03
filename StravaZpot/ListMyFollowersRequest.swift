@@ -12,7 +12,7 @@ public class ListMyFollowersRequest : AthleteArrayRequest, PaginatedRequest {
     internal var page: Int?
     internal var perPage: Int?
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Athlete>, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<EquatableArray<Athlete>>) -> ()) {
         request(url: "athlete/followers", parameters: pageParameters(), callback: callback)
     }
 }

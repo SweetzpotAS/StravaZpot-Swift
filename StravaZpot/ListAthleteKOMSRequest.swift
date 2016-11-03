@@ -19,7 +19,7 @@ public class ListAthleteKOMSRequest : PaginatedRequest {
         self.id = id
     }
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<SegmentEffort>, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<EquatableArray<SegmentEffort>>) -> ()) {
         client.get(url: "athletes/\(id)/koms", parameters: pageParameters()) { result in
             switch(result) {
             case let .success(json):

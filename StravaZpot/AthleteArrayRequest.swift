@@ -15,7 +15,7 @@ public class AthleteArrayRequest {
         self.client = client
     }
     
-    func request(url : String, parameters : [String : Any], callback: @escaping (StravaResult<EquatableArray<Athlete>, StravaError>) -> ()) {
+    func request(url : String, parameters : [String : Any], callback: @escaping (StravaResult<EquatableArray<Athlete>>) -> ()) {
         client.get(url: url, parameters: parameters) { result in
             switch(result) {
             case let .success(json):

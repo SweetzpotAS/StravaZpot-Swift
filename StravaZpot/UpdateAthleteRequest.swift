@@ -25,7 +25,7 @@ public class UpdateAthleteRequest {
         self.weight = weight
     }
     
-    public func execute(callback : @escaping (StravaResult<Athlete, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<Athlete>) -> ()) {
         let parameters = [ "city" : city,
                            "state" : state,
                            "country" : country,

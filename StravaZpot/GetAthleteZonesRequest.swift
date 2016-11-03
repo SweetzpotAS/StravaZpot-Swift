@@ -15,7 +15,7 @@ public class GetAthleteZonesRequest {
         self.client = client
     }
     
-    public func execute(callback : @escaping (StravaResult<Zones, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<Zones>) -> ()) {
         client.get(url: "athlete/zones", parameters: [:]) { result in
             switch(result) {
             case let .success(json):

@@ -16,7 +16,7 @@ class FriendAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: "[]")
         let api = FriendAPI(client: client)
         
-        var result : StravaResult<EquatableArray<Athlete>, StravaError>?
+        var result : StravaResult<EquatableArray<Athlete>>?
         api.listMyFriends().of(page: 2, itemsPerPage: 10).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -30,7 +30,7 @@ class FriendAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: "[]")
         let api = FriendAPI(client: client)
         
-        var result : StravaResult<EquatableArray<Athlete>, StravaError>?
+        var result : StravaResult<EquatableArray<Athlete>>?
         api.listAthleteFriends(withID: 227615).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -44,7 +44,7 @@ class FriendAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: "[]")
         let api = FriendAPI(client: client)
         
-        var result : StravaResult<EquatableArray<Athlete>, StravaError>?
+        var result : StravaResult<EquatableArray<Athlete>>?
         api.listMyFollowers().of(page: 2, itemsPerPage: 10).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -58,7 +58,7 @@ class FriendAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: "[]")
         let api = FriendAPI(client: client)
         
-        var result : StravaResult<EquatableArray<Athlete>, StravaError>?
+        var result : StravaResult<EquatableArray<Athlete>>?
         api.listAthleteFollowers(withID: 227615).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -72,7 +72,7 @@ class FriendAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: "[]")
         let api = FriendAPI(client: client)
         
-        var result : StravaResult<EquatableArray<Athlete>, StravaError>?
+        var result : StravaResult<EquatableArray<Athlete>>?
         api.listBothFollowing(withID: 227615).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())

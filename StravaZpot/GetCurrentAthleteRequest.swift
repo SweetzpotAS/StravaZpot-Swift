@@ -15,7 +15,7 @@ public class GetCurrentAthleteRequest {
         self.client = client
     }
     
-    public func execute(callback : @escaping (StravaResult<Athlete, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<Athlete>) -> ()) {
         client.get(url: "athlete", parameters: [:]) { result in
             switch(result) {
             case let .success(json) :

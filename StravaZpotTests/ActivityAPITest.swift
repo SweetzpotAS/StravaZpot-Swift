@@ -16,7 +16,7 @@ class ActivityAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: ACTIVITY_JSON)
         let api = ActivityAPI(client: client)
         
-        var result : StravaResult<Activity, StravaError>?
+        var result : StravaResult<Activity>?
         api.createActivity(withName: "Rowing session", withType: .rowing, withStartDate: Date(day: 20, month: 1, year: 2016, hour: 12, minute: 35, second: 46), withElapsedTime: Time(seconds: 6345), withDescription: "Relaxing training", withDistance: Distance(meters: 1234), isPrivate: false, withTrainer: true, withCommute: false).execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -37,7 +37,7 @@ class ActivityAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: ACTIVITY_JSON)
         let api = ActivityAPI(client: client)
         
-        var result : StravaResult<Activity, StravaError>?
+        var result : StravaResult<Activity>?
         api.retrieveActivity(withID: 321934, includeAllEfforts: true).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())

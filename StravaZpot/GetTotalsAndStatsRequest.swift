@@ -17,7 +17,7 @@ public class GetTotalsAndStatsRequest {
         self.id = id
     }
     
-    public func execute(callback : @escaping (StravaResult<Stats, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<Stats>) -> ()) {
         client.get(url: "athletes/\(id)/stats", parameters: [:]) { result in
             switch(result) {
             case let .success(json):

@@ -32,7 +32,7 @@ public class CreateActivityRequest : ActivityRequest {
         super.init(client: client)
     }
     
-    public func execute(callback : @escaping (StravaResult<Activity, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<Activity>) -> ()) {
         let parameters = ["name" : name,
                           "type" : type.rawValue,
                           "start_date_local" : startDate.iso8601,

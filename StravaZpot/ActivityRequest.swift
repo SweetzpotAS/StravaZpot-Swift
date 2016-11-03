@@ -16,23 +16,23 @@ public class ActivityRequest {
         self.client = client
     }
     
-    func getRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity, StravaError>) -> ()) {
+    func getRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity>) -> ()) {
         client.get(url: url, parameters: parameters.flatten(), callback: parseActivity(callback: callback))
     }
     
-    func postRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity, StravaError>) -> ()) {
+    func postRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity>) -> ()) {
         client.post(url: url, parameters: parameters.flatten(), callback: parseActivity(callback: callback))
     }
     
-    func putRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity, StravaError>) -> ()) {
+    func putRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity>) -> ()) {
         client.put(url: url, parameters: parameters.flatten(), callback: parseActivity(callback: callback))
     }
     
-    func deleteRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity, StravaError>) -> ()) {
+    func deleteRequest(url : String, parameters : [String : Any], callback : @escaping (StravaResult<Activity>) -> ()) {
         client.delete(url: url, parameters: parameters.flatten(), callback: parseActivity(callback: callback))
     }
     
-    private func parseActivity(callback: @escaping (StravaResult<Activity, StravaError>) -> ()) -> (StravaResult<JSON, StravaError>) -> () {
+    private func parseActivity(callback: @escaping (StravaResult<Activity>) -> ()) -> (StravaResult<JSON>) -> () {
         return { result in
             switch result {
             case let .success(json):

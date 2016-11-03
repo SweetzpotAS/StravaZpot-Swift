@@ -18,7 +18,7 @@ public class RetrieveActivityRequest : ActivityRequest {
         super.init(client: client)
     }
     
-    public func execute(callback : @escaping (StravaResult<Activity, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<Activity>) -> ()) {
         let parameters = ["include_all_efforts" : includeAllEfforts] as [String : Any]
         getRequest(url: "activities/\(id)", parameters: parameters, callback: callback)
     }

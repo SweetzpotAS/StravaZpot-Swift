@@ -18,7 +18,7 @@ public class ListAthleteFollowersRequest : AthleteArrayRequest, PaginatedRequest
         super.init(client: client)
     }
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Athlete>, StravaError>) -> ()) {
+    public func execute(callback : @escaping (StravaResult<EquatableArray<Athlete>>) -> ()) {
         request(url: "athletes/\(id)/followers", parameters: pageParameters(), callback: callback)
     }
 }

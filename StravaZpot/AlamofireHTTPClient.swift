@@ -29,23 +29,23 @@ class AlamofireHTTPClient : HTTPClient {
         self.debug = debug
     }
     
-    func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .get, parameters: parameters, callback: callback)
     }
     
-    func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .post, parameters: parameters, callback: callback)
     }
     
-    func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .put, parameters: parameters, callback: callback)
     }
     
-    func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .delete, parameters: parameters, callback: callback)
     }
     
-    private func request(url : String, method: HTTPMethod, parameters : [String : Any], callback : @escaping (StravaResult<JSON, StravaError>) -> ()) {
+    private func request(url : String, method: HTTPMethod, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         
         Alamofire.request(baseURL + url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200 ..< 300)

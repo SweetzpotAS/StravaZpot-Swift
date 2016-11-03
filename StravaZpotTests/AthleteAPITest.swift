@@ -16,7 +16,7 @@ class AthleteAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: ATHLETE_JSON)
         let api = AthleteAPI(client: client)
         
-        var result : StravaResult<Athlete, StravaError>?
+        var result : StravaResult<Athlete>?
         api.retrieveCurrentAthlete().execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -28,7 +28,7 @@ class AthleteAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: ATHLETE_JSON)
         let api = AthleteAPI(client: client)
         
-        var result : StravaResult<Athlete, StravaError>?
+        var result : StravaResult<Athlete>?
         api.retrieveAthlete(withID: 227615).execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -40,7 +40,7 @@ class AthleteAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: ATHLETE_JSON)
         let api = AthleteAPI(client: client)
         
-        var result : StravaResult<Athlete, StravaError>?
+        var result : StravaResult<Athlete>?
         api.updateCurrentAthlete(withCity: "Irvine", withState: "California", withCountry: "USA", withSex: .male, withWeight: 85.6).execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -58,7 +58,7 @@ class AthleteAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: ZONES_JSON)
         let api = AthleteAPI(client: client)
         
-        var result : StravaResult<Zones, StravaError>?
+        var result : StravaResult<Zones>?
         api.getAthleteZones().execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -70,7 +70,7 @@ class AthleteAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: STATS_JSON)
         let api = AthleteAPI(client: client)
         
-        var result : StravaResult<Stats, StravaError>?
+        var result : StravaResult<Stats>?
         api.getTotalsAndStats(withID: 227615).execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
@@ -82,7 +82,7 @@ class AthleteAPITest: XCTestCase {
         let client = MockHTTPClient(respondWithJSON: "[]")
         let api = AthleteAPI(client: client)
         
-        var result : StravaResult<EquatableArray<SegmentEffort>, StravaError>?
+        var result : StravaResult<EquatableArray<SegmentEffort>>?
         api.listAthleteKOMS(withID: 227615).of(page: 2, itemsPerPage: 10).execute { result = $0 }
         
         expect(result).toEventually(beSuccessful())
