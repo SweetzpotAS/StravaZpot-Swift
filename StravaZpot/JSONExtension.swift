@@ -264,4 +264,12 @@ extension JSON {
     var photoArray : EquatableArray<Photo>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.photo }) : nil
     }
+    
+    var comment : Comment? {
+        return exists() ? CommentParser().from(json: self) : nil
+    }
+    
+    var commentArray : EquatableArray<Comment>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.comment }) : nil
+    }
 }

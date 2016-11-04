@@ -70,6 +70,9 @@
 		11162D091DCC98B70030123F /* PhotoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D081DCC98B70030123F /* PhotoAPI.swift */; };
 		11162D0B1DCC98E70030123F /* ListActivityPhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D0A1DCC98E70030123F /* ListActivityPhotosRequest.swift */; };
 		11162D0D1DCC9A5E0030123F /* PhotoAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */; };
+		11162D101DCC9C200030123F /* CommentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D0F1DCC9C200030123F /* CommentAPI.swift */; };
+		11162D121DCC9C490030123F /* ListActivityCommentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D111DCC9C490030123F /* ListActivityCommentsRequest.swift */; };
+		11162D141DCC9DBD0030123F /* CommentAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D131DCC9DBD0030123F /* CommentAPITest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -312,6 +315,9 @@
 		11162D081DCC98B70030123F /* PhotoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAPI.swift; sourceTree = "<group>"; };
 		11162D0A1DCC98E70030123F /* ListActivityPhotosRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityPhotosRequest.swift; sourceTree = "<group>"; };
 		11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAPITest.swift; sourceTree = "<group>"; };
+		11162D0F1DCC9C200030123F /* CommentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAPI.swift; sourceTree = "<group>"; };
+		11162D111DCC9C490030123F /* ListActivityCommentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityCommentsRequest.swift; sourceTree = "<group>"; };
+		11162D131DCC9DBD0030123F /* CommentAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAPITest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -536,6 +542,15 @@
 			name = Photo;
 			sourceTree = "<group>";
 		};
+		11162D0E1DCC9C0E0030123F /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				11162D0F1DCC9C200030123F /* CommentAPI.swift */,
+				11162D111DCC9C490030123F /* ListActivityCommentsRequest.swift */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
 		1151B1341DC9E53600AE054F /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +567,7 @@
 			children = (
 				118668FE1DCB629B006D5275 /* Activity */,
 				1151B1401DC9F0CC00AE054F /* Athlete */,
+				11162D0E1DCC9C0E0030123F /* Comment */,
 				118668EA1DCB3851006D5275 /* Common */,
 				118668ED1DCB3B46006D5275 /* Friend */,
 				11162D001DCC968F0030123F /* Kudos */,
@@ -580,6 +596,7 @@
 			children = (
 				118669051DCB6814006D5275 /* ActivityAPITest.swift */,
 				1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */,
+				11162D131DCC9DBD0030123F /* CommentAPITest.swift */,
 				118668F21DCB3DD2006D5275 /* FriendAPITest.swift */,
 				11162D051DCC978A0030123F /* KudosAPITest.swift */,
 				11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */,
@@ -1110,6 +1127,7 @@
 				11DADB731DBF7FF800194349 /* Photo.swift in Sources */,
 				11DADB431DBF5C4300194349 /* SeriesType.swift in Sources */,
 				118668F91DCB41E9006D5275 /* ListMyFollowersRequest.swift in Sources */,
+				11162D121DCC9C490030123F /* ListActivityCommentsRequest.swift in Sources */,
 				110682F51DC76AD600A08026 /* GearParser.swift in Sources */,
 				11DADB531DBF61A700194349 /* Stats.swift in Sources */,
 				11DADB6D1DBF76F800194349 /* ActivityType.swift in Sources */,
@@ -1180,6 +1198,7 @@
 				11A6A97D1DBE57CC003E5302 /* RouteSubtype.swift in Sources */,
 				118669081DCB9BF2006D5275 /* RetrieveActivityRequest.swift in Sources */,
 				11DADB7D1DBF878300194349 /* Athlete.swift in Sources */,
+				11162D101DCC9C200030123F /* CommentAPI.swift in Sources */,
 				11FB66C91DC3554E006FF63E /* CoordinatesParser.swift in Sources */,
 				11A6A96F1DBE50E2003E5302 /* Temperature.swift in Sources */,
 				110683201DC7AC2500A08026 /* DateExtension.swift in Sources */,
@@ -1332,6 +1351,7 @@
 				1151B14E1DC9F63A00AE054F /* StravaResultMatchers.swift in Sources */,
 				110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */,
 				110682E71DC765E900A08026 /* TerrainParserTest.swift in Sources */,
+				11162D141DCC9DBD0030123F /* CommentAPITest.swift in Sources */,
 				1151B1331DC9DFCE00AE054F /* SegmentEffortParserTest.swift in Sources */,
 				1151B11B1DC8AFF200AE054F /* PhotoParserTest.swift in Sources */,
 				11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */,
