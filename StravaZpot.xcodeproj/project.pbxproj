@@ -73,6 +73,9 @@
 		11162D101DCC9C200030123F /* CommentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D0F1DCC9C200030123F /* CommentAPI.swift */; };
 		11162D121DCC9C490030123F /* ListActivityCommentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D111DCC9C490030123F /* ListActivityCommentsRequest.swift */; };
 		11162D141DCC9DBD0030123F /* CommentAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D131DCC9DBD0030123F /* CommentAPITest.swift */; };
+		11162D171DCC9F5F0030123F /* ClubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D161DCC9F5F0030123F /* ClubAPI.swift */; };
+		11162D191DCC9F990030123F /* RetrieveClubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D181DCC9F990030123F /* RetrieveClubRequest.swift */; };
+		11162D1B1DCCA0CC0030123F /* ClubAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D1A1DCCA0CC0030123F /* ClubAPITest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -318,6 +321,9 @@
 		11162D0F1DCC9C200030123F /* CommentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAPI.swift; sourceTree = "<group>"; };
 		11162D111DCC9C490030123F /* ListActivityCommentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityCommentsRequest.swift; sourceTree = "<group>"; };
 		11162D131DCC9DBD0030123F /* CommentAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAPITest.swift; sourceTree = "<group>"; };
+		11162D161DCC9F5F0030123F /* ClubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubAPI.swift; sourceTree = "<group>"; };
+		11162D181DCC9F990030123F /* RetrieveClubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveClubRequest.swift; sourceTree = "<group>"; };
+		11162D1A1DCCA0CC0030123F /* ClubAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubAPITest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -551,6 +557,15 @@
 			name = Comment;
 			sourceTree = "<group>";
 		};
+		11162D151DCC9F460030123F /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				11162D161DCC9F5F0030123F /* ClubAPI.swift */,
+				11162D181DCC9F990030123F /* RetrieveClubRequest.swift */,
+			);
+			name = Club;
+			sourceTree = "<group>";
+		};
 		1151B1341DC9E53600AE054F /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,12 +582,12 @@
 			children = (
 				118668FE1DCB629B006D5275 /* Activity */,
 				1151B1401DC9F0CC00AE054F /* Athlete */,
+				11162D151DCC9F460030123F /* Club */,
 				11162D0E1DCC9C0E0030123F /* Comment */,
 				118668EA1DCB3851006D5275 /* Common */,
 				118668ED1DCB3B46006D5275 /* Friend */,
 				11162D001DCC968F0030123F /* Kudos */,
 				11162D071DCC98940030123F /* Photo */,
-				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -600,6 +615,7 @@
 				118668F21DCB3DD2006D5275 /* FriendAPITest.swift */,
 				11162D051DCC978A0030123F /* KudosAPITest.swift */,
 				11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */,
+				11162D1A1DCCA0CC0030123F /* ClubAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -623,6 +639,7 @@
 		118668EA1DCB3851006D5275 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
 				118668EB1DCB385D006D5275 /* PaginatedRequest.swift */,
 			);
 			name = Common;
@@ -1192,6 +1209,7 @@
 				110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */,
 				11DADB511DBF60A400194349 /* Totals.swift in Sources */,
 				1186690E1DCBA601006D5275 /* ActivityArrayRequest.swift in Sources */,
+				11162D191DCC9F990030123F /* RetrieveClubRequest.swift in Sources */,
 				1151B1191DC8AE9200AE054F /* PhotoParser.swift in Sources */,
 				11DADB4D1DBF5F6F00194349 /* MeasurementPreference.swift in Sources */,
 				110683191DC7A99400A08026 /* LeaderboardEntryParser.swift in Sources */,
@@ -1221,6 +1239,7 @@
 				11DADB471DBF5E0C00194349 /* AthleteType.swift in Sources */,
 				11DADB351DBF50B700194349 /* DateRange.swift in Sources */,
 				11A6A9651DBE4BDC003E5302 /* Coordinates.swift in Sources */,
+				11162D171DCC9F5F0030123F /* ClubAPI.swift in Sources */,
 				11EFB3101DC73F150096AD9B /* ActivityTypeParser.swift in Sources */,
 				110682C51DC7550600A08026 /* PowerParser.swift in Sources */,
 				1151B1311DC9DE4A00AE054F /* SegmentEffortParser.swift in Sources */,
@@ -1298,6 +1317,7 @@
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
 				11EFB3121DC73F5D0096AD9B /* ActivityTypeParserTest.swift in Sources */,
 				11EFB30A1DC73D000096AD9B /* AchievementTypeParserTest.swift in Sources */,
+				11162D1B1DCCA0CC0030123F /* ClubAPITest.swift in Sources */,
 				1151B10F1DC8A0BE00AE054F /* AthleteParserTest.swift in Sources */,
 				1151B1271DC8BB6F00AE054F /* ActivityParserTest.swift in Sources */,
 				1151B1171DC8AC4C00AE054F /* EventParserTest.swift in Sources */,
