@@ -24,6 +24,18 @@ class ClubAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
 
+    func testShouldListClubAnnouncements() {
+        let client = MockHTTPClient(respondWithJSON: ANNOUNCEMENTS_JSON)
+        let api = ClubAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Announcement>>?
+        api.listClubAnnouncements(withID: 109984).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("clubs/109984/announcements"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let CLUB_JSON = "{" +
         "  \"id\": 1," +
         "  \"resource_state\": 3," +
@@ -48,4 +60,31 @@ class ClubAPITest: XCTestCase {
         "  \"following_count\": 1," +
         "  \"url\": \"strava-cycling\"" +
     "}"
+    
+    let ANNOUNCEMENTS_JSON = "[" +
+        "  {" +
+        "    \"id\": 1219827," +
+        "    \"resource_state\": 2," +
+        "    \"club_id\": 109984," +
+        "    \"athlete\": {" +
+        "      \"id\": 227615," +
+        "      \"resource_state\": 2," +
+        "      \"firstname\": \"John\"," +
+        "      \"lastname\": \"Applestrava\"," +
+        "      \"profile_medium\": \"http://pics.com/227615/medium.jpg\"," +
+        "      \"profile\": \"http://pics.com/227615/large.jpg\"," +
+        "      \"city\": \"San Francisco\"," +
+        "      \"state\": \"California\"," +
+        "      \"country\": \"United States\"," +
+        "      \"sex\": \"M\"," +
+        "      \"friend\": \"accepted\"," +
+        "      \"follower\": \"accepted\"," +
+        "      \"premium\": true," +
+        "      \"created_at\": \"2009-08-26T13:42:05Z\"," +
+        "      \"updated_at\": \"2013-01-11T18:51:00Z\"" +
+        "    }," +
+        "    \"created_at\": \"2015-04-01T21:14:02Z\"," +
+        "    \"message\": \"hello club\"" +
+        "  }" +
+    "]"
 }

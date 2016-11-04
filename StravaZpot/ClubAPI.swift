@@ -18,4 +18,8 @@ public class ClubAPI {
     public func retrieveClub(withID id : Int) -> RetrieveClubRequest {
         return RetrieveClubRequest(client: client, id: id)
     }
+    
+    public func listClubAnnouncements(withID id : Int) -> ListClubAnnouncementsRequest {
+        return ListClubAnnouncementsRequest(client: client, id: id)
+    }
 }

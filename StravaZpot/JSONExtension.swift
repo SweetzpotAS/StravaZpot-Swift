@@ -272,4 +272,12 @@ extension JSON {
     var commentArray : EquatableArray<Comment>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.comment }) : nil
     }
+    
+    var announcement : Announcement? {
+        return exists() ? AnnouncementParser().from(json: self) : nil
+    }
+    
+    var announcementArray : EquatableArray<Announcement>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.announcement }) : nil
+    }
 }
