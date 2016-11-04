@@ -248,4 +248,13 @@ extension JSON {
     var activityZoneArray : EquatableArray<ActivityZone>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.activityZone }) : nil
     }
+    
+    var activityLap : ActivityLap? {
+        return exists() ? ActivityLapParser().from(json: self) : nil
+    }
+    
+    var activityLapArray : EquatableArray<ActivityLap>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.activityLap }) : nil
+    }
+    
 }

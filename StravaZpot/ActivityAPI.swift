@@ -62,4 +62,8 @@ public class ActivityAPI {
     public func listActivityZones(withID id : Int) -> ListActivityZonesRequest {
         return ListActivityZonesRequest(client: client, id: id)
     }
+    
+    public func listActivityLaps(withID id : Int) -> ListActivityLapsRequest {
+        return ListActivityLapsRequest(client: client, id: id)
+    }
 }

@@ -134,6 +134,18 @@ class ActivityAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldListActivityLaps() {
+        let client = MockHTTPClient(respondWithJSON: ACTIVITY_LAPS_JSON)
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<ActivityLap>>?
+        api.listActivityLaps(withID: 321934).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("activities/321934/laps"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let ACTIVITY_JSON = "{" +
         "  \"id\": 321934," +
         "  \"resource_state\": 3," +
@@ -335,40 +347,71 @@ class ActivityAPITest: XCTestCase {
         "  ]" +
     "}"
     
-    let ACTIVITY_ZONES_JSON = "[\n" +
-        "  {\n" +
-        "    \"score\": 215,\n" +
-        "    \"distribution_buckets\": [\n" +
-        "      { \"min\": 0,   \"max\":115,  \"time\": 1735 },\n" +
-        "      { \"min\": 115, \"max\": 152, \"time\": 5966 },\n" +
-        "      { \"min\": 152, \"max\": 171, \"time\": 4077 },\n" +
-        "      { \"min\": 171, \"max\": 190, \"time\": 4238 },\n" +
-        "      { \"min\": 190, \"max\": -1,  \"time\": 36 }\n" +
-        "    ],\n" +
-        "    \"type\": \"heartrate\",\n" +
-        "    \"resource_state\": 3,\n" +
-        "    \"sensor_based\": true,\n" +
-        "    \"points\": 119,\n" +
-        "    \"custom_zones\": false,\n" +
-        "    \"max\": 196\n" +
-        "  },\n" +
-        "  {\n" +
-        "    \"distribution_buckets\": [\n" +
-        "      { \"min\": 0,   \"max\": 0,   \"time\": 3043 },\n" +
-        "      { \"min\": 0,   \"max\": 50,  \"time\": 999 },\n" +
-        "      { \"min\": 50,  \"max\": 100, \"time\": 489 },\n" +
-        "      { \"min\": 100, \"max\": 150, \"time\": 737 },\n" +
-        "      { \"min\": 150, \"max\": 200, \"time\": 1299 },\n" +
-        "      { \"min\": 200, \"max\": 250, \"time\": 1478 },\n" +
-        "      { \"min\": 250, \"max\": 300, \"time\": 1523 },\n" +
-        "      { \"min\": 300, \"max\": 350, \"time\": 2154 },\n" +
-        "      { \"min\": 350, \"max\": 400, \"time\": 2226 },\n" +
-        "      { \"min\": 400, \"max\": 450, \"time\": 1181 },\n" +
-        "      { \"min\": 450, \"max\": -1,  \"time\": 923 }\n" +
-        "    ],\n" +
-        "    \"type\": \"power\",\n" +
-        "    \"resource_state\": 3,\n" +
-        "    \"sensor_based\": true\n" +
-        "  }\n" +
+    let ACTIVITY_ZONES_JSON = "[" +
+        "  {" +
+        "    \"score\": 215," +
+        "    \"distribution_buckets\": [" +
+        "      { \"min\": 0,   \"max\":115,  \"time\": 1735 }," +
+        "      { \"min\": 115, \"max\": 152, \"time\": 5966 }," +
+        "      { \"min\": 152, \"max\": 171, \"time\": 4077 }," +
+        "      { \"min\": 171, \"max\": 190, \"time\": 4238 }," +
+        "      { \"min\": 190, \"max\": -1,  \"time\": 36 }" +
+        "    ]," +
+        "    \"type\": \"heartrate\"," +
+        "    \"resource_state\": 3," +
+        "    \"sensor_based\": true," +
+        "    \"points\": 119," +
+        "    \"custom_zones\": false," +
+        "    \"max\": 196" +
+        "  }," +
+        "  {" +
+        "    \"distribution_buckets\": [" +
+        "      { \"min\": 0,   \"max\": 0,   \"time\": 3043 }," +
+        "      { \"min\": 0,   \"max\": 50,  \"time\": 999 }," +
+        "      { \"min\": 50,  \"max\": 100, \"time\": 489 }," +
+        "      { \"min\": 100, \"max\": 150, \"time\": 737 }," +
+        "      { \"min\": 150, \"max\": 200, \"time\": 1299 }," +
+        "      { \"min\": 200, \"max\": 250, \"time\": 1478 }," +
+        "      { \"min\": 250, \"max\": 300, \"time\": 1523 }," +
+        "      { \"min\": 300, \"max\": 350, \"time\": 2154 }," +
+        "      { \"min\": 350, \"max\": 400, \"time\": 2226 }," +
+        "      { \"min\": 400, \"max\": 450, \"time\": 1181 }," +
+        "      { \"min\": 450, \"max\": -1,  \"time\": 923 }" +
+        "    ]," +
+        "    \"type\": \"power\"," +
+        "    \"resource_state\": 3," +
+        "    \"sensor_based\": true" +
+        "  }" +
+    "]"
+    
+    let ACTIVITY_LAPS_JSON = "[" +
+        "  {" +
+        "    \"id\": 401614652," +
+        "    \"resource_state\": 2," +
+        "    \"name\": \"Lap 1\"," +
+        "    \"activity\": {" +
+        "      \"id\": 123" +
+        "    }," +
+        "    \"athlete\": {" +
+        "      \"id\": 227615" +
+        "    }," +
+        "    \"elapsed_time\": 7092," +
+        "    \"moving_time\": 6870," +
+        "    \"start_date\": \"2013-11-02T17:39:37Z\"," +
+        "    \"start_date_local\": \"2013-11-02T10:39:37Z\"," +
+        "    \"distance\": 42121.5," +
+        "    \"start_index\": 0," +
+        "    \"end_index\": 6826," +
+        "    \"total_elevation_gain\": 766.0," +
+        "    \"average_speed\": 5.9," +
+        "    \"max_speed\": 16.8," +
+        "    \"average_cadence\": 64.7," +
+        "    \"average_watts\": 156.2," +
+        "    \"device_watts\": false," +
+        "    \"has_heartrate\": true," +
+        "    \"average_heartrate\": 141.1," +
+        "    \"max_heartrate\": 176.0," +
+        "    \"lap_index\": 1" +
+        "  }" +
     "]"
 }

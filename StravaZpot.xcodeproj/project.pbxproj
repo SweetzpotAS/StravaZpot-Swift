@@ -63,6 +63,7 @@
 		110683221DC7AE6400A08026 /* LeaderboardEntryParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683211DC7AE6400A08026 /* LeaderboardEntryParserTest.swift */; };
 		110683241DC7AFF700A08026 /* LeaderboardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683231DC7AFF700A08026 /* LeaderboardParser.swift */; };
 		110683261DC7B09E00A08026 /* LeaderboardParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110683251DC7B09E00A08026 /* LeaderboardParserTest.swift */; };
+		11162CFF1DCC93D30030123F /* ListActivityLapsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162CFE1DCC93D30030123F /* ListActivityLapsRequest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
@@ -298,6 +299,7 @@
 		110683211DC7AE6400A08026 /* LeaderboardEntryParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardEntryParserTest.swift; sourceTree = "<group>"; };
 		110683231DC7AFF700A08026 /* LeaderboardParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardParser.swift; sourceTree = "<group>"; };
 		110683251DC7B09E00A08026 /* LeaderboardParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardParserTest.swift; sourceTree = "<group>"; };
+		11162CFE1DCC93D30030123F /* ListActivityLapsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityLapsRequest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
@@ -603,6 +605,7 @@
 				118669111DCBAA1C006D5275 /* ListFriendsActivitiesRequest.swift */,
 				118669131DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift */,
 				118669151DCBAD25006D5275 /* ListActivityZonesRequest.swift */,
+				11162CFE1DCC93D30030123F /* ListActivityLapsRequest.swift */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -1107,6 +1110,7 @@
 				110682FD1DC76DF700A08026 /* RouteSubtypeParser.swift in Sources */,
 				110682F91DC76D4700A08026 /* RouteTypeParser.swift in Sources */,
 				11DADB4B1DBF5EC700194349 /* HeartRate.swift in Sources */,
+				11162CFF1DCC93D30030123F /* ListActivityLapsRequest.swift in Sources */,
 				11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */,
 				1151B1381DC9E57100AE054F /* StravaResult.swift in Sources */,
 				118669161DCBAD25006D5275 /* ListActivityZonesRequest.swift in Sources */,
