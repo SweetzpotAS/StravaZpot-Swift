@@ -257,4 +257,11 @@ extension JSON {
         return exists() ? EquatableArray(array: self.flatMap{ $1.activityLap }) : nil
     }
     
+    var photo : Photo? {
+        return exists() ? PhotoParser().from(json: self) : nil
+    }
+    
+    var photoArray : EquatableArray<Photo>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.photo }) : nil
+    }
 }
