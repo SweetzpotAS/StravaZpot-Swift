@@ -39,4 +39,18 @@ class StreamAPITest: XCTestCase {
         expect(client.lastParameters["resolution"] as! String?).to(equal("low"))
         expect(client.lastParameters["series_type"] as! String?).to(equal("time"))
     }
+    
+    func testShouldListSegmentStreams() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = StreamAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<StravaZpot.Stream>>?
+        api.listSegmentStreams(withID: 112233, forTypes: .altitude, .time, .temperature, withResolution: .low, withSeriesType: .time).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segment/112233/streams/altitude,time,temp"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["resolution"] as! String?).to(equal("low"))
+        expect(client.lastParameters["series_type"] as! String?).to(equal("time"))
+    }
 }

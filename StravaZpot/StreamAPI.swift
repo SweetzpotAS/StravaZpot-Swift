@@ -28,4 +28,11 @@ public class StreamAPI {
                                          withSeriesType seriesType : SeriesType? = nil) -> ListSegmentEffortStreamsRequest {
         return ListSegmentEffortStreamsRequest(client: client, id: id, types: types, resolution: resolution, seriesType: seriesType)
     }
+    
+    public func listSegmentStreams(withID id : Int,
+                                   forTypes types : StreamType...,
+                                   withResolution resolution : Resolution? = nil,
+                                   withSeriesType seriesType : SeriesType? = nil) -> ListSegmentStreamsRequest {
+        return ListSegmentStreamsRequest(client: client, id: id, types: types, resolution: resolution, seriesType: seriesType)
+    }
 }
