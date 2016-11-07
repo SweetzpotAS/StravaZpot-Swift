@@ -35,4 +35,8 @@ public class StreamAPI {
                                    withSeriesType seriesType : SeriesType? = nil) -> ListSegmentStreamsRequest {
         return ListSegmentStreamsRequest(client: client, id: id, types: types, resolution: resolution, seriesType: seriesType)
     }
+    
+    public func listRouteStreams(withID id : Int) -> ListRouteStreamsRequest {
+        return ListRouteStreamsRequest(client: client, id: id)
+    }
 }
