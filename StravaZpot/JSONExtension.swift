@@ -308,4 +308,12 @@ extension JSON {
     var leaderboard : Leaderboard? {
         return exists() ? LeaderboardParser().from(json: self) : nil
     }
+    
+    var stream : Stream? {
+        return exists() ? StreamParser().from(json: self) : nil
+    }
+    
+    var streamArray : EquatableArray<Stream>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.stream }) : nil
+    }
 }

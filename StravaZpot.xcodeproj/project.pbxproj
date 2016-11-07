@@ -86,6 +86,9 @@
 		113559F31DD0D365004C8BB5 /* SegmentEffortAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F21DD0D365004C8BB5 /* SegmentEffortAPI.swift */; };
 		113559F51DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F41DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift */; };
 		113559F71DD0D42E004C8BB5 /* SegmentEffortAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */; };
+		113559FA1DD0D5A2004C8BB5 /* StreamAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F91DD0D5A2004C8BB5 /* StreamAPI.swift */; };
+		113559FC1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559FB1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift */; };
+		113559FE1DD0D7BD004C8BB5 /* StreamAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */; };
 		1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1041DC888BE00AE054F /* SegmentParser.swift */; };
 		1151B1071DC88B7B00AE054F /* SegmentParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */; };
 		1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1081DC88F4300AE054F /* ClubParser.swift */; };
@@ -363,6 +366,9 @@
 		113559F21DD0D365004C8BB5 /* SegmentEffortAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentEffortAPI.swift; sourceTree = "<group>"; };
 		113559F41DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentEffortRequest.swift; sourceTree = "<group>"; };
 		113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentEffortAPITest.swift; sourceTree = "<group>"; };
+		113559F91DD0D5A2004C8BB5 /* StreamAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAPI.swift; sourceTree = "<group>"; };
+		113559FB1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityStreamsRequest.swift; sourceTree = "<group>"; };
+		113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAPITest.swift; sourceTree = "<group>"; };
 		1151B1041DC888BE00AE054F /* SegmentParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParser.swift; sourceTree = "<group>"; };
 		1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParserTest.swift; sourceTree = "<group>"; };
 		1151B1081DC88F4300AE054F /* ClubParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubParser.swift; sourceTree = "<group>"; };
@@ -641,6 +647,15 @@
 			name = SegmentEffort;
 			sourceTree = "<group>";
 		};
+		113559F81DD0D592004C8BB5 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				113559F91DD0D5A2004C8BB5 /* StreamAPI.swift */,
+				113559FB1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift */,
+			);
+			name = Stream;
+			sourceTree = "<group>";
+		};
 		1151B1341DC9E53600AE054F /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +682,7 @@
 				11F319A71DD092AA003CF870 /* Route */,
 				11F319B01DD09705003CF870 /* Segment */,
 				113559F11DD0D355004C8BB5 /* SegmentEffort */,
+				113559F81DD0D592004C8BB5 /* Stream */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -699,6 +715,7 @@
 				11F319AC1DD09394003CF870 /* RouteAPITest.swift */,
 				11F319B51DD097A7003CF870 /* SegmentAPITest.swift */,
 				113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */,
+				113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -1291,6 +1308,7 @@
 				11162D091DCC98B70030123F /* PhotoAPI.swift in Sources */,
 				118668E51DCB2FD9006D5275 /* GetAthleteZonesRequest.swift in Sources */,
 				1151B1151DC8AB0600AE054F /* EventParser.swift in Sources */,
+				113559FC1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift in Sources */,
 				1151B13F1DC9E85900AE054F /* AlamofireHTTPClient.swift in Sources */,
 				110682B51DC74FF100A08026 /* AthleteTypeParser.swift in Sources */,
 				11EFB2F81DC739040096AD9B /* SpeedParser.swift in Sources */,
@@ -1325,6 +1343,7 @@
 				1151B12D1DC9D92C00AE054F /* RouteParser.swift in Sources */,
 				110683111DC773F600A08026 /* StreamTypeParser.swift in Sources */,
 				11DADB5B1DBF6F5500194349 /* Membership.swift in Sources */,
+				113559FA1DD0D5A2004C8BB5 /* StreamAPI.swift in Sources */,
 				11F319BC1DD09CCE003CF870 /* StarSegmentRequest.swift in Sources */,
 				11DADB391DBF51A100194349 /* WeightClass.swift in Sources */,
 				11DADB7F1DBF891E00194349 /* Segment.swift in Sources */,
@@ -1486,6 +1505,7 @@
 				110682FB1DC76D7D00A08026 /* RouteTypeParserTest.swift in Sources */,
 				1151B12B1DC8D2F900AE054F /* ActivityLapParserTest.swift in Sources */,
 				1106830F1DC7733600A08026 /* SeriesTypeParserTest.swift in Sources */,
+				113559FE1DD0D7BD004C8BB5 /* StreamAPITest.swift in Sources */,
 				1106831D1DC7AB7B00A08026 /* DateParserTest.swift in Sources */,
 				110682FF1DC76E5B00A08026 /* RouteSubtypeParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
