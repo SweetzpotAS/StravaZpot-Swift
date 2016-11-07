@@ -246,6 +246,7 @@
 		11F319B81DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */; };
 		11F319BA1DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */; };
 		11F319BC1DD09CCE003CF870 /* StarSegmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319BB1DD09CCE003CF870 /* StarSegmentRequest.swift */; };
+		11F319BE1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319BD1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -520,6 +521,7 @@
 		11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMyStarredSegmentsRequest.swift; sourceTree = "<group>"; };
 		11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAthleteStarredSegmentsRequest.swift; sourceTree = "<group>"; };
 		11F319BB1DD09CCE003CF870 /* StarSegmentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarSegmentRequest.swift; sourceTree = "<group>"; };
+		11F319BD1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSegmentEffortsRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -883,6 +885,7 @@
 				11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */,
 				11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */,
 				11F319BB1DD09CCE003CF870 /* StarSegmentRequest.swift */,
+				11F319BD1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift */,
 			);
 			name = Segment;
 			sourceTree = "<group>";
@@ -1303,6 +1306,7 @@
 				11DADB7F1DBF891E00194349 /* Segment.swift in Sources */,
 				1151B1251DC8B6C900AE054F /* ActivityParser.swift in Sources */,
 				1151B1111DC8A3AC00AE054F /* AnnouncementParser.swift in Sources */,
+				11F319BE1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift in Sources */,
 				118668EF1DCB3B5F006D5275 /* FriendAPI.swift in Sources */,
 				110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */,
 				11DADB511DBF60A400194349 /* Totals.swift in Sources */,

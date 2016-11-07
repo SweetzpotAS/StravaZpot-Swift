@@ -74,6 +74,23 @@ class SegmentAPITest: XCTestCase {
         expect(client.lastParameters["starred"] as! Bool?).to(equal(false))
     }
     
+    func testShouldListSegmentEfforts() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = SegmentAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<SegmentEffort>>?
+        api.listSegmentEfforts(withID: 229781, forAthleteWithID: 1234, withStartDate: Date(day: 1, month: 1, year: 2015, hour: 0, minute: 0, second: 1), withEndDate: Date(day: 31, month: 12, year: 2015, hour: 23, minute: 59, second: 59)).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segments/229781/all_efforts"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["athlete_id"] as! Int?).to(equal(1234))
+        expect(client.lastParameters["start_date_local"] as! String?).to(equal("2015-01-01T00:00:01Z"))
+        expect(client.lastParameters["end_date_local"] as! String?).to(equal("2015-12-31T23:59:59Z"))
+        expect(client.lastParameters["page"] as! Int?).to(equal(2))
+        expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
+    }
+    
     let SEGMENT_JSON = "{" +
         "  \"id\": 229781," +
         "  \"resource_state\": 3," +

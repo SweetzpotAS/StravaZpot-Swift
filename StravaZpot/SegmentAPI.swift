@@ -34,4 +34,11 @@ public class SegmentAPI {
     public func unstarSegment(withID id : Int) -> StarSegmentRequest {
         return StarSegmentRequest(client: client, id: id, starred: false)
     }
+    
+    public func listSegmentEfforts(withID id : Int,
+                                   forAthleteWithID athleteID : Int,
+                                   withStartDate startDate : Date? = nil,
+                                   withEndDate endDate : Date? = nil) -> ListSegmentEffortsRequest {
+        return ListSegmentEffortsRequest(client: client, id: id, athleteID: athleteID, startDate: startDate, endDate: endDate)
+    }
 }
