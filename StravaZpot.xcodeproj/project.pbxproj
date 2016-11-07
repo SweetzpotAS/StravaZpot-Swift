@@ -138,7 +138,6 @@
 		118669081DCB9BF2006D5275 /* RetrieveActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */; };
 		1186690A1DCB9FD3006D5275 /* UpdateActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */; };
 		1186690C1DCBA408006D5275 /* DeleteActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */; };
-		1186690E1DCBA601006D5275 /* ActivityArrayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186690D1DCBA601006D5275 /* ActivityArrayRequest.swift */; };
 		118669101DCBA6E7006D5275 /* ListActivitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186690F1DCBA6E7006D5275 /* ListActivitiesRequest.swift */; };
 		118669121DCBAA1C006D5275 /* ListFriendsActivitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669111DCBAA1C006D5275 /* ListFriendsActivitiesRequest.swift */; };
 		118669141DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669131DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift */; };
@@ -224,6 +223,7 @@
 		11EFB31E1DC742AD0096AD9B /* SplitParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB31D1DC742AD0096AD9B /* SplitParserTest.swift */; };
 		11EFB3201DC744820096AD9B /* PrimaryPhotoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB31F1DC744820096AD9B /* PrimaryPhotoParser.swift */; };
 		11EFB3221DC749280096AD9B /* PrimaryPhotoParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3211DC749280096AD9B /* PrimaryPhotoParserTest.swift */; };
+		11F3198B1DD07DFC003CF870 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198A1DD07DFC003CF870 /* PostRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -387,7 +387,6 @@
 		118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveActivityRequest.swift; sourceTree = "<group>"; };
 		118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateActivityRequest.swift; sourceTree = "<group>"; };
 		1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteActivityRequest.swift; sourceTree = "<group>"; };
-		1186690D1DCBA601006D5275 /* ActivityArrayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityArrayRequest.swift; sourceTree = "<group>"; };
 		1186690F1DCBA6E7006D5275 /* ListActivitiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivitiesRequest.swift; sourceTree = "<group>"; };
 		118669111DCBAA1C006D5275 /* ListFriendsActivitiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFriendsActivitiesRequest.swift; sourceTree = "<group>"; };
 		118669131DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRelatedActivitiesRequest.swift; sourceTree = "<group>"; };
@@ -476,6 +475,7 @@
 		11EFB31D1DC742AD0096AD9B /* SplitParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitParserTest.swift; sourceTree = "<group>"; };
 		11EFB31F1DC744820096AD9B /* PrimaryPhotoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryPhotoParser.swift; sourceTree = "<group>"; };
 		11EFB3211DC749280096AD9B /* PrimaryPhotoParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryPhotoParserTest.swift; sourceTree = "<group>"; };
+		11F3198A1DD07DFC003CF870 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -645,6 +645,7 @@
 				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
 				118668EB1DCB385D006D5275 /* PaginatedRequest.swift */,
 				11162D1E1DCCA4D90030123F /* GetRequest.swift */,
+				11F3198A1DD07DFC003CF870 /* PostRequest.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -671,7 +672,6 @@
 				118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */,
 				118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */,
 				1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */,
-				1186690D1DCBA601006D5275 /* ActivityArrayRequest.swift */,
 				1186690F1DCBA6E7006D5275 /* ListActivitiesRequest.swift */,
 				118669111DCBAA1C006D5275 /* ListFriendsActivitiesRequest.swift */,
 				118669131DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift */,
@@ -1211,7 +1211,6 @@
 				118668EF1DCB3B5F006D5275 /* FriendAPI.swift in Sources */,
 				110682CD1DC75BC400A08026 /* TotalsParser.swift in Sources */,
 				11DADB511DBF60A400194349 /* Totals.swift in Sources */,
-				1186690E1DCBA601006D5275 /* ActivityArrayRequest.swift in Sources */,
 				11162D191DCC9F990030123F /* RetrieveClubRequest.swift in Sources */,
 				1151B1191DC8AE9200AE054F /* PhotoParser.swift in Sources */,
 				11DADB4D1DBF5F6F00194349 /* MeasurementPreference.swift in Sources */,
@@ -1294,6 +1293,7 @@
 				11A6A9711DBE5164003E5302 /* Time.swift in Sources */,
 				118668E11DCB2F01006D5275 /* OptionalExtension.swift in Sources */,
 				118669041DCB6340006D5275 /* ActivityRequest.swift in Sources */,
+				11F3198B1DD07DFC003CF870 /* PostRequest.swift in Sources */,
 				11DADB491DBF5E5500194349 /* FriendStatus.swift in Sources */,
 				11A6A9811DBE5959003E5302 /* AgeGroup.swift in Sources */,
 				1151B1501DC9F8D400AE054F /* JSONExtension.swift in Sources */,
