@@ -280,4 +280,12 @@ extension JSON {
     var announcementArray : EquatableArray<Announcement>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.announcement }) : nil
     }
+    
+    var event : Event? {
+        return exists() ? EventParser().from(json: self) : nil
+    }
+    
+    var eventArray : EquatableArray<Event>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.event }) : nil
+    }
 }

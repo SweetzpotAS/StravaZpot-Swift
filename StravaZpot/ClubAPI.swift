@@ -22,4 +22,8 @@ public class ClubAPI {
     public func listClubAnnouncements(withID id : Int) -> ListClubAnnouncementsRequest {
         return ListClubAnnouncementsRequest(client: client, id: id)
     }
+    
+    public func listClubGroupEvents(withID id : Int) -> ListClubGroupEventsRequest {
+        return ListClubGroupEventsRequest(client: client, id: id)
+    }
 }
