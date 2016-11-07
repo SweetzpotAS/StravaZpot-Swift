@@ -30,4 +30,8 @@ public class ClubAPI {
     public func listAthleteClubs() -> ListAthleteClubsRequest {
         return ListAthleteClubsRequest(client: client)
     }
+    
+    public func listClubMembers(withID id : Int) -> ListClubMembersRequest {
+        return ListClubMembersRequest(client: client, id: id)
+    }
 }
