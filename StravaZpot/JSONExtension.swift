@@ -304,4 +304,8 @@ extension JSON {
     var routeArray : EquatableArray<Route>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.route }) : nil
     }
+    
+    var leaderboard : Leaderboard? {
+        return exists() ? LeaderboardParser().from(json: self) : nil
+    }
 }

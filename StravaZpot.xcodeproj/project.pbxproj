@@ -81,6 +81,7 @@
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
+		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
 		1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1041DC888BE00AE054F /* SegmentParser.swift */; };
 		1151B1071DC88B7B00AE054F /* SegmentParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */; };
 		1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1081DC88F4300AE054F /* ClubParser.swift */; };
@@ -353,6 +354,7 @@
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
+		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
 		1151B1041DC888BE00AE054F /* SegmentParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParser.swift; sourceTree = "<group>"; };
 		1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParserTest.swift; sourceTree = "<group>"; };
 		1151B1081DC88F4300AE054F /* ClubParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubParser.swift; sourceTree = "<group>"; };
@@ -886,6 +888,7 @@
 				11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */,
 				11F319BB1DD09CCE003CF870 /* StarSegmentRequest.swift */,
 				11F319BD1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift */,
+				113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */,
 			);
 			name = Segment;
 			sourceTree = "<group>";
@@ -1361,6 +1364,7 @@
 				11F319971DD08935003CF870 /* ListClubMembersRequest.swift in Sources */,
 				11DADB791DBF838F00194349 /* Split.swift in Sources */,
 				11DADB451DBF5CAD00194349 /* Stream.swift in Sources */,
+				113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */,
 				110682C91DC7568F00A08026 /* ZonesParser.swift in Sources */,
 				11FB66C71DC35477006FF63E /* Parser.swift in Sources */,
 				11DADB691DBF758F00194349 /* AchievementType.swift in Sources */,

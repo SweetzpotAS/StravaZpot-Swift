@@ -91,6 +91,27 @@ class SegmentAPITest: XCTestCase {
         expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
     }
     
+    func testShouldRetrieveSegmentLeaderboard() {
+        let client = MockHTTPClient(respondWithJSON: LEADERBOARD_JSON)
+        let api = SegmentAPI(client: client)
+        
+        var result : StravaResult<Leaderboard>?
+        api.retrieveSegmentLeaderboard(withID: 229781, withGender: .female, withAgeGroup: .age_25_34, withWeightClass: .kg_65_74, following: true, withClubID: 321, inDateRange: .thisMonth, withContextEntries: 4).of(page: 2, itemsPerPage: 10).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segments/229781/leaderboard"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["gender"] as! String?).to(equal("F"))
+        expect(client.lastParameters["age_group"] as! String?).to(equal("25_34"))
+        expect(client.lastParameters["weight_class"] as! String?).to(equal("65_74"))
+        expect(client.lastParameters["following"] as! Bool?).to(equal(true))
+        expect(client.lastParameters["club_id"] as! Int?).to(equal(321))
+        expect(client.lastParameters["date_range"] as! String?).to(equal("this_month"))
+        expect(client.lastParameters["context_entries"] as! Int?).to(equal(4))
+        expect(client.lastParameters["page"] as! Int?).to(equal(2))
+        expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
+    }
+    
     let SEGMENT_JSON = "{" +
         "  \"id\": 229781," +
         "  \"resource_state\": 3," +
@@ -127,5 +148,43 @@ class SegmentAPITest: XCTestCase {
         "  \"athlete_count\": 7036," +
         "  \"hazardous\": false," +
         "  \"star_count\": 0" +
+    "}"
+    
+    let LEADERBOARD_JSON = "{" +
+        "  \"entry_count\": 7037," +
+        "  \"entries\": [" +
+        "    {" +
+        "      \"athlete_name\": \"Jim Whimpey\"," +
+        "      \"athlete_id\": 123529," +
+        "      \"athlete_gender\": \"M\"," +
+        "      \"average_hr\": 190.5," +
+        "      \"average_watts\": 460.8," +
+        "      \"distance\": 2659.89," +
+        "      \"elapsed_time\": 360," +
+        "      \"moving_time\": 360," +
+        "      \"start_date\": \"2013-03-29T13:49:35Z\"," +
+        "      \"start_date_local\": \"2013-03-29T06:49:35Z\"," +
+        "      \"activity_id\": 46320211," +
+        "      \"effort_id\": 801006623," +
+        "      \"rank\": 1," +
+        "      \"athlete_profile\": \"http://pics.com/227615/large.jpg\"" +
+        "    }," +
+        "    {" +
+        "      \"athlete_name\": \"Chris Zappala\"," +
+        "      \"athlete_id\": 11673," +
+        "      \"athlete_gender\": \"M\"," +
+        "      \"average_hr\": null," +
+        "      \"average_watts\": 368.3," +
+        "      \"distance\": 2705.7," +
+        "      \"elapsed_time\": 374," +
+        "      \"moving_time\": 374," +
+        "      \"start_date\": \"2012-02-23T14:50:16Z\"," +
+        "      \"start_date_local\": \"2012-02-23T06:50:16Z\"," +
+        "      \"activity_id\": 4431903," +
+        "      \"effort_id\": 83383918," +
+        "      \"rank\": 2," +
+        "      \"athlete_profile\": \"http://pics.com/227615/large.jpg\"" +
+        "    }" +
+        "  ]" +
     "}"
 }

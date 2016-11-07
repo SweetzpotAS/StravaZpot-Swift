@@ -41,4 +41,15 @@ public class SegmentAPI {
                                    withEndDate endDate : Date? = nil) -> ListSegmentEffortsRequest {
         return ListSegmentEffortsRequest(client: client, id: id, athleteID: athleteID, startDate: startDate, endDate: endDate)
     }
+    
+    public func retrieveSegmentLeaderboard(withID id : Int,
+                                           withGender gender : Gender? = nil,
+                                           withAgeGroup ageGroup : AgeGroup? = nil,
+                                           withWeightClass weightClass : WeightClass? = nil,
+                                           following : Bool? = nil,
+                                           withClubID clubID : Int? = nil,
+                                           inDateRange dateRange : DateRange? = nil,
+                                           withContextEntries contextEntries : Int? = nil) -> RetrieveSegmentLeaderboardsRequest {
+        return RetrieveSegmentLeaderboardsRequest(client: client, id: id, gender: gender, ageGroup: ageGroup, weightClass: weightClass, following: following, clubID: clubID, dateRange: dateRange, contextEntries: contextEntries)
+    }
 }

@@ -11,18 +11,18 @@ import Foundation
 public struct LeaderboardEntry {
     public let athleteID : Int
     public let athleteName : String
-    public let athleteGender : Gender
-    public let averageHeartRate : Double
-    public let averageWatts : Double
-    public let distance : Distance
-    public let elapsedTime : Time
-    public let movingTime : Time
-    public let startDate : Date
-    public let stardDateLocal : Date
-    public let activityID : Int
-    public let effortID : Int
-    public let rank : Int
-    public let athleteProfile : String
+    public let athleteGender : Gender?
+    public let averageHeartRate : Double?
+    public let averageWatts : Double?
+    public let distance : Distance?
+    public let elapsedTime : Time?
+    public let movingTime : Time?
+    public let startDate : Date?
+    public let stardDateLocal : Date?
+    public let activityID : Int?
+    public let effortID : Int?
+    public let rank : Int?
+    public let athleteProfile : String?
 }
 
 extension LeaderboardEntry : Equatable {}
