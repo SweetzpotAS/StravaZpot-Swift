@@ -26,4 +26,12 @@ public class SegmentAPI {
     public func listAthleteStarredSegments(withID id : Int) -> ListAthleteStarredSegmentsRequest {
         return ListAthleteStarredSegmentsRequest(client: client, id: id)
     }
+    
+    public func starSegment(withID id : Int) -> StarSegmentRequest {
+        return StarSegmentRequest(client: client, id: id, starred: true)
+    }
+    
+    public func unstarSegment(withID id : Int) -> StarSegmentRequest {
+        return StarSegmentRequest(client: client, id: id, starred: false)
+    }
 }

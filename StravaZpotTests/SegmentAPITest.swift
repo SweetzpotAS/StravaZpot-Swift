@@ -48,6 +48,32 @@ class SegmentAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldStarASegment() {
+        let client = MockHTTPClient(respondWithJSON: SEGMENT_JSON)
+        let api = SegmentAPI(client: client)
+        
+        var result : StravaResult<Segment>?
+        api.starSegment(withID: 229781).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segments/229781/starred"))
+        expect(client.putCalled).to(equal(true))
+        expect(client.lastParameters["starred"] as! Bool?).to(equal(true))
+    }
+    
+    func testShouldUnstarASegment() {
+        let client = MockHTTPClient(respondWithJSON: SEGMENT_JSON)
+        let api = SegmentAPI(client: client)
+        
+        var result : StravaResult<Segment>?
+        api.unstarSegment(withID: 229781).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segments/229781/starred"))
+        expect(client.putCalled).to(equal(true))
+        expect(client.lastParameters["starred"] as! Bool?).to(equal(false))
+    }
+    
     let SEGMENT_JSON = "{" +
         "  \"id\": 229781," +
         "  \"resource_state\": 3," +
