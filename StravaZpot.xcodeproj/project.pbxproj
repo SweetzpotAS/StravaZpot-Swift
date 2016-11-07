@@ -236,6 +236,9 @@
 		11F319A21DD0913D003CF870 /* GearAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A11DD0913D003CF870 /* GearAPI.swift */; };
 		11F319A41DD09179003CF870 /* GetGearRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A31DD09179003CF870 /* GetGearRequest.swift */; };
 		11F319A61DD091D9003CF870 /* GearAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A51DD091D9003CF870 /* GearAPITest.swift */; };
+		11F319A91DD092BB003CF870 /* RouteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A81DD092BB003CF870 /* RouteAPI.swift */; };
+		11F319AB1DD092E4003CF870 /* RetrieveRouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319AA1DD092E4003CF870 /* RetrieveRouteRequest.swift */; };
+		11F319AD1DD09394003CF870 /* RouteAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319AC1DD09394003CF870 /* RouteAPITest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -500,6 +503,9 @@
 		11F319A11DD0913D003CF870 /* GearAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearAPI.swift; sourceTree = "<group>"; };
 		11F319A31DD09179003CF870 /* GetGearRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetGearRequest.swift; sourceTree = "<group>"; };
 		11F319A51DD091D9003CF870 /* GearAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearAPITest.swift; sourceTree = "<group>"; };
+		11F319A81DD092BB003CF870 /* RouteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAPI.swift; sourceTree = "<group>"; };
+		11F319AA1DD092E4003CF870 /* RetrieveRouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveRouteRequest.swift; sourceTree = "<group>"; };
+		11F319AC1DD09394003CF870 /* RouteAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAPITest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -623,6 +629,7 @@
 				11F319A01DD09129003CF870 /* Gear */,
 				11162D001DCC968F0030123F /* Kudos */,
 				11162D071DCC98940030123F /* Photo */,
+				11F319A71DD092AA003CF870 /* Route */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -652,6 +659,7 @@
 				11162D051DCC978A0030123F /* KudosAPITest.swift */,
 				11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */,
 				11F319A51DD091D9003CF870 /* GearAPITest.swift */,
+				11F319AC1DD09394003CF870 /* RouteAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -839,6 +847,15 @@
 				11F319A31DD09179003CF870 /* GetGearRequest.swift */,
 			);
 			name = Gear;
+			sourceTree = "<group>";
+		};
+		11F319A71DD092AA003CF870 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				11F319A81DD092BB003CF870 /* RouteAPI.swift */,
+				11F319AA1DD092E4003CF870 /* RetrieveRouteRequest.swift */,
+			);
+			name = Route;
 			sourceTree = "<group>";
 		};
 		11FB66C51DC35440006FF63E /* Parsers */ = {
@@ -1230,6 +1247,7 @@
 				11DADB4B1DBF5EC700194349 /* HeartRate.swift in Sources */,
 				11162CFF1DCC93D30030123F /* ListActivityLapsRequest.swift in Sources */,
 				11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */,
+				11F319AB1DD092E4003CF870 /* RetrieveRouteRequest.swift in Sources */,
 				1151B1381DC9E57100AE054F /* StravaResult.swift in Sources */,
 				118669161DCBAD25006D5275 /* ListActivityZonesRequest.swift in Sources */,
 				118669141DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift in Sources */,
@@ -1315,6 +1333,7 @@
 				110682D11DC75E7600A08026 /* StatsParser.swift in Sources */,
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
 				11F319951DD0880F003CF870 /* ListAthleteClubsRequest.swift in Sources */,
+				11F319A91DD092BB003CF870 /* RouteAPI.swift in Sources */,
 				1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */,
 				110683151DC79D5800A08026 /* StreamParser.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
@@ -1372,6 +1391,7 @@
 			files = (
 				110683171DC79E2100A08026 /* StreamParserTest.swift in Sources */,
 				1151B10B1DC890C900AE054F /* ClubParserTest.swift in Sources */,
+				11F319AD1DD09394003CF870 /* RouteAPITest.swift in Sources */,
 				110682C71DC7559300A08026 /* PowerParserTest.swift in Sources */,
 				11FB66CD1DC35661006FF63E /* CoordinatesParserTest.swift in Sources */,
 				11EFB3121DC73F5D0096AD9B /* ActivityTypeParserTest.swift in Sources */,

@@ -296,4 +296,12 @@ extension JSON {
     var leaveResult : LeaveResult? {
         return exists() ? LeaveResultParser().from(json: self) : nil
     }
+    
+    var route : Route? {
+        return exists() ? RouteParser().from(json: self) : nil
+    }
+    
+    var routeArray : EquatableArray<Route>? {
+        return exists() ? EquatableArray(array: self.flatMap{ $1.route }) : nil
+    }
 }
