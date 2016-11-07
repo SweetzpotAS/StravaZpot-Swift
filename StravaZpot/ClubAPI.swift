@@ -38,4 +38,8 @@ public class ClubAPI {
     public func listClubAdmins(withID id : Int) -> ListClubAdminsRequest {
         return ListClubAdminsRequest(client: client, id: id)
     }
+    
+    public func listClubActivities(withID id : Int, before : Int? = nil) -> ListClubActivitiesRequest {
+        return ListClubActivitiesRequest(client: client, id: id, before: before)
+    }
 }
