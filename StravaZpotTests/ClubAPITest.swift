@@ -99,6 +99,18 @@ class ClubAPITest: XCTestCase {
         expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
     }
     
+    func testShouldJoinAClub() {
+        let client = MockHTTPClient(respondWithJSON: JOIN_JSON)
+        let api = ClubAPI(client: client)
+        
+        var result : StravaResult<JoinResult>?
+        api.joinClub(withID: 123).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("clubs/123/join"))
+        expect(client.postCalled).to(equal(true))
+    }
+    
     let CLUB_JSON = "{" +
         "  \"id\": 1," +
         "  \"resource_state\": 3," +
@@ -192,4 +204,10 @@ class ClubAPITest: XCTestCase {
         "    \"address\": \"1 Happening St. Reno, NV\"" +
         "  }" +
     "]"
+    
+    let JOIN_JSON = "{" +
+        "  \"success\": true," +
+        "  \"active\": true," +
+        "  \"membership\": \"member\"" +
+    "}"
 }

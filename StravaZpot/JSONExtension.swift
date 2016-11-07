@@ -288,4 +288,8 @@ extension JSON {
     var eventArray : EquatableArray<Event>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.event }) : nil
     }
+    
+    var joinResult : JoinResult? {
+        return exists() ? JoinResultParser().from(json: self) : nil
+    }
 }
