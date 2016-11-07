@@ -8,23 +8,8 @@
 
 import Foundation
 
-public class DeleteActivityRequest {
-    private let client : HTTPClient
-    private let id : Int
-    
+public class DeleteActivityRequest : DeleteRequest<Bool> {
     init(client : HTTPClient, id : Int) {
-        self.client = client
-        self.id = id
-    }
-    
-    public func execute(callback : @escaping (StravaResult<Bool>) -> ()) {
-        client.delete(url: "activities/\(id)", parameters: [:], callback: { result in
-            switch(result) {
-            case .success(_):
-                callback(.success(true))
-            case let .error(content):
-                callback(.error(content))
-            }
-        })
+        super.init(client: client, url: "activities/\(id)", parse: { _ in true })
     }
 }

@@ -225,6 +225,7 @@
 		11F3198B1DD07DFC003CF870 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198A1DD07DFC003CF870 /* PostRequest.swift */; };
 		11F3198D1DD07FB8003CF870 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198C1DD07FB8003CF870 /* Request.swift */; };
 		11F3198F1DD08162003CF870 /* PutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198E1DD08162003CF870 /* PutRequest.swift */; };
+		11F319911DD0833A003CF870 /* DeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319901DD0833A003CF870 /* DeleteRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -478,6 +479,7 @@
 		11F3198A1DD07DFC003CF870 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		11F3198C1DD07FB8003CF870 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		11F3198E1DD08162003CF870 /* PutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutRequest.swift; sourceTree = "<group>"; };
+		11F319901DD0833A003CF870 /* DeleteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -650,6 +652,7 @@
 				11F3198E1DD08162003CF870 /* PutRequest.swift */,
 				11F3198C1DD07FB8003CF870 /* Request.swift */,
 				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
+				11F319901DD0833A003CF870 /* DeleteRequest.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1248,6 +1251,7 @@
 				11EFB3101DC73F150096AD9B /* ActivityTypeParser.swift in Sources */,
 				110682C51DC7550600A08026 /* PowerParser.swift in Sources */,
 				1151B1311DC9DE4A00AE054F /* SegmentEffortParser.swift in Sources */,
+				11F319911DD0833A003CF870 /* DeleteRequest.swift in Sources */,
 				110682E91DC767E500A08026 /* JoinResultParser.swift in Sources */,
 				11162D1F1DCCA4D90030123F /* GetRequest.swift in Sources */,
 				11326E711DC09BBE0020956F /* Activity.swift in Sources */,
