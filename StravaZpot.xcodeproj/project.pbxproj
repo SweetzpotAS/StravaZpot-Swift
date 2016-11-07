@@ -244,6 +244,7 @@
 		11F319B41DD09756003CF870 /* RetrieveSegmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */; };
 		11F319B61DD097A7003CF870 /* SegmentAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B51DD097A7003CF870 /* SegmentAPITest.swift */; };
 		11F319B81DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */; };
+		11F319BA1DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -516,6 +517,7 @@
 		11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentRequest.swift; sourceTree = "<group>"; };
 		11F319B51DD097A7003CF870 /* SegmentAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentAPITest.swift; sourceTree = "<group>"; };
 		11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMyStarredSegmentsRequest.swift; sourceTree = "<group>"; };
+		11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAthleteStarredSegmentsRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -877,6 +879,7 @@
 				11F319B11DD0971A003CF870 /* SegmentAPI.swift */,
 				11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */,
 				11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */,
+				11F319B91DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift */,
 			);
 			name = Segment;
 			sourceTree = "<group>";
@@ -1285,6 +1288,7 @@
 				11FB66C21DC343FB006FF63E /* Route.swift in Sources */,
 				11A6A97F1DBE5829003E5302 /* EquatableArray.swift in Sources */,
 				11FB66C41DC34612006FF63E /* SegmentEffort.swift in Sources */,
+				11F319BA1DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift in Sources */,
 				11EFB31C1DC742130096AD9B /* SplitParser.swift in Sources */,
 				11A6A9791DBE56E0003E5302 /* Map.swift in Sources */,
 				1151B1451DC9F15800AE054F /* GetCurrentAthleteRequest.swift in Sources */,

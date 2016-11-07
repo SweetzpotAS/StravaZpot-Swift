@@ -22,4 +22,8 @@ public class SegmentAPI {
     public func listMyStarredSegments() -> ListMyStarredSegmentsRequest {
         return ListMyStarredSegmentsRequest(client: client)
     }
+    
+    public func listAthleteStarredSegments(withID id : Int) -> ListAthleteStarredSegmentsRequest {
+        return ListAthleteStarredSegmentsRequest(client: client, id: id)
+    }
 }
