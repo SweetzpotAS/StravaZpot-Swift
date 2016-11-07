@@ -52,4 +52,11 @@ public class SegmentAPI {
                                            withContextEntries contextEntries : Int? = nil) -> RetrieveSegmentLeaderboardsRequest {
         return RetrieveSegmentLeaderboardsRequest(client: client, id: id, gender: gender, ageGroup: ageGroup, weightClass: weightClass, following: following, clubID: clubID, dateRange: dateRange, contextEntries: contextEntries)
     }
+    
+    public func explore(inRegion bounds : Bounds,
+                        withActivityType activityType : ExploreType? = nil,
+                        withMinCategory minCategory : Int? = nil,
+                        withMaxCategory maxCategory : Int? = nil) -> ExploreSegmentsRequest {
+        return ExploreSegmentsRequest(client: client, bounds: bounds, activityType: activityType, minCategory: minCategory, maxCategory: maxCategory)
+    }
 }

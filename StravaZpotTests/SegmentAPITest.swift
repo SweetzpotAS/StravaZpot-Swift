@@ -112,6 +112,22 @@ class SegmentAPITest: XCTestCase {
         expect(client.lastParameters["per_page"] as! Int?).to(equal(10))
     }
     
+    func testShouldExploreNearbySegments() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = SegmentAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Segment>>?
+        api.explore(inRegion: Bounds(southWest: Coordinates(latitude: 15, longitude: -24), northEast: Coordinates(latitude: -32, longitude: 40)), withActivityType: .running, withMinCategory: 3, withMaxCategory: 7).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segments/explore"))
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastParameters["bounds"] as! String?).to(equal("15.0,-24.0,-32.0,40.0"))
+        expect(client.lastParameters["activity_type"] as! String?).to(equal("running"))
+        expect(client.lastParameters["min_cat"] as! Int?).to(equal(3))
+        expect(client.lastParameters["max_cat"] as! Int?).to(equal(7))
+    }
+    
     let SEGMENT_JSON = "{" +
         "  \"id\": 229781," +
         "  \"resource_state\": 3," +
