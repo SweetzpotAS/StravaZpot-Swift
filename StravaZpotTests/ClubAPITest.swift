@@ -48,6 +48,18 @@ class ClubAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldListAthleteClubs() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = ClubAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Club>>?
+        api.listAthleteClubs().execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athlete/clubs"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let CLUB_JSON = "{" +
         "  \"id\": 1," +
         "  \"resource_state\": 3," +

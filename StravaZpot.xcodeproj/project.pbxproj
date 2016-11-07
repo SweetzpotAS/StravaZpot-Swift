@@ -227,6 +227,7 @@
 		11F3198F1DD08162003CF870 /* PutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198E1DD08162003CF870 /* PutRequest.swift */; };
 		11F319911DD0833A003CF870 /* DeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319901DD0833A003CF870 /* DeleteRequest.swift */; };
 		11F319931DD0844E003CF870 /* ListClubGroupEventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319921DD0844E003CF870 /* ListClubGroupEventsRequest.swift */; };
+		11F319951DD0880F003CF870 /* ListAthleteClubsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319941DD0880F003CF870 /* ListAthleteClubsRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -482,6 +483,7 @@
 		11F3198E1DD08162003CF870 /* PutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutRequest.swift; sourceTree = "<group>"; };
 		11F319901DD0833A003CF870 /* DeleteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRequest.swift; sourceTree = "<group>"; };
 		11F319921DD0844E003CF870 /* ListClubGroupEventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListClubGroupEventsRequest.swift; sourceTree = "<group>"; };
+		11F319941DD0880F003CF870 /* ListAthleteClubsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAthleteClubsRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -572,6 +574,7 @@
 				11162D181DCC9F990030123F /* RetrieveClubRequest.swift */,
 				11162D1C1DCCA1DA0030123F /* ListClubAnnouncementsRequest.swift */,
 				11F319921DD0844E003CF870 /* ListClubGroupEventsRequest.swift */,
+				11F319941DD0880F003CF870 /* ListAthleteClubsRequest.swift */,
 			);
 			name = Club;
 			sourceTree = "<group>";
@@ -1275,6 +1278,7 @@
 				11DADB7B1DBF84D000194349 /* WorkoutType.swift in Sources */,
 				110682D11DC75E7600A08026 /* StatsParser.swift in Sources */,
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
+				11F319951DD0880F003CF870 /* ListAthleteClubsRequest.swift in Sources */,
 				1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */,
 				110683151DC79D5800A08026 /* StreamParser.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
