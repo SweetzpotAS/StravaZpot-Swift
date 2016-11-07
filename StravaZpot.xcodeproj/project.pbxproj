@@ -83,6 +83,9 @@
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
 		113559F01DD0ADFF004C8BB5 /* ExploreSegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559EF1DD0ADFF004C8BB5 /* ExploreSegmentsRequest.swift */; };
+		113559F31DD0D365004C8BB5 /* SegmentEffortAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F21DD0D365004C8BB5 /* SegmentEffortAPI.swift */; };
+		113559F51DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F41DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift */; };
+		113559F71DD0D42E004C8BB5 /* SegmentEffortAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */; };
 		1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1041DC888BE00AE054F /* SegmentParser.swift */; };
 		1151B1071DC88B7B00AE054F /* SegmentParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */; };
 		1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1081DC88F4300AE054F /* ClubParser.swift */; };
@@ -357,6 +360,9 @@
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
 		113559EF1DD0ADFF004C8BB5 /* ExploreSegmentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreSegmentsRequest.swift; sourceTree = "<group>"; };
+		113559F21DD0D365004C8BB5 /* SegmentEffortAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentEffortAPI.swift; sourceTree = "<group>"; };
+		113559F41DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentEffortRequest.swift; sourceTree = "<group>"; };
+		113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentEffortAPITest.swift; sourceTree = "<group>"; };
 		1151B1041DC888BE00AE054F /* SegmentParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParser.swift; sourceTree = "<group>"; };
 		1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParserTest.swift; sourceTree = "<group>"; };
 		1151B1081DC88F4300AE054F /* ClubParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubParser.swift; sourceTree = "<group>"; };
@@ -626,6 +632,15 @@
 			name = Club;
 			sourceTree = "<group>";
 		};
+		113559F11DD0D355004C8BB5 /* SegmentEffort */ = {
+			isa = PBXGroup;
+			children = (
+				113559F21DD0D365004C8BB5 /* SegmentEffortAPI.swift */,
+				113559F41DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift */,
+			);
+			name = SegmentEffort;
+			sourceTree = "<group>";
+		};
 		1151B1341DC9E53600AE054F /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,6 +666,7 @@
 				11162D071DCC98940030123F /* Photo */,
 				11F319A71DD092AA003CF870 /* Route */,
 				11F319B01DD09705003CF870 /* Segment */,
+				113559F11DD0D355004C8BB5 /* SegmentEffort */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -682,6 +698,7 @@
 				11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */,
 				11F319AC1DD09394003CF870 /* RouteAPITest.swift */,
 				11F319B51DD097A7003CF870 /* SegmentAPITest.swift */,
+				113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -1281,6 +1298,7 @@
 				11162D021DCC969A0030123F /* KudosAPI.swift in Sources */,
 				110682B91DC750C400A08026 /* FriendStatusParser.swift in Sources */,
 				11FB66D11DC35977006FF63E /* DistanceParser.swift in Sources */,
+				113559F51DD0D3A4004C8BB5 /* RetrieveSegmentEffortRequest.swift in Sources */,
 				11EFB30C1DC73E020096AD9B /* AchievementParser.swift in Sources */,
 				110682FD1DC76DF700A08026 /* RouteSubtypeParser.swift in Sources */,
 				110682F91DC76D4700A08026 /* RouteTypeParser.swift in Sources */,
@@ -1382,6 +1400,7 @@
 				1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */,
 				110683151DC79D5800A08026 /* StreamParser.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
+				113559F31DD0D365004C8BB5 /* SegmentEffortAPI.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
 				11162D0B1DCC98E70030123F /* ListActivityPhotosRequest.swift in Sources */,
 				118668F71DCB4027006D5275 /* ListAthleteFriendsRequest.swift in Sources */,
@@ -1446,6 +1465,7 @@
 				11162D1B1DCCA0CC0030123F /* ClubAPITest.swift in Sources */,
 				1151B10F1DC8A0BE00AE054F /* AthleteParserTest.swift in Sources */,
 				1151B1271DC8BB6F00AE054F /* ActivityParserTest.swift in Sources */,
+				113559F71DD0D42E004C8BB5 /* SegmentEffortAPITest.swift in Sources */,
 				1151B1171DC8AC4C00AE054F /* EventParserTest.swift in Sources */,
 				11EFB2FE1DC73A0E0096AD9B /* TemperatureParserTest.swift in Sources */,
 				11EFB3161DC740620096AD9B /* PhotoSourceParserTest.swift in Sources */,
