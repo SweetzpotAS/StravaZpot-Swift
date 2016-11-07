@@ -72,6 +72,18 @@ class ClubAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldListClubAdmins() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = ClubAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Athlete>>?
+        api.listClubAdmins(withID: 123).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("clubs/123/admins"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let CLUB_JSON = "{" +
         "  \"id\": 1," +
         "  \"resource_state\": 3," +
