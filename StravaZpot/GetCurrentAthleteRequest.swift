@@ -7,26 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class GetCurrentAthleteRequest {
-    private let client : HTTPClient
-    
-    init(client : HTTPClient) {
-        self.client = client
-    }
-    
-    public func execute(callback : @escaping (StravaResult<Athlete>) -> ()) {
-        client.get(url: "athlete", parameters: [:]) { result in
-            switch(result) {
-            case let .success(json) :
-                if let athlete = json.athlete {
-                    callback(.success(athlete))
-                } else {
-                    callback(.error(StravaError.apiError(message: "Error parsing JSON")))
-                }
-            case let .error(content) :
-                callback(.error(content))
-            }
-        }
+public class GetCurrentAthleteRequest : GetRequest<Athlete> {
+    init(client: HTTPClient) {
+        super.init(client: client, url: "athlete", parse: { $0.athlete })
     }
 }

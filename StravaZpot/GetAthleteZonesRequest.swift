@@ -7,26 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class GetAthleteZonesRequest {
-    private let client : HTTPClient
-    
-    init(client : HTTPClient) {
-        self.client = client
-    }
-    
-    public func execute(callback : @escaping (StravaResult<Zones>) -> ()) {
-        client.get(url: "athlete/zones", parameters: [:]) { result in
-            switch(result) {
-            case let .success(json):
-                if let zones = json.zones {
-                    callback(.success(zones))
-                } else {
-                    callback(.error(StravaError.apiError(message: "Error parsing zones")))
-                }
-            case let .error(content):
-                callback(.error(content))
-            }
-        }
+public class GetAthleteZonesRequest : GetRequest<Zones> {
+    init(client: HTTPClient) {
+        super.init(client: client, url: "athlete/zones", parse: { $0.zones })
     }
 }

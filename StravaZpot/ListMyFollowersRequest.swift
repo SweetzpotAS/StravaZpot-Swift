@@ -7,12 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class ListMyFollowersRequest : AthleteArrayRequest, PaginatedRequest {
+public class ListMyFollowersRequest : GetRequest<EquatableArray<Athlete>>, PaginatedRequest {
     internal var page: Int?
     internal var perPage: Int?
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Athlete>>) -> ()) {
-        request(url: "athlete/followers", parameters: pageParameters(), callback: callback)
+    init(client : HTTPClient){
+        super.init(client: client, url: "athlete/followers", parse: { $0.athleteArray })
+    }
+    
+    override func getParameters() -> [String : Any] {
+        return pageParameters()
     }
 }

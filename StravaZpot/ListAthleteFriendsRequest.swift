@@ -7,18 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class ListAthleteFriendsRequest : AthleteArrayRequest, PaginatedRequest {
-    private let id : Int
+public class ListAthleteFriendsRequest : GetRequest<EquatableArray<Athlete>>, PaginatedRequest {
     internal var page: Int?
     internal var perPage: Int?
     
     init(client: HTTPClient, id: Int) {
-        self.id = id
-        super.init(client: client)
+        super.init(client: client, url: "athletes/\(id)/friends", parse: { $0.athleteArray })
     }
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Athlete>>) -> ()) {
-        request(url: "athletes/\(id)/friends", parameters: pageParameters(), callback: callback)
+    override func getParameters() -> [String : Any] {
+        return pageParameters()
     }
 }

@@ -7,28 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class ListClubAnnouncementsRequest {
-    private let client : HTTPClient
-    private let id : Int
-    
+public class ListClubAnnouncementsRequest : GetRequest<EquatableArray<Announcement>>{
     init(client : HTTPClient, id : Int) {
-        self.client = client
-        self.id = id
-    }
-    
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Announcement>>) -> ()) {
-        client.get(url: "clubs/\(id)/announcements", parameters: [:]) { result in
-            switch(result) {
-            case let .success(json):
-                if let announcementArray = json.announcementArray {
-                    callback(.success(announcementArray))
-                } else {
-                    callback(.error(.apiError(message: "Error parsing announcement list")))
-                }
-            case let .error(content):
-                callback(.error(content))
-            }
-        }
+        super.init(client: client, url: "clubs/\(id)/announcements", parse : { $0.announcementArray })
     }
 }

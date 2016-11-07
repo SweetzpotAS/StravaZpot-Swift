@@ -7,30 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class ListActivityCommentsRequest : PaginatedRequest {
-    private let client : HTTPClient
-    private let id : Int
+public class ListActivityCommentsRequest : GetRequest<EquatableArray<Comment>>, PaginatedRequest {
     internal var page : Int?
     internal var perPage: Int?
     
     init(client : HTTPClient, id : Int) {
-        self.client = client
-        self.id = id
+        super.init(client: client, url: "activities/\(id)/comments", parse: { $0.commentArray })
     }
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Comment>>) -> ()) {
-        client.get(url: "activities/\(id)/comments", parameters: pageParameters()){ result in
-            switch(result) {
-            case let .success(json):
-                if let commentArray = json.commentArray {
-                    callback(.success(commentArray))
-                } else {
-                    callback(.error(StravaError.apiError(message: "Error parsing comment array")))
-                }
-            case let .error(content):
-                callback(.error(content))
-            }
-        }
+    override func getParameters() -> [String : Any] {
+        return pageParameters()
     }
 }

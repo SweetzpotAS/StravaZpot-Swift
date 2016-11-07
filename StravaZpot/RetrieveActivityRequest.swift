@@ -7,19 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class RetrieveActivityRequest : ActivityRequest {
-    private let id : Int
-    private let includeAllEfforts : Bool?
+public class RetrieveActivityRequest : GetRequest<Activity> {
+    private let parameters : [String : Any]
     
     init(client : HTTPClient, id : Int, includeAllEfforts : Bool?) {
-        self.id = id
-        self.includeAllEfforts = includeAllEfforts
-        super.init(client: client)
+        parameters = ["include_all_efforts" : includeAllEfforts] as [String : Any]
+        super.init(client: client, url: "activities/\(id)", parse: { $0.activity })
     }
     
-    public func execute(callback : @escaping (StravaResult<Activity>) -> ()) {
-        let parameters = ["include_all_efforts" : includeAllEfforts] as [String : Any]
-        getRequest(url: "activities/\(id)", parameters: parameters, callback: callback)
+    override func getParameters() -> [String : Any] {
+        return parameters
     }
 }

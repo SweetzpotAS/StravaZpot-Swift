@@ -7,28 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class RetrieveClubRequest {
-    private let client : HTTPClient
-    private let id : Int
-    
+public class RetrieveClubRequest : GetRequest<Club> {
     init(client : HTTPClient, id : Int) {
-        self.client = client
-        self.id = id
-    }
-    
-    public func execute(callback : @escaping (StravaResult<Club>) -> ()) {
-        client.get(url: "clubs/\(id)", parameters: [:]) { result in
-            switch(result) {
-            case let .success(json):
-                if let club = json.club {
-                    callback(.success(club))
-                } else {
-                    callback(.error(StravaError.apiError(message: "Error parsing club")))
-                }
-            case let .error(content):
-                callback(.error(content))
-            }
-        }
+        super.init(client: client, url: "clubs/\(id)", parse: { $0.club })
     }
 }

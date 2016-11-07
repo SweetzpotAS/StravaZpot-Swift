@@ -7,29 +7,14 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class ListActivityPhotosRequest {
-    private let client : HTTPClient
-    private let id : Int
-    
+public class ListActivityPhotosRequest : GetRequest<EquatableArray<Photo>> {
     init(client : HTTPClient, id : Int) {
-        self.client = client
-        self.id = id
+        super.init(client: client, url: "activities/\(id)/photos", parse: { $0.photoArray })
     }
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<Photo>>) -> ()) {
-        let parameters = ["photo_sources" : true] as [String : Any]
-        client.get(url: "activities/\(id)/photos", parameters: parameters){ result in
-            switch(result){
-            case let .success(json):
-                if let photos = json.photoArray {
-                    callback(.success(photos))
-                } else {
-                    callback(.error(StravaError.apiError(message: "Error parsing photo array")))
-                }
-            case let .error(content):
-                callback(.error(content))
-            }
-        }
+    override func getParameters() -> [String : Any] {
+        return ["photo_sources" : true] as [String : Any]
     }
 }

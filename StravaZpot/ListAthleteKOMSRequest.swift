@@ -7,30 +7,19 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class ListAthleteKOMSRequest : PaginatedRequest {
-    private let client : HTTPClient
+public class ListAthleteKOMSRequest : GetRequest<EquatableArray<SegmentEffort>>, PaginatedRequest {
     private let id : Int
     internal var page: Int?
     internal var perPage: Int?
     
     init(client : HTTPClient, id : Int) {
-        self.client = client
         self.id = id
+        super.init(client: client, url: "athletes/\(id)/koms", parse: { $0.segmentEffortArray })
     }
     
-    public func execute(callback : @escaping (StravaResult<EquatableArray<SegmentEffort>>) -> ()) {
-        client.get(url: "athletes/\(id)/koms", parameters: pageParameters()) { result in
-            switch(result) {
-            case let .success(json):
-                if let effortArray = json.segmentEffortArray {
-                    callback(.success(effortArray))
-                } else {
-                    callback(.error(StravaError.apiError(message: "Error parsing segment effort array")))
-                }
-            case let .error(content):
-                callback(.error(content))
-            }
-        }
+    override func getParameters() -> [String : Any] {
+        return pageParameters()
     }
 }
