@@ -18,4 +18,8 @@ public class RouteAPI {
     public func retrieveRoute(withID id : Int) -> RetrieveRouteRequest {
         return RetrieveRouteRequest(client: client, id: id)
     }
+    
+    public func listAthleteRoutes(withID id : Int) -> ListAthleteRoutesRequest {
+        return ListAthleteRoutesRequest(client: client, id: id)
+    }
 }

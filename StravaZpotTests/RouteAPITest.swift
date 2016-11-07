@@ -24,6 +24,18 @@ class RouteAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShoudlListAthleteRoutes() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = RouteAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Route>>?
+        api.listAthleteRoutes(withID: 1234).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("athletes/1234/routes"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let ROUTE_JSON = "{" +
         "  \"athlete\": {" +
         "    \"id\": 265720," +
