@@ -18,4 +18,8 @@ public class SegmentAPI {
     public func retrieveSegment(withID id : Int) -> RetrieveSegmentRequest {
         return RetrieveSegmentRequest(client: client, id: id)
     }
+    
+    public func listMyStarredSegments() -> ListMyStarredSegmentsRequest {
+        return ListMyStarredSegmentsRequest(client: client)
+    }
 }

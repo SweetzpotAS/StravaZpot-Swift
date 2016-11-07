@@ -24,6 +24,18 @@ class SegmentAPITest: XCTestCase {
         expect(client.getCalled).to(equal(true))
     }
     
+    func testShouldListCurrentAthleteStarrredSegments() {
+        let client = MockHTTPClient(respondWithJSON: "[]")
+        let api = SegmentAPI(client: client)
+        
+        var result : StravaResult<EquatableArray<Segment>>?
+        api.listMyStarredSegments().execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("segments/starred"))
+        expect(client.getCalled).to(equal(true))
+    }
+    
     let SEGMENT_JSON = "{" +
         "  \"id\": 229781," +
         "  \"resource_state\": 3," +

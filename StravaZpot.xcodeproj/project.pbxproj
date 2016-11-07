@@ -243,6 +243,7 @@
 		11F319B21DD0971A003CF870 /* SegmentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B11DD0971A003CF870 /* SegmentAPI.swift */; };
 		11F319B41DD09756003CF870 /* RetrieveSegmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */; };
 		11F319B61DD097A7003CF870 /* SegmentAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B51DD097A7003CF870 /* SegmentAPITest.swift */; };
+		11F319B81DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -514,6 +515,7 @@
 		11F319B11DD0971A003CF870 /* SegmentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentAPI.swift; sourceTree = "<group>"; };
 		11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentRequest.swift; sourceTree = "<group>"; };
 		11F319B51DD097A7003CF870 /* SegmentAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentAPITest.swift; sourceTree = "<group>"; };
+		11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMyStarredSegmentsRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -874,6 +876,7 @@
 			children = (
 				11F319B11DD0971A003CF870 /* SegmentAPI.swift */,
 				11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */,
+				11F319B71DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift */,
 			);
 			name = Segment;
 			sourceTree = "<group>";
@@ -1397,6 +1400,7 @@
 				110682BD1DC751DE00A08026 /* MeasurementPreferenceParser.swift in Sources */,
 				11DADB671DBF74E700194349 /* LeaveResult.swift in Sources */,
 				11F319A41DD09179003CF870 /* GetGearRequest.swift in Sources */,
+				11F319B81DD09ADA003CF870 /* ListMyStarredSegmentsRequest.swift in Sources */,
 				11DADB5D1DBF6FB700194349 /* Club.swift in Sources */,
 				110683011DC76F0F00A08026 /* MapParser.swift in Sources */,
 				110683091DC7724300A08026 /* ResolutionParser.swift in Sources */,
