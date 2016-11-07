@@ -240,6 +240,9 @@
 		11F319AB1DD092E4003CF870 /* RetrieveRouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319AA1DD092E4003CF870 /* RetrieveRouteRequest.swift */; };
 		11F319AD1DD09394003CF870 /* RouteAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319AC1DD09394003CF870 /* RouteAPITest.swift */; };
 		11F319AF1DD09469003CF870 /* ListAthleteRoutesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319AE1DD09469003CF870 /* ListAthleteRoutesRequest.swift */; };
+		11F319B21DD0971A003CF870 /* SegmentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B11DD0971A003CF870 /* SegmentAPI.swift */; };
+		11F319B41DD09756003CF870 /* RetrieveSegmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */; };
+		11F319B61DD097A7003CF870 /* SegmentAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319B51DD097A7003CF870 /* SegmentAPITest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -508,6 +511,9 @@
 		11F319AA1DD092E4003CF870 /* RetrieveRouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveRouteRequest.swift; sourceTree = "<group>"; };
 		11F319AC1DD09394003CF870 /* RouteAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAPITest.swift; sourceTree = "<group>"; };
 		11F319AE1DD09469003CF870 /* ListAthleteRoutesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAthleteRoutesRequest.swift; sourceTree = "<group>"; };
+		11F319B11DD0971A003CF870 /* SegmentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentAPI.swift; sourceTree = "<group>"; };
+		11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentRequest.swift; sourceTree = "<group>"; };
+		11F319B51DD097A7003CF870 /* SegmentAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentAPITest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -632,6 +638,7 @@
 				11162D001DCC968F0030123F /* Kudos */,
 				11162D071DCC98940030123F /* Photo */,
 				11F319A71DD092AA003CF870 /* Route */,
+				11F319B01DD09705003CF870 /* Segment */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -662,6 +669,7 @@
 				11162D051DCC978A0030123F /* KudosAPITest.swift */,
 				11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */,
 				11F319AC1DD09394003CF870 /* RouteAPITest.swift */,
+				11F319B51DD097A7003CF870 /* SegmentAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -859,6 +867,15 @@
 				11F319A81DD092BB003CF870 /* RouteAPI.swift */,
 			);
 			name = Route;
+			sourceTree = "<group>";
+		};
+		11F319B01DD09705003CF870 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				11F319B11DD0971A003CF870 /* SegmentAPI.swift */,
+				11F319B31DD09756003CF870 /* RetrieveSegmentRequest.swift */,
+			);
+			name = Segment;
 			sourceTree = "<group>";
 		};
 		11FB66C51DC35440006FF63E /* Parsers */ = {
@@ -1227,7 +1244,9 @@
 				11DADB6F1DBF7CF600194349 /* ActivityZone.swift in Sources */,
 				11A6A9691DBE4ECA003E5302 /* Interval.swift in Sources */,
 				11A6A9671DBE4E64003E5302 /* Gender.swift in Sources */,
+				11F319B21DD0971A003CF870 /* SegmentAPI.swift in Sources */,
 				11DADB3D1DBF561B00194349 /* Leaderboard.swift in Sources */,
+				11F319B41DD09756003CF870 /* RetrieveSegmentRequest.swift in Sources */,
 				11EFB2FC1DC739CC0096AD9B /* TemperatureParser.swift in Sources */,
 				118669001DCB62A7006D5275 /* ActivityAPI.swift in Sources */,
 				110682E51DC765B300A08026 /* TerrainParser.swift in Sources */,
@@ -1460,6 +1479,7 @@
 				1151B11B1DC8AFF200AE054F /* PhotoParserTest.swift in Sources */,
 				11EFB3021DC73AFA0096AD9B /* TimeParserTest.swift in Sources */,
 				1151B1071DC88B7B00AE054F /* SegmentParserTest.swift in Sources */,
+				11F319B61DD097A7003CF870 /* SegmentAPITest.swift in Sources */,
 				110683031DC76F8C00A08026 /* MapParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
