@@ -133,7 +133,6 @@
 		118668FD1DCB60F8006D5275 /* ListBothFollowingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668FC1DCB60F8006D5275 /* ListBothFollowingRequest.swift */; };
 		118669001DCB62A7006D5275 /* ActivityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118668FF1DCB62A7006D5275 /* ActivityAPI.swift */; };
 		118669021DCB62D8006D5275 /* CreateActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669011DCB62D8006D5275 /* CreateActivityRequest.swift */; };
-		118669041DCB6340006D5275 /* ActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669031DCB6340006D5275 /* ActivityRequest.swift */; };
 		118669061DCB6814006D5275 /* ActivityAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669051DCB6814006D5275 /* ActivityAPITest.swift */; };
 		118669081DCB9BF2006D5275 /* RetrieveActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */; };
 		1186690A1DCB9FD3006D5275 /* UpdateActivityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */; };
@@ -225,6 +224,7 @@
 		11EFB3221DC749280096AD9B /* PrimaryPhotoParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB3211DC749280096AD9B /* PrimaryPhotoParserTest.swift */; };
 		11F3198B1DD07DFC003CF870 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198A1DD07DFC003CF870 /* PostRequest.swift */; };
 		11F3198D1DD07FB8003CF870 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198C1DD07FB8003CF870 /* Request.swift */; };
+		11F3198F1DD08162003CF870 /* PutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3198E1DD08162003CF870 /* PutRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -383,7 +383,6 @@
 		118668FC1DCB60F8006D5275 /* ListBothFollowingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBothFollowingRequest.swift; sourceTree = "<group>"; };
 		118668FF1DCB62A7006D5275 /* ActivityAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAPI.swift; sourceTree = "<group>"; };
 		118669011DCB62D8006D5275 /* CreateActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateActivityRequest.swift; sourceTree = "<group>"; };
-		118669031DCB6340006D5275 /* ActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRequest.swift; sourceTree = "<group>"; };
 		118669051DCB6814006D5275 /* ActivityAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAPITest.swift; sourceTree = "<group>"; };
 		118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveActivityRequest.swift; sourceTree = "<group>"; };
 		118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateActivityRequest.swift; sourceTree = "<group>"; };
@@ -478,6 +477,7 @@
 		11EFB3211DC749280096AD9B /* PrimaryPhotoParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryPhotoParserTest.swift; sourceTree = "<group>"; };
 		11F3198A1DD07DFC003CF870 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		11F3198C1DD07FB8003CF870 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		11F3198E1DD08162003CF870 /* PutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -647,6 +647,7 @@
 				11162D1E1DCCA4D90030123F /* GetRequest.swift */,
 				118668EB1DCB385D006D5275 /* PaginatedRequest.swift */,
 				11F3198A1DD07DFC003CF870 /* PostRequest.swift */,
+				11F3198E1DD08162003CF870 /* PutRequest.swift */,
 				11F3198C1DD07FB8003CF870 /* Request.swift */,
 				1151B13C1DC9E7D200AE054F /* StravaConfig.swift */,
 			);
@@ -671,7 +672,6 @@
 			children = (
 				118668FF1DCB62A7006D5275 /* ActivityAPI.swift */,
 				118669011DCB62D8006D5275 /* CreateActivityRequest.swift */,
-				118669031DCB6340006D5275 /* ActivityRequest.swift */,
 				118669071DCB9BF2006D5275 /* RetrieveActivityRequest.swift */,
 				118669091DCB9FD3006D5275 /* UpdateActivityRequest.swift */,
 				1186690B1DCBA408006D5275 /* DeleteActivityRequest.swift */,
@@ -1295,13 +1295,13 @@
 				11DADB651DBF740400194349 /* JoinResult.swift in Sources */,
 				11A6A9711DBE5164003E5302 /* Time.swift in Sources */,
 				118668E11DCB2F01006D5275 /* OptionalExtension.swift in Sources */,
-				118669041DCB6340006D5275 /* ActivityRequest.swift in Sources */,
 				11F3198B1DD07DFC003CF870 /* PostRequest.swift in Sources */,
 				11DADB491DBF5E5500194349 /* FriendStatus.swift in Sources */,
 				11A6A9811DBE5959003E5302 /* AgeGroup.swift in Sources */,
 				1151B1501DC9F8D400AE054F /* JSONExtension.swift in Sources */,
 				11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */,
 				11DADB5F1DBF733C00194349 /* Terrain.swift in Sources */,
+				11F3198F1DD08162003CF870 /* PutRequest.swift in Sources */,
 				118668DD1DCA49EE006D5275 /* UpdateAthleteRequest.swift in Sources */,
 				110682BD1DC751DE00A08026 /* MeasurementPreferenceParser.swift in Sources */,
 				11DADB671DBF74E700194349 /* LeaveResult.swift in Sources */,
