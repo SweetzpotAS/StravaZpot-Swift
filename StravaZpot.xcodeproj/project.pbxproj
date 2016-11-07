@@ -89,6 +89,7 @@
 		113559FA1DD0D5A2004C8BB5 /* StreamAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559F91DD0D5A2004C8BB5 /* StreamAPI.swift */; };
 		113559FC1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559FB1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift */; };
 		113559FE1DD0D7BD004C8BB5 /* StreamAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */; };
+		11355A001DD0DA0B004C8BB5 /* ListSegmentEffortStreamsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559FF1DD0DA0B004C8BB5 /* ListSegmentEffortStreamsRequest.swift */; };
 		1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1041DC888BE00AE054F /* SegmentParser.swift */; };
 		1151B1071DC88B7B00AE054F /* SegmentParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */; };
 		1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151B1081DC88F4300AE054F /* ClubParser.swift */; };
@@ -369,6 +370,7 @@
 		113559F91DD0D5A2004C8BB5 /* StreamAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAPI.swift; sourceTree = "<group>"; };
 		113559FB1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityStreamsRequest.swift; sourceTree = "<group>"; };
 		113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAPITest.swift; sourceTree = "<group>"; };
+		113559FF1DD0DA0B004C8BB5 /* ListSegmentEffortStreamsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSegmentEffortStreamsRequest.swift; sourceTree = "<group>"; };
 		1151B1041DC888BE00AE054F /* SegmentParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParser.swift; sourceTree = "<group>"; };
 		1151B1061DC88B7B00AE054F /* SegmentParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentParserTest.swift; sourceTree = "<group>"; };
 		1151B1081DC88F4300AE054F /* ClubParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubParser.swift; sourceTree = "<group>"; };
@@ -652,6 +654,7 @@
 			children = (
 				113559F91DD0D5A2004C8BB5 /* StreamAPI.swift */,
 				113559FB1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift */,
+				113559FF1DD0DA0B004C8BB5 /* ListSegmentEffortStreamsRequest.swift */,
 			);
 			name = Stream;
 			sourceTree = "<group>";
@@ -1465,6 +1468,7 @@
 				11EFB3181DC7410F0096AD9B /* WorkoutTypeParser.swift in Sources */,
 				11DADB6B1DBF75C100194349 /* Achievement.swift in Sources */,
 				11F3199D1DD08CDD003CF870 /* JoinClubRequest.swift in Sources */,
+				11355A001DD0DA0B004C8BB5 /* ListSegmentEffortStreamsRequest.swift in Sources */,
 				11F3198D1DD07FB8003CF870 /* Request.swift in Sources */,
 				113559F01DD0ADFF004C8BB5 /* ExploreSegmentsRequest.swift in Sources */,
 			);
