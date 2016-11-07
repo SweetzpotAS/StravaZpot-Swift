@@ -233,6 +233,9 @@
 		11F3199B1DD08B2D003CF870 /* ListClubActivitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3199A1DD08B2D003CF870 /* ListClubActivitiesRequest.swift */; };
 		11F3199D1DD08CDD003CF870 /* JoinClubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3199C1DD08CDD003CF870 /* JoinClubRequest.swift */; };
 		11F3199F1DD08E34003CF870 /* LeaveClubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3199E1DD08E34003CF870 /* LeaveClubRequest.swift */; };
+		11F319A21DD0913D003CF870 /* GearAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A11DD0913D003CF870 /* GearAPI.swift */; };
+		11F319A41DD09179003CF870 /* GetGearRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A31DD09179003CF870 /* GetGearRequest.swift */; };
+		11F319A61DD091D9003CF870 /* GearAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319A51DD091D9003CF870 /* GearAPITest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -494,6 +497,9 @@
 		11F3199A1DD08B2D003CF870 /* ListClubActivitiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListClubActivitiesRequest.swift; sourceTree = "<group>"; };
 		11F3199C1DD08CDD003CF870 /* JoinClubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinClubRequest.swift; sourceTree = "<group>"; };
 		11F3199E1DD08E34003CF870 /* LeaveClubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveClubRequest.swift; sourceTree = "<group>"; };
+		11F319A11DD0913D003CF870 /* GearAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearAPI.swift; sourceTree = "<group>"; };
+		11F319A31DD09179003CF870 /* GetGearRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetGearRequest.swift; sourceTree = "<group>"; };
+		11F319A51DD091D9003CF870 /* GearAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearAPITest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -614,6 +620,7 @@
 				11162D0E1DCC9C0E0030123F /* Comment */,
 				118668EA1DCB3851006D5275 /* Common */,
 				118668ED1DCB3B46006D5275 /* Friend */,
+				11F319A01DD09129003CF870 /* Gear */,
 				11162D001DCC968F0030123F /* Kudos */,
 				11162D071DCC98940030123F /* Photo */,
 			);
@@ -644,6 +651,7 @@
 				118668F21DCB3DD2006D5275 /* FriendAPITest.swift */,
 				11162D051DCC978A0030123F /* KudosAPITest.swift */,
 				11162D0C1DCC9A5E0030123F /* PhotoAPITest.swift */,
+				11F319A51DD091D9003CF870 /* GearAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -822,6 +830,15 @@
 				11DADB541DBF64A100194349 /* Zones.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		11F319A01DD09129003CF870 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				11F319A11DD0913D003CF870 /* GearAPI.swift */,
+				11F319A31DD09179003CF870 /* GetGearRequest.swift */,
+			);
+			name = Gear;
 			sourceTree = "<group>";
 		};
 		11FB66C51DC35440006FF63E /* Parsers */ = {
@@ -1262,6 +1279,7 @@
 				11F319931DD0844E003CF870 /* ListClubGroupEventsRequest.swift in Sources */,
 				11DADB591DBF6ECE00194349 /* SportType.swift in Sources */,
 				110683241DC7AFF700A08026 /* LeaderboardParser.swift in Sources */,
+				11F319A21DD0913D003CF870 /* GearAPI.swift in Sources */,
 				11DADB551DBF64A100194349 /* Zones.swift in Sources */,
 				110682F11DC76A2300A08026 /* FrameTypeParser.swift in Sources */,
 				1151B1091DC88F4300AE054F /* ClubParser.swift in Sources */,
@@ -1336,6 +1354,7 @@
 				118668DD1DCA49EE006D5275 /* UpdateAthleteRequest.swift in Sources */,
 				110682BD1DC751DE00A08026 /* MeasurementPreferenceParser.swift in Sources */,
 				11DADB671DBF74E700194349 /* LeaveResult.swift in Sources */,
+				11F319A41DD09179003CF870 /* GetGearRequest.swift in Sources */,
 				11DADB5D1DBF6FB700194349 /* Club.swift in Sources */,
 				110683011DC76F0F00A08026 /* MapParser.swift in Sources */,
 				110683091DC7724300A08026 /* ResolutionParser.swift in Sources */,
@@ -1384,6 +1403,7 @@
 				110682FF1DC76E5B00A08026 /* RouteSubtypeParserTest.swift in Sources */,
 				11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */,
 				110682BF1DC7521400A08026 /* MeasurementPreferenceParserTest.swift in Sources */,
+				11F319A61DD091D9003CF870 /* GearAPITest.swift in Sources */,
 				110682F31DC76A5200A08026 /* FrameTypeParserTest.swift in Sources */,
 				110682BB1DC7512C00A08026 /* FriendStatusParserTest.swift in Sources */,
 				1151B11F1DC8B34F00AE054F /* ActivityZoneParserTest.swift in Sources */,
