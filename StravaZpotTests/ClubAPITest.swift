@@ -111,6 +111,18 @@ class ClubAPITest: XCTestCase {
         expect(client.postCalled).to(equal(true))
     }
     
+    func testShouldLeaveAClub() {
+        let client = MockHTTPClient(respondWithJSON: LEAVE_JSON)
+        let api = ClubAPI(client: client)
+        
+        var result : StravaResult<LeaveResult>?
+        api.leaveClub(withID: 123).execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("clubs/123/leave"))
+        expect(client.postCalled).to(equal(true))
+    }
+    
     let CLUB_JSON = "{" +
         "  \"id\": 1," +
         "  \"resource_state\": 3," +
@@ -209,5 +221,10 @@ class ClubAPITest: XCTestCase {
         "  \"success\": true," +
         "  \"active\": true," +
         "  \"membership\": \"member\"" +
+    "}"
+    
+    let LEAVE_JSON = "{" +
+        "  \"success\": true," +
+        "  \"active\": false" +
     "}"
 }

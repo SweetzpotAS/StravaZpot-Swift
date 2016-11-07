@@ -232,6 +232,7 @@
 		11F319991DD08A34003CF870 /* ListClubAdminsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F319981DD08A34003CF870 /* ListClubAdminsRequest.swift */; };
 		11F3199B1DD08B2D003CF870 /* ListClubActivitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3199A1DD08B2D003CF870 /* ListClubActivitiesRequest.swift */; };
 		11F3199D1DD08CDD003CF870 /* JoinClubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3199C1DD08CDD003CF870 /* JoinClubRequest.swift */; };
+		11F3199F1DD08E34003CF870 /* LeaveClubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3199E1DD08E34003CF870 /* LeaveClubRequest.swift */; };
 		11FB66BC1DC33D29006FF63E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BB1DC33D29006FF63E /* Comment.swift */; };
 		11FB66BE1DC33F42006FF63E /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BD1DC33F42006FF63E /* Announcement.swift */; };
 		11FB66C01DC34268006FF63E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66BF1DC34268006FF63E /* Event.swift */; };
@@ -492,6 +493,7 @@
 		11F319981DD08A34003CF870 /* ListClubAdminsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListClubAdminsRequest.swift; sourceTree = "<group>"; };
 		11F3199A1DD08B2D003CF870 /* ListClubActivitiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListClubActivitiesRequest.swift; sourceTree = "<group>"; };
 		11F3199C1DD08CDD003CF870 /* JoinClubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinClubRequest.swift; sourceTree = "<group>"; };
+		11F3199E1DD08E34003CF870 /* LeaveClubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveClubRequest.swift; sourceTree = "<group>"; };
 		11FB66BB1DC33D29006FF63E /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		11FB66BD1DC33F42006FF63E /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		11FB66BF1DC34268006FF63E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -579,14 +581,15 @@
 			isa = PBXGroup;
 			children = (
 				11162D161DCC9F5F0030123F /* ClubAPI.swift */,
-				11162D181DCC9F990030123F /* RetrieveClubRequest.swift */,
+				11F3199C1DD08CDD003CF870 /* JoinClubRequest.swift */,
+				11F3199E1DD08E34003CF870 /* LeaveClubRequest.swift */,
+				11F319941DD0880F003CF870 /* ListAthleteClubsRequest.swift */,
+				11F3199A1DD08B2D003CF870 /* ListClubActivitiesRequest.swift */,
+				11F319981DD08A34003CF870 /* ListClubAdminsRequest.swift */,
 				11162D1C1DCCA1DA0030123F /* ListClubAnnouncementsRequest.swift */,
 				11F319921DD0844E003CF870 /* ListClubGroupEventsRequest.swift */,
-				11F319941DD0880F003CF870 /* ListAthleteClubsRequest.swift */,
 				11F319961DD08935003CF870 /* ListClubMembersRequest.swift */,
-				11F319981DD08A34003CF870 /* ListClubAdminsRequest.swift */,
-				11F3199A1DD08B2D003CF870 /* ListClubActivitiesRequest.swift */,
-				11F3199C1DD08CDD003CF870 /* JoinClubRequest.swift */,
+				11162D181DCC9F990030123F /* RetrieveClubRequest.swift */,
 			);
 			name = Club;
 			sourceTree = "<group>";
@@ -1326,6 +1329,7 @@
 				11DADB491DBF5E5500194349 /* FriendStatus.swift in Sources */,
 				11A6A9811DBE5959003E5302 /* AgeGroup.swift in Sources */,
 				1151B1501DC9F8D400AE054F /* JSONExtension.swift in Sources */,
+				11F3199F1DD08E34003CF870 /* LeaveClubRequest.swift in Sources */,
 				11A6A9611DBE49CF003E5302 /* ResourceState.swift in Sources */,
 				11DADB5F1DBF733C00194349 /* Terrain.swift in Sources */,
 				11F3198F1DD08162003CF870 /* PutRequest.swift in Sources */,

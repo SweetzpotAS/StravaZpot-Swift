@@ -292,4 +292,8 @@ extension JSON {
     var joinResult : JoinResult? {
         return exists() ? JoinResultParser().from(json: self) : nil
     }
+    
+    var leaveResult : LeaveResult? {
+        return exists() ? LeaveResultParser().from(json: self) : nil
+    }
 }

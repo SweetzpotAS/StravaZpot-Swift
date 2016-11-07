@@ -46,4 +46,8 @@ public class ClubAPI {
     public func joinClub(withID id : Int) -> JoinClubRequest {
         return JoinClubRequest(client: client, id: id)
     }
+    
+    public func leaveClub(withID id : Int) -> LeaveClubRequest {
+        return LeaveClubRequest(client: client, id: id)
+    }
 }
