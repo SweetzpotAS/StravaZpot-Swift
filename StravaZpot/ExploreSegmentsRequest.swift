@@ -9,7 +9,7 @@
 import Foundation
 
 public class ExploreSegmentsRequest : GetRequest<EquatableArray<Segment>> {
-    private let parameters : [String : Any]
+    private let parameters : [String : Any?]
     
     init(client : HTTPClient, bounds : Bounds, activityType : ExploreType?, minCategory : Int?, maxCategory : Int?) {
         parameters = [ "bounds" : bounds.description,

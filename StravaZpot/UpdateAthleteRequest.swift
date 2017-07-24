@@ -9,14 +9,14 @@
 import Foundation
 
 public class UpdateAthleteRequest : PutRequest<Athlete> {
-    private let parameters : [String : Any]
+    private let parameters : [String : Any?]
     
     init(client : HTTPClient, city : String?, state : String?, country : String?, sex : Gender?, weight : Double?) {
         parameters = [ "city" : city,
                        "state" : state,
                        "country" : country,
                        "sex" : sex?.rawValue,
-                       "weight" : weight] as [String : Any]
+                       "weight" : weight]
         super.init(client: client, url: "athlete", parse: { $0.athlete })
     }
     
