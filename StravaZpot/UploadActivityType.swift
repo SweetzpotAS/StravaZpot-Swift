@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum UploadActivityType : String {
+public enum UploadActivityType : String {
     case ride = "ride"
     case run = "run"
     case swim = "swim"

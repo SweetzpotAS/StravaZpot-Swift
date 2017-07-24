@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UploadStatus {
+public struct UploadStatus {
     let id : Int
     let externalID : String?
     let error : String?
@@ -18,7 +18,7 @@ struct UploadStatus {
 
 extension UploadStatus : Equatable {}
 
-func ==(lhs : UploadStatus, rhs : UploadStatus) -> Bool {
+public func ==(lhs : UploadStatus, rhs : UploadStatus) -> Bool {
     return  lhs.id         == rhs.id &&
             lhs.externalID == rhs.externalID &&
             lhs.error      == rhs.error &&

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DataType : String {
+public enum DataType : String {
     case fit = "fit"
     case fitGz = "fit.gz"
     case tcx = "tcx"
