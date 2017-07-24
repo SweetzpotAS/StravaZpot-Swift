@@ -17,7 +17,7 @@ public class ListAthleteFriendsRequest : GetRequest<EquatableArray<Athlete>>, Pa
         super.init(client: client, url: "athletes/\(id)/friends", parse: { $0.athleteArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return pageParameters()
     }
 }

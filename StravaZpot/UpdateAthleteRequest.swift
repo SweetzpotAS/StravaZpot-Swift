@@ -20,7 +20,7 @@ public class UpdateAthleteRequest : PutRequest<Athlete> {
         super.init(client: client, url: "athlete", parse: { $0.athlete })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters
     }
 }

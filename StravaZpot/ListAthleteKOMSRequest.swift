@@ -19,7 +19,7 @@ public class ListAthleteKOMSRequest : GetRequest<EquatableArray<SegmentEffort>>,
         super.init(client: client, url: "athletes/\(id)/koms", parse: { $0.segmentEffortArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return pageParameters()
     }
 }

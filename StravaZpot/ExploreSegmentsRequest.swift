@@ -19,7 +19,7 @@ public class ExploreSegmentsRequest : GetRequest<EquatableArray<Segment>> {
         super.init(client: client, url: "segments/explore", parse: { $0.segmentArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters
     }
 }

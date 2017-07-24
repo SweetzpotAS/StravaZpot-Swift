@@ -22,9 +22,17 @@ extension Dictionary {
     }
 }
 
-func +<T>(_ lhs : [T : Any], _ rhs : [T : Any]) -> [T : Any] {
-    var result = [T : Any]()
-    lhs.forEach{ result[$0.key] = $0.value }
-    rhs.forEach{ result[$0.key] = $0.value }
+func +<T>(_ lhs : [T : Any?], _ rhs : [T : Any?]) -> [T : Any?] {
+    var result = [T : Any?]()
+    lhs.forEach{
+        if $0.value != nil {
+            result[$0.key] = $0.value
+        }
+    }
+    rhs.forEach{
+        if $0.value != nil {
+            result[$0.key] = $0.value
+        }
+    }
     return result.flatten()
 }

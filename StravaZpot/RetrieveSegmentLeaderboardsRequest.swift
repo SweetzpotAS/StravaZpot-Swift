@@ -9,7 +9,7 @@
 import Foundation
 
 public class RetrieveSegmentLeaderboardsRequest : GetRequest<Leaderboard>, PaginatedRequest {
-    private let parameters : [String : Any]
+    private let parameters : [String : Any?]
     internal var page: Int?
     internal var perPage: Int?
     
@@ -24,7 +24,7 @@ public class RetrieveSegmentLeaderboardsRequest : GetRequest<Leaderboard>, Pagin
         super.init(client: client, url: "segments/\(id)/leaderboard", parse: { $0.leaderboard })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters + pageParameters()
     }
 }

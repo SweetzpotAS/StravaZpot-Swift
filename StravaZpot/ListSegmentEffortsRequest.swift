@@ -9,7 +9,7 @@
 import Foundation
 
 public class ListSegmentEffortsRequest : GetRequest<EquatableArray<SegmentEffort>>, PaginatedRequest {
-    private let parameters : [String : Any]
+    private let parameters : [String : Any?]
     internal var page : Int?
     internal var perPage: Int?
     
@@ -20,7 +20,7 @@ public class ListSegmentEffortsRequest : GetRequest<EquatableArray<SegmentEffort
         super.init(client: client, url: "segments/\(id)/all_efforts", parse: { $0.segmentEffortArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters + pageParameters()
     }
 }

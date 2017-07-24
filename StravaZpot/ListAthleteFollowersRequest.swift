@@ -17,7 +17,7 @@ public class ListAthleteFollowersRequest : GetRequest<EquatableArray<Athlete>>, 
         super.init(client: client, url: "athletes/\(id)/followers", parse: { $0.athleteArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return pageParameters()
     }
 }

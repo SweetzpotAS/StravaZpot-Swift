@@ -33,6 +33,27 @@ class ActivityAPITest: XCTestCase {
         expect(client.lastParameters["commute"] as! Bool?).to(equal(false))
     }
     
+    func testShouldCreateAnActivityWithMissingData() {
+        let client = MockHTTPClient(respondWithJSON: ACTIVITY_JSON)
+        let api = ActivityAPI(client: client)
+        
+        var result : StravaResult<Activity>?
+        api.createActivity(withName: "Rowing session", withType: .rowing, withStartDate: Date(day: 20, month: 1, year: 2016, hour: 12, minute: 35, second: 46), withElapsedTime: Time(seconds: 6345)).execute { result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.lastUrl).to(contain("activities"))
+        expect(client.postCalled).to(equal(true))
+        expect(client.lastParameters["name"] as! String?).to(equal("Rowing session"))
+        expect(client.lastParameters["type"] as! String?).to(equal("Rowing"))
+        expect(client.lastParameters["start_date_local"] as! String?).to(equal("2016-01-20T12:35:46Z"))
+        expect(client.lastParameters["elapsed_time"] as! Int?).to(equal(6345))
+        expect(client.lastParameters["description"] as! String?).to(beNil())
+        expect(client.lastParameters["distance"] as! Double?).to(beNil())
+        expect(client.lastParameters["private"] as! Bool?).to(beNil())
+        expect(client.lastParameters["trainer"] as! Bool?).to(beNil())
+        expect(client.lastParameters["commute"] as! Bool?).to(beNil())
+    }
+    
     func testShouldRetrieveActivity() {
         let client = MockHTTPClient(respondWithJSON: ACTIVITY_JSON)
         let api = ActivityAPI(client: client)

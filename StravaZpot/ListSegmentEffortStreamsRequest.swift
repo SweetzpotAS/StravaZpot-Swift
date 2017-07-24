@@ -9,7 +9,7 @@
 import Foundation
 
 public class ListSegmentEffortStreamsRequest : GetRequest<EquatableArray<Stream>> {
-    private let parameters : [String : Any]
+    private let parameters : [String : Any?]
     
     init(client : HTTPClient, id : Int, types : [StreamType], resolution : Resolution?, seriesType : SeriesType?) {
         parameters = [ "resolution" : resolution?.rawValue,
@@ -18,7 +18,7 @@ public class ListSegmentEffortStreamsRequest : GetRequest<EquatableArray<Stream>
         super.init(client: client, url: "segment_efforts/\(id)/streams/\(streamTypes)", parse: { $0.streamArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters
     }
 }

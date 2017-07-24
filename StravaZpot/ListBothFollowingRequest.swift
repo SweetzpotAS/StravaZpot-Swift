@@ -17,7 +17,7 @@ public class ListBothFollowingRequest : GetRequest<EquatableArray<Athlete>>, Pag
         super.init(client: client, url: "athletes/\(id)/both-following", parse: { $0.athleteArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return pageParameters()
     }
 }

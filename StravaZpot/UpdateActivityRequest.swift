@@ -9,7 +9,7 @@
 import Foundation
 
 public class UpdateActivityRequest : PutRequest<Activity> {
-    private let parameters : [String : Any]
+    private let parameters : [String : Any?]
     
     init(client : HTTPClient, id : Int, name : String?, type : ActivityType?, isPrivate : Bool?, hasTrainer : Bool?, commute : Bool?, gearID : String?, description : String?) {
         parameters = [ "name" : name,
@@ -18,11 +18,11 @@ public class UpdateActivityRequest : PutRequest<Activity> {
                        "trainer" : hasTrainer,
                        "commute" : commute,
                        "gear_id" : gearID,
-                       "description" : description] as [String : Any]
+                       "description" : description] as [String : Any?]
         super.init(client: client, url: "activities/\(id)", parse: { $0.activity })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters
     }
 }

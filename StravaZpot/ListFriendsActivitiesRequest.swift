@@ -15,11 +15,15 @@ public class ListFriendsActivitiesRequest : GetRequest<EquatableArray<Activity>>
     internal var perPage: Int?
     
     init(client : HTTPClient, before : Int?) {
-        parameters = ["before" : before] as [String : Any]
+        if let before = before {
+            parameters = ["before" : before]
+        } else {
+            parameters = [:]
+        }
         super.init(client: client, url: "activities/following", parse: { $0.activityArray })
     }
     
-    override func getParameters() -> [String : Any] {
+    override func getParameters() -> [String : Any?] {
         return parameters + self.pageParameters()
     }
 }

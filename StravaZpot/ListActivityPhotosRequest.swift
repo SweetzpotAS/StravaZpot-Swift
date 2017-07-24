@@ -14,7 +14,7 @@ public class ListActivityPhotosRequest : GetRequest<EquatableArray<Photo>> {
         super.init(client: client, url: "activities/\(id)/photos", parse: { $0.photoArray })
     }
     
-    override func getParameters() -> [String : Any] {
-        return ["photo_sources" : true] as [String : Any]
+    override func getParameters() -> [String : Any?] {
+        return ["photo_sources" : true] as [String : Any?]
     }
 }

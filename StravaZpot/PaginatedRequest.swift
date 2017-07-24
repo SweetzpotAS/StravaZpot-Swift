@@ -20,7 +20,7 @@ extension PaginatedRequest {
         return self
     }
     
-    func pageParameters() -> [String : Any] {
+    func pageParameters() -> [String : Any?] {
         return [ "page" : self.page,
                  "per_page" : self.perPage ].flatten()
     }
