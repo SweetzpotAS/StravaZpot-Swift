@@ -861,6 +861,7 @@
 				11DADB561DBF6D8700194349 /* ClubType.swift */,
 				11FB66BB1DC33D29006FF63E /* Comment.swift */,
 				11A6A9641DBE4BDC003E5302 /* Coordinates.swift */,
+				11BC21C81F260257002A2417 /* DataType.swift */,
 				11DADB341DBF50B700194349 /* DateRange.swift */,
 				11A6A9621DBE4B2D003E5302 /* Distance.swift */,
 				11A6A97E1DBE5829003E5302 /* EquatableArray.swift */,
@@ -905,12 +906,11 @@
 				11A6A9701DBE5164003E5302 /* Time.swift */,
 				11A6A9721DBE51C9003E5302 /* TimedInterval.swift */,
 				11DADB501DBF60A400194349 /* Totals.swift */,
+				11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */,
+				11BC21CC1F2603DD002A2417 /* UploadStatus.swift */,
 				11DADB381DBF51A100194349 /* WeightClass.swift */,
 				11DADB7A1DBF84D000194349 /* WorkoutType.swift */,
 				11DADB541DBF64A100194349 /* Zones.swift */,
-				11BC21C81F260257002A2417 /* DataType.swift */,
-				11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */,
-				11BC21CC1F2603DD002A2417 /* UploadStatus.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";

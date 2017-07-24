@@ -16,8 +16,13 @@ class MockHTTPClient : HTTPClient {
     var postCalled = false
     var putCalled = false
     var deleteCalled = false
+    var uploadCalled = false
     var lastUrl = ""
     var lastParameters : [String : Any] = [:]
+    var lastFile : URL? = nil
+    var lastKey = ""
+    var lastFilename = ""
+    var lastMimeType = ""
     
     init(respondWithJSON json : String) {
         self.response = .success(JSON.parse(json))
@@ -45,6 +50,17 @@ class MockHTTPClient : HTTPClient {
     func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         self.deleteCalled = true
         request(url: url, parameters: parameters, callback: callback)
+    }
+    
+    func upload(file : URL, withKey key : String, withName name : String, toUrl url : String, parameters : [String : Data], mimeType : String, callback : @escaping (StravaResult<JSON>) -> ()) {
+        self.uploadCalled = true
+        self.lastUrl = url
+        self.lastParameters = parameters
+        self.lastFile = file
+        self.lastKey = key
+        self.lastFilename = name
+        self.lastMimeType = mimeType
+        callback(response)
     }
     
     private func request(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
