@@ -316,4 +316,8 @@ extension JSON {
     var streamArray : EquatableArray<Stream>? {
         return exists() ? EquatableArray(array: self.flatMap{ $1.stream }) : nil
     }
+    
+    var uploadStatus : UploadStatus? {
+        return exists() ? UploadStatusParser().from(json: self) : nil
+    }
 }
