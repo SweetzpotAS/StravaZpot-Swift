@@ -172,6 +172,7 @@
 		11A6A97F1DBE5829003E5302 /* EquatableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A97E1DBE5829003E5302 /* EquatableArray.swift */; };
 		11A6A9811DBE5959003E5302 /* AgeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9801DBE5959003E5302 /* AgeGroup.swift */; };
 		11BC21C91F260257002A2417 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21C81F260257002A2417 /* DataType.swift */; };
+		11BC21CB1F2602F0002A2417 /* UploadActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */; };
 		11DADB331DBF4F5200194349 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB321DBF4F5200194349 /* Bounds.swift */; };
 		11DADB351DBF50B700194349 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB341DBF50B700194349 /* DateRange.swift */; };
 		11DADB371DBF511E00194349 /* ExploreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB361DBF511E00194349 /* ExploreType.swift */; };
@@ -459,6 +460,7 @@
 		11A6A97E1DBE5829003E5302 /* EquatableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableArray.swift; sourceTree = "<group>"; };
 		11A6A9801DBE5959003E5302 /* AgeGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeGroup.swift; sourceTree = "<group>"; };
 		11BC21C81F260257002A2417 /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadActivityType.swift; sourceTree = "<group>"; };
 		11DADB321DBF4F5200194349 /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
 		11DADB341DBF50B700194349 /* DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
 		11DADB361DBF511E00194349 /* ExploreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreType.swift; sourceTree = "<group>"; };
@@ -905,6 +907,7 @@
 				11DADB7A1DBF84D000194349 /* WorkoutType.swift */,
 				11DADB541DBF64A100194349 /* Zones.swift */,
 				11BC21C81F260257002A2417 /* DataType.swift */,
+				11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1411,6 +1414,7 @@
 				11162D171DCC9F5F0030123F /* ClubAPI.swift in Sources */,
 				11EFB3101DC73F150096AD9B /* ActivityTypeParser.swift in Sources */,
 				110682C51DC7550600A08026 /* PowerParser.swift in Sources */,
+				11BC21CB1F2602F0002A2417 /* UploadActivityType.swift in Sources */,
 				1151B1311DC9DE4A00AE054F /* SegmentEffortParser.swift in Sources */,
 				11F319911DD0833A003CF870 /* DeleteRequest.swift in Sources */,
 				110682E91DC767E500A08026 /* JoinResultParser.swift in Sources */,
