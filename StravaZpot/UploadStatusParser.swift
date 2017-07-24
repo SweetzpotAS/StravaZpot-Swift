@@ -11,10 +11,10 @@ import SwiftyJSON
 
 public class UploadStatusParser : Parser {
     public func from(json: JSON) -> UploadStatus {
-        return UploadStatus(id: json.int!,
-            externalID: json.string,
-            error: json.string,
-            status: json.string,
-            activityID: json.int)
+        return UploadStatus(id: json["id"].int!,
+            externalID: json["external_id"].string,
+            error: json["error"].string,
+            status: json["status"].string,
+            activityID: json["activity_id"].int)
     }
 }
