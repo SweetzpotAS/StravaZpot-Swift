@@ -1150,7 +1150,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "SweetZpot AS";
 				TargetAttributes = {
 					11A6A9441DBE44B4003E5302 = {
