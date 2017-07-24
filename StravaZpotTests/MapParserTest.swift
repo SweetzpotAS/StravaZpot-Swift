@@ -24,7 +24,8 @@ class MapParserTest: XCTestCase {
         let result = parser.from(json: json)
         let expected = Map(id: "a32193479",
                            resourceState: .detailed,
-                           summaryPolyline: "{cteFjcaBkCx@gEz@")
+                           summaryPolyline: "{cteFjcaBkCx@gEz@",
+                           polyline: nil)
         
         expect(result).to(equal(expected))
     }

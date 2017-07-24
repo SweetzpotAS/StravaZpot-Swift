@@ -26,6 +26,7 @@ class RouteParserTest: XCTestCase {
             "  \"map\": {" +
             "    \"id\": \"r1263727\"," +
             "    \"summary_polyline\": \"qyrFxswgV|\"," +
+            "    \"polyline\": \"qyrFxswgV|\"," +
             "    \"resource_state\": 3" +
             "  }," +
             "  \"name\": \"New Years Resolution - Santa Cruz Century Edition\"," +
@@ -53,7 +54,7 @@ class RouteParserTest: XCTestCase {
                              athlete: Athlete(id: 265720, resourceState: .meta, firstName: nil, lastName: nil, profileMedium: nil, profile: nil, city: nil, state: nil, country: nil, sex: nil, friend: nil, follower: nil, isPremium: nil, createdAt: nil, updatedAt: nil, followerCount: nil, friendCount: nil, mutualFriendCount: nil, athleteType: nil, datePreference: nil, measurementPreference: nil, email: nil, ftp: nil, weight: nil, clubs: nil, bikes: nil, shoes: nil),
                              distance: Distance(meters: 173625.6),
                              elevationGain: Distance(meters: 2964.6),
-                             map: Map(id: "r1263727", resourceState: .detailed, summaryPolyline: "qyrFxswgV|"),
+                             map: Map(id: "r1263727", resourceState: .detailed, summaryPolyline: "qyrFxswgV|", polyline: "qyrFxswgV|"),
                              type: RouteType.ride,
                              subtype: RouteSubtype.mtb,
                              isPrivate: false,
