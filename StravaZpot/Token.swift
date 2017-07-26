@@ -17,3 +17,9 @@ extension Token : CustomStringConvertible {
         return "Bearer \(value)"
     }
 }
+
+extension Token : Equatable {}
+
+public func ==(lhs : Token, rhs : Token) -> Bool {
+    return lhs.value == rhs.value
+}
