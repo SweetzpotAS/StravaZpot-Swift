@@ -27,4 +27,8 @@ public class UploadAPI {
                        withExternalID externalID : String? = nil) -> UploadFileRequest {
         return UploadFileRequest(client: self.client, file: file, filename: filename, dataType: dataType, activityType: activityType, name: name, description: description, isPrivate: isPrivate, hasTrainer: hasTrainer, isCommute: isCommute, externalID: externalID)
     }
+    
+    public func checkUploadStatus(withId id : Int) -> CheckUploadStatusRequest {
+        return CheckUploadStatusRequest(client: client, id: id)
+    }
 }

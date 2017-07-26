@@ -46,6 +46,19 @@ class UploadAPITest: XCTestCase {
         expect(client.lastMimeType).to(equal("multipart/form-data"))
     }
     
+    func testShouldCheckUploadStatus() {
+        let client = MockHTTPClient(respondWithJSON: UPLOAD_STATUS_JSON)
+        let api = UploadAPI(client: client)
+        
+        var result : StravaResult<UploadStatus>?
+        api.checkUploadStatus(withId: 16486788)
+            .execute{ result = $0 }
+        
+        expect(result).toEventually(beSuccessful())
+        expect(client.getCalled).to(equal(true))
+        expect(client.lastUrl).to(equal("uploads/16486788"))
+    }
+    
     let UPLOAD_STATUS_JSON = "{\n" +
         "  \"id\": 16486788,\n" +
         "  \"external_id\": \"test.fit\",\n" +

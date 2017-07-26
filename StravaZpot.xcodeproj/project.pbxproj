@@ -79,6 +79,7 @@
 		11162D1D1DCCA1DA0030123F /* ListClubAnnouncementsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D1C1DCCA1DA0030123F /* ListClubAnnouncementsRequest.swift */; };
 		11162D1F1DCCA4D90030123F /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11162D1E1DCCA4D90030123F /* GetRequest.swift */; };
 		111D50781DC74DBD00B6117E /* PhotoSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */; };
+		112EF32D1F287FA700A1159F /* CheckUploadStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF32C1F287FA700A1159F /* CheckUploadStatusRequest.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
@@ -371,6 +372,7 @@
 		11162D1C1DCCA1DA0030123F /* ListClubAnnouncementsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListClubAnnouncementsRequest.swift; sourceTree = "<group>"; };
 		11162D1E1DCCA4D90030123F /* GetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
 		111D50771DC74DBD00B6117E /* PhotoSummaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParser.swift; sourceTree = "<group>"; };
+		112EF32C1F287FA700A1159F /* CheckUploadStatusRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckUploadStatusRequest.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
@@ -934,6 +936,7 @@
 			children = (
 				11BC21CE1F260EF3002A2417 /* UploadFileRequest.swift */,
 				11BC21D01F260F23002A2417 /* UploadAPI.swift */,
+				112EF32C1F287FA700A1159F /* CheckUploadStatusRequest.swift */,
 			);
 			name = Upload;
 			sourceTree = "<group>";
@@ -1351,6 +1354,7 @@
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
 				1151B10D1DC8924300AE054F /* AthleteParser.swift in Sources */,
 				11162D091DCC98B70030123F /* PhotoAPI.swift in Sources */,
+				112EF32D1F287FA700A1159F /* CheckUploadStatusRequest.swift in Sources */,
 				118668E51DCB2FD9006D5275 /* GetAthleteZonesRequest.swift in Sources */,
 				1151B1151DC8AB0600AE054F /* EventParser.swift in Sources */,
 				113559FC1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift in Sources */,
