@@ -174,6 +174,12 @@
 		11BC21C91F260257002A2417 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21C81F260257002A2417 /* DataType.swift */; };
 		11BC21CB1F2602F0002A2417 /* UploadActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */; };
 		11BC21CD1F2603DD002A2417 /* UploadStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21CC1F2603DD002A2417 /* UploadStatus.swift */; };
+		11BC21CF1F260EF3002A2417 /* UploadFileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21CE1F260EF3002A2417 /* UploadFileRequest.swift */; };
+		11BC21D11F260F23002A2417 /* UploadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21D01F260F23002A2417 /* UploadAPI.swift */; };
+		11BC21D31F2612AB002A2417 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21D21F2612AB002A2417 /* BoolExtension.swift */; };
+		11BC21D51F26173F002A2417 /* UploadStatusParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21D41F26173F002A2417 /* UploadStatusParser.swift */; };
+		11BC21D71F261928002A2417 /* UploadStatusParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21D61F261928002A2417 /* UploadStatusParserTest.swift */; };
+		11BC21D91F261B77002A2417 /* UploadAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21D81F261B77002A2417 /* UploadAPITest.swift */; };
 		11DADB331DBF4F5200194349 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB321DBF4F5200194349 /* Bounds.swift */; };
 		11DADB351DBF50B700194349 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB341DBF50B700194349 /* DateRange.swift */; };
 		11DADB371DBF511E00194349 /* ExploreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DADB361DBF511E00194349 /* ExploreType.swift */; };
@@ -463,6 +469,12 @@
 		11BC21C81F260257002A2417 /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadActivityType.swift; sourceTree = "<group>"; };
 		11BC21CC1F2603DD002A2417 /* UploadStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadStatus.swift; sourceTree = "<group>"; };
+		11BC21CE1F260EF3002A2417 /* UploadFileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileRequest.swift; sourceTree = "<group>"; };
+		11BC21D01F260F23002A2417 /* UploadAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadAPI.swift; sourceTree = "<group>"; };
+		11BC21D21F2612AB002A2417 /* BoolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
+		11BC21D41F26173F002A2417 /* UploadStatusParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadStatusParser.swift; sourceTree = "<group>"; };
+		11BC21D61F261928002A2417 /* UploadStatusParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadStatusParserTest.swift; sourceTree = "<group>"; };
+		11BC21D81F261B77002A2417 /* UploadAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadAPITest.swift; sourceTree = "<group>"; };
 		11DADB321DBF4F5200194349 /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
 		11DADB341DBF50B700194349 /* DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
 		11DADB361DBF511E00194349 /* ExploreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreType.swift; sourceTree = "<group>"; };
@@ -602,6 +614,7 @@
 				1151B14F1DC9F8D400AE054F /* JSONExtension.swift */,
 				118668E01DCB2F01006D5275 /* OptionalExtension.swift */,
 				118668E21DCB2F20006D5275 /* DictionaryExtension.swift */,
+				11BC21D21F2612AB002A2417 /* BoolExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -732,6 +745,7 @@
 				11F319B51DD097A7003CF870 /* SegmentAPITest.swift */,
 				113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */,
 				113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */,
+				11BC21D81F261B77002A2417 /* UploadAPITest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -918,6 +932,8 @@
 		11BC21C71F26022F002A2417 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
+				11BC21CE1F260EF3002A2417 /* UploadFileRequest.swift */,
+				11BC21D01F260F23002A2417 /* UploadAPI.swift */,
 			);
 			name = Upload;
 			sourceTree = "<group>";
@@ -1017,6 +1033,7 @@
 				110682CC1DC75BC400A08026 /* TotalsParser.swift */,
 				11EFB3171DC7410F0096AD9B /* WorkoutTypeParser.swift */,
 				110682C81DC7568F00A08026 /* ZonesParser.swift */,
+				11BC21D41F26173F002A2417 /* UploadStatusParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -1079,6 +1096,7 @@
 				11EFB3051DC73BE30096AD9B /* TimedIntervalParserTest.swift */,
 				11EFB3011DC73AFA0096AD9B /* TimeParserTest.swift */,
 				110682CE1DC75C9900A08026 /* TotalsParserTest.swift */,
+				11BC21D61F261928002A2417 /* UploadStatusParserTest.swift */,
 				11EFB3191DC7413E0096AD9B /* WorkoutTypeParserTest.swift */,
 				110682CA1DC756F600A08026 /* ZonesParserTest.swift */,
 			);
@@ -1327,6 +1345,7 @@
 				11F319B41DD09756003CF870 /* RetrieveSegmentRequest.swift in Sources */,
 				11EFB2FC1DC739CC0096AD9B /* TemperatureParser.swift in Sources */,
 				118669001DCB62A7006D5275 /* ActivityAPI.swift in Sources */,
+				11BC21D51F26173F002A2417 /* UploadStatusParser.swift in Sources */,
 				110682E51DC765B300A08026 /* TerrainParser.swift in Sources */,
 				1151B1291DC8D1A700AE054F /* ActivityLapParser.swift in Sources */,
 				11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */,
@@ -1373,6 +1392,7 @@
 				11F319BC1DD09CCE003CF870 /* StarSegmentRequest.swift in Sources */,
 				11DADB391DBF51A100194349 /* WeightClass.swift in Sources */,
 				11DADB7F1DBF891E00194349 /* Segment.swift in Sources */,
+				11BC21D31F2612AB002A2417 /* BoolExtension.swift in Sources */,
 				1151B1251DC8B6C900AE054F /* ActivityParser.swift in Sources */,
 				1151B1111DC8A3AC00AE054F /* AnnouncementParser.swift in Sources */,
 				11F319BE1DD09EDD003CF870 /* ListSegmentEffortsRequest.swift in Sources */,
@@ -1416,6 +1436,7 @@
 				11DADB351DBF50B700194349 /* DateRange.swift in Sources */,
 				11A6A9651DBE4BDC003E5302 /* Coordinates.swift in Sources */,
 				11162D171DCC9F5F0030123F /* ClubAPI.swift in Sources */,
+				11BC21CF1F260EF3002A2417 /* UploadFileRequest.swift in Sources */,
 				11EFB3101DC73F150096AD9B /* ActivityTypeParser.swift in Sources */,
 				110682C51DC7550600A08026 /* PowerParser.swift in Sources */,
 				11BC21CB1F2602F0002A2417 /* UploadActivityType.swift in Sources */,
@@ -1443,6 +1464,7 @@
 				11DADB7B1DBF84D000194349 /* WorkoutType.swift in Sources */,
 				110682D11DC75E7600A08026 /* StatsParser.swift in Sources */,
 				11A6A9731DBE51C9003E5302 /* TimedInterval.swift in Sources */,
+				11BC21D11F260F23002A2417 /* UploadAPI.swift in Sources */,
 				11F319951DD0880F003CF870 /* ListAthleteClubsRequest.swift in Sources */,
 				11F319A91DD092BB003CF870 /* RouteAPI.swift in Sources */,
 				1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */,
@@ -1506,6 +1528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BC21D91F261B77002A2417 /* UploadAPITest.swift in Sources */,
 				110683171DC79E2100A08026 /* StreamParserTest.swift in Sources */,
 				1151B10B1DC890C900AE054F /* ClubParserTest.swift in Sources */,
 				11F319AD1DD09394003CF870 /* RouteAPITest.swift in Sources */,
@@ -1519,6 +1542,7 @@
 				113559F71DD0D42E004C8BB5 /* SegmentEffortAPITest.swift in Sources */,
 				1151B1171DC8AC4C00AE054F /* EventParserTest.swift in Sources */,
 				11EFB2FE1DC73A0E0096AD9B /* TemperatureParserTest.swift in Sources */,
+				11BC21D71F261928002A2417 /* UploadStatusParserTest.swift in Sources */,
 				11EFB3161DC740620096AD9B /* PhotoSourceParserTest.swift in Sources */,
 				11EFB31A1DC7413E0096AD9B /* WorkoutTypeParserTest.swift in Sources */,
 				110682E31DC7652100A08026 /* SportTypeParserTest.swift in Sources */,
