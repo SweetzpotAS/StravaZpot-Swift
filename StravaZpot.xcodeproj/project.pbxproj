@@ -83,6 +83,7 @@
 		112EF3301F28824A00A1159F /* AccessScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF32F1F28824A00A1159F /* AccessScope.swift */; };
 		112EF3321F2882B100A1159F /* ApprovalPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3311F2882B100A1159F /* ApprovalPrompt.swift */; };
 		112EF3341F28830900A1159F /* AppCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3331F28830900A1159F /* AppCredentials.swift */; };
+		112EF3361F28834A00A1159F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3351F28834A00A1159F /* Token.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
@@ -379,6 +380,7 @@
 		112EF32F1F28824A00A1159F /* AccessScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessScope.swift; sourceTree = "<group>"; };
 		112EF3311F2882B100A1159F /* ApprovalPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovalPrompt.swift; sourceTree = "<group>"; };
 		112EF3331F28830900A1159F /* AppCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCredentials.swift; sourceTree = "<group>"; };
+		112EF3351F28834A00A1159F /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 				112EF32F1F28824A00A1159F /* AccessScope.swift */,
 				112EF3311F2882B100A1159F /* ApprovalPrompt.swift */,
 				112EF3331F28830900A1159F /* AppCredentials.swift */,
+				112EF3351F28834A00A1159F /* Token.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -1503,6 +1506,7 @@
 				110682D51DC7625000A08026 /* ClubTypeParser.swift in Sources */,
 				1186690A1DCB9FD3006D5275 /* UpdateActivityRequest.swift in Sources */,
 				1151B1421DC9F0F200AE054F /* AthleteAPI.swift in Sources */,
+				112EF3361F28834A00A1159F /* Token.swift in Sources */,
 				11FB66D91DC35E08006FF63E /* IntervalParser.swift in Sources */,
 				11EFB2F41DC737E60096AD9B /* ResourceStateParser.swift in Sources */,
 				1186690C1DCBA408006D5275 /* DeleteActivityRequest.swift in Sources */,
