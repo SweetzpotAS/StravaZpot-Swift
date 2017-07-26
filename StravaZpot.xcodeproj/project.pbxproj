@@ -84,6 +84,8 @@
 		112EF3321F2882B100A1159F /* ApprovalPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3311F2882B100A1159F /* ApprovalPrompt.swift */; };
 		112EF3341F28830900A1159F /* AppCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3331F28830900A1159F /* AppCredentials.swift */; };
 		112EF3361F28834A00A1159F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3351F28834A00A1159F /* Token.swift */; };
+		112EF3381F2883E000A1159F /* StravaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3371F2883E000A1159F /* StravaLogin.swift */; };
+		112EF33A1F28868E00A1159F /* StravaLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3391F28868E00A1159F /* StravaLoginTest.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
@@ -381,6 +383,8 @@
 		112EF3311F2882B100A1159F /* ApprovalPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovalPrompt.swift; sourceTree = "<group>"; };
 		112EF3331F28830900A1159F /* AppCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCredentials.swift; sourceTree = "<group>"; };
 		112EF3351F28834A00A1159F /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		112EF3371F2883E000A1159F /* StravaLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaLogin.swift; sourceTree = "<group>"; };
+		112EF3391F28868E00A1159F /* StravaLoginTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaLoginTest.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
@@ -680,6 +684,7 @@
 				112EF3311F2882B100A1159F /* ApprovalPrompt.swift */,
 				112EF3331F28830900A1159F /* AppCredentials.swift */,
 				112EF3351F28834A00A1159F /* Token.swift */,
+				112EF3371F2883E000A1159F /* StravaLogin.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -768,6 +773,7 @@
 				113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */,
 				113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */,
 				11BC21D81F261B77002A2417 /* UploadAPITest.swift */,
+				112EF3391F28868E00A1159F /* StravaLoginTest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -1398,6 +1404,7 @@
 				118669161DCBAD25006D5275 /* ListActivityZonesRequest.swift in Sources */,
 				118669141DCBAB58006D5275 /* ListRelatedActivitiesRequest.swift in Sources */,
 				112EF3341F28830900A1159F /* AppCredentials.swift in Sources */,
+				112EF3381F2883E000A1159F /* StravaLogin.swift in Sources */,
 				11DADB411DBF5B7300194349 /* Resolution.swift in Sources */,
 				118669101DCBA6E7006D5275 /* ListActivitiesRequest.swift in Sources */,
 				11DADB631DBF73C000194349 /* SkillLevel.swift in Sources */,
@@ -1602,6 +1609,7 @@
 				110682EB1DC7684C00A08026 /* JoinResultParserTest.swift in Sources */,
 				11EFB30E1DC73E760096AD9B /* AchievementParserTest.swift in Sources */,
 				1151B1481DC9F2D600AE054F /* AthleteAPITest.swift in Sources */,
+				112EF33A1F28868E00A1159F /* StravaLoginTest.swift in Sources */,
 				1151B12F1DC9DA7F00AE054F /* RouteParserTest.swift in Sources */,
 				11EFB2F61DC738350096AD9B /* ResourceStateParserTest.swift in Sources */,
 				110683261DC7B09E00A08026 /* LeaderboardParserTest.swift in Sources */,
