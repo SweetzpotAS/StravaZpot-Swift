@@ -86,6 +86,13 @@
 		112EF3361F28834A00A1159F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3351F28834A00A1159F /* Token.swift */; };
 		112EF3381F2883E000A1159F /* StravaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3371F2883E000A1159F /* StravaLogin.swift */; };
 		112EF33A1F28868E00A1159F /* StravaLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3391F28868E00A1159F /* StravaLoginTest.swift */; };
+		112EF33C1F28951000A1159F /* AuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF33B1F28951000A1159F /* AuthenticationRequest.swift */; };
+		112EF33E1F28954600A1159F /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF33D1F28954600A1159F /* LoginResult.swift */; };
+		112EF3401F289B0200A1159F /* LoginResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF33F1F289B0200A1159F /* LoginResultParser.swift */; };
+		112EF3421F289C0E00A1159F /* TokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3411F289C0E00A1159F /* TokenParser.swift */; };
+		112EF3441F289D6700A1159F /* LoginResultParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3431F289D6700A1159F /* LoginResultParserTest.swift */; };
+		112EF3461F28A1A500A1159F /* AuthenticationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3451F28A1A500A1159F /* AuthenticationAPI.swift */; };
+		112EF3481F28A21B00A1159F /* AuthenticationAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3471F28A21B00A1159F /* AuthenticationAPITest.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
@@ -385,6 +392,13 @@
 		112EF3351F28834A00A1159F /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		112EF3371F2883E000A1159F /* StravaLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaLogin.swift; sourceTree = "<group>"; };
 		112EF3391F28868E00A1159F /* StravaLoginTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaLoginTest.swift; sourceTree = "<group>"; };
+		112EF33B1F28951000A1159F /* AuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequest.swift; sourceTree = "<group>"; };
+		112EF33D1F28954600A1159F /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		112EF33F1F289B0200A1159F /* LoginResultParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResultParser.swift; sourceTree = "<group>"; };
+		112EF3411F289C0E00A1159F /* TokenParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenParser.swift; sourceTree = "<group>"; };
+		112EF3431F289D6700A1159F /* LoginResultParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResultParserTest.swift; sourceTree = "<group>"; };
+		112EF3451F28A1A500A1159F /* AuthenticationAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationAPI.swift; sourceTree = "<group>"; };
+		112EF3471F28A21B00A1159F /* AuthenticationAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationAPITest.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
@@ -624,11 +638,11 @@
 		1106831E1DC7AC1600A08026 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				11BC21D21F2612AB002A2417 /* BoolExtension.swift */,
 				1106831F1DC7AC2500A08026 /* DateExtension.swift */,
+				118668E21DCB2F20006D5275 /* DictionaryExtension.swift */,
 				1151B14F1DC9F8D400AE054F /* JSONExtension.swift */,
 				118668E01DCB2F01006D5275 /* OptionalExtension.swift */,
-				118668E21DCB2F20006D5275 /* DictionaryExtension.swift */,
-				11BC21D21F2612AB002A2417 /* BoolExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -681,10 +695,13 @@
 			isa = PBXGroup;
 			children = (
 				112EF32F1F28824A00A1159F /* AccessScope.swift */,
-				112EF3311F2882B100A1159F /* ApprovalPrompt.swift */,
 				112EF3331F28830900A1159F /* AppCredentials.swift */,
-				112EF3351F28834A00A1159F /* Token.swift */,
+				112EF3311F2882B100A1159F /* ApprovalPrompt.swift */,
+				112EF33B1F28951000A1159F /* AuthenticationRequest.swift */,
+				112EF33D1F28954600A1159F /* LoginResult.swift */,
 				112EF3371F2883E000A1159F /* StravaLogin.swift */,
+				112EF3351F28834A00A1159F /* Token.swift */,
+				112EF3451F28A1A500A1159F /* AuthenticationAPI.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -762,6 +779,7 @@
 			children = (
 				118669051DCB6814006D5275 /* ActivityAPITest.swift */,
 				1151B1471DC9F2D600AE054F /* AthleteAPITest.swift */,
+				112EF3471F28A21B00A1159F /* AuthenticationAPITest.swift */,
 				11162D1A1DCCA0CC0030123F /* ClubAPITest.swift */,
 				11162D131DCC9DBD0030123F /* CommentAPITest.swift */,
 				118668F21DCB3DD2006D5275 /* FriendAPITest.swift */,
@@ -771,9 +789,9 @@
 				11F319AC1DD09394003CF870 /* RouteAPITest.swift */,
 				11F319B51DD097A7003CF870 /* SegmentAPITest.swift */,
 				113559F61DD0D42E004C8BB5 /* SegmentEffortAPITest.swift */,
+				112EF3391F28868E00A1159F /* StravaLoginTest.swift */,
 				113559FD1DD0D7BD004C8BB5 /* StreamAPITest.swift */,
 				11BC21D81F261B77002A2417 /* UploadAPITest.swift */,
-				112EF3391F28868E00A1159F /* StravaLoginTest.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -875,12 +893,12 @@
 		11A6A9521DBE44B4003E5302 /* StravaZpotTests */ = {
 			isa = PBXGroup;
 			children = (
-				1151B14C1DC9F5D200AE054F /* Matchers */,
-				1151B1491DC9F2E300AE054F /* HTTP */,
 				1151B1461DC9F2C200AE054F /* API */,
-				11FB66CB1DC35661006FF63E /* StravaZpotTests-Bridging-Header.h */,
-				11FB66CA1DC35649006FF63E /* Parsers */,
+				1151B1491DC9F2E300AE054F /* HTTP */,
 				11A6A9551DBE44B4003E5302 /* Info.plist */,
+				1151B14C1DC9F5D200AE054F /* Matchers */,
+				11FB66CA1DC35649006FF63E /* Parsers */,
+				11FB66CB1DC35661006FF63E /* StravaZpotTests-Bridging-Header.h */,
 			);
 			path = StravaZpotTests;
 			sourceTree = "<group>";
@@ -1063,6 +1081,8 @@
 				11EFB3171DC7410F0096AD9B /* WorkoutTypeParser.swift */,
 				110682C81DC7568F00A08026 /* ZonesParser.swift */,
 				11BC21D41F26173F002A2417 /* UploadStatusParser.swift */,
+				112EF33F1F289B0200A1159F /* LoginResultParser.swift */,
+				112EF3411F289C0E00A1159F /* TokenParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -1096,6 +1116,7 @@
 				110683211DC7AE6400A08026 /* LeaderboardEntryParserTest.swift */,
 				110683251DC7B09E00A08026 /* LeaderboardParserTest.swift */,
 				110682EE1DC7694E00A08026 /* LeaveResultParserTest.swift */,
+				112EF3431F289D6700A1159F /* LoginResultParserTest.swift */,
 				110683021DC76F8C00A08026 /* MapParserTest.swift */,
 				110682BE1DC7521400A08026 /* MeasurementPreferenceParserTest.swift */,
 				110682DA1DC7638200A08026 /* MembershipParserTest.swift */,
@@ -1414,6 +1435,7 @@
 				11FB66C21DC343FB006FF63E /* Route.swift in Sources */,
 				11A6A97F1DBE5829003E5302 /* EquatableArray.swift in Sources */,
 				11FB66C41DC34612006FF63E /* SegmentEffort.swift in Sources */,
+				112EF3401F289B0200A1159F /* LoginResultParser.swift in Sources */,
 				11F319BA1DD09BEC003CF870 /* ListAthleteStarredSegmentsRequest.swift in Sources */,
 				11EFB31C1DC742130096AD9B /* SplitParser.swift in Sources */,
 				11A6A9791DBE56E0003E5302 /* Map.swift in Sources */,
@@ -1443,6 +1465,7 @@
 				11FB66C91DC3554E006FF63E /* CoordinatesParser.swift in Sources */,
 				11A6A96F1DBE50E2003E5302 /* Temperature.swift in Sources */,
 				110683201DC7AC2500A08026 /* DateExtension.swift in Sources */,
+				112EF33E1F28954600A1159F /* LoginResult.swift in Sources */,
 				110682ED1DC7691200A08026 /* LeaveResultParser.swift in Sources */,
 				11F319991DD08A34003CF870 /* ListClubAdminsRequest.swift in Sources */,
 				11162D041DCC96D20030123F /* ListActivityKudosRequest.swift in Sources */,
@@ -1527,7 +1550,9 @@
 				11A6A96D1DBE506C003E5302 /* Speed.swift in Sources */,
 				11A6A9771DBE532E003E5302 /* Gear.swift in Sources */,
 				11EFB3001DC73AA00096AD9B /* TimeParser.swift in Sources */,
+				112EF3461F28A1A500A1159F /* AuthenticationAPI.swift in Sources */,
 				11DADB651DBF740400194349 /* JoinResult.swift in Sources */,
+				112EF3421F289C0E00A1159F /* TokenParser.swift in Sources */,
 				11A6A9711DBE5164003E5302 /* Time.swift in Sources */,
 				118668E11DCB2F01006D5275 /* OptionalExtension.swift in Sources */,
 				11355A021DD0DAF1004C8BB5 /* ListSegmentStreamsRequest.swift in Sources */,
@@ -1556,6 +1581,7 @@
 				11355A001DD0DA0B004C8BB5 /* ListSegmentEffortStreamsRequest.swift in Sources */,
 				11F3198D1DD07FB8003CF870 /* Request.swift in Sources */,
 				113559F01DD0ADFF004C8BB5 /* ExploreSegmentsRequest.swift in Sources */,
+				112EF33C1F28951000A1159F /* AuthenticationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1615,6 +1641,7 @@
 				110683261DC7B09E00A08026 /* LeaderboardParserTest.swift in Sources */,
 				11162D061DCC978A0030123F /* KudosAPITest.swift in Sources */,
 				11EFB3221DC749280096AD9B /* PrimaryPhotoParserTest.swift in Sources */,
+				112EF3481F28A21B00A1159F /* AuthenticationAPITest.swift in Sources */,
 				110682DB1DC7638200A08026 /* MembershipParserTest.swift in Sources */,
 				11EFB31E1DC742AD0096AD9B /* SplitParserTest.swift in Sources */,
 				11FB66DF1DC3634A006FF63E /* PercentageParserTest.swift in Sources */,
@@ -1628,6 +1655,7 @@
 				11FB66D71DC35C8D006FF63E /* GenderParserTest.swift in Sources */,
 				110682B31DC74E6F00A08026 /* PhotoSummaryParserTest.swift in Sources */,
 				1151B14E1DC9F63A00AE054F /* StravaResultMatchers.swift in Sources */,
+				112EF3441F289D6700A1159F /* LoginResultParserTest.swift in Sources */,
 				110682D71DC7629500A08026 /* ClubTypeParserTest.swift in Sources */,
 				110682E71DC765E900A08026 /* TerrainParserTest.swift in Sources */,
 				11162D141DCC9DBD0030123F /* CommentAPITest.swift in Sources */,
