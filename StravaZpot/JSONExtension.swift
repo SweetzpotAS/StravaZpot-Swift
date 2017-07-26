@@ -320,4 +320,8 @@ extension JSON {
     var uploadStatus : UploadStatus? {
         return exists() ? UploadStatusParser().from(json: self) : nil
     }
+    
+    var token : Token? {
+        return exists() ? TokenParser().from(json: self) : nil
+    }
 }
