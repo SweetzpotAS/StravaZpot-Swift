@@ -324,4 +324,8 @@ extension JSON {
     var token : Token? {
         return exists() ? TokenParser().from(json: self) : nil
     }
+    
+    var loginResult : LoginResult? {
+        return exists() ? LoginResultParser().from(json: self) : nil
+    }
 }

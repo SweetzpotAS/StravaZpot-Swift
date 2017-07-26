@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class TokenParser : Parser {
-    func from(json: JSON) -> Token {
+    public func from(json: JSON) -> Token {
         return Token(value: json.string!)
     }
 }
