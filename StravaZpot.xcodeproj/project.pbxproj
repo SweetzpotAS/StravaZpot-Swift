@@ -96,6 +96,8 @@
 		112EF34A1F28A8FA00A1159F /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3491F28A8FA00A1159F /* AuthenticationViewController.swift */; };
 		112EF34C1F28AC8E00A1159F /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF34B1F28AC8E00A1159F /* URLExtension.swift */; };
 		112EF3A21F2A028900A1159F /* ExploreResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3A11F2A028900A1159F /* ExploreResult.swift */; };
+		112EF3A41F2A02FA00A1159F /* ExploreResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3A31F2A02FA00A1159F /* ExploreResultParser.swift */; };
+		112EF3A61F2A037600A1159F /* ExploreResultParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3A51F2A037600A1159F /* ExploreResultParserTest.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
@@ -409,6 +411,8 @@
 		112EF3661F28B65600A1159F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		112EF36A1F28B7BB00A1159F /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_StravaZpot.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/Pods_StravaZpot.framework"; sourceTree = "<group>"; };
 		112EF3A11F2A028900A1159F /* ExploreResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResult.swift; sourceTree = "<group>"; };
+		112EF3A31F2A02FA00A1159F /* ExploreResultParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResultParser.swift; sourceTree = "<group>"; };
+		112EF3A51F2A037600A1159F /* ExploreResultParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResultParserTest.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
@@ -1096,6 +1100,7 @@
 				11BC21D41F26173F002A2417 /* UploadStatusParser.swift */,
 				112EF33F1F289B0200A1159F /* LoginResultParser.swift */,
 				112EF3411F289C0E00A1159F /* TokenParser.swift */,
+				112EF3A31F2A02FA00A1159F /* ExploreResultParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -1162,6 +1167,7 @@
 				11BC21D61F261928002A2417 /* UploadStatusParserTest.swift */,
 				11EFB3191DC7413E0096AD9B /* WorkoutTypeParserTest.swift */,
 				110682CA1DC756F600A08026 /* ZonesParserTest.swift */,
+				112EF3A51F2A037600A1159F /* ExploreResultParserTest.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -1595,6 +1601,7 @@
 				110683011DC76F0F00A08026 /* MapParser.swift in Sources */,
 				110683091DC7724300A08026 /* ResolutionParser.swift in Sources */,
 				112EF34C1F28AC8E00A1159F /* URLExtension.swift in Sources */,
+				112EF3A41F2A02FA00A1159F /* ExploreResultParser.swift in Sources */,
 				11A6A96B1DBE4FBF003E5302 /* Percentage.swift in Sources */,
 				11EFB3181DC7410F0096AD9B /* WorkoutTypeParser.swift in Sources */,
 				11DADB6B1DBF75C100194349 /* Achievement.swift in Sources */,
@@ -1669,6 +1676,7 @@
 				11FB66D31DC359F1006FF63E /* DistanceParserTest.swift in Sources */,
 				11EFB2FA1DC739430096AD9B /* SpeedParserTest.swift in Sources */,
 				11162D0D1DCC9A5E0030123F /* PhotoAPITest.swift in Sources */,
+				112EF3A61F2A037600A1159F /* ExploreResultParserTest.swift in Sources */,
 				11EFB3061DC73BE30096AD9B /* TimedIntervalParserTest.swift in Sources */,
 				118669061DCB6814006D5275 /* ActivityAPITest.swift in Sources */,
 				110682F71DC76B7800A08026 /* GearParserTest.swift in Sources */,

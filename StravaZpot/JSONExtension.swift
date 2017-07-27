@@ -328,4 +328,8 @@ extension JSON {
     var loginResult : LoginResult? {
         return exists() ? LoginResultParser().from(json: self) : nil
     }
+    
+    var exploreResult : ExploreResult? {
+        return exists() ? ExploreResultParser().from(json: self) : nil
+    }
 }
