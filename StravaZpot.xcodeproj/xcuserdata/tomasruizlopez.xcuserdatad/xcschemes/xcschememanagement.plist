@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>StravaZpotDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>112EF3501F28AE5900A1159F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>11A6A9441DBE44B4003E5302</key>
 		<dict>
 			<key>primary</key>
