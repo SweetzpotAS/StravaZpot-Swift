@@ -113,10 +113,10 @@ class SegmentAPITest: XCTestCase {
     }
     
     func testShouldExploreNearbySegments() {
-        let client = MockHTTPClient(respondWithJSON: "[]")
+        let client = MockHTTPClient(respondWithJSON: "{ segments : [] }")
         let api = SegmentAPI(client: client)
         
-        var result : StravaResult<EquatableArray<Segment>>?
+        var result : StravaResult<ExploreResult>?
         api.explore(inRegion: Bounds(southWest: Coordinates(latitude: 15, longitude: -24), northEast: Coordinates(latitude: -32, longitude: 40)), withActivityType: .running, withMinCategory: 3, withMaxCategory: 7).execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())

@@ -18,7 +18,7 @@ class ExploreResultParserTest: XCTestCase {
         let parser = ExploreResultParser()
         
         let result = parser.from(json: json)
-        expect(result.segments.array.count).to(equal(10))
+        expect(result.segments?.array.count).to(equal(10))
     }
     
     let EXPLORE_RESULT_JSON = "{\n" +

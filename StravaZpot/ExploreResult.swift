@@ -9,5 +9,11 @@
 import Foundation
 
 public struct ExploreResult {
-    let segments : EquatableArray<Segment>
+    let segments : EquatableArray<Segment>?
+}
+
+extension ExploreResult : Equatable {}
+
+public func ==(lhs : ExploreResult, rhs : ExploreResult) -> Bool {
+    return lhs.segments == rhs.segments
 }

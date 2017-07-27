@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class ExploreResultParser : Parser {
     public func from(json: JSON) -> ExploreResult {
-        return ExploreResult(segments: json["segments"].segmentArray!)
+        return ExploreResult(segments: json["segments"].segmentArray)
     }
 }
