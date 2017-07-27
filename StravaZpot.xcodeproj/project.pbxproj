@@ -95,6 +95,7 @@
 		112EF3481F28A21B00A1159F /* AuthenticationAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3471F28A21B00A1159F /* AuthenticationAPITest.swift */; };
 		112EF34A1F28A8FA00A1159F /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3491F28A8FA00A1159F /* AuthenticationViewController.swift */; };
 		112EF34C1F28AC8E00A1159F /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF34B1F28AC8E00A1159F /* URLExtension.swift */; };
+		112EF3A21F2A028900A1159F /* ExploreResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EF3A11F2A028900A1159F /* ExploreResult.swift */; };
 		11326E711DC09BBE0020956F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E701DC09BBE0020956F /* Activity.swift */; };
 		11326E731DC0A22E0020956F /* ActivityLap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11326E721DC0A22E0020956F /* ActivityLap.swift */; };
 		113559EE1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */; };
@@ -407,6 +408,7 @@
 		112EF3651F28B65600A1159F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		112EF3661F28B65600A1159F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		112EF36A1F28B7BB00A1159F /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_StravaZpot.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/Pods_StravaZpot.framework"; sourceTree = "<group>"; };
+		112EF3A11F2A028900A1159F /* ExploreResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResult.swift; sourceTree = "<group>"; };
 		11326E701DC09BBE0020956F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		11326E721DC0A22E0020956F /* ActivityLap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLap.swift; sourceTree = "<group>"; };
 		113559ED1DD0A7A2004C8BB5 /* RetrieveSegmentLeaderboardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveSegmentLeaderboardsRequest.swift; sourceTree = "<group>"; };
@@ -981,6 +983,7 @@
 				11DADB381DBF51A100194349 /* WeightClass.swift */,
 				11DADB7A1DBF84D000194349 /* WorkoutType.swift */,
 				11DADB541DBF64A100194349 /* Zones.swift */,
+				112EF3A11F2A028900A1159F /* ExploreResult.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1540,6 +1543,7 @@
 				11F319A91DD092BB003CF870 /* RouteAPI.swift in Sources */,
 				1151B1051DC888BE00AE054F /* SegmentParser.swift in Sources */,
 				110683151DC79D5800A08026 /* StreamParser.swift in Sources */,
+				112EF3A21F2A028900A1159F /* ExploreResult.swift in Sources */,
 				11A6A9631DBE4B2D003E5302 /* Distance.swift in Sources */,
 				113559F31DD0D365004C8BB5 /* SegmentEffortAPI.swift in Sources */,
 				11DADB371DBF511E00194349 /* ExploreType.swift in Sources */,
