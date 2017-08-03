@@ -20,8 +20,10 @@ extension PaginatedRequest {
         return self
     }
     
-    func pageParameters() -> [String : Any?] {
-        return [ "page" : self.page,
-                 "per_page" : self.perPage ].flatten()
+    func pageParameters() -> [String : Any] {
+        var parameters : [String : Any] = [:]
+        parameters["page"] = page
+        parameters["per_page"] = perPage
+        return parameters
     }
 }

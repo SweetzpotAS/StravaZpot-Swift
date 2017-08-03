@@ -9,18 +9,18 @@
 import Foundation
 
 public class UpdateAthleteRequest : PutRequest<Athlete> {
-    private let parameters : [String : Any?]
+    private var parameters : [String : Any] = [:]
     
     init(client : HTTPClient, city : String?, state : String?, country : String?, sex : Gender?, weight : Double?) {
-        parameters = [ "city" : city,
-                       "state" : state,
-                       "country" : country,
-                       "sex" : sex?.rawValue,
-                       "weight" : weight]
+        parameters["city"] = city
+        parameters["state"] = state
+        parameters["country"] = country
+        parameters["sex"] = sex?.rawValue
+        parameters["weight"] = weight
         super.init(client: client, url: "athlete", parse: { $0.athlete })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return parameters
     }
 }

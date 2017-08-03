@@ -17,7 +17,7 @@ public class ListActivityKudosRequest : GetRequest<EquatableArray<Athlete>>, Pag
         super.init(client: client, url: "activities/\(id)/kudos", parse: { $0.athleteArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return pageParameters()
     }
 }

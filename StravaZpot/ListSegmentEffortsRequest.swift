@@ -9,18 +9,18 @@
 import Foundation
 
 public class ListSegmentEffortsRequest : GetRequest<EquatableArray<SegmentEffort>>, PaginatedRequest {
-    private let parameters : [String : Any?]
+    private var parameters : [String : Any] = [:]
     internal var page : Int?
     internal var perPage: Int?
     
     init(client : HTTPClient, id : Int, athleteID : Int, startDate : Date?, endDate : Date?) {
-        parameters = [ "athlete_id" : athleteID,
-                       "start_date_local" : startDate?.iso8601,
-                       "end_date_local" : endDate?.iso8601 ]
+        parameters["athlete_id"] = athleteID
+        parameters["start_date_local"] = startDate?.iso8601
+        parameters["end_date_local"] = endDate?.iso8601
         super.init(client: client, url: "segments/\(id)/all_efforts", parse: { $0.segmentEffortArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return parameters + pageParameters()
     }
 }

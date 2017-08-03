@@ -17,7 +17,7 @@ public class ListRelatedActivitiesRequest : GetRequest<EquatableArray<Activity>>
         super.init(client: client, url: "activities/\(id)/related", parse: { $0.activityArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return pageParameters()
     }
 }

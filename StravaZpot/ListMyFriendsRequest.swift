@@ -17,7 +17,7 @@ public class ListMyFriendsRequest : GetRequest<EquatableArray<Athlete>>, Paginat
         super.init(client: client, url: "athlete/friends", parse: { $0.athleteArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return pageParameters()
     }
 }
