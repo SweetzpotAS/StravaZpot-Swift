@@ -9,20 +9,21 @@
 import Foundation
 
 public class UpdateActivityRequest : PutRequest<Activity> {
-    private let parameters : [String : Any?]
+    private var parameters : [String : Any] = [:]
     
     init(client : HTTPClient, id : Int, name : String?, type : ActivityType?, isPrivate : Bool?, hasTrainer : Bool?, commute : Bool?, gearID : String?, description : String?) {
-        parameters = [ "name" : name,
-                       "type" : type?.rawValue,
-                       "private" : isPrivate,
-                       "trainer" : hasTrainer,
-                       "commute" : commute,
-                       "gear_id" : gearID,
-                       "description" : description] as [String : Any?]
+        parameters["name"] = name
+        parameters["type"] = type?.rawValue
+        parameters["private"] = isPrivate
+        parameters["trainer"] = hasTrainer
+        parameters["commute"] = commute
+        parameters["gear_id"] = gearID
+        parameters["description"] = description
+        
         super.init(client: client, url: "activities/\(id)", parse: { $0.activity })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return parameters
     }
 }

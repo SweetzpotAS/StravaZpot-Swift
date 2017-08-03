@@ -39,7 +39,7 @@ public class Request<T : Equatable> {
         }
     }
     
-    func getParameters() -> [String : Any?] {
+    func getParameters() -> [String : Any] {
         return [:]
     }
 }

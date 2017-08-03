@@ -9,16 +9,16 @@
 import Foundation
 
 public class ListActivityStreamsRequest : GetRequest<EquatableArray<Stream>> {
-    private let parameters : [String : Any?]
+    private var parameters : [String : Any] = [:]
     
     init(client : HTTPClient, id : Int, types : [StreamType], resolution : Resolution?, seriesType : SeriesType?) {
-        parameters = [ "resolution" : resolution?.rawValue,
-                       "series_type" : seriesType?.rawValue ]
+        parameters["resolution"] = resolution?.rawValue
+        parameters["series_type"] = seriesType?.rawValue
         let streamTypes = types.map{ $0.rawValue }.joined(separator: ",")
         super.init(client: client, url: "activities/\(id)/streams/\(streamTypes)", parse: { $0.streamArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return parameters
     }
 }

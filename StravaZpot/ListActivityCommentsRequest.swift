@@ -17,7 +17,7 @@ public class ListActivityCommentsRequest : GetRequest<EquatableArray<Comment>>, 
         super.init(client: client, url: "activities/\(id)/comments", parse: { $0.commentArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return pageParameters()
     }
 }

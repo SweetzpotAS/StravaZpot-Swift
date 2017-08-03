@@ -23,7 +23,7 @@ public class ListFriendsActivitiesRequest : GetRequest<EquatableArray<Activity>>
         super.init(client: client, url: "activities/following", parse: { $0.activityArray })
     }
     
-    override func getParameters() -> [String : Any?] {
+    override func getParameters() -> [String : Any] {
         return parameters + self.pageParameters()
     }
 }

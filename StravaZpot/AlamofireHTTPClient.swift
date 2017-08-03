@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
-class AlamofireHTTPClient : HTTPClient {
+public class AlamofireHTTPClient : HTTPClient {
     private let baseURL : String
     private let token : String
     private let debug : Bool
@@ -23,25 +23,25 @@ class AlamofireHTTPClient : HTTPClient {
         }
     }
     
-    init(baseURL : String, token : String, debug : Bool) {
+    public init(baseURL : String, token : String, debug : Bool) {
         self.baseURL = baseURL
         self.token = token
         self.debug = debug
     }
     
-    func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
+    public func get(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .get, parameters: parameters, callback: callback)
     }
     
-    func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
+    public func post(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .post, parameters: parameters, callback: callback)
     }
     
-    func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
+    public func put(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .put, parameters: parameters, callback: callback)
     }
     
-    func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
+    public func delete(url : String, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         request(url: url, method: .delete, parameters: parameters, callback: callback)
     }
     
@@ -70,7 +70,7 @@ class AlamofireHTTPClient : HTTPClient {
         }
     }
     
-    func upload(file : URL, withKey key : String, withName name : String, toUrl url : String, parameters : [String : Data], mimeType : String = "multipart/form-data", callback : @escaping (StravaResult<JSON>) -> ()) {
+    public func upload(file : URL, withKey key : String, withName name : String, toUrl url : String, parameters : [String : Data], mimeType : String = "multipart/form-data", callback : @escaping (StravaResult<JSON>) -> ()) {
         Alamofire.upload(multipartFormData: { multipartFormData in
             parameters.forEach{ key, value in
                 multipartFormData.append(value, withName: key)
