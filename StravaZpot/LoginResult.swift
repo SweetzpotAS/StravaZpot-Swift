@@ -9,8 +9,8 @@
 import Foundation
 
 public struct LoginResult {
-    let token : Token
-    let athlete : Athlete
+    public let token : Token
+    public let athlete : Athlete
 }
 
 extension LoginResult : Equatable {}

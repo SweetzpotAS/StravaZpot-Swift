@@ -17,7 +17,7 @@ class AuthenticationAPITest: XCTestCase {
         let api = AuthenticationAPI(client: client)
         
         var result : StravaResult<LoginResult>?
-        api.getToken(forApp: AppCredentials(cliendID: 1234, clientSecret: "any_secret"), withCode: "any_code")
+        api.getToken(forApp: AppCredentials(clientID: 1234, clientSecret: "any_secret"), withCode: "any_code")
             .execute{ result = $0 }
         
         expect(result).toEventually(beSuccessful())
