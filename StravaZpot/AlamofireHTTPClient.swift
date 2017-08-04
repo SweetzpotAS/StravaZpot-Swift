@@ -23,7 +23,7 @@ public class AlamofireHTTPClient : HTTPClient {
         }
     }
     
-    public init(baseURL : String, token : String, debug : Bool) {
+    public init(baseURL : String, token : String = "", debug : Bool) {
         self.baseURL = baseURL
         self.token = token
         self.debug = debug

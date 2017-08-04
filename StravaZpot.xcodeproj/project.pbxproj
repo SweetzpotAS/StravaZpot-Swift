@@ -190,6 +190,7 @@
 		11A6A97D1DBE57CC003E5302 /* RouteSubtype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A97C1DBE57CC003E5302 /* RouteSubtype.swift */; };
 		11A6A97F1DBE5829003E5302 /* EquatableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A97E1DBE5829003E5302 /* EquatableArray.swift */; };
 		11A6A9811DBE5959003E5302 /* AgeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A9801DBE5959003E5302 /* AgeGroup.swift */; };
+		11B3F8201F346CB100CD9E5E /* HTTPClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F81F1F346CB100CD9E5E /* HTTPClientBuilder.swift */; };
 		11BC21C91F260257002A2417 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21C81F260257002A2417 /* DataType.swift */; };
 		11BC21CB1F2602F0002A2417 /* UploadActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */; };
 		11BC21CD1F2603DD002A2417 /* UploadStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC21CC1F2603DD002A2417 /* UploadStatus.swift */; };
@@ -508,6 +509,7 @@
 		11A6A97C1DBE57CC003E5302 /* RouteSubtype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSubtype.swift; sourceTree = "<group>"; };
 		11A6A97E1DBE5829003E5302 /* EquatableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableArray.swift; sourceTree = "<group>"; };
 		11A6A9801DBE5959003E5302 /* AgeGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeGroup.swift; sourceTree = "<group>"; };
+		11B3F81F1F346CB100CD9E5E /* HTTPClientBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientBuilder.swift; sourceTree = "<group>"; };
 		11BC21C81F260257002A2417 /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		11BC21CA1F2602F0002A2417 /* UploadActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadActivityType.swift; sourceTree = "<group>"; };
 		11BC21CC1F2603DD002A2417 /* UploadStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadStatus.swift; sourceTree = "<group>"; };
@@ -750,6 +752,7 @@
 				1151B1371DC9E57100AE054F /* StravaResult.swift */,
 				1151B1391DC9E5AD00AE054F /* StravaError.swift */,
 				1151B13E1DC9E85900AE054F /* AlamofireHTTPClient.swift */,
+				11B3F81F1F346CB100CD9E5E /* HTTPClientBuilder.swift */,
 			);
 			name = HTTP;
 			sourceTree = "<group>";
@@ -1428,6 +1431,7 @@
 				11162D091DCC98B70030123F /* PhotoAPI.swift in Sources */,
 				112EF32D1F287FA700A1159F /* CheckUploadStatusRequest.swift in Sources */,
 				118668E51DCB2FD9006D5275 /* GetAthleteZonesRequest.swift in Sources */,
+				11B3F8201F346CB100CD9E5E /* HTTPClientBuilder.swift in Sources */,
 				1151B1151DC8AB0600AE054F /* EventParser.swift in Sources */,
 				113559FC1DD0D621004C8BB5 /* ListActivityStreamsRequest.swift in Sources */,
 				1151B13F1DC9E85900AE054F /* AlamofireHTTPClient.swift in Sources */,
