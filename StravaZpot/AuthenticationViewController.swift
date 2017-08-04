@@ -19,7 +19,6 @@ public class AuthenticationViewController: UIViewController, UIWebViewDelegate {
     public var delegate : AuthenticationDelegate!
     private var webView : UIWebView!
     
-    
     override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UserDefaults.standard.register(defaults: ["UserAgent": "StravaZpot"])

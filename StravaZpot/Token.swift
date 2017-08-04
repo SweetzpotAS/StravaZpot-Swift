@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Token {
-    let value : String
+    public let value : String
 }
 
 extension Token : CustomStringConvertible {

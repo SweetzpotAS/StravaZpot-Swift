@@ -9,6 +9,6 @@
 import Foundation
 
 public struct AppCredentials {
-    let cliendID : Int
-    let clientSecret : String
+    public let clientID : Int
+    public let clientSecret : String
 }
