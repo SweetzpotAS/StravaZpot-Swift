@@ -9,11 +9,11 @@
 import Foundation
 
 public class HTTPClientBuilder {
-    public func authorizationClient(debug : Bool) -> HTTPClient {
+    public static func authenticationClient(debug : Bool) -> HTTPClient {
         return AlamofireHTTPClient(baseURL: "https://www.strava.com/", debug: debug)
     }
     
-    public func client(withToken token : String, debug : Bool) -> HTTPClient {
+    public static func client(withToken token : String, debug : Bool) -> HTTPClient {
         return AlamofireHTTPClient(baseURL: "https://www.strava.com/api/v3/", token: token, debug: debug)
     }
 }
