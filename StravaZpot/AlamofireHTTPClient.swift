@@ -63,7 +63,7 @@ public class AlamofireHTTPClient : HTTPClient {
     
     private func request(url : String, method: HTTPMethod, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         
-        Alamofire.request(baseURL + url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        Alamofire.request(baseURL + url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200 ..< 300)
             .responseJSON { response in
                 self.responseCallback(response, callback)
