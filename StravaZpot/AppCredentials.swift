@@ -11,4 +11,9 @@ import Foundation
 public struct AppCredentials {
     public let clientID : Int
     public let clientSecret : String
+    
+    public init(clientID : Int, clientSecret : String) {
+        self.clientID = clientID
+        self.clientSecret = clientSecret
+    }
 }
