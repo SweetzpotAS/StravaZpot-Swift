@@ -10,6 +10,10 @@ import Foundation
 
 public struct Token {
     public let value : String
+    
+    public init(value : String) {
+        self.value = value
+    }
 }
 
 extension Token : CustomStringConvertible {
