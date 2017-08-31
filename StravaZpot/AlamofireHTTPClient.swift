@@ -76,16 +76,17 @@ public class AlamofireHTTPClient : HTTPClient {
                 multipartFormData.append(value, withName: key)
             }
             multipartFormData.append(file, withName: key, fileName: name, mimeType: mimeType)
-        }, to: baseURL + url, encodingCompletion: { encodingResult in
-                switch encodingResult {
-                case .success(let upload, _, _):
-                    upload.responseJSON { response in
+        }, to: baseURL + url, method: .post, headers: headers, encodingCompletion: { encodingResult in
+            switch encodingResult {
+            case .success(let upload, _, _):
+                upload.validate(statusCode: 200 ..< 300)
+                    .responseJSON { response in
                         self.responseCallback(response, callback)
-                    }
-                case .failure(let encodingError):
-                    callback(.error(.apiError(message: "Strava API Error: \(encodingError)")))
                 }
+            case .failure(let encodingError):
+                callback(.error(.apiError(message: "Strava API Error: \(encodingError)")))
             }
+        }
         )
     }
 }
