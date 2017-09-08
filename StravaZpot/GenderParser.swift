@@ -12,7 +12,12 @@ import SwiftyJSON
 public class GenderParser : Parser {
     
     public func from(json : JSON) -> Gender {
-        return Gender(rawValue: json.string!)!
+        if let gender = json.string {
+            if !gender.isEmpty {
+                return Gender(rawValue: json.string!)!
+            }
+        }
+        return Gender.notDefined
     }
     
 }
