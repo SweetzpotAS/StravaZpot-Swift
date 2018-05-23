@@ -14,7 +14,7 @@ import SwiftyJSON
 class CommentParserTest: XCTestCase {
     
     func testJSONisParsedToComment() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"id\": 26," +
             "    \"activity_id\": 123," +
             "    \"resource_state\": 2," +

@@ -14,7 +14,7 @@ import SwiftyJSON
 class ZonesParserTest: XCTestCase {
    
     func testJSONisParsedToZones() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"heart_rate\": {" +
             "    \"custom_zones\": false," +
             "    \"zones\": [" +

@@ -14,7 +14,7 @@ import SwiftyJSON
 class ExploreResultParserTest: XCTestCase {
     
     func testExploreResultParsedCorrectly() {
-        let json = JSON.parse(EXPLORE_RESULT_JSON)
+        let json = JSON(parseJSON: EXPLORE_RESULT_JSON)
         let parser = ExploreResultParser()
         
         let result = parser.from(json: json)

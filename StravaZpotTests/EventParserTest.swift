@@ -14,7 +14,7 @@ import SwiftyJSON
 class EventParserTest: XCTestCase {
     
     func testJSONisParsedToEvent() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"id\": 1234567," +
             "    \"resource_state\": 2," +
             "    \"title\": \"Test Group Event\"," +

@@ -14,7 +14,7 @@ import SwiftyJSON
 class UploadStatusParserTest: XCTestCase {
     
     func testJSONIsParsedToUploadStatus() {
-        let json = JSON.parse("{ \"id\": 16486788, \"external_id\": \"test.fit\", \"error\": null, \"status\": \"Your activity is still being processed.\", \"activity_id\": null }")
+        let json = JSON(parseJSON: "{ \"id\": 16486788, \"external_id\": \"test.fit\", \"error\": null, \"status\": \"Your activity is still being processed.\", \"activity_id\": null }")
         let parser = UploadStatusParser()
         
         let result = parser.from(json: json)
