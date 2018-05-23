@@ -14,7 +14,7 @@ import SwiftyJSON
 class MapParserTest: XCTestCase {
     
     func testJSONisParsedToMap() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
                 "    \"id\": \"a32193479\"," +
                 "    \"summary_polyline\": \"{cteFjcaBkCx@gEz@\"," +
                 "    \"resource_state\": 3" +

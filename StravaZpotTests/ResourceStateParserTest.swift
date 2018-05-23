@@ -15,7 +15,7 @@ import Nimble
 class ResourceStateParserTest : XCTestCase {
     
     func testJSONisParsedToResourceState() {
-        let json = JSON.parse("2")
+        let json = JSON(parseJSON: "2")
         let parser = ResourceStateParser()
         
         let result = parser.from(json: json)

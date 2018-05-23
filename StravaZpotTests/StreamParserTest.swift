@@ -14,7 +14,7 @@ import SwiftyJSON
 class StreamParserType: XCTestCase {
     
     func testJSONisParsedToStream() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"type\": \"latlng\"," +
             "    \"data\": [" +
             "      [ 38.603734, -122.864112 ]" +

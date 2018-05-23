@@ -14,7 +14,7 @@ import SwiftyJSON
 class ResolutionParserTest: XCTestCase {
     
     func testJSONisParsedToResolution() {
-        let json = JSON.parse("\"low\"")
+        let json = JSON(parseJSON: "\"low\"")
         let parser = ResolutionParser()
         
         let result = parser.from(json: json)

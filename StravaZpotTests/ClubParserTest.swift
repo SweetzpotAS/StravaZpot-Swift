@@ -14,7 +14,7 @@ import SwiftyJSON
 class ClubParserTest: XCTestCase {
     
     func testJSONisParsedToClub() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"id\": 1," +
             "  \"resource_state\": 3," +
             "  \"name\": \"Team Strava Cycling\"," +

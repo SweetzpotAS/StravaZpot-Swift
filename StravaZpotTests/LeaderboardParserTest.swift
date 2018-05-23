@@ -14,7 +14,7 @@ import SwiftyJSON
 class LeaderboardParserTest: XCTestCase {
     
     func testJSONisParsedToLeaderboard() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"entry_count\": 7037," +
             "  \"entries\": [" +
             "    {" +

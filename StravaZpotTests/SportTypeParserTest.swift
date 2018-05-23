@@ -14,7 +14,7 @@ import SwiftyJSON
 class SportTypeParserTest: XCTestCase {
     
     func testJSONisParsedToSportType() {
-        let json = JSON.parse("\"triathlon\"")
+        let json = JSON(parseJSON: "\"triathlon\"")
         let parser = SportTypeParser()
         
         let result = parser.from(json: json)

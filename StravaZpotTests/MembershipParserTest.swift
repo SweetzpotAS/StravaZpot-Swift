@@ -14,7 +14,7 @@ import SwiftyJSON
 class MembershipParserTest: XCTestCase {
     
     func testJSONisParsedToMembership() {
-        let json = JSON.parse("\"member\"")
+        let json = JSON(parseJSON: "\"member\"")
         let parser = MembershipParser()
         
         let result = parser.from(json: json)

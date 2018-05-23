@@ -14,7 +14,7 @@ import SwiftyJSON
 class SpeedParserTest: XCTestCase {
     
     func testJSONisParsedToSpeed() {
-        let json = JSON.parse("25.4")
+        let json = JSON(parseJSON: "25.4")
         let parser = SpeedParser()
         
         let result = parser.from(json: json)

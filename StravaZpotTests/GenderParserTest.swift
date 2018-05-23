@@ -14,7 +14,7 @@ import Nimble
 class GenderParserTest: XCTestCase {
     
     func testJSONisParsedToGender() {
-        let json = JSON.parse("\"M\"")
+        let json = JSON(parseJSON: "\"M\"")
         let parser = GenderParser()
         
         let result = parser.from(json: json)

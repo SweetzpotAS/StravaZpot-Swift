@@ -14,7 +14,7 @@ import Nimble
 class FriendStatusParserTest: XCTestCase {
     
     func testJSONisParsedToFriendStatus() {
-        let json = JSON.parse("\"pending\"")
+        let json = JSON(parseJSON: "\"pending\"")
         let parser = FriendStatusParser()
         
         let result = parser.from(json: json)

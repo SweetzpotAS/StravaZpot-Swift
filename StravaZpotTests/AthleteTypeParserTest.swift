@@ -14,7 +14,7 @@ import SwiftyJSON
 class AthleteTypeParserTest: XCTestCase {
     
     func testJSONisParsedToAthleteType() {
-        let json = JSON.parse("1")
+        let json = JSON(parseJSON: "1")
         let parser = AthleteTypeParser()
         
         let result = parser.from(json: json)

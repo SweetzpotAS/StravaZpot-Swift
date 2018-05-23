@@ -25,7 +25,7 @@ class MockHTTPClient : HTTPClient {
     var lastMimeType = ""
     
     init(respondWithJSON json : String) {
-        self.response = .success(JSON.parse(json))
+        self.response = .success(JSON(parseJSON: json))
     }
     
     init(respondWithError error : StravaError) {

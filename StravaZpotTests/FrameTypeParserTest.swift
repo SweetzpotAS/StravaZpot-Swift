@@ -14,7 +14,7 @@ import SwiftyJSON
 class FrameTypeParserTest: XCTestCase {
  
     func testJSONisParsedToFrameType() {
-        let json = JSON.parse("2")
+        let json = JSON(parseJSON: "2")
         let parser = FrameTypeParser()
         
         let result = parser.from(json: json)

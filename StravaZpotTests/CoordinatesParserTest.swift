@@ -15,7 +15,7 @@ import Nimble
 class CoordinatesParserTest : XCTestCase {
     
     func testJSONIsParsedToCoordinates() {
-        let json = JSON.parse("[23.6, -42.1]")
+        let json = JSON(parseJSON: "[23.6, -42.1]")
         let parser = CoordinatesParser()
         
         let result = parser.from(json: json)

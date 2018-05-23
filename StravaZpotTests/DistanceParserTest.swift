@@ -15,7 +15,7 @@ import Nimble
 class DistanceParserTest : XCTestCase {
     
     func testJSONisParsedToDistance() {
-        let json = JSON.parse("3621")
+        let json = JSON(parseJSON: "3621")
         let parser = DistanceParser()
         
         let result = parser.from(json: json)

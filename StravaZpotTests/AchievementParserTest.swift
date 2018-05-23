@@ -14,7 +14,7 @@ import SwiftyJSON
 class AchievementParserTest: XCTestCase {
     
     func testJSONisParsedToAchievement() {
-        let json = JSON.parse("{\"type_id\" : 2, \"type\" : \"overall\", \"rank\" : 3}")
+        let json = JSON(parseJSON: "{\"type_id\" : 2, \"type\" : \"overall\", \"rank\" : 3}")
         let parser = AchievementParser()
         
         let result = parser.from(json: json)

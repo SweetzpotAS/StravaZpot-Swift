@@ -14,7 +14,7 @@ import SwiftyJSON
 class JoinResultParserTest: XCTestCase {
     
     func testJSONisParsedToJoinResult() {
-        let json = JSON.parse("{\"success\": true, \"active\": true, \"membership\": \"pending\"}")
+        let json = JSON(parseJSON: "{\"success\": true, \"active\": true, \"membership\": \"pending\"}")
         let parser = JoinResultParser()
         
         let result = parser.from(json: json)

@@ -14,7 +14,7 @@ import SwiftyJSON
 class PhotoParserTest: XCTestCase {
     
     func testJSONisParsedToPhoto() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"id\": 10701863," +
             "    \"activity_id\": 81121657," +
             "    \"resource_state\": 2," +

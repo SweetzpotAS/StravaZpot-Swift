@@ -14,7 +14,7 @@ import SwiftyJSON
 class PhotoSummaryParserTest: XCTestCase {
     
     func testJSONisParsedToPhotoSummary() {
-        let json = JSON.parse("{\"count\" : 3, \"primary\" : {\"id\" : 1234, \"source\" : 1, \"urls\" : {}} }")
+        let json = JSON(parseJSON: "{\"count\" : 3, \"primary\" : {\"id\" : 1234, \"source\" : 1, \"urls\" : {}} }")
         let parser = PhotoSummaryParser()
         
         let result = parser.from(json: json)

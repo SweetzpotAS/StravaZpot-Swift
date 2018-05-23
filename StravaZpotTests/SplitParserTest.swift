@@ -14,7 +14,7 @@ import Nimble
 class SplitParserTest: XCTestCase {
 
     func testJSONisParsedToSplit() {
-        let json = JSON.parse(
+        let json = JSON(parseJSON: 
                 "{\"distance\": 1002.5," +
                 "\"elapsed_time\": 276," +
                 "\"elevation_difference\": 0," +

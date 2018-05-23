@@ -14,7 +14,7 @@ import SwiftyJSON
 class TemperatureParserTest: XCTestCase {
     
     func testJSONisParsedToTemperature() {
-        let json = JSON.parse("17.8")
+        let json = JSON(parseJSON: "17.8")
         let parser = TemperatureParser()
         
         let result = parser.from(json: json)

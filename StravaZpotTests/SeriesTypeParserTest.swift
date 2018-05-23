@@ -14,7 +14,7 @@ import SwiftyJSON
 class SeriesTypeParserTest: XCTestCase {
     
     func testJSONisParsedToSeriesType() {
-        let json = JSON.parse("\"time\"")
+        let json = JSON(parseJSON: "\"time\"")
         let parser = SeriesTypeParser()
         
         let result = parser.from(json: json)

@@ -14,7 +14,7 @@ import SwiftyJSON
 class LoginResultParserTest: XCTestCase {
     
     func testParsesLoginResultFromJSONCorrectly() {
-        let json = JSON.parse("{\n" +
+        let json = JSON(parseJSON: "{\n" +
             "  \"access_token\": \"83ebeabdec09f6670863766f792ead24d61fe3f9\",\n" +
             "  \"athlete\": {\n" +
             "    \"id\": 227615,\n" +

@@ -14,7 +14,7 @@ import SwiftyJSON
 class ActivityTypeParserTest: XCTestCase {
     
     func testJSONisParsedToActivityType() {
-        let json = JSON.parse("\"Rowing\"")
+        let json = JSON(parseJSON: "\"Rowing\"")
         let parser = ActivityTypeParser()
         
         let result = parser.from(json: json)

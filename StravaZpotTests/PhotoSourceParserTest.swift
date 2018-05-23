@@ -14,7 +14,7 @@ import Nimble
 class PhotoSourceParserTest: XCTestCase {
     
     func testJSONisParsedToPhotoSource() {
-        let json = JSON.parse("1")
+        let json = JSON(parseJSON: "1")
         let parser = PhotoSourceParser()
         
         let result = parser.from(json: json)
