@@ -14,7 +14,7 @@ import SwiftyJSON
 class GearParserTest: XCTestCase {
     
     func testJSONisParsedToGear() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"id\": \"b105763\"," +
             "  \"primary\": false," +
             "  \"name\": \"Cannondale TT\"," +

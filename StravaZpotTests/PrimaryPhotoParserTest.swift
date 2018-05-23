@@ -14,7 +14,7 @@ import Nimble
 class PrimaryPhotoParserTest: XCTestCase {
     
     func testJSONisParsedToPrimaryPhoto() {
-        let json = JSON.parse("{\"unique_id\" : \"abcd\", \"source\" : 2, \"urls\" : {\"100\" : \"url1\", \"600\" : \"url2\"}}")
+        let json = JSON(parseJSON: "{\"unique_id\" : \"abcd\", \"source\" : 2, \"urls\" : {\"100\" : \"url1\", \"600\" : \"url2\"}}")
         let parser = PrimaryPhotoParser()
         
         let result = parser.from(json: json)

@@ -14,7 +14,7 @@ import SwiftyJSON
 class SkillLevelParserTest: XCTestCase {
     
     func testJSONisParsedToSkillLevel() {
-        let json = JSON.parse("1")
+        let json = JSON(parseJSON: "1")
         let parser = SkillLevelParser()
         
         let result = parser.from(json: json)

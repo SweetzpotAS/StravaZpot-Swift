@@ -14,7 +14,7 @@ import SwiftyJSON
 class ActivityZoneParserTest : XCTestCase {
     
     func testJSONisParsedToActivityZone() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"score\": 215," +
             "    \"distribution_buckets\": [" +
             "      { \"min\": 0,   \"max\":115,  \"time\": 1735 }," +

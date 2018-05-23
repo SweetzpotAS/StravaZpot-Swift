@@ -14,7 +14,7 @@ import Nimble
 class PercentageParserTest: XCTestCase {
     
     func testJSONisParsedToPercentage() {
-        let json = JSON.parse("75")
+        let json = JSON(parseJSON: "75")
         let parser = PercentageParser()
         
         let result = parser.from(json: json)

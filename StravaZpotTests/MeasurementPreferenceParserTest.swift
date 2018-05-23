@@ -14,7 +14,7 @@ import SwiftyJSON
 class MeasurementPreferenceParserTest: XCTestCase {
     
     func testJSONisParsedToMeasurementPreference() {
-        let json = JSON.parse("\"feet\"")
+        let json = JSON(parseJSON: "\"feet\"")
         let parser = MeasurementPreferenceParser()
         
         let result = parser.from(json: json)

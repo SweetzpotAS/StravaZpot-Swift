@@ -14,7 +14,7 @@ import SwiftyJSON
 class RouteSubtypeParserTest : XCTestCase {
     
     func testJSONisParsedToRouteSubtype() {
-        let json = JSON.parse("3")
+        let json = JSON(parseJSON: "3")
         let parser = RouteSubtypeParser()
         
         let result = parser.from(json: json)

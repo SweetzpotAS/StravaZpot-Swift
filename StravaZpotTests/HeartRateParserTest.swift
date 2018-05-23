@@ -14,7 +14,7 @@ import SwiftyJSON
 class HeartRateParserTest: XCTestCase {
     
     func testJSONisParsedToHeartRate() {
-        let json = JSON.parse("{\"custom_zones\" : false, \"zones\": [{\"min\":0, \"max\":1}, {\"min\":1, \"max\":2}] }")
+        let json = JSON(parseJSON: "{\"custom_zones\" : false, \"zones\": [{\"min\":0, \"max\":1}, {\"min\":1, \"max\":2}] }")
         let parser = HeartRateParser()
         
         let result = parser.from(json: json)

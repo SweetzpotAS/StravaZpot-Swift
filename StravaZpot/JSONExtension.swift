@@ -23,7 +23,7 @@ extension JSON {
     }
     
     var activityArray : EquatableArray<Activity>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.activity }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.activity }) : nil
     }
     
     var athlete : Athlete? {
@@ -31,7 +31,7 @@ extension JSON {
     }
     
     var athleteArray : EquatableArray<Athlete>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.athlete }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.athlete }) : nil
     }
     
     var time : Time? {
@@ -43,7 +43,7 @@ extension JSON {
     }
     
     var dateArray : EquatableArray<Date>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.date }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.date }) : nil
     }
     
     var distance : Distance? {
@@ -79,7 +79,7 @@ extension JSON {
     }
     
     var gearArray : EquatableArray<Gear>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.gear }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.gear }) : nil
     }
     
     var temperature : Temperature? {
@@ -91,7 +91,7 @@ extension JSON {
     }
     
     var splitArray : EquatableArray<Split>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.split }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.split }) : nil
     }
     
     var segmentEffort : SegmentEffort? {
@@ -99,7 +99,7 @@ extension JSON {
     }
     
     var segmentEffortArray : EquatableArray<SegmentEffort>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.segmentEffort }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.segmentEffort }) : nil
     }
     
     var gender : Gender? {
@@ -123,7 +123,7 @@ extension JSON {
     }
     
     var clubArray : EquatableArray<Club>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.club }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.club }) : nil
     }
     
     var clubType : ClubType? {
@@ -147,7 +147,7 @@ extension JSON {
     }
     
     var intervalArray : EquatableArray<Interval<Double>>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.interval }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.interval }) : nil
     }
     
     var membership : Membership? {
@@ -159,7 +159,7 @@ extension JSON {
     }
     
     var leaderboardEntryArray : EquatableArray<LeaderboardEntry>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.leaderboardEntry }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.leaderboardEntry }) : nil
     }
     
     var photoSource : PhotoSource? {
@@ -190,7 +190,7 @@ extension JSON {
     }
     
     var segmentArray : EquatableArray<Segment>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.segment }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.segment }) : nil
     }
     
     var percentage : Percentage? {
@@ -226,7 +226,7 @@ extension JSON {
     }
     
     var timedIntervalArray : EquatableArray<TimedInterval<Double>>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.timedInterval }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.timedInterval }) : nil
     }
     
     var zones : Zones? {
@@ -234,7 +234,7 @@ extension JSON {
     }
     
     var zonesArray : EquatableArray<Zones>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.zones }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.zones }) : nil
     }
     
     var stats : Stats? {
@@ -246,7 +246,7 @@ extension JSON {
     }
     
     var activityZoneArray : EquatableArray<ActivityZone>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.activityZone }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.activityZone }) : nil
     }
     
     var activityLap : ActivityLap? {
@@ -254,7 +254,7 @@ extension JSON {
     }
     
     var activityLapArray : EquatableArray<ActivityLap>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.activityLap }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.activityLap }) : nil
     }
     
     var photo : Photo? {
@@ -262,7 +262,7 @@ extension JSON {
     }
     
     var photoArray : EquatableArray<Photo>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.photo }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.photo }) : nil
     }
     
     var comment : Comment? {
@@ -270,7 +270,7 @@ extension JSON {
     }
     
     var commentArray : EquatableArray<Comment>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.comment }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.comment }) : nil
     }
     
     var announcement : Announcement? {
@@ -278,7 +278,7 @@ extension JSON {
     }
     
     var announcementArray : EquatableArray<Announcement>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.announcement }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.announcement }) : nil
     }
     
     var event : Event? {
@@ -286,7 +286,7 @@ extension JSON {
     }
     
     var eventArray : EquatableArray<Event>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.event }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.event }) : nil
     }
     
     var joinResult : JoinResult? {
@@ -302,7 +302,7 @@ extension JSON {
     }
     
     var routeArray : EquatableArray<Route>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.route }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.route }) : nil
     }
     
     var leaderboard : Leaderboard? {
@@ -314,7 +314,7 @@ extension JSON {
     }
     
     var streamArray : EquatableArray<Stream>? {
-        return exists() ? EquatableArray(array: self.flatMap{ $1.stream }) : nil
+        return exists() ? EquatableArray(array: self.compactMap{ $1.stream }) : nil
     }
     
     var uploadStatus : UploadStatus? {

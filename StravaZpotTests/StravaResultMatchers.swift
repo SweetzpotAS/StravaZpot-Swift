@@ -10,18 +10,17 @@ import Foundation
 import Nimble
 @testable import StravaZpot
 
-public func beSuccessful<T>() -> MatcherFunc<StravaResult<T>> {
-    return MatcherFunc { actualExpression, failureMessage in
-        failureMessage.postfixMessage = "be successful>"
+public func beSuccessful<T>() -> Predicate<StravaResult<T>> {
+    return Predicate.define("be successful") { actualExpression, msg in
         if let actualValue = try actualExpression.evaluate() {
             switch(actualValue) {
             case .success(_) :
-                return true
+                return PredicateResult(bool: true, message: msg)
             default:
-                return false
+                return PredicateResult(bool: false, message: msg)
             }
         } else {
-            return false
+            return PredicateResult(bool: false, message: msg)
         }
     }
 }

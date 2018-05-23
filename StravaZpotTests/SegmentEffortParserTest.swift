@@ -14,7 +14,7 @@ import SwiftyJSON
 class SegmentEffortParserTest: XCTestCase {
     
     func testJSONisParsedToSegmentEffort() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"id\": 269990681," +
             "  \"resource_state\": 3," +
             "  \"name\": \"Geysers Road Climb\"," +

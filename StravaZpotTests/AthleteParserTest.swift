@@ -14,7 +14,7 @@ import SwiftyJSON
 class AthleteParserTest: XCTestCase {
     
     func testJSONisParsedToAthlete() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
                 "  \"id\": 227615," +
                 "  \"resource_state\": 3," +
                 "  \"firstname\": \"John\"," +

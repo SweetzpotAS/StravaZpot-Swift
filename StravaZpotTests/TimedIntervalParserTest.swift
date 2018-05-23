@@ -14,7 +14,7 @@ import SwiftyJSON
 class TimedIntervalParserTest: XCTestCase {
     
     func testJSONisParsedToTimedInterval() {
-        let json = JSON.parse("{\"min\" : 15.2, \"max\" : 23.8, \"time\" : 64}")
+        let json = JSON(parseJSON: "{\"min\" : 15.2, \"max\" : 23.8, \"time\" : 64}")
         let parser = TimedDoubleIntervalParser()
         
         let result = parser.from(json: json)

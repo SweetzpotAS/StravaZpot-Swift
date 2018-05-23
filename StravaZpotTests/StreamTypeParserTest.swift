@@ -14,7 +14,7 @@ import SwiftyJSON
 class StreamTypeParserTest: XCTestCase {
     
     func testJSONisParsedToStreamType() {
-        let json = JSON.parse("\"grade_smooth\"")
+        let json = JSON(parseJSON: "\"grade_smooth\"")
         let parser = StreamTypeParser()
         
         let result = parser.from(json: json)

@@ -14,7 +14,7 @@ import SwiftyJSON
 class SegmentParserTest: XCTestCase {
     
     func testJSONisParsedToSegment() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"id\": 229781," +
             "  \"resource_state\": 3," +
             "  \"name\": \"Hawk Hill\"," +

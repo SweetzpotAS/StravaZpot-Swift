@@ -14,7 +14,7 @@ import SwiftyJSON
 class PowerParserTest: XCTestCase {
     
     func testJSONisParsedToPower() {
-        let json = JSON.parse("{\"zones\" : [{\"min\":0, \"max\":1}]}")
+        let json = JSON(parseJSON: "{\"zones\" : [{\"min\":0, \"max\":1}]}")
         let parser = PowerParser()
         
         let result = parser.from(json: json)

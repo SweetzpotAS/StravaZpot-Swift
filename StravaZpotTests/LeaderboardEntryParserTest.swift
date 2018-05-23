@@ -14,7 +14,7 @@ import SwiftyJSON
 class LeaderboardEntryParserTest: XCTestCase {
     
     func testJSONisParsedToLeaderboardEntry() {
-        let json = JSON.parse("    {" +
+        let json = JSON(parseJSON: "    {" +
             "      \"athlete_name\": \"Jim Whimpey\"," +
             "      \"athlete_id\": 123529," +
             "      \"athlete_gender\": \"M\"," +

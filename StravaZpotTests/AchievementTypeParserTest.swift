@@ -14,7 +14,7 @@ import Nimble
 class AchievementTypeParserTest: XCTestCase {
     
     func testJSONisParsedToAchievementType() {
-        let json = JSON.parse("2")
+        let json = JSON(parseJSON: "2")
         let parser = AchievementTypeParser()
         
         let result = parser.from(json: json)

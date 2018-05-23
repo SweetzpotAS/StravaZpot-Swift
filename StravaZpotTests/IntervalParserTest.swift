@@ -14,7 +14,7 @@ import Nimble
 class IntervalParserTest: XCTestCase {
     
     func testJSONIsParsedToIntervalOfDouble() {
-        let json = JSON.parse("{\"min\" : 1.0, \"max\" : 7.5}")
+        let json = JSON(parseJSON: "{\"min\" : 1.0, \"max\" : 7.5}")
         let parser = IntervalDoubleParser()
         
         let result = parser.from(json : json)

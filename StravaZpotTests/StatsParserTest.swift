@@ -14,7 +14,7 @@ import SwiftyJSON
 class StatsParserTest: XCTestCase {
     
     func testJSONisParsedToStats() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"biggest_ride_distance\": 0," +
             "  \"biggest_climb_elevation_gain\": 0," +
             "  \"recent_ride_totals\": {" +

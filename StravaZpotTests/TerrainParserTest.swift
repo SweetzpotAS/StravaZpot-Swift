@@ -14,7 +14,7 @@ import SwiftyJSON
 class TerrainParserTest: XCTestCase {
     
     func testJSONisParsedToTerrain() {
-        let json = JSON.parse("1")
+        let json = JSON(parseJSON: "1")
         let parser = TerrainParser()
         
         let result = parser.from(json: json)

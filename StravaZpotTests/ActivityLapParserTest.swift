@@ -14,7 +14,7 @@ import SwiftyJSON
 class ActivityLapParserTest: XCTestCase {
     
     func testJSONisParsedToActivityLap() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"id\": 401614652," +
             "    \"resource_state\": 2," +
             "    \"name\": \"Lap 1\"," +

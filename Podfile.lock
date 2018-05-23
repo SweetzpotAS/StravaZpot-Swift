@@ -1,18 +1,24 @@
 PODS:
-  - Alamofire (4.0.1)
-  - Nimble (5.1.0)
-  - SwiftyJSON (3.1.1)
+  - Alamofire (4.7.2)
+  - Nimble (7.1.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
-  - Nimble (~> 5.0)
+  - Alamofire (~> 4.7.2)
+  - Nimble (~> 7.1.1)
   - SwiftyJSON (~> 3.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Nimble
+    - SwiftyJSON
+
 SPEC CHECKSUMS:
-  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
-  Nimble: 5ea121a2eda60440287054cde077fc0ad22227b3
-  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: e730626bb9835fb5774f8b9c8414851b63391b4f
+PODFILE CHECKSUM: 423b7186f58996253fe37c560d10b1e13d60fb3d
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.2

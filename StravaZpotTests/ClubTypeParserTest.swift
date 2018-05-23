@@ -14,7 +14,7 @@ import SwiftyJSON
 class ClubTypeParserTest: XCTestCase {
     
     func testJSONisParsedToClubType() {
-        let json = JSON.parse("\"shop\"")
+        let json = JSON(parseJSON: "\"shop\"")
         let parser = ClubTypeParser()
         
         let result = parser.from(json: json)

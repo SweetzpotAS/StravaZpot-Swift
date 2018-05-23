@@ -14,7 +14,7 @@ import SwiftyJSON
 class LeaveResultParserTest: XCTestCase {
     
     func testJSONisParserToLeaveResult() {
-        let json = JSON.parse("{\"success\" : true, \"active\" : false}")
+        let json = JSON(parseJSON: "{\"success\" : true, \"active\" : false}")
         let parser = LeaveResultParser()
         
         let result = parser.from(json: json)

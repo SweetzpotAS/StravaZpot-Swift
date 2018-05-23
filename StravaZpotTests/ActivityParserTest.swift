@@ -14,7 +14,7 @@ import SwiftyJSON
 class ActivityParserTest: XCTestCase {
     
     func testJSONisParsedToActivity() {
-        let json = JSON.parse("{\n" +
+        let json = JSON(parseJSON: "{\n" +
             "  \"id\": 321934,\n" +
                 "  \"resource_state\": 3,\n" +
                 "  \"external_id\": \"2012-12-12_21-40-32-80-29011.fit\",\n" +

@@ -14,7 +14,7 @@ import Nimble
 class AnnouncementParserTest: XCTestCase {
     
     func testJSONisParsedToAnnouncement() {
-        let json = JSON.parse("  {" +
+        let json = JSON(parseJSON: "  {" +
             "    \"id\": 1219827," +
             "    \"resource_state\": 2," +
             "    \"club_id\": 109984," +

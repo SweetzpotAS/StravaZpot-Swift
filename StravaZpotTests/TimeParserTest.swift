@@ -14,7 +14,7 @@ import Nimble
 class TimeParserTest: XCTestCase {
     
     func testJSONisParsedToTime() {
-        let json = JSON.parse("60")
+        let json = JSON(parseJSON: "60")
         let parser = TimeParser()
         
         let result = parser.from(json: json)

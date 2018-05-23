@@ -14,7 +14,7 @@ import SwiftyJSON
 class DateParserTest: XCTestCase {
     
     func testJSONisParsedToDate() {
-        let json = JSON.parse("\"2013-03-30T18:43:50Z\"")
+        let json = JSON(parseJSON: "\"2013-03-30T18:43:50Z\"")
         let parser = DateParser()
         
         let result = parser.from(json: json)

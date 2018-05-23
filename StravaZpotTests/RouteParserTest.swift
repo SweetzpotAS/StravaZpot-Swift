@@ -14,7 +14,7 @@ import SwiftyJSON
 class RouteParserTest: XCTestCase {
     
     func testJSONisParsedToRoute() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
             "  \"athlete\": {" +
             "    \"id\": 265720," +
             "    \"resource_state\": 1" +

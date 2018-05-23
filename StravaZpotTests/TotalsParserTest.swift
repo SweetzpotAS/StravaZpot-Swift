@@ -14,7 +14,7 @@ import SwiftyJSON
 class TotalsParserTest: XCTestCase {
     
     func testJSONisParsedToTotals() {
-        let json = JSON.parse("{" +
+        let json = JSON(parseJSON: "{" +
                 "    \"count\": 3," +
                 "    \"distance\": 12054.9," +
                 "    \"moving_time\": 2190," +

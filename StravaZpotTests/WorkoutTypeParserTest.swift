@@ -14,7 +14,7 @@ import Nimble
 class WorkoutTypeParserTest: XCTestCase {
     
     func testJSONisParsedToWorkoutType() {
-        let json = JSON.parse("11")
+        let json = JSON(parseJSON: "11")
         let parser = WorkoutTypeParser()
         
         let result = parser.from(json: json)
