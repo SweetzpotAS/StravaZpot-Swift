@@ -23,8 +23,14 @@ public class ActivityAPI {
                                withDistance distance : Distance? = nil,
                                isPrivate : Bool? = nil,
                                withTrainer hasTrainer : Bool? = nil,
-                               withCommute commute : Bool? = nil) -> CreateActivityRequest{
-        return CreateActivityRequest(client: client, name: name, type: type, startDate: startDate, elapsedTime: elapsedTime, description: description, distance: distance, isPrivate: isPrivate, hasTrainer: hasTrainer, commute: commute)
+                               withCommute commute : Bool? = nil,
+                               withExternalId externalId: String?,
+                               withTotalElevationGain totalElevationGain: Double?,
+                               withLocation location: Coordinates?,
+                               inCity city: String?,
+                               withGearId gearId: String?,
+                               withDeviceName deviceName: String?) -> CreateActivityRequest{
+        return CreateActivityRequest(client: client, name: name, type: type, startDate: startDate, elapsedTime: elapsedTime, description: description, distance: distance, isPrivate: isPrivate, hasTrainer: hasTrainer, commute: commute, externalId: externalId, totalElevationGain: totalElevationGain, location: location, city: city, gearId: gearId, deviceName: deviceName)
     }
     
     public func retrieveActivity(withID id : Int,
