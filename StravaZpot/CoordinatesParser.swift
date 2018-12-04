@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class CoordinatesParser : Parser {
     public func from(json: JSON) -> Coordinates {
-        return Coordinates(latitude: json.arrayValue[0].double!,
-                           longitude: json.arrayValue[1].double!)
+        return Coordinates(latitude: json.arrayValue[0].double ?? 0.0,
+                           longitude: json.arrayValue[1].double ?? 0.0)
     }
 }
