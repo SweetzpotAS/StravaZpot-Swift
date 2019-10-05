@@ -67,6 +67,7 @@ public struct Athlete {
         self.bikes = bikes
         self.shoes = shoes
     }
+    
 }
 
 extension Athlete : Equatable {}

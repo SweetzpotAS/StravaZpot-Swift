@@ -10,6 +10,9 @@ import Foundation
 
 public struct Distance {
     public let meters : Double
+    public init(meters: Double) {
+        self.meters = meters
+    }
 }
 
 extension Distance : Equatable {}
