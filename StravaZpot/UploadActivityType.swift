@@ -27,4 +27,6 @@ public enum UploadActivityType : String {
     case snowshoe = "snowshoe"
     case eBikeRide = "ebikeride"
     case virtualRide = "virtualride"
+    case rockClimbing = "rockclimbing"
+    case bouldering = "bouldering"
 }
