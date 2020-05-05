@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'StravaZpot' do
   use_frameworks!
 
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.8.1'
   pod 'SwiftyJSON'
 
   target 'StravaZpotTests' do
