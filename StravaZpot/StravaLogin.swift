@@ -13,25 +13,20 @@ import AuthenticationServices
 public class StravaLogin: NSObject {
     private let STRAVA_LOGIN_URL = "https://www.strava.com/oauth/authorize?response_type=code"
     let clientID : Int
-    let redirectURI : String?
+    let redirectURI : String
+    let stravaAuthorizationCallbackDomain: String
     let approvalPrompt : ApprovalPrompt?
     let accessScope : AccessScope?
     
-    public init(clientID : Int, redirectURI : String? = nil, approvalPrompt : ApprovalPrompt?, accessScope : AccessScope?) {
+    public init(clientID : Int, redirectURI : String, stravaAuthorizationCallbackDomain: String, approvalPrompt : ApprovalPrompt?, accessScope : AccessScope?) {
         self.clientID = clientID
         self.redirectURI = redirectURI
         self.approvalPrompt = approvalPrompt
         self.accessScope = accessScope
+        self.stravaAuthorizationCallbackDomain = stravaAuthorizationCallbackDomain
     }
     
     public func makeURL() -> URL? {
-        var urlPrefix = STRAVA_LOGIN_URL
-        
-//        let nativeStravaAppLink = "strava://oauth/mobile/authorize?response_type=code"
-//        if UIApplication.shared.canOpenURL(URL(string: nativeStravaAppLink)) {
-//
-//        }
-        
         let url = STRAVA_LOGIN_URL + clientIDParameter() + redirectURIParameter() + approvalPromptParameter() + accessScopeParameter()
         return URL(string: url)
     }
@@ -41,7 +36,7 @@ public class StravaLogin: NSObject {
     }
     
     private func redirectURIParameter() -> String {
-        return redirectURI.flatMap{ redirectURI in "&redirect_uri=\(redirectURI)" } ?? ""
+        return redirectURI.flatMap{ redirectURI in "&redirect_uri=\(stravaAuthorizationCallbackDomain)" } ?? ""
     }
     
     private func approvalPromptParameter() -> String {
