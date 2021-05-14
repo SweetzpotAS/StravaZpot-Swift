@@ -36,7 +36,7 @@ public class StravaLogin: NSObject {
     }
     
     private func redirectURIParameter() -> String {
-        return redirectURI.flatMap{ redirectURI in "&redirect_uri=\(stravaAuthorizationCallbackDomain)" } ?? ""
+        return redirectURI.flatMap{ redirectURI in "&redirect_uri=\(stravaAuthorizationCallbackDomain)" }
     }
     
     private func approvalPromptParameter() -> String {
@@ -50,7 +50,7 @@ public class StravaLogin: NSObject {
     var webAuthSession: ASWebAuthenticationSession?
     public func authenticate(completion: @escaping (String) -> Void) {
         
-        webAuthSession = ASWebAuthenticationSession.init(url: makeURL()!, callbackURLScheme: redirectURI!, completionHandler: { (callBack:URL?, error:Error?) in
+        webAuthSession = ASWebAuthenticationSession.init(url: makeURL()!, callbackURLScheme: redirectURI, completionHandler: { (callBack:URL?, error:Error?) in
 
             // handle auth response
             guard error == nil, let successURL = callBack else {
