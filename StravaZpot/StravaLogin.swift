@@ -36,7 +36,7 @@ public class StravaLogin: NSObject {
     }
     
     private func redirectURIParameter() -> String {
-        return redirectURI.flatMap{ redirectURI in "&redirect_uri=\(stravaAuthorizationCallbackDomain)" }
+        return "&redirect_uri=\(stravaAuthorizationCallbackDomain)"
     }
     
     private func approvalPromptParameter() -> String {
