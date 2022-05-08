@@ -54,8 +54,6 @@ public func ==(lhs : Athlete, rhs : Athlete) -> Bool {
             lhs.friend                == rhs.friend &&
             lhs.follower              == rhs.follower &&
             lhs.isPremium             == rhs.isPremium &&
-            lhs.createdAt             == rhs.createdAt &&
-            lhs.updatedAt             == rhs.updatedAt &&
             lhs.followerCount         == rhs.followerCount &&
             lhs.friendCount           == rhs.friendCount &&
             lhs.mutualFriendCount     == rhs.mutualFriendCount &&
