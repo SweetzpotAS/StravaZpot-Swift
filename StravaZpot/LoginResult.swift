@@ -9,13 +9,13 @@
 import Foundation
 
 public struct LoginResult {
-    public let token : Token
+    public let accessToken : String
     public let athlete : Athlete
 }
 
 extension LoginResult : Equatable {}
 
 public func ==(lhs : LoginResult, rhs : LoginResult) -> Bool {
-    return lhs.token == rhs.token &&
-            lhs.athlete == rhs.athlete
+    return lhs.accessToken == rhs.accessToken &&
+        lhs.athlete == rhs.athlete
 }

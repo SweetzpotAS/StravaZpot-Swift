@@ -10,6 +10,10 @@ import Foundation
 
 public struct Time {
     public let seconds : Int
+    
+    public init(seconds: Int) {
+        self.seconds = seconds
+    }
 }
 
 extension Time : Equatable {}

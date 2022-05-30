@@ -9,7 +9,7 @@
 import Foundation
 
 public struct UploadStatus {
-    let id : Int
+    public let id : Int
     let externalID : String?
     let error : String?
     let status : String?
